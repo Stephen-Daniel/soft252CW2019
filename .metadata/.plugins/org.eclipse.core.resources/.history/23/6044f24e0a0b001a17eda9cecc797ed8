@@ -1,0 +1,13 @@
+package DoctorSystem;
+
+public class doctor {
+	
+	public static void doctor()
+	{
+	System.out.println("doctor");
+	
+	DoctorForm doc = new DoctorForm();
+	doc.main(null);
+	}
+
+}

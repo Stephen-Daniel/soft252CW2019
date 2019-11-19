@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.InputStream"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Convert"/>
+<fullyQualifiedTypeName name="AdminSystem.Admin"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="AdminSystem.admin"/>
+<fullyQualifiedTypeName name="DoctorSystem.doctor"/>
+<fullyQualifiedTypeName name="PatientSystem.patient"/>
+<fullyQualifiedTypeName name="SecretarySystem.secretary"/>
+<fullyQualifiedTypeName name="DoctorSystem.DoctorForm"/>
+</qualifiedTypeNameHistroy>
