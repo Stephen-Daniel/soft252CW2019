@@ -15,8 +15,8 @@ public class SecretaryForm {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					SecretaryForm window = new SecretaryForm();
-					window.frame.setVisible(true);
+					SecretaryForm secretary = new SecretaryForm();
+					secretary.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

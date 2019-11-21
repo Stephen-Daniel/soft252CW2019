@@ -1,0 +1,14 @@
+package DoctorSystem;
+
+public class doctor {
+	
+	public static void doctor()
+	{
+		JFrame o = new JFrame();
+		o.setVisible(true);
+		dispose();  
+	System.out.println("doctor");
+	System.exit(0);
+	}
+
+}

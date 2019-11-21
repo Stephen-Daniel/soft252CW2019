@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class AdminForm {
+public class AdminForm extends javax.swing.JFrame{
 
 	private JFrame frame;
 
@@ -15,11 +15,12 @@ public class AdminForm {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AdminForm window = new AdminForm();
-					window.frame.setVisible(true);
+					AdminForm admin = new AdminForm();
+					admin.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				
 			}
 		});
 	}

@@ -7,7 +7,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class DoctorForm {
+public class DoctorForm extends javax.swing.JFrame{
 
 	private JFrame frame;
 
@@ -18,8 +18,8 @@ public class DoctorForm {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					DoctorForm window = new DoctorForm();
-					window.frame.setVisible(true);
+					DoctorForm doctor = new DoctorForm();
+					doctor.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

@@ -4,7 +4,7 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 
-public class PatientForm {
+public class PatientForm extends javax.swing.JFrame{
 
 	private JFrame frame;
 
@@ -15,8 +15,8 @@ public class PatientForm {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					PatientForm window = new PatientForm();
-					window.frame.setVisible(true);
+					PatientForm patient = new PatientForm();
+					patient.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
