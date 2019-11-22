@@ -3,6 +3,7 @@ package AdminSystem;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 public class AdminForm extends javax.swing.JFrame{
 
@@ -29,6 +30,11 @@ public class AdminForm extends javax.swing.JFrame{
 	 * Create the application.
 	 */
 	public AdminForm() {
+		getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Admin");
+		lblNewLabel.setBounds(174, 21, 46, 14);
+		getContentPane().add(lblNewLabel);
 		initialize();
 	}
 

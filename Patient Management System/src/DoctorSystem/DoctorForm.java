@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
 
 public class DoctorForm extends javax.swing.JFrame{
 
@@ -53,6 +54,10 @@ public class DoctorForm extends javax.swing.JFrame{
 		});
 		btnLogout.setBounds(714, 472, 89, 23);
 		frame.getContentPane().add(btnLogout);
+		
+		JLabel lblNewLabel = new JLabel("Doctor");
+		lblNewLabel.setBounds(361, 21, 46, 14);
+		frame.getContentPane().add(lblNewLabel);
 	}
 
 }
