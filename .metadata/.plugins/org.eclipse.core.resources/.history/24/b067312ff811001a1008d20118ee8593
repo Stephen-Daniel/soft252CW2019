@@ -1,0 +1,52 @@
+package LoginSystem;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class uniqueNumber {
+	
+	public int number;
+	private String filePath = "nextNumber.txt";
+	private static Scanner read;
+	
+	
+	public int uniqueNumber()
+	{
+		
+		
+		try {
+			read = new Scanner(new File(filePath));
+			//read.useDelimiter("\n");
+		String text = read.next();
+		System.out.println(text);
+		number = Integer.parseInt(text);
+		number++;
+		
+        try {
+            FileWriter writer = new FileWriter(filePath, true);
+            writer.write(number);
+            
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+			
+			
+			
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+ 
+    
+		
+		return number;
+	}
+	
+	
+	
+
+}

@@ -70,6 +70,8 @@ public class VerifyLogin extends javax.swing.JFrame{
 			break;
 		case "P":
 			PatientForm.main(null);
+			//PatientForm pat = new PatientForm();
+			//pat.setVisible(true);
 			break;
 		case "S":
 			SecretaryForm.main(null);

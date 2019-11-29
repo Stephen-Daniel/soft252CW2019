@@ -8,11 +8,14 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
+
+import LoginSystem.LoginForm;
+
 import javax.swing.JRadioButton;
 
 public class RequestForm extends javax.swing.JFrame{
 
-	private JFrame frame;
+	private static JFrame frame;
 	
 	
 	private JTextField textField;
@@ -45,14 +48,17 @@ public class RequestForm extends javax.swing.JFrame{
 		initialize();
 	}
 
-	
+	public static void Close() {
+		frame.dispose();
+		return;
+	}
 	/**
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
 		
 		frame = new JFrame();
-		frame.setBounds(100, 100, 946, 647);
+		frame.setBounds(100, 100, 900, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 	
@@ -61,6 +67,9 @@ public class RequestForm extends javax.swing.JFrame{
 		JButton btnExit = new JButton("Exit");
 		btnExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				RequestForm.Close();
+				LoginForm.main(null);
 			}
 		});
 		frame.getContentPane().setLayout(null);

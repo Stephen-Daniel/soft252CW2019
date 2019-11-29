@@ -1,0 +1,34 @@
+package LoginSystem;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class uniqueNumber {
+	
+	public int number;
+	private String filePath = "nextNumber.txt";
+	public int uniqueNumber()
+	{
+		
+		Scanner readNumber = new Scanner(filePath);
+		String text = readNumber.next();
+		number = Integer.parseInt(text);
+		number++;
+        try {
+            FileWriter writer = new FileWriter(filePath, true);
+            writer.write(number);
+            
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+ 
+    
+		
+		return number;
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,30 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class uniqueNumber {
+	private int number;
+	public int uniqueNumber()
+	{
+		@SuppressWarnings("resource")
+		Scanner readNumber = new Scanner("savedNumber");
+		number = Integer.parseInt(readNumber.next());
+		number++;
+        try {
+            FileWriter writer = new FileWriter("MyFile.txt", true);
+            writer.write(number);
+            
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+ 
+    
+		
+		return number;
+	}
+	
+	
+	
+
+}

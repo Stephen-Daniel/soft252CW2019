@@ -62,7 +62,7 @@ public class LoginForm extends javax.swing.JFrame{
 		frmPatientManagementSystem = new JFrame();
 		frmPatientManagementSystem.setType(Type.POPUP);
 		frmPatientManagementSystem.setTitle("Patient Management System");
-		frmPatientManagementSystem.setBounds(100, 100, 700, 500);
+		frmPatientManagementSystem.setBounds(100, 100, 900, 600);
 		frmPatientManagementSystem.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmPatientManagementSystem.getContentPane().setLayout(null);
 		

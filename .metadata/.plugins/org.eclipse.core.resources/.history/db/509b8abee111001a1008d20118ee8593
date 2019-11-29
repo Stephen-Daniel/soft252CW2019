@@ -1,0 +1,68 @@
+package SecretarySystem;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import LoginSystem.LoginForm;
+
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class SecretaryForm {
+
+	private static JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					SecretaryForm secretary = new SecretaryForm();
+					secretary.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public SecretaryForm() {
+		initialize();
+	}
+	public static void Close() {
+		frame.dispose();
+		return;
+	}
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 900, 600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Secretary");
+		lblNewLabel.setBounds(146, 11, 89, 14);
+		frame.getContentPane().add(lblNewLabel);
+		
+		JButton btnLogout = new JButton("Logout");
+		btnLogout.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			SecretaryForm.Close();
+			LoginForm.main(null);
+				
+			}
+		});
+		btnLogout.setBounds(740, 515, 97, 25);
+		frame.getContentPane().add(btnLogout);
+	}
+}

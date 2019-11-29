@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class uniqueNumber {
+	private int number;
+	public int uniqueNumber()
+	{
+		Scanner readNumber = new Scanner("savedNumber");
+		number = Integer.parseInt(readNumber.next());
+		number++;
+		
+		
+		return number;
+	}
+	
+	
+	
+
+}
