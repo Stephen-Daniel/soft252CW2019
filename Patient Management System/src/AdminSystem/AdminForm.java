@@ -6,19 +6,23 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
+import LoginSystem.Person;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.InputMethodListener;
+import java.awt.event.InputMethodEvent;
 
 public class AdminForm extends javax.swing.JFrame{
 
 	private static JFrame frame;
-
+	public static String userId;
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void main(String id) {
+		userId = id;
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -28,6 +32,11 @@ public class AdminForm extends javax.swing.JFrame{
 					e.printStackTrace();
 				}
 				
+				
+				Person adminLogin = new Person();
+				adminLogin.setID(userId);
+				
+				
 			}
 		});
 	}
@@ -36,8 +45,11 @@ public class AdminForm extends javax.swing.JFrame{
 		return;
 	}
 	public AdminForm() {
+		System.out.println(userId);
 		initialize();
+		System.out.println("end");
 	}
+	
 	/**
 	 * Create the application.
 	 */
@@ -91,14 +103,10 @@ public class AdminForm extends javax.swing.JFrame{
 		btnSendFeedback.setBounds(12, 303, 146, 25);
 		frame.getContentPane().add(btnSendFeedback);
 		
+		JLabel lbluserID = new JLabel("12345");
+		lbluserID.setBounds(57, 12, 101, 16);
+		frame.getContentPane().add(lbluserID);
+		
+		lbluserID.setText(userId);
 	}
-
-//	/**
-//	 * Initialize the contents of the frame.
-//	 */
-//	private void initialize() {
-//		frame = new JFrame();
-//		frame.setBounds(100, 100, 450, 300);
-//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//	}
 }

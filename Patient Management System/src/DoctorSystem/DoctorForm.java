@@ -9,15 +9,17 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
+import LoginSystem.Person;
 
 public class DoctorForm extends javax.swing.JFrame{
 
 	private static JFrame frame;
-
+	public static String userId;
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void main(String id) {
+		userId = id;
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -26,6 +28,9 @@ public class DoctorForm extends javax.swing.JFrame{
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				
+				Person doctorLogin = new Person();
+				doctorLogin.setID(userId);
 			}
 		});
 	}
@@ -34,6 +39,7 @@ public class DoctorForm extends javax.swing.JFrame{
 	 * Create the application.
 	 */
 	public DoctorForm() {
+		
 		initialize();
 	}
 	public static void Close() {
@@ -61,9 +67,10 @@ public class DoctorForm extends javax.swing.JFrame{
 		btnLogout.setBounds(714, 472, 89, 23);
 		frame.getContentPane().add(btnLogout);
 		
-		JLabel lblNewLabel = new JLabel("Doctor");
-		lblNewLabel.setBounds(361, 21, 46, 14);
-		frame.getContentPane().add(lblNewLabel);
+		JLabel lbldoctorTitle = new JLabel("Doctor");
+		lbldoctorTitle.setBounds(361, 21, 144, 14);
+		frame.getContentPane().add(lbldoctorTitle);
+		lbldoctorTitle.setText("Doctor " + userId);
 		
 		JButton btnViewAppointments = new JButton("View Appointments");
 		btnViewAppointments.setBounds(12, 88, 214, 25);

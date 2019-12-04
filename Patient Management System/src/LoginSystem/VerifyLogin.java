@@ -24,7 +24,7 @@ public class VerifyLogin extends javax.swing.JFrame{
 	static String checkDepartment = "";
 	static String checkNumber = "";
 	static String filePath = "login.txt";
-
+	static String idNumber;
 	private static Scanner scanLogin;
 	
 	public void verifyLogin(String username, String password) {
@@ -56,25 +56,27 @@ public class VerifyLogin extends javax.swing.JFrame{
 			return;
 		}
 		
+		
 		checkDepartment = scanLogin.next();
 		checkNumber = scanLogin.next();
+		idNumber = checkDepartment + checkNumber;
 		foundIt = false;
 		LoginForm.Close();
 		switch(checkDepartment)
 		{
-		case "A":			
-			AdminForm.main(null);
+		case "A":	
+			
+			AdminForm.main(idNumber);
 			break;
 		case "D":
-			DoctorForm.main(null);
+			DoctorForm.main(idNumber);
 			break;
 		case "P":
-			PatientForm.main(null);
-			//PatientForm pat = new PatientForm();
-			//pat.setVisible(true);
+			PatientForm.main(idNumber);
+			
 			break;
 		case "S":
-			SecretaryForm.main(null);
+			SecretaryForm.main(idNumber);
 			break;
 		default:
 			System.out.println(username+password+checkUsername+checkPassword + foundIt +checkDepartment+checkNumber);

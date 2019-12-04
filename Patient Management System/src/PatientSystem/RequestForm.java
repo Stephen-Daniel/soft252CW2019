@@ -4,27 +4,39 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JTextField;
 
 import LoginSystem.LoginForm;
+import LoginSystem.Person;
+import LoginSystem.uniqueNumber;
+import SecretarySystem.SecretaryForm;
 
 import javax.swing.JRadioButton;
 
 public class RequestForm extends javax.swing.JFrame{
 
-	private static JFrame frame;
-	
-	
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-
+	public static JFrame frame;
+	public int number;
+	public  String request;
+	public  JTextField txtFirstname;
+	public  JTextField txtSurname;
+	public  JTextField txtAddress;
+	public  JTextField txtCity;
+	public  JTextField txtPostcode;
+	public  JTextField txtAge;
+	public  JTextField txtUsername;
+	public  JTextField txtPassword;
+	public  boolean female;
+	public  boolean male;
 	/**
 	 * Launch the application.
 	 */
@@ -52,6 +64,19 @@ public class RequestForm extends javax.swing.JFrame{
 		frame.dispose();
 		return;
 	}
+	 public void Clear()
+	 {
+		txtFirstname.setText("");
+		txtSurname.setText("");
+		txtAddress.setText("");
+		txtCity.setText("");
+		txtPostcode.setText("");
+		txtAge.setText("");
+		txtUsername.setText("");
+		txtPassword.setText("");
+		
+	 }
+	
 	/**
 	 * Initialize the contents of the frame.
 	 */
@@ -61,8 +86,6 @@ public class RequestForm extends javax.swing.JFrame{
 		frame.setBounds(100, 100, 900, 600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-	
-		
 		
 		JButton btnExit = new JButton("Exit");
 		btnExit.addActionListener(new ActionListener() {
@@ -74,21 +97,72 @@ public class RequestForm extends javax.swing.JFrame{
 		});
 		frame.getContentPane().setLayout(null);
 		btnExit.setFont(new Font("Arial", Font.BOLD, 20));
-		btnExit.setBounds(570, 335, 100, 30);
+		btnExit.setBounds(570, 500, 100, 30);
 		frame.getContentPane().add(btnExit);
 		
 		JButton btnSubmit = new JButton("Submit Request");
-		btnSubmit.setFont(new Font("Arial", Font.BOLD, 20));
-		btnSubmit.setBounds(360, 335, 200, 30);
-		frame.getContentPane().add(btnSubmit);
-		
-		JButton btnClear = new JButton("Clear");
-		btnClear.setFont(new Font("Arial", Font.BOLD, 20));
-		btnClear.addActionListener(new ActionListener() {
+		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				uniqueNumber requestNumber = new uniqueNumber();				
+				number = requestNumber.uniqueNumber();	
+				//create unique temp file for Patient
+				
+				request = "tempP" + Integer.toString(number) + ".txt";
+				System.out.println(request);
+				File newRequest = new File(request);
+				
+				// grab the users input and write to new temp file.
+				
+				try
+				{					
+					FileWriter fw = new FileWriter(request);
+					PrintWriter pw = new PrintWriter(fw);
+		            	 
+		            pw.println(txtFirstname.getText());
+		            pw.println(txtSurname.getText());
+		            pw.println(txtAddress.getText());
+		            pw.println(txtCity.getText());
+		            pw.println(txtPostcode.getText());
+		            if (male == true)
+		            {
+		            	pw.println("Male");
+		            }else {
+		            	pw.println("Female");
+		            }
+		            pw.println(txtAge.getText());
+		            pw.println(txtUsername.getText());
+		            pw.println(txtPassword.getText());
+		            pw.flush();
+		            pw.close();		            
+		            fw.close(); 
+		            SecretaryForm.sentRequest(request);
+		            RequestForm.Close();
+					LoginForm.main(null);
+					
+				}
+				catch (IOException e) {
+		            e.printStackTrace();
+									
+				}
+//				
 			}
 		});
-		btnClear.setBounds(250, 335, 100, 30);
+		btnSubmit.setFont(new Font("Arial", Font.BOLD, 20));
+		btnSubmit.setBounds(360, 500, 200, 30);
+		frame.getContentPane().add(btnSubmit);
+		
+		JRadioButton btnMale = new JRadioButton("Male");
+		JRadioButton btnFemale = new JRadioButton("Female");
+		
+		JButton btnClear = new JButton("Clear");
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Clear();
+			}
+		});
+		btnClear.setFont(new Font("Arial", Font.BOLD, 20));
+		
+		btnClear.setBounds(250, 500, 100, 30);
 		frame.getContentPane().add(btnClear);
 		
 		JLabel lblFirstname = new JLabel("First Name");
@@ -126,54 +200,98 @@ public class RequestForm extends javax.swing.JFrame{
 		lblAge.setBounds(40, 295, 150, 20);
 		frame.getContentPane().add(lblAge);
 		
-		textField = new JTextField();
-		textField.setFont(new Font("Arial", Font.PLAIN, 15));
-		textField.setBounds(200, 45, 500, 30);
-		frame.getContentPane().add(textField);
-		textField.setColumns(10);
+		txtFirstname = new JTextField();
+		txtFirstname.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtFirstname.setBounds(200, 45, 500, 30);
+		frame.getContentPane().add(txtFirstname);
+		txtFirstname.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Arial", Font.PLAIN, 15));
-		textField_1.setColumns(10);
-		textField_1.setBounds(200, 85, 500, 30);
-		frame.getContentPane().add(textField_1);
+		txtSurname = new JTextField();
+		txtSurname.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtSurname.setColumns(10);
+		txtSurname.setBounds(200, 85, 500, 30);
+		frame.getContentPane().add(txtSurname);
 		
-		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Arial", Font.PLAIN, 15));
-		textField_2.setColumns(10);
-		textField_2.setBounds(200, 125, 500, 30);
-		frame.getContentPane().add(textField_2);
+		txtAddress = new JTextField();
+		txtAddress.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtAddress.setColumns(10);
+		txtAddress.setBounds(200, 125, 500, 30);
+		frame.getContentPane().add(txtAddress);
 		
-		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Arial", Font.PLAIN, 15));
-		textField_3.setColumns(10);
-		textField_3.setBounds(200, 165, 500, 30);
-		frame.getContentPane().add(textField_3);
+		txtCity = new JTextField();
+		txtCity.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtCity.setColumns(10);
+		txtCity.setBounds(200, 165, 500, 30);
+		frame.getContentPane().add(txtCity);
 		
-		textField_4 = new JTextField();
-		textField_4.setFont(new Font("Arial", Font.PLAIN, 15));
-		textField_4.setColumns(10);
-		textField_4.setBounds(200, 205, 150, 30);
-		frame.getContentPane().add(textField_4);
+		txtPostcode = new JTextField();
+		txtPostcode.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtPostcode.setColumns(10);
+		txtPostcode.setBounds(200, 205, 150, 30);
+		frame.getContentPane().add(txtPostcode);
 		
-		textField_5 = new JTextField();
-		textField_5.setFont(new Font("Arial", Font.PLAIN, 15));
-		textField_5.setColumns(10);
-		textField_5.setBounds(200, 285, 93, 30);
-		frame.getContentPane().add(textField_5);
+		txtAge = new JTextField();
+		txtAge.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtAge.setColumns(10);
+		txtAge.setBounds(200, 285, 93, 30);
+		frame.getContentPane().add(txtAge);
 		
-		JRadioButton rdbtnFemale = new JRadioButton("Female");
-		rdbtnFemale.setBounds(196, 252, 71, 23);
-		frame.getContentPane().add(rdbtnFemale);
+		btnFemale.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btnFemale.isSelected())
+				{
+					female = true;
+					male = false;
+					btnMale.setSelected(false);
+				}
+			}
+		});
+		btnFemale.setBounds(196, 252, 71, 23);
+		frame.getContentPane().add(btnFemale);
 		
-		JRadioButton rdbtnMale = new JRadioButton("Male");
-		rdbtnMale.setBounds(270, 252, 109, 23);
-		frame.getContentPane().add(rdbtnMale);
+		//JRadioButton btnMale = new JRadioButton("Male");
+		btnMale.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if (btnMale.isSelected())
+				{
+					female = false;
+					male = true;
+					btnFemale.setSelected(false);
+				}
+			}
+		});
+		btnMale.setBounds(270, 252, 109, 23);
+		frame.getContentPane().add(btnMale);
 		
 		JLabel lblNewLabel = new JLabel("Request Form");
 		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 20));
 		lblNewLabel.setBounds(200, 20, 150, 20);
 		frame.getContentPane().add(lblNewLabel);
 		
+		JLabel lblusername = new JLabel("Username");
+		lblusername.setFont(new Font("Arial", Font.BOLD, 20));
+		lblusername.setBounds(40, 381, 123, 16);
+		frame.getContentPane().add(lblusername);
+		
+		JLabel lblpassword = new JLabel("Password");
+		lblpassword.setFont(new Font("Arial", Font.BOLD, 20));
+		lblpassword.setBounds(40, 418, 144, 16);
+		frame.getContentPane().add(lblpassword);
+		
+		txtUsername = new JTextField();
+		txtUsername.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtUsername.setBounds(200, 376, 500, 30);
+		frame.getContentPane().add(txtUsername);
+		txtUsername.setColumns(10);
+		
+		txtPassword = new JTextField();
+		txtPassword.setFont(new Font("Arial", Font.PLAIN, 15));
+		txtPassword.setBounds(200, 413, 500, 30);
+		frame.getContentPane().add(txtPassword);
+		txtPassword.setColumns(10);
+		
+		
+		
 	}
+	
 }

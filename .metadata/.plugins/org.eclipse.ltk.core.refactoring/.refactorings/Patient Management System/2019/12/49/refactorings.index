@@ -1,0 +1,20 @@
+1575283312866	Encapsulate field 'firstName'
+1575283324044	Encapsulate field 'surname'
+1575283333390	Encapsulate field 'address'
+1575283340708	Encapsulate field 'gender'
+1575283346798	Encapsulate field 'age'
+1575372753264	Encapsulate field 'department'
+1575372757772	Encapsulate field 'uniqueNumber'
+1575376637939	Encapsulate field 'doctorRating'
+1575376647882	Encapsulate field 'feedbackNotes'
+1575376654365	Encapsulate field 'doctorsNotes'
+1575376659206	Encapsulate field 'medicine'
+1575376669175	Encapsulate field 'dosage'
+1575376673903	Encapsulate field 'quantity'
+1575392577464	Encapsulate field 'ID'
+1575457951134	Delete element
+1575460487702	Delete element
+1575460756012	Delete element
+1575460764273	Delete element
+1575461237292	Delete element
+1575461242626	Delete element

@@ -6,21 +6,26 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
+import LoginSystem.Person;
 import LoginSystem.uniqueNumber;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JComboBox;
 
 public class SecretaryForm {
 
 	private static JFrame frame;
+	public static String requests;
 	private String nums = "";
 	private int number;
+	public static String userId;
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void main(String id) {
+		userId = id;
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -29,10 +34,15 @@ public class SecretaryForm {
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				Person secretary = new Person();
+				secretary.setID(userId);
 			}
 		});
 	}
-
+	public static void sentRequest(String request)
+	{
+		requests = request;
+	}
 	/**
 	 * Create the application.
 	 */
@@ -52,9 +62,12 @@ public class SecretaryForm {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Secretary");
-		lblNewLabel.setBounds(12, 13, 89, 14);
-		frame.getContentPane().add(lblNewLabel);
+		JLabel lblTitle = new JLabel("Secretary");
+		lblTitle.setBounds(12, 13, 164, 14);
+		frame.getContentPane().add(lblTitle);
+		
+		
+		
 		
 		JButton btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {
@@ -113,5 +126,18 @@ public class SecretaryForm {
 		JButton btnApproveAccRemoval = new JButton("Approve account removal");
 		btnApproveAccRemoval.setBounds(12, 300, 229, 25);
 		frame.getContentPane().add(btnApproveAccRemoval);
+		
+		lblTitle.setText("Secretary " + userId);
+		
+		JComboBox cbRequests = new JComboBox();
+		cbRequests.addItem(requests);
+		cbRequests.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+			}
+		});
+		cbRequests.setBounds(262, 74, 153, 22);
+		frame.getContentPane().add(cbRequests);
 	}
 }

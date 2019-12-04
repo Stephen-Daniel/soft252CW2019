@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
+import LoginSystem.Person;
 
 import java.awt.Font;
 import javax.swing.JButton;
@@ -15,12 +16,14 @@ import java.awt.event.ActionEvent;
 public class PatientForm extends javax.swing.JFrame{
 
 	private static JFrame frame;
-
+	public static String userId;
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void main(String id) {
+		userId = id;
 		EventQueue.invokeLater(new Runnable() {
+			
 			public void run() {
 				try {
 					PatientForm patient = new PatientForm();
@@ -28,6 +31,8 @@ public class PatientForm extends javax.swing.JFrame{
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
+				Person doctor = new Person();
+				doctor.setID(userId);
 			}
 		});
 	}
@@ -112,5 +117,10 @@ public class PatientForm extends javax.swing.JFrame{
 		btnRequestTermination.setFont(new Font("Arial", Font.PLAIN, 15));
 		btnRequestTermination.setBounds(40, 346, 200, 25);
 		frame.getContentPane().add(btnRequestTermination);
+		
+		JLabel lblTitle = new JLabel("Patient");
+		lblTitle.setBounds(40, 13, 159, 16);
+		frame.getContentPane().add(lblTitle);
+		lblTitle.setText("Patient " + userId);
 	}
 }
