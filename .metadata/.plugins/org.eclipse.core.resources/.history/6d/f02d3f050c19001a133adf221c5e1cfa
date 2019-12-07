@@ -61,7 +61,6 @@ public class VerifyLogin extends javax.swing.JFrame{
 		checkNumber = scanLogin.next();
 		idNumber = checkDepartment + checkNumber;
 		foundIt = false;
-		scanLogin.close();
 		LoginForm.Close();
 		switch(checkDepartment)
 		{
