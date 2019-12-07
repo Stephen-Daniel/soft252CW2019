@@ -26,6 +26,7 @@ public class RequestForm extends javax.swing.JFrame{
 
 	public static JFrame frame;
 	public int number;
+	private String uniqueNumber;
 	public  String request;
 	public  JTextField txtFirstname;
 	public  JTextField txtSurname;
@@ -33,7 +34,6 @@ public class RequestForm extends javax.swing.JFrame{
 	public  JTextField txtCity;
 	public  JTextField txtPostcode;
 	public  JTextField txtAge;
-	public  JTextField txtUsername;
 	public  JTextField txtPassword;
 	public  boolean female;
 	public  boolean male;
@@ -72,7 +72,7 @@ public class RequestForm extends javax.swing.JFrame{
 		txtCity.setText("");
 		txtPostcode.setText("");
 		txtAge.setText("");
-		txtUsername.setText("");
+		
 		txtPassword.setText("");
 		
 	 }
@@ -101,18 +101,19 @@ public class RequestForm extends javax.swing.JFrame{
 		frame.getContentPane().add(btnExit);
 		
 		JButton btnSubmit = new JButton("Submit Request");
-		btnSubmit.addActionListener(new ActionListener() {
+		btnSubmit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0) {
 				uniqueNumber requestNumber = new uniqueNumber();				
 				number = requestNumber.uniqueNumber();	
+				// add department p tag
+				uniqueNumber = "P" + Integer.toString(number);
 				//create unique temp file for Patient
-				
 				request = "tempP" + Integer.toString(number) + ".txt";
 				System.out.println(request);
-				File newRequest = new File(request);
+				//File newRequest = new File(request);
 				
 				// grab the users input and write to new temp file.
-				
+				// exception handle to be done
 				try
 				{					
 					FileWriter fw = new FileWriter(request);
@@ -123,19 +124,19 @@ public class RequestForm extends javax.swing.JFrame{
 		            pw.println(txtAddress.getText());
 		            pw.println(txtCity.getText());
 		            pw.println(txtPostcode.getText());
-		            if (male == true)
+		            if (male)
 		            {
 		            	pw.println("Male");
 		            }else {
 		            	pw.println("Female");
 		            }
 		            pw.println(txtAge.getText());
-		            pw.println(txtUsername.getText());
+		            pw.println(uniqueNumber);
 		            pw.println(txtPassword.getText());
 		            pw.flush();
 		            pw.close();		            
 		            fw.close(); 
-		            SecretaryForm.sentRequest(request);
+		            //SecretaryForm.sentRequest(request);
 		            RequestForm.Close();
 					LoginForm.main(null);
 					
@@ -268,25 +269,14 @@ public class RequestForm extends javax.swing.JFrame{
 		lblNewLabel.setBounds(200, 20, 150, 20);
 		frame.getContentPane().add(lblNewLabel);
 		
-		JLabel lblusername = new JLabel("Username");
-		lblusername.setFont(new Font("Arial", Font.BOLD, 20));
-		lblusername.setBounds(40, 381, 123, 16);
-		frame.getContentPane().add(lblusername);
-		
 		JLabel lblpassword = new JLabel("Password");
 		lblpassword.setFont(new Font("Arial", Font.BOLD, 20));
-		lblpassword.setBounds(40, 418, 144, 16);
+		lblpassword.setBounds(40, 335, 144, 16);
 		frame.getContentPane().add(lblpassword);
-		
-		txtUsername = new JTextField();
-		txtUsername.setFont(new Font("Arial", Font.PLAIN, 15));
-		txtUsername.setBounds(200, 376, 500, 30);
-		frame.getContentPane().add(txtUsername);
-		txtUsername.setColumns(10);
 		
 		txtPassword = new JTextField();
 		txtPassword.setFont(new Font("Arial", Font.PLAIN, 15));
-		txtPassword.setBounds(200, 413, 500, 30);
+		txtPassword.setBounds(200, 335, 500, 30);
 		frame.getContentPane().add(txtPassword);
 		txtPassword.setColumns(10);
 		

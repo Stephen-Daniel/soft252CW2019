@@ -1,0 +1,73 @@
+package SecretarySystem;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.util.Scanner;
+
+import LoginSystem.Person;
+
+public class secretary {
+		
+	public File[] tempFiles;
+	public int i = 0;
+		public secretary()
+		{
+			
+		}
+		
+		public void renameFile(String filename, String uniqueNumber)
+		{
+			System.out.println(uniqueNumber);
+			uniqueNumber = uniqueNumber.replaceAll("\n", "") + ".txt";
+			System.out.print(uniqueNumber);
+			File approved = new File(filename);
+			File rename = new File(uniqueNumber);
+			System.out.println(approved + "  "  + rename);			
+			if (approved.renameTo(rename)) {
+				System.out.println(filename + " has been changed to " + rename.getName());
+				}else {
+					System.out.println("error");
+				}
+			}
+		
+		public void notApproved(String filename)
+		{
+			
+			File notApproved = new File(filename);
+			if (notApproved.delete()) {
+				System.out.println(filename + " is deleted");
+				}else {
+					System.out.println("error");
+				}
+			}
+			
+			
+		
+
+		public File[] FindTextFiles(String[] temps)
+		{						
+				File directoryPath = new File(System.getProperty("user.dir"));			
+				//List all files and directories
+//				System.out.println("------------All files------------");
+//				for (File file : directoryPath.listFiles()) {
+//					System.out.println(file.getName());
+//				}
+//				
+//				//List text files only
+//				System.out.println("\n------------Text files------------");
+				File[] files=directoryPath.listFiles(new FilenameFilter() {
+					@Override
+					public boolean accept(File dir, String name) {
+						
+						return name.startsWith("temp");
+					}
+				});
+				
+				//for (File file : files) {					
+					tempFiles = files; 					
+				//
+			
+				return tempFiles;
+			}
+		}
+

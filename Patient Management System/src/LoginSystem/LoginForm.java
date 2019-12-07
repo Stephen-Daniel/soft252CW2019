@@ -15,6 +15,7 @@ import java.awt.Color;
 import javax.swing.SwingConstants;
 
 import PatientSystem.RequestForm;
+import SecretarySystem.secretary;
 
 public class LoginForm extends javax.swing.JFrame{
 
@@ -29,6 +30,7 @@ public class LoginForm extends javax.swing.JFrame{
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -72,6 +74,7 @@ public class LoginForm extends javax.swing.JFrame{
 		frmPatientManagementSystem.getContentPane().add(lblTitle);
 		
 		txtUsername = new JTextField();
+		txtUsername.setText("secretary");
 		txtUsername.setFont(new Font("Arial", Font.BOLD, 20));
 		txtUsername.setBounds(250, 90, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtUsername);
@@ -131,6 +134,7 @@ public class LoginForm extends javax.swing.JFrame{
 		frmPatientManagementSystem.getContentPane().add(btnClear);
 		
 		txtPassword = new JPasswordField();
+		txtPassword.setText("12345");
 		txtPassword.setFont(new Font("Arial", Font.BOLD, 20));
 		txtPassword.setBounds(250, 190, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtPassword);

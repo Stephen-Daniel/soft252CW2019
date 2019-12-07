@@ -1,0 +1,19 @@
+
+nsquid:UselessImportCheck"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰ÎéHØRMINORZ
+CODE_SMELL
+msquid:UselessImportCheck".Remove this unused import 'AdminSystem.admin'.(ÍóáÅúÿÿÿÿHÜRMINORZ
+CODE_SMELL
+psquid:UselessImportCheck"6Remove this unused import 'PatientSystem.RequestForm'.(¡’ÊçHÙRMINORZ
+CODE_SMELL
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHÕRMINORZ
+CODE_SMELL
+usquid:UselessImportCheck"6Remove this unused import 'SecretarySystem.secretary'.(ó›ÆÙûÿÿÿÿHÖRMINORZ
+CODE_SMELL
+¥squid:UselessImportCheck"fRemove this unused import 'org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Convert'.(âÂƒÓüÿÿÿÿHÛRMINORZ
+CODE_SMELL
+osquid:UselessImportCheck"0Remove this unused import 'DoctorSystem.doctor'.(Ýš©ÀÿÿÿÿÿH×RMINORZ
+CODE_SMELL
+{squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(š´Š‚HÝRMAJORZ
+CODE_SMELL
+qsquid:UselessImportCheck"2Remove this unused import 'PatientSystem.patient'.(“ÎùüÿÿÿÿHÚRMINORZ
+CODE_SMELL
