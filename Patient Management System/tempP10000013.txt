@@ -7,4 +7,6 @@ Male
 55
 P10000013
 password
-
+appointment
+medicine
+notes

@@ -1,0 +1,6 @@
+
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHRMINORZ
+CODE_SMELL
+¶squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Î“ó×ıÿÿÿÿHƒRCRITICALZ
+CODE_SMELL
+jsquid:S1226"DIntroduce a new variable instead of reusing the parameter "dateNow".(è—ÛšH€RMINORZBUG

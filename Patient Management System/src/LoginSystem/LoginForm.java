@@ -8,14 +8,20 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
 import java.awt.Window.Type;
 import java.awt.Color;
 import javax.swing.SwingConstants;
+import javax.swing.Timer;
 
 import PatientSystem.RequestForm;
 import SecretarySystem.secretary;
+import java.awt.event.InputMethodListener;
+import java.io.File;
+import java.awt.event.InputMethodEvent;
 
 public class LoginForm extends javax.swing.JFrame{
 
@@ -23,6 +29,9 @@ public class LoginForm extends javax.swing.JFrame{
 	private JTextField txtUsername;
 	private JLabel lblUsername;
 	private JPasswordField txtPassword;
+	private String date;
+	public String time;
+	JLabel lblTime;
 	JLabel lblMessage;
 	
 
@@ -50,13 +59,30 @@ public class LoginForm extends javax.swing.JFrame{
 	
 	public LoginForm() {
 		initialize();
+		showTime();
+		
+	}
+	
+	void showTime() {
+		new Timer(0, new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Date d = new Date();
+				SimpleDateFormat s = new SimpleDateFormat("hh:mm a");
+				
+				lblTime.setText("Time: " + s.format(d));
+								
+				//throw new UnsupportedOperationException("Not supported");
+			}			
+		}).start();		
 	}
 	
 	public static void Close() {
 		frmPatientManagementSystem.dispose();
-		return;
+		
 	}
-
+	
 	/**
 	 * Initialize the contents of the frame.
 	 */
@@ -74,7 +100,6 @@ public class LoginForm extends javax.swing.JFrame{
 		frmPatientManagementSystem.getContentPane().add(lblTitle);
 		
 		txtUsername = new JTextField();
-		txtUsername.setText("secretary");
 		txtUsername.setFont(new Font("Arial", Font.BOLD, 20));
 		txtUsername.setBounds(250, 90, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtUsername);
@@ -134,7 +159,6 @@ public class LoginForm extends javax.swing.JFrame{
 		frmPatientManagementSystem.getContentPane().add(btnClear);
 		
 		txtPassword = new JPasswordField();
-		txtPassword.setText("12345");
 		txtPassword.setFont(new Font("Arial", Font.BOLD, 20));
 		txtPassword.setBounds(250, 190, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtPassword);
@@ -167,5 +191,19 @@ public class LoginForm extends javax.swing.JFrame{
 		lblMessage.setFont(new Font("Arial", Font.BOLD, 18));
 		lblMessage.setBounds(100, 360, 500, 20);
 		frmPatientManagementSystem.getContentPane().add(lblMessage);
+		
+		DateTime d = new DateTime();
+		date = d.showDate(date);
+		
+		JLabel lblDate = new JLabel("Date: " + date);
+		lblDate.setBounds(744, 16, 111, 14);
+		frmPatientManagementSystem.getContentPane().add(lblDate);
+		
+		lblTime = new JLabel("Time: ");
+		
+		
+		lblTime.setBounds(744, 45, 111, 14);
+		frmPatientManagementSystem.getContentPane().add(lblTime);
+		
 	}
 }

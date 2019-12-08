@@ -21,6 +21,7 @@ import LoginSystem.uniqueNumber;
 import SecretarySystem.SecretaryForm;
 
 import javax.swing.JRadioButton;
+import java.awt.Color;
 
 public class RequestForm extends javax.swing.JFrame{
 
@@ -35,8 +36,12 @@ public class RequestForm extends javax.swing.JFrame{
 	public  JTextField txtPostcode;
 	public  JTextField txtAge;
 	public  JTextField txtPassword;
+	public JLabel lblError;
+	public JRadioButton btnMale;
+	public JRadioButton btnFemale;
 	public  boolean female;
 	public  boolean male;
+	public boolean err, errAge;
 	/**
 	 * Launch the application.
 	 */
@@ -53,16 +58,36 @@ public class RequestForm extends javax.swing.JFrame{
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+
 	public RequestForm() {
 		initialize();
 	}
 
 	public static void Close() {
 		frame.dispose();
-		return;
+	}
+	
+	public void checkAge() 
+	{	int a = 0;	
+		errAge = false;
+		try{
+			a = Integer.parseInt(txtAge.getText().trim());			
+			}catch (NumberFormatException nfe) 
+		        {
+					errAge = true;
+					txtAge.setText("");
+				}
+			System.out.println(a);
+			
+	}
+	public void check()
+	{
+		err = false;
+		if(txtFirstname.getText().isEmpty() || txtSurname.getText().isEmpty()||
+		txtAddress.getText().isEmpty() || txtCity.getText().isEmpty() || 
+		txtPostcode.getText().isEmpty() || (male==false && female==false) || txtPassword.getText().isEmpty())  {
+			err = true;
+		}
 	}
 	 public void Clear()
 	 {
@@ -71,10 +96,10 @@ public class RequestForm extends javax.swing.JFrame{
 		txtAddress.setText("");
 		txtCity.setText("");
 		txtPostcode.setText("");
-		txtAge.setText("");
-		
-		txtPassword.setText("");
-		
+		txtAge.setText(null);
+		btnFemale.setSelected(false);
+		btnMale.setSelected(false);
+		txtPassword.setText("");		
 	 }
 	
 	/**
@@ -103,6 +128,20 @@ public class RequestForm extends javax.swing.JFrame{
 		JButton btnSubmit = new JButton("Submit Request");
 		btnSubmit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent arg0) {
+				
+				lblError.setText("");
+				checkAge();
+				check();
+				System.out.println(errAge + " " + err);
+				
+			if(errAge == true)
+			{
+				lblError.setText("Age requires numbers only");
+				
+			}else if(err == true)
+			{
+				lblError.setText("Fill all fields before submitting");
+			} else if (errAge == false && err == false){
 				uniqueNumber requestNumber = new uniqueNumber();				
 				number = requestNumber.uniqueNumber();	
 				// add department p tag
@@ -110,10 +149,7 @@ public class RequestForm extends javax.swing.JFrame{
 				//create unique temp file for Patient
 				request = "tempP" + Integer.toString(number) + ".txt";
 				System.out.println(request);
-				//File newRequest = new File(request);
 				
-				// grab the users input and write to new temp file.
-				// exception handle to be done
 				try
 				{					
 					FileWriter fw = new FileWriter(request);
@@ -123,7 +159,7 @@ public class RequestForm extends javax.swing.JFrame{
 		            pw.println(txtSurname.getText());
 		            pw.println(txtAddress.getText());
 		            pw.println(txtCity.getText());
-		            pw.println(txtPostcode.getText());
+		            pw.println(txtPostcode.getText().toUpperCase());
 		            if (male)
 		            {
 		            	pw.println("Male");
@@ -133,31 +169,34 @@ public class RequestForm extends javax.swing.JFrame{
 		            pw.println(txtAge.getText());
 		            pw.println(uniqueNumber);
 		            pw.println(txtPassword.getText());
+		            pw.println("appointment");
+		            pw.println("medicine");
+		            pw.println("notes");
 		            pw.flush();
 		            pw.close();		            
 		            fw.close(); 
 		            //SecretaryForm.sentRequest(request);
 		            RequestForm.Close();
 					LoginForm.main(null);
-					
+								
 				}
 				catch (IOException e) {
-		            e.printStackTrace();
-									
+		            e.printStackTrace();									
 				}
-//				
+			  }								
 			}
 		});
 		btnSubmit.setFont(new Font("Arial", Font.BOLD, 20));
 		btnSubmit.setBounds(360, 500, 200, 30);
 		frame.getContentPane().add(btnSubmit);
 		
-		JRadioButton btnMale = new JRadioButton("Male");
-		JRadioButton btnFemale = new JRadioButton("Female");
+		btnMale = new JRadioButton("Male");
+		btnFemale = new JRadioButton("Female");
 		
 		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				lblError.setText("");
 				Clear();
 			}
 		});
@@ -231,7 +270,7 @@ public class RequestForm extends javax.swing.JFrame{
 		txtPostcode.setBounds(200, 205, 150, 30);
 		frame.getContentPane().add(txtPostcode);
 		
-		txtAge = new JTextField();
+		txtAge = new JTextField("");
 		txtAge.setFont(new Font("Arial", Font.PLAIN, 15));
 		txtAge.setColumns(10);
 		txtAge.setBounds(200, 285, 93, 30);
@@ -280,8 +319,13 @@ public class RequestForm extends javax.swing.JFrame{
 		frame.getContentPane().add(txtPassword);
 		txtPassword.setColumns(10);
 		
+		lblError = new JLabel("");
+		lblError.setForeground(Color.RED);
+		lblError.setFont(new Font("Arial", Font.BOLD, 18));
+		lblError.setBounds(250, 442, 420, 20);
+		frame.getContentPane().add(lblError);
+		
 		
 		
 	}
-	
 }

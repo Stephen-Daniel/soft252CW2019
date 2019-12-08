@@ -1,5 +1,6 @@
 package LoginSystem;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -19,73 +20,78 @@ import SecretarySystem.secretary;
 
 public class VerifyLogin extends javax.swing.JFrame{
 	
-	static String checkUsername = "";
+	static String temp = "";
+	char readChar;
+	static String username = "";
 	static String checkPassword = "";
 	static String checkDepartment = "";
 	static String checkNumber = "";
-	static String filePath = "login.txt";
-	static String idNumber;
+	static String filePath = ".txt";
+	
 	private static Scanner scanLogin;
 	
-	public void verifyLogin(String username, String password) {
+	public void verifyLogin(String user, String password) {
 		boolean foundIt = false;
-		
-		
+		username = user;
+		// grab department letter
+		readChar = username.charAt(0);
+		checkDepartment = Character.toString(readChar);
+		filePath = username + filePath;
+		//System.out.println(filePath);
 		try {
 				scanLogin = new Scanner(new File(filePath));
-				// scan text file username,password new line \n
-				scanLogin.useDelimiter("[,\n]");
+				// scan text file for password at line 9 
+				scanLogin.useDelimiter("[\n]");
 				
-				while(scanLogin.hasNext() && !foundIt) {	
-					
-					checkUsername = scanLogin.next();
+				for (int i = 1; i < 9; i++) {
+					temp = scanLogin.next();
+				}		
+					temp = "";
 					checkPassword = scanLogin.next();
 					
-				if(checkUsername.trim().equals(username.trim()) && checkPassword.trim().equals(password.trim()))
-							{								
-								foundIt = true;								
-							}				
-				}
+				if(checkPassword.trim().equals(password.trim()))
+					{	
+					foundIt = true;
+					}else {
+							System.out.println("no user found");
+							if(foundIt == false) {
+
+								scanLogin.close();
+								return;
+							}						
+						}
+				}catch (Exception e) {
 				
+				return;
 			}
-		catch(Exception e) {
-			System.out.println("error");
-		}
-		
-		if(foundIt == false) {
-			return;
-		}
-		
-		
-		checkDepartment = scanLogin.next();
-		checkNumber = scanLogin.next();
-		idNumber = checkDepartment + checkNumber;
-		foundIt = false;
+	
 		scanLogin.close();
 		LoginForm.Close();
+			
 		switch(checkDepartment)
 		{
 		case "A":	
 			
-			AdminForm.main(idNumber);
+			AdminForm.main(username);
 			break;
 		case "D":
-			DoctorForm.main(idNumber);
+			DoctorForm.main(username);
 			break;
 		case "P":
-			PatientForm.main(idNumber);
+			PatientForm.main(username);
 			
 			break;
 		case "S":
-			SecretaryForm.main(idNumber);
+			SecretaryForm.main(username);
 			break;
 		default:
-			System.out.println(username+password+checkUsername+checkPassword + foundIt +checkDepartment+checkNumber);
+			System.out.println(username);
 			System.exit(0);
 			
 		}
-		
+		}
+	
 		
 	}
-}
+
 		

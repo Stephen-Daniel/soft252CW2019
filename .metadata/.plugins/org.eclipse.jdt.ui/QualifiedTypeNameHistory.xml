@@ -10,7 +10,6 @@
 <fullyQualifiedTypeName name="PatientSystem.patient"/>
 <fullyQualifiedTypeName name="SecretarySystem.secretary"/>
 <fullyQualifiedTypeName name="DoctorSystem.DoctorForm"/>
-<fullyQualifiedTypeName name="LoginSystem.LoginForm"/>
 <fullyQualifiedTypeName name="PatientSystem.PatientForm"/>
 <fullyQualifiedTypeName name="PatientSystem.RequestForm"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -23,4 +22,10 @@
 <fullyQualifiedTypeName name="SecretarySystem.SecretaryForm"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FilenameFilter"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="javax.swing.Timer"/>
+<fullyQualifiedTypeName name="LoginSystem.LoginForm"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
 </qualifiedTypeNameHistroy>

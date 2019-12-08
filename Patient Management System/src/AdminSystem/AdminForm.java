@@ -13,11 +13,19 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.InputMethodListener;
 import java.awt.event.InputMethodEvent;
+import javax.swing.JTextField;
 
 public class AdminForm extends javax.swing.JFrame{
 
 	private static JFrame frame;
 	public static String userId;
+	private JTextField txtFirstname;
+	private JTextField txtSurname;
+	private JTextField txtAddress;
+	private JTextField txtCity;
+	private JTextField txtPostcode;
+	private JTextField txtUsername;
+	private JTextField txtPassword;
 	/**
 	 * Launch the application.
 	 */
@@ -108,5 +116,68 @@ public class AdminForm extends javax.swing.JFrame{
 		frame.getContentPane().add(lbluserID);
 		
 		lbluserID.setText(userId);
+		
+		JLabel lblFirstname = new JLabel("First Name");
+		lblFirstname.setBounds(594, 75, 100, 16);
+		frame.getContentPane().add(lblFirstname);
+		
+		txtFirstname = new JTextField();
+		txtFirstname.setColumns(10);
+		txtFirstname.setBounds(694, 75, 244, 22);
+		frame.getContentPane().add(txtFirstname);
+		
+		JLabel lblSurname = new JLabel("Surname");
+		lblSurname.setBounds(594, 100, 56, 16);
+		frame.getContentPane().add(lblSurname);
+		
+		txtSurname = new JTextField();
+		txtSurname.setColumns(10);
+		txtSurname.setBounds(694, 100, 245, 22);
+		frame.getContentPane().add(txtSurname);
+		
+		JLabel lblAddress = new JLabel("Address");
+		lblAddress.setBounds(594, 125, 56, 16);
+		frame.getContentPane().add(lblAddress);
+		
+		txtAddress = new JTextField();
+		txtAddress.setColumns(10);
+		txtAddress.setBounds(694, 125, 244, 22);
+		frame.getContentPane().add(txtAddress);
+		
+		JLabel lblCity = new JLabel("City");
+		lblCity.setBounds(594, 150, 56, 16);
+		frame.getContentPane().add(lblCity);
+		
+		txtCity = new JTextField();
+		txtCity.setColumns(10);
+		txtCity.setBounds(694, 150, 245, 22);
+		frame.getContentPane().add(txtCity);
+		
+		JLabel lblPostcode = new JLabel("Postcode");
+		lblPostcode.setBounds(594, 175, 56, 16);
+		frame.getContentPane().add(lblPostcode);
+		
+		txtPostcode = new JTextField();
+		txtPostcode.setColumns(10);
+		txtPostcode.setBounds(694, 175, 116, 22);
+		frame.getContentPane().add(txtPostcode);
+		
+		JLabel lblUsername = new JLabel("Username");
+		lblUsername.setBounds(594, 200, 83, 16);
+		frame.getContentPane().add(lblUsername);
+		
+		txtUsername = new JTextField();
+		txtUsername.setColumns(10);
+		txtUsername.setBounds(694, 200, 116, 22);
+		frame.getContentPane().add(txtUsername);
+		
+		JLabel lblPassword = new JLabel("Password");
+		lblPassword.setBounds(594, 225, 82, 16);
+		frame.getContentPane().add(lblPassword);
+		
+		txtPassword = new JTextField();
+		txtPassword.setColumns(10);
+		txtPassword.setBounds(694, 225, 245, 22);
+		frame.getContentPane().add(txtPassword);
 	}
 }

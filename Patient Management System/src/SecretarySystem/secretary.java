@@ -19,11 +19,7 @@ public class secretary {
 		
 		public void renameFile(File approved, File rename)
 		{
-		
-			
-			
-//			File approved = new File(filename);
-//			File rename = new File(uniqueNumber);
+
 			approved.renameTo(rename);
 			System.out.println(approved);
 			
@@ -51,22 +47,18 @@ public class secretary {
 			
 		
 
-		public File[] FindTextFiles(String[] temps)
+		public File[] FindFiles(String[] temps, String beginsWith)
 		{						
 				File directoryPath = new File(System.getProperty("user.dir"));			
 				
 				File[] files=directoryPath.listFiles(new FilenameFilter() {
 					@Override
-					public boolean accept(File dir, String name) {
+					public boolean accept(File dir, String name) {	
 						
-						return name.startsWith("temp");
+						return name.startsWith(beginsWith);
 					}
-				});
-				
-								
-					tempFiles = files; 					
-				
-			
+				});												
+					tempFiles = files; 							
 				return tempFiles;
 			}
 		}

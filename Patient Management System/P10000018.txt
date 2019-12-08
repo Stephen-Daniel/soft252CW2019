@@ -7,3 +7,6 @@ Male
 70
 P10000018
 password
+appointment
+medicine
+notes

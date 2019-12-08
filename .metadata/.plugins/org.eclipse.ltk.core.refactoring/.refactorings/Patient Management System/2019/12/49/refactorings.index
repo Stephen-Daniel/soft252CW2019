@@ -19,3 +19,6 @@
 1575461237292	Delete element
 1575461242626	Delete element
 1575564633339	Delete element
+1575800746731	Encapsulate field 'date'
+1575800750715	Encapsulate field 'time'
+1575802720090	Rename compilation unit 'Date.java'

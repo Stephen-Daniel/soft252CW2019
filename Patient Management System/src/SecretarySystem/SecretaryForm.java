@@ -26,6 +26,7 @@ public class SecretaryForm {
 	public static JFrame frame;
 	public static File[] requests;
 	public static String [] temps;
+	public String beginWith = "temp";
 	private String nums = "";
 	private int number;
 	private String uniqueNumber;
@@ -145,8 +146,7 @@ public class SecretaryForm {
 				approve.renameFile(oldfile, newfile);
 				
 				cbRequests.removeItem(filename);
-				
-				
+								
 				clear();
 				btnNotApproved.setEnabled(false);
 				btnApproveNewAccounts.setEnabled(false);
@@ -185,7 +185,8 @@ public class SecretaryForm {
 		
 		secretary getTemps = new secretary();
 		
-		requests = getTemps.FindTextFiles(temps);
+		requests = getTemps.FindFiles(temps, beginWith);
+		
 		for (File file: requests)
 		{
 			String i = file.getName();

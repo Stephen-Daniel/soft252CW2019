@@ -7,16 +7,22 @@ import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
 import LoginSystem.Person;
+import SecretarySystem.secretary;
 
 import java.awt.Font;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.File;
 import java.awt.event.ActionEvent;
 
 public class PatientForm extends javax.swing.JFrame{
 
 	private static JFrame frame;
 	public static String userId;
+	public static String [] temps;
+	public static File[] requests;
+	public String beginsWith = "";
+	
 	/**
 	 * Launch the application.
 	 */
@@ -43,6 +49,20 @@ public class PatientForm extends javax.swing.JFrame{
 	public PatientForm() {
 		initialize();
 	}
+	
+	
+//	public void populateDoctors() {
+//	secretary getDoctors = new secretary();
+//	beginsWith = "D";
+//	
+//	requests = getDoctors.FindFiles(temps, beginsWith);
+//	
+//	for (File file: requests)
+//	{
+//		String i = file.getName();
+//		cbRequests.addItem(i);
+//	}
+//	}
 
 	public static void Close() {
 		frame.dispose();
@@ -95,11 +115,6 @@ public class PatientForm extends javax.swing.JFrame{
 		btnViewPrescription.setFont(new Font("Arial", Font.PLAIN, 15));
 		btnViewPrescription.setBounds(40, 274, 200, 25);
 		frame.getContentPane().add(btnViewPrescription);
-		
-		JButton button_1 = new JButton("View Appointment");
-		button_1.setFont(new Font("Arial", Font.PLAIN, 15));
-		button_1.setBounds(40, 310, 200, 25);
-		frame.getContentPane().add(button_1);
 		
 		JButton btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {

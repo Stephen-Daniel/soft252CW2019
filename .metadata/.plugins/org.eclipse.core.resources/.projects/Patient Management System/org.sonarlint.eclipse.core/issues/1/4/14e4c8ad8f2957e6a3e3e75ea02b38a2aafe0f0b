@@ -1,19 +1,27 @@
 
-nsquid:UselessImportCheck"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰ÎéHØRMINORZ
+€squid:UselessImportCheck":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8¹‰Ì‹î-H¼RMINORZ
 CODE_SMELL
-msquid:UselessImportCheck".Remove this unused import 'AdminSystem.admin'.(ÍóáÅúÿÿÿÿHÜRMINORZ
+Œsquid:S1450"XRemove the "scanLogin" field and declare it as a local variable in the relevant methods.(Ôß½®8ñÈÍ‹î-H½RMINORZ
 CODE_SMELL
-psquid:UselessImportCheck"6Remove this unused import 'PatientSystem.RequestForm'.(¡’ÊçHÙRMINORZ
+usquid:UselessImportCheck"6Remove this unused import 'SecretarySystem.secretary'.(ó›ÆÙûÿÿÿÿH¾RMINORZ
 CODE_SMELL
-‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHÕRMINORZ
+nsquid:UselessImportCheck"4Remove this unused import 'javax.swing.JOptionPane'.(÷‰ÎéH¿RMINORZ
 CODE_SMELL
-usquid:UselessImportCheck"6Remove this unused import 'SecretarySystem.secretary'.(ó›ÆÙûÿÿÿÿHÖRMINORZ
+msquid:UselessImportCheck".Remove this unused import 'AdminSystem.admin'.(ÍóáÅúÿÿÿÿHÀRMINORZ
 CODE_SMELL
-¥squid:UselessImportCheck"fRemove this unused import 'org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Convert'.(âÂƒÓüÿÿÿÿHÛRMINORZ
+osquid:UselessImportCheck"0Remove this unused import 'DoctorSystem.doctor'.(İš©ÀÿÿÿÿÿHÁRMINORZ
 CODE_SMELL
-osquid:UselessImportCheck"0Remove this unused import 'DoctorSystem.doctor'.(İš©ÀÿÿÿÿÿH×RMINORZ
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHÂRMINORZ
 CODE_SMELL
-{squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(š´Š‚HİRMAJORZ
+psquid:UselessImportCheck"6Remove this unused import 'PatientSystem.RequestForm'.(¡’ÊçHÃRMINORZ
 CODE_SMELL
-qsquid:UselessImportCheck"2Remove this unused import 'PatientSystem.patient'.(“ÎùüÿÿÿÿHÚRMINORZ
+{squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(š´Š‚HÄRMAJORZ
+CODE_SMELL
+tsquid:S18546";Remove this useless assignment to local variable "foundIt".(¶–Ÿ„şÿÿÿÿ8Æ¢‹î-HÅRMAJORZ
+CODE_SMELL
+¥squid:UselessImportCheck"fRemove this unused import 'org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Convert'.(âÂƒÓüÿÿÿÿHÆRMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"2Remove this unused import 'PatientSystem.patient'.(“ÎùüÿÿÿÿHÇRMINORZ
+CODE_SMELL
+psquid:S25899"7Remove this expression which always evaluates to "true"(ôµé ùÿÿÿÿ8Æ¢‹î-HÈRMAJORZ
 CODE_SMELL

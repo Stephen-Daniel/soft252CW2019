@@ -7,3 +7,6 @@ Female
 34
 P10000017
 password
+appointment
+medicine
+notes
