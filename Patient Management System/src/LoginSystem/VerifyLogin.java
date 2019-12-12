@@ -26,18 +26,19 @@ public class VerifyLogin extends javax.swing.JFrame{
 	static String checkPassword = "";
 	static String checkDepartment = "";
 	static String checkNumber = "";
-	static String filePath = ".txt";
+	 
 	
 	private static Scanner scanLogin;
 	
 	public void verifyLogin(String user, String password) {
 		boolean foundIt = false;
+		String filePath = ".txt";
 		username = user;
 		// grab department letter
 		readChar = username.charAt(0);
 		checkDepartment = Character.toString(readChar);
 		filePath = username + filePath;
-		//System.out.println(filePath);
+		System.out.println(filePath);
 		try {
 				scanLogin = new Scanner(new File(filePath));
 				// scan text file for password at line 9 

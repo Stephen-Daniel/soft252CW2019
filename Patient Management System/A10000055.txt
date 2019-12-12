@@ -1,0 +1,12 @@
+1
+2
+3
+4
+5
+6
+spare
+spare
+A10000055
+password
+3
+admin

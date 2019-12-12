@@ -142,6 +142,7 @@ public class RequestForm extends javax.swing.JFrame{
 			{
 				lblError.setText("Fill all fields before submitting");
 			} else if (errAge == false && err == false){
+				//grab the username
 				uniqueNumber requestNumber = new uniqueNumber();				
 				number = requestNumber.uniqueNumber();	
 				// add department p tag

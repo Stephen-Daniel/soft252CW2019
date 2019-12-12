@@ -317,7 +317,7 @@ public class SecretaryForm {
 			public void actionPerformed(ActionEvent e) {
 				secretary notapprove = new secretary();
 				
-				notapprove.notApproved(filename);
+				notapprove.deleteFile(filename);
 				//remove from combo box
 				cbRequests.removeItem(filename);
 				clear();

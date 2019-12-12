@@ -7,6 +7,6 @@ Male
 50
 P10000014
 password
+appointment
 medicine
-notes
 

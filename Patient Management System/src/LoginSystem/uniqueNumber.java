@@ -21,7 +21,7 @@ public class uniqueNumber {
 			number = Integer.parseInt(text);
 			number++;
 		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
+			
 			e1.printStackTrace();
 		}		
 		//System.out.println("before the write" + number);		

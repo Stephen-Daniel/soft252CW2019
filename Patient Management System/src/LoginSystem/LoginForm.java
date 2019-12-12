@@ -99,7 +99,7 @@ public class LoginForm extends javax.swing.JFrame{
 		lblTitle.setBounds(250, 30, 100, 30);
 		frmPatientManagementSystem.getContentPane().add(lblTitle);
 		
-		txtUsername = new JTextField();
+		txtUsername = new JTextField("A10000001");
 		txtUsername.setFont(new Font("Arial", Font.BOLD, 20));
 		txtUsername.setBounds(250, 90, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtUsername);
@@ -158,7 +158,7 @@ public class LoginForm extends javax.swing.JFrame{
 		btnClear.setBounds(300, 300, 100, 30);
 		frmPatientManagementSystem.getContentPane().add(btnClear);
 		
-		txtPassword = new JPasswordField();
+		txtPassword = new JPasswordField("password");
 		txtPassword.setFont(new Font("Arial", Font.BOLD, 20));
 		txtPassword.setBounds(250, 190, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtPassword);
