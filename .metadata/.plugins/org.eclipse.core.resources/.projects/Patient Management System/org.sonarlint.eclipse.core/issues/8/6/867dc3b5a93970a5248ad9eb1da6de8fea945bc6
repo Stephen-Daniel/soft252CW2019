@@ -1,29 +1,40 @@
 
-Usquid:S1604x"(Make this anonymous inner class a lambda(‹Ô¡H¯3RMAJORZ
+Zsquid:S1604$"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH¦=RMAJORZ
 CODE_SMELL
-§"squid:ClassVariableVisibilityCheck"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿ8½í­î-H°3RMINORZVULNERABILITY
-Zsquid:S1604"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH±3RMAJORZ
+€squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(…ñà¾ùÿÿÿÿH¨=RMAJORZ
 CODE_SMELL
-\squid:S1444",Make this "public static userId" field final(Ó¡â±H²3RMINORZVULNERABILITY
-|squid:S00100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H³3RMINORZ
+‚squid:UselessImportCheck"<Remove this unused import 'javax.swing.JFormattedTextField'.(È¹Ç‹şÿÿÿÿ8Ü©ñ¡ğ-H©=RMINORZ
 CODE_SMELL
-Tsquid:S1604V"(Make this anonymous inner class a lambda(º€ò+H´3RMAJORZ
+gsquid:S1444"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿ8½í­î-H˜=RMINORZVULNERABILITY
+rsquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8Ü©ñ¡ğ-Hª=RMINORZ
 CODE_SMELL
-vsquid:S1192Q"FDefine a constant instead of duplicating this literal "Arial" 9 times.(ß“Æ Hµ3RCRITICALZ
+\squid:S1444",Make this "public static userId" field final(Ó¡â±H=RMINORZVULNERABILITY
+§"squid:ClassVariableVisibilityCheck"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿ8½í­î-H£=RMINORZVULNERABILITY
+’squid:S1450 "YRemove the "txtDisplay" field and declare it as a local variable in the relevant methods.(Öúğèşÿÿÿÿ8Ü©ñ¡ğ-H«=RMINORZ
 CODE_SMELL
-¶squid:S1186W"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ ÒşüÿÿÿÿH¶3RCRITICALZ
+|squid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HŸ=RMINORZ
 CODE_SMELL
-¤"squid:ClassVariableVisibilityCheck"VMake beginsWith a static final constant or non-public and provide accessors if needed.(ŒĞ²È8½í­î-H·3RMINORZVULNERABILITY
-bsquid:S2209$"5Change this instance-reference to a static reference.(µ€­H¸3RMAJORZ
+¶squid:S1186J"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ ÒşüÿÿÿÿH›=RCRITICALZ
 CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆœˆ­ùÿÿÿÿH¹3RMINORZ
+™"squid:ClassVariableVisibilityCheck"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H¢=RMINORZVULNERABILITY
+bsquid:S2209)"5Change this instance-reference to a static reference.(µ€­H=RMAJORZ
 CODE_SMELL
-¤"squid:ClassVariableVisibilityCheck"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿ8½í­î-Hº3RMINORZVULNERABILITY
-€squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(…ñà¾ùÿÿÿÿH»3RMAJORZ
+jsquid:S1444".Make this "public static requests" field final(¢áªçûÿÿÿÿ8½í­î-H =RMINORZVULNERABILITY
+Usquid:S1604k"(Make this anonymous inner class a lambda(‹Ô¡H§=RMAJORZ
 CODE_SMELL
-jsquid:S1444".Make this "public static requests" field final(¢áªçûÿÿÿÿ8½í­î-H¼3RMINORZVULNERABILITY
-™"squid:ClassVariableVisibilityCheck"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H½3RMINORZVULNERABILITY
-gsquid:S1444"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿ8½í­î-H¾3RMINORZVULNERABILITY
-Xsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH¿3RMINORZVULNERABILITY
-Hsquid:S3626E"Remove this redundant jump.(ûÁİ…HÀ3RMINORZ
+¤"squid:ClassVariableVisibilityCheck"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿ8½í­î-Hœ=RMINORZVULNERABILITY
+Xsquid:S1148+"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHš=RMINORZVULNERABILITY
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆœˆ­ùÿÿÿÿHş;RMINORZ
+CODE_SMELL
+vsquid:S1192D"FDefine a constant instead of duplicating this literal "Arial" 9 times.(ß“Æ H¤=RCRITICALZ
+CODE_SMELL
+|squid:UselessImportCheck
+"6Remove this unused import 'SecretarySystem.secretary'.(ó›ÆÙûÿÿÿÿ8’ÿ´ÿï-Hƒ<RMINORZ
+CODE_SMELL
+¤"squid:ClassVariableVisibilityCheck"VMake beginsWith a static final constant or non-public and provide accessors if needed.(ŒĞ²È8½í­î-H¥=RMINORZVULNERABILITY
+Tsquid:S1604I"(Make this anonymous inner class a lambda(º€ò+H¡=RMAJORZ
+CODE_SMELL
+ysquid:UselessImportCheck"8Remove this unused import 'java.util.GregorianCalendar'.(€û½8ê÷Ò¦ğ-HÉ@RMINORZ
+CODE_SMELL
+psquid:UselessImportCheck"/Remove this unused import 'java.util.Calendar'.(ÿÛö´8ê÷Ò¦ğ-HÊ@RMINORZ
 CODE_SMELL

@@ -11,9 +11,16 @@ import SecretarySystem.secretary;
 
 import java.awt.Font;
 import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+
 import java.awt.event.ActionListener;
 import java.io.File;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 
 public class PatientForm extends javax.swing.JFrame{
 
@@ -22,10 +29,8 @@ public class PatientForm extends javax.swing.JFrame{
 	public static String [] temps;
 	public static File[] requests;
 	public String beginsWith = "";
+	private JTextField txtDisplay;
 	
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String id) {
 		userId = id;
 		EventQueue.invokeLater(new Runnable() {
@@ -43,37 +48,19 @@ public class PatientForm extends javax.swing.JFrame{
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
 	public PatientForm() {
 		initialize();
 	}
 	
-	
-//	public void populateDoctors() {
-//	secretary getDoctors = new secretary();
-//	beginsWith = "D";
-//	
-//	requests = getDoctors.FindFiles(temps, beginsWith);
-//	
-//	for (File file: requests)
-//	{
-//		String i = file.getName();
-//		cbRequests.addItem(i);
-//	}
-//	}
 
 	public static void Close() {
 		frame.dispose();
-		return;
+		
 	}
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 900, 600);
+		frame.setBounds(100, 100, 988, 698);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -82,38 +69,38 @@ public class PatientForm extends javax.swing.JFrame{
 		lblPatientTitle.setBounds(350, 30, 120, 30);
 		frame.getContentPane().add(lblPatientTitle);
 		
-		JButton btnRateDoctor = new JButton("Rate Doctor");
+		JButton btnRateDoctor = new JButton("Rate Doctor with feedback");
 		btnRateDoctor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
 		btnRateDoctor.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnRateDoctor.setBounds(40, 94, 200, 25);
+		btnRateDoctor.setBounds(198, 40, 229, 25);
 		frame.getContentPane().add(btnRateDoctor);
 		
 		JButton btnViewRate = new JButton("View Ratings");
 		btnViewRate.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewRate.setBounds(40, 130, 200, 25);
+		btnViewRate.setBounds(40, 40, 142, 25);
 		frame.getContentPane().add(btnViewRate);
 		
 		JButton btnRequestApp = new JButton("Request an Appointment");
 		btnRequestApp.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnRequestApp.setBounds(40, 166, 200, 25);
+		btnRequestApp.setBounds(40, 250, 200, 25);
 		frame.getContentPane().add(btnRequestApp);
 		
 		JButton btnViewHistory = new JButton("View History");
 		btnViewHistory.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewHistory.setBounds(40, 202, 200, 25);
+		btnViewHistory.setBounds(602, 250, 200, 25);
 		frame.getContentPane().add(btnViewHistory);
 		
 		JButton btnViewAppointment = new JButton("View Appointment");
 		btnViewAppointment.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewAppointment.setBounds(40, 238, 200, 25);
+		btnViewAppointment.setBounds(40, 286, 200, 25);
 		frame.getContentPane().add(btnViewAppointment);
 		
 		JButton btnViewPrescription = new JButton("View Prescription");
 		btnViewPrescription.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewPrescription.setBounds(40, 274, 200, 25);
+		btnViewPrescription.setBounds(40, 459, 200, 25);
 		frame.getContentPane().add(btnViewPrescription);
 		
 		JButton btnLogout = new JButton("Logout");
@@ -125,17 +112,25 @@ public class PatientForm extends javax.swing.JFrame{
 			}
 		});
 		btnLogout.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnLogout.setBounds(350, 572, 200, 25);
+		btnLogout.setBounds(762, 623, 200, 25);
 		frame.getContentPane().add(btnLogout);
 		
 		JButton btnRequestTermination = new JButton("Request Termination");
 		btnRequestTermination.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnRequestTermination.setBounds(40, 346, 200, 25);
+		btnRequestTermination.setBounds(762, 587, 200, 25);
 		frame.getContentPane().add(btnRequestTermination);
 		
 		JLabel lblTitle = new JLabel("Patient");
 		lblTitle.setBounds(40, 13, 159, 16);
 		frame.getContentPane().add(lblTitle);
 		lblTitle.setText("Patient " + userId);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(602, 40, 335, 197);
+		frame.getContentPane().add(scrollPane);
+		
+		txtDisplay = new JTextField();
+		scrollPane.setViewportView(txtDisplay);
+		txtDisplay.setColumns(10);
 	}
 }

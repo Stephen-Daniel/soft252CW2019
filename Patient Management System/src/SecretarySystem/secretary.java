@@ -55,7 +55,7 @@ public class secretary {
 					@Override
 					public boolean accept(File dir, String name) {	
 						
-						System.out.println(name.startsWith(beginsWith) + " hello");
+						//System.out.println(name.startsWith(beginsWith) + " hello");
 						// takes the feedback out of the files
 						if(name.contains(notFeedback))
 						{	return false;				

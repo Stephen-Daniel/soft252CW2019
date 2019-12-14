@@ -1,36 +1,42 @@
 
-csquid:S1444".Make this "public static requests" field final(¢áªçûÿÿÿÿHñ$RMINORZVULNERABILITY
-Ysquid:S1148Û"#Use a logger to log this exception.(ÂþÿâûÿÿÿÿHå$RMINORZVULNERABILITY
-[squid:S1604¼"(Make this anonymous inner class a lambda(èËåÀýÿÿÿÿHí$RMAJORZ
+Zsquid:S16047"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH³=RMAJORZ
 CODE_SMELL
-ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦Hè$RMINORZ
+\squid:S1444(",Make this "public static userId" field final(Ó¡â±H®=RMINORZVULNERABILITY
+ "squid:ClassVariableVisibilityCheck!"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿH¸=RMINORZVULNERABILITY
+asquid:S1068$"(Remove this unused "nums" private field.(ŠóñÎýÿÿÿÿ8à©ñ¡ð-HÃ=RMAJORZ
 CODE_SMELL
- "squid:ClassVariableVisibilityCheck"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿHÝ$RMINORZVULNERABILITY
-Zsquid:S1604w"(Make this anonymous inner class a lambda(›‰Ó÷þÿÿÿÿHß$RMAJORZ
+"squid:ClassVariableVisibilityCheck""QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ýÿÿÿÿH¹=RMINORZVULNERABILITY
+ssquid:UselessImportCheck"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8à©ñ¡ð-HÂ=RMINORZ
 CODE_SMELL
-™"squid:ClassVariableVisibilityCheck!"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HÛ$RMINORZVULNERABILITY
-Usquid:S1604l"(Make this anonymous inner class a lambda(‹Ô¡Hç$RMAJORZ
+`squid:S1444""+Make this "public static temps" field final(¬‘²÷ýÿÿÿÿHÀ=RMINORZVULNERABILITY
+bsquid:S2209;"5Change this instance-reference to a static reference.(¶š¬–H·=RMAJORZ
 CODE_SMELL
-|squid:S00100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿Hð$RMINORZ
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦H¨;RMINORZ
 CODE_SMELL
-¤"squid:ClassVariableVisibilityCheck"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘þøÿÿÿÿ8¶¯œàí-Hä$RMINORZVULNERABILITY
-`squid:S1444"+Make this "public static temps" field final(¬‘²÷ýÿÿÿÿHà$RMINORZVULNERABILITY
-±squid:S1186L"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ëÝ—HÞ$RCRITICALZ
+csquid:S1444!".Make this "public static requests" field final(¢áªçûÿÿÿÿH»=RMINORZVULNERABILITY
+Ysquid:S2386´"#Make member "requests" "protected".(©´å‹ÿÿÿÿÿHÁ=RMINORZVULNERABILITY
+Ysquid:S1148Õ"#Use a logger to log this exception.(ÂþÿâûÿÿÿÿH½=RMINORZVULNERABILITY
+Xsquid:S1148="#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿH¼=RMINORZVULNERABILITY
+±squid:S1186R"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ëÝ—H±=RCRITICALZ
 CODE_SMELL
-\squid:S1444!",Make this "public static userId" field final(Ó¡â±Hã$RMINORZVULNERABILITY
-¨"squid:ClassVariableVisibilityCheck"UMake beginWith a static final constant or non-public and provide accessors if needed.(öúÚ‡ùÿÿÿÿ8ý¨„­î-Há$RMINORZVULNERABILITY
-Zsquid:S16041"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHÜ$RMAJORZ
+|squid:S00100_"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H¯=RMINORZ
 CODE_SMELL
-gsquid:S1444"+Make this "public static frame" field final(¹å‘þøÿÿÿÿ8¶¯œàí-Hé$RMINORZVULNERABILITY
-Xsquid:S11487"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿHò$RMINORZVULNERABILITY
-Vsquid:S1604‡"(Make this anonymous inner class a lambda(ýÿû‚Hæ$RMAJORZ
+Vsquid:S1604¼"(Make this anonymous inner class a lambda(¼¾ŽóHµ=RMAJORZ
 CODE_SMELL
-Vsquid:S1604Ä"(Make this anonymous inner class a lambda(¼¾ŽóHì$RMAJORZ
+lsquid:S4973¿"9Use the "equals" method if value comparison was intended.(éž©ÿÿÿÿÿ8ò–ôßí-H¾=RMAJORZBUG
+^squid:S1068&"*Remove this unused "number" private field.(òù´Ê8à©ñ¡ð-HÅ=RMAJORZ
 CODE_SMELL
-lsquid:S4973Ç"9Use the "equals" method if value comparison was intended.(éž©ÿÿÿÿÿ8ò–ôßí-Hë$RMAJORZBUG
-"squid:ClassVariableVisibilityCheck"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ýÿÿÿÿHê$RMINORZVULNERABILITY
-bsquid:S22095"5Change this instance-reference to a static reference.(¶š¬–Hï$RMAJORZ
+™"squid:ClassVariableVisibilityCheck("RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H°=RMINORZVULNERABILITY
+[squid:S1604­"(Make this anonymous inner class a lambda(èËåÀýÿÿÿÿH´=RMAJORZ
 CODE_SMELL
-Ysquid:S2386¼"#Make member "requests" "protected".(©´å‹ÿÿÿÿÿHâ$RMINORZVULNERABILITY
-Hsquid:S3626Z"Remove this redundant jump.(ûÁÝ…Hî$RMINORZ
+¤"squid:ClassVariableVisibilityCheck "QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘þøÿÿÿÿ8¶¯œàí-H¿=RMINORZVULNERABILITY
+gsquid:S1444 "+Make this "public static frame" field final(¹å‘þøÿÿÿÿ8¶¯œàí-H²=RMINORZVULNERABILITY
+Usquid:S1604s"(Make this anonymous inner class a lambda(‹Ô¡H­=RMAJORZ
+CODE_SMELL
+{squid:S3252Ô">Use static access with "javax.swing.SwingConstants" for "TOP".(û“ÍÉûÿÿÿÿ8©Þ†‚ð-H¶=RCRITICALZ
+CODE_SMELL
+asquid:S1068%"(Remove this unused "temp" private field.(ìøø¯øÿÿÿÿ8à©ñ¡ð-HÄ=RMAJORZ
+CODE_SMELL
+¨"squid:ClassVariableVisibilityCheck#"UMake beginWith a static final constant or non-public and provide accessors if needed.(öúÚ‡ùÿÿÿÿ8ý¨„­î-Hº=RMINORZVULNERABILITY
+Usquid:S1604"(Make this anonymous inner class a lambda(ýÿû‚H¬=RMAJORZ
 CODE_SMELL

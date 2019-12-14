@@ -1,87 +1,89 @@
 
-«"squid:ClassVariableVisibilityCheck5"^Make txtDisplayFeedback a static final constant or non-public and provide accessors if needed.(ÀÉ‡8öÕô¥ï-Hà0RMINORZVULNERABILITY
-¤"squid:ClassVariableVisibilityCheck-"QMake files a static final constant or non-public and provide accessors if needed.(ã¶úûÿÿÿÿ8ş¡âÖî-HÎ0RMINORZVULNERABILITY
-Zsquid:S1604I"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH·0RMAJORZ
+\squid:S14441",Make this "public static userId" field final(Ó¡â±H–<RMINORZVULNERABILITY
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á‰¤¹ıÿÿÿÿH—<RMINORZ
 CODE_SMELL
-ysquid:UselessImportCheck"?Remove this unused import 'java.awt.event.InputMethodListener'.(óø©Hò+RMINORZ
+Zsquid:S2386Ï""Make member "request" "protected".(ØìÔ¥8êöÄ‚ï-H˜<RMINORZVULNERABILITY
+xsquid:HiddenFieldCheckÑ"8Rename "file" which hides the field declared at line 46.(ö‚×¢8êöÄ‚ï-H™<RMAJORZ
 CODE_SMELL
-]squid:S1604¤"(Make this anonymous inner class a lambda(ûò–İ8¤şüşî-HÂ0RMAJORZ
+isquid:S1444,"-Make this "public static request" field final(ôÎÀüÿÿÿÿ8êöÄ‚ï-Hš<RMINORZVULNERABILITY
+«"squid:ClassVariableVisibilityCheck5"^Make txtDisplayFeedback a static final constant or non-public and provide accessors if needed.(ÀÉ‡8öÕô¥ï-H›<RMINORZVULNERABILITY
+|squid:S00100\"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿Hœ<RMINORZ
 CODE_SMELL
-|squid:S00100Y"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H×0RMINORZ
+Ysquid:S1148³"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿH<RMINORZVULNERABILITY
+]squid:S1604á"(Make this anonymous inner class a lambda(ªŒˆ8¤şüşî-H<RMAJORZ
 CODE_SMELL
-]squid:S1604Ã"(Make this anonymous inner class a lambda(ç‰õ›8Õ–Ÿãî-HÀ0RMAJORZ
+]squid:S1604æ"(Make this anonymous inner class a lambda(‹Ô¡8ÌÚùî-HŸ<RMAJORZ
 CODE_SMELL
-`squid:S1148š"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ş¡âÖî-HË0RMINORZVULNERABILITY
-]squid:S1604Ù"(Make this anonymous inner class a lambda(±üÓ¸8¤şüşî-Hå0RMAJORZ
+¬"squid:ClassVariableVisibilityCheck4"^Make txtDisplayComments a static final constant or non-public and provide accessors if needed.(‡”Š”8ş¡âÖî-H <RMINORZVULNERABILITY
+]squid:S1604"(Make this anonymous inner class a lambda(¼—Ê¶8Ë€¸ªï-H¡<RMAJORZ
 CODE_SMELL
-€squid:MaximumInheritanceDepth("<This class has 6 parents which is greater than 5 authorized.(¹É‹ÙûÿÿÿÿHÍ0RMAJORZ
+¬"squid:ClassVariableVisibilityCheckG"^Make usernameWithoutTXT a static final constant or non-public and provide accessors if needed.(â•š¶8æÈüî-H¢<RMINORZVULNERABILITY
+¢"squid:ClassVariableVisibilityCheckH"TMake username a static final constant or non-public and provide accessors if needed.(ıá³Ê8»œúî-H£<RMINORZVULNERABILITY
+wsquid:UselessImportCheck""1Remove this unused import 'javax.swing.DropMode'.(Ì˜²¢ıÿÿÿÿ8ş¡âÖî-H¤<RMINORZ
 CODE_SMELL
-wsquid:S2095Ä"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÎÏØ[8»œúî-HŞ0RBLOCKERZBUG
-™"squid:ClassVariableVisibilityCheck1"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HØ0RMINORZVULNERABILITY
-}squid:S2095Ü"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(—‡é„ùÿÿÿÿ8öÏ’®ï-H®3RBLOCKERZBUG
-¨"squid:ClassVariableVisibilityCheck/"UMake beginWith a static final constant or non-public and provide accessors if needed.(ŸÑ¹¥ıÿÿÿÿ8ş¡âÖî-HÖ0RMINORZVULNERABILITY
-§"squid:ClassVariableVisibilityCheck+"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿ8ş¡âÖî-Hä0RMINORZVULNERABILITY
-‚squid:UselessImportCheck"<Remove this unused import 'javax.swing.text.StyledDocument'.(ˆ¼ğÒøÿÿÿÿ8öÕô¥ï-Há.RMINORZ
+]squid:S1604ğ"(Make this anonymous inner class a lambda(ç‰õ›8ş¡âÖî-H¥<RMAJORZ
 CODE_SMELL
-gsquid:S2209M"5Change this instance-reference to a static reference.(±ù“¶üÿÿÿÿHÄ0RMAJORZ
+"squid:ClassVariableVisibilityCheck."PMake file a static final constant or non-public and provide accessors if needed.(ÇâÜş8êöÄ‚ï-H¦<RMINORZVULNERABILITY
+_squid:S1148U"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£ÃÜ®ï-H§<RMINORZVULNERABILITY
+[squid:S1604³"(Make this anonymous inner class a lambda(ŸÄñÿÿÿÿÿH¨<RMAJORZ
 CODE_SMELL
-{squid:UselessImportCheck":Remove this unused import 'javax.swing.border.LineBorder'.(¢è·¥8ş¡âÖî-H‰,RMINORZ
+wsquid:UselessImportCheck%"6Remove this unused import 'java.awt.event.MouseEvent'.(›õ8÷ç„¤ï-H©<RMINORZ
 CODE_SMELL
-fsquid:S1172l"-Remove this unused method parameter "chosen".(Úš€ºÿÿÿÿÿ8è—ø„ï-HÁ0RMAJORZ
+jsquid:S1444+".Make this "public static requests" field final(¢áªçûÿÿÿÿ8ş¡âÖî-Hª<RMINORZVULNERABILITY
+]squid:S1604œ"(Make this anonymous inner class a lambda(¦Ÿ¥8ûÛœªï-H«<RMAJORZ
 CODE_SMELL
-wsquid:UselessImportCheck"6Remove this unused import 'PatientSystem.RequestForm'.(¡’Êç8÷´Âûî-Hî+RMINORZ
+¤"squid:ClassVariableVisibilityCheck0"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿ8ş¡âÖî-H¬<RMINORZVULNERABILITY
+gsquid:S1172“"-Remove this unused method parameter "chosen".(Úš€ºÿÿÿÿÿ8è—ø„ï-H­<RMAJORZ
 CODE_SMELL
-bsquid:S1604ú"(Make this anonymous inner class a lambda(ıŞËşÿÿÿÿ8»œúî-HÚ0RMAJORZ
+tsquid:UselessImportCheck&"3Remove this unused import 'javax.swing.JScrollBar'.(êº§è8–³º§ï-H®<RMINORZ
 CODE_SMELL
-¡"squid:ClassVariableVisibilityCheck8"SMake btnSave a static final constant or non-public and provide accessors if needed.(»Õá8»°°úî-HĞ0RMINORZVULNERABILITY
-¨"squid:ClassVariableVisibilityCheckD"ZMake userDepartment a static final constant or non-public and provide accessors if needed.(á‰•8»œúî-H¼0RMINORZVULNERABILITY
-gsquid:S1444-"+Make this "public static files" field final(ã¶úûÿÿÿÿ8ş¡âÖî-H¹0RMINORZVULNERABILITY
-]squid:S1604ã"(Make this anonymous inner class a lambda(¦Ÿ¥8ûÛœªï-H¬1RMAJORZ
+ysquid:UselessImportCheck"?Remove this unused import 'java.awt.event.InputMethodListener'.(óø©H¯<RMINORZ
 CODE_SMELL
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á‰¤¹ıÿÿÿÿH÷+RMINORZ
+qsquid:UselessImportCheck "+Remove this unused import 'java.awt.Color'.(ùÈãÈøÿÿÿÿ8ş¡âÖî-H°<RMINORZ
 CODE_SMELL
-]squid:S1604¹"(Make this anonymous inner class a lambda(‹Ô¡8»œúî-HÈ0RMAJORZ
+wsquid:S2095ê"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÎÏØ[8»œúî-H±<RBLOCKERZBUG
+™"squid:ClassVariableVisibilityCheck1"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H²<RMINORZVULNERABILITY
+¨"squid:ClassVariableVisibilityCheck9"UMake btnDelete a static final constant or non-public and provide accessors if needed.(…¶ûˆıÿÿÿÿ8»°°úî-H³<RMINORZVULNERABILITY
+~squid:UselessImportCheck$"8Remove this unused import 'java.awt.event.MouseAdapter'.( ÜÍÁûÿÿÿÿ8÷ç„¤ï-H´<RMINORZ
 CODE_SMELL
-bsquid:S1604Ï"(Make this anonymous inner class a lambda(ş”èïüÿÿÿÿ8ş¡âÖî-HÏ0RMAJORZ
+gsquid:S2209S"5Change this instance-reference to a static reference.(±ù“¶üÿÿÿÿHµ<RMAJORZ
 CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck7"UMake btnDelete a static final constant or non-public and provide accessors if needed.(…¶ûˆıÿÿÿÿ8»°°úî-Há0RMINORZVULNERABILITY
-wsquid:UselessImportCheck%"6Remove this unused import 'java.awt.event.MouseEvent'.(›õ8÷ç„¤ï-HÏ-RMINORZ
+asquid:S1444."*Make this "public static file" field final(ÇâÜş8êöÄ‚ï-H¶<RMINORZVULNERABILITY
+{squid:UselessImportCheck":Remove this unused import 'javax.swing.border.LineBorder'.(¢è·¥8ş¡âÖî-H·<RMINORZ
 CODE_SMELL
-Xsquid:S1148O"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÃ0RMINORZVULNERABILITY
-isquid:S1444,"-Make this "public static request" field final(ôÎÀüÿÿÿÿ8êöÄ‚ï-HÓ0RMINORZVULNERABILITY
-gsquid:S14440"+Make this "public static frame" field final(¹å‘şøÿÿÿÿ8ş¡âÖî-Hã0RMINORZVULNERABILITY
-asquid:S1444."*Make this "public static file" field final(ÇâÜş8êöÄ‚ï-HÇ0RMINORZVULNERABILITY
-"squid:ClassVariableVisibilityCheckE"PMake temp a static final constant or non-public and provide accessors if needed.(‘—­›8êà‚ï-Hß0RMINORZVULNERABILITY
-¤"squid:ClassVariableVisibilityCheck2"WMake cbAdminList a static final constant or non-public and provide accessors if needed.(Éò÷%8ş¡âÖî-Hæ0RMINORZVULNERABILITY
-~squid:UselessImportCheck$"8Remove this unused import 'java.awt.event.MouseAdapter'.( ÜÍÁûÿÿÿÿ8÷ç„¤ï-HÎ-RMINORZ
+¨"squid:ClassVariableVisibilityCheck/"UMake beginWith a static final constant or non-public and provide accessors if needed.(ŸÑ¹¥ıÿÿÿÿ8ş¡âÖî-H¸<RMINORZVULNERABILITY
+¤"squid:ClassVariableVisibilityCheck2"WMake cbAdminList a static final constant or non-public and provide accessors if needed.(Éò÷%8ş¡âÖî-H¹<RMINORZVULNERABILITY
+`squid:S1148¾"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ş¡âÖî-Hº<RMINORZVULNERABILITY
+Zsquid:S1604O"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH»<RMAJORZ
 CODE_SMELL
-wsquid:UselessImportCheck""1Remove this unused import 'javax.swing.DropMode'.(Ì˜²¢ıÿÿÿÿ8ş¡âÖî-HÙ+RMINORZ
+bsquid:S1604¼"(Make this anonymous inner class a lambda(ıŞËşÿÿÿÿ8»œúî-H¼<RMAJORZ
 CODE_SMELL
-¤"squid:ClassVariableVisibilityCheck0"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿ8ş¡âÖî-Hº0RMINORZVULNERABILITY
-¦"squid:ClassVariableVisibilityCheck,"SMake request a static final constant or non-public and provide accessors if needed.(ôÎÀüÿÿÿÿ8êöÄ‚ï-H¸0RMINORZVULNERABILITY
-xsquid:UselessImportCheck#"2Remove this unused import 'javax.swing.JTextPane'.(ŸÉù¿ùÿÿÿÿ8öÕô¥ï-Hâ.RMINORZ
+}squid:S2095‚"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(—‡é„ùÿÿÿÿ8öÏ’®ï-H½<RBLOCKERZBUG
+]squid:S1604Á"(Make this anonymous inner class a lambda(»„¦²8¤şüşî-H¾<RMAJORZ
 CODE_SMELL
-"squid:ClassVariableVisibilityCheck."PMake file a static final constant or non-public and provide accessors if needed.(ÇâÜş8êöÄ‚ï-H»0RMINORZVULNERABILITY
-bsquid:S1604ğ"(Make this anonymous inner class a lambda(œ™åúÿÿÿÿ8÷ç„¤ï-Hİ0RMAJORZ
+"squid:ClassVariableVisibilityCheckJ"PMake temp a static final constant or non-public and provide accessors if needed.(‘—­›8êà‚ï-H¿<RMINORZVULNERABILITY
+vsquid:UselessImportCheck"<Remove this unused import 'java.awt.event.InputMethodEvent'.(ÿ“—”HÀ<RMINORZ
 CODE_SMELL
-qsquid:UselessImportCheck "+Remove this unused import 'java.awt.Color'.(ùÈãÈøÿÿÿÿ8ş¡âÖî-Hæ+RMINORZ
+§"squid:ClassVariableVisibilityCheck+"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿ8ş¡âÖî-HÁ<RMINORZVULNERABILITY
+bsquid:S1604ÿ"(Make this anonymous inner class a lambda(ş”èïüÿÿÿÿ8»œúî-HÂ<RMAJORZ
 CODE_SMELL
-tsquid:UselessImportCheck&"3Remove this unused import 'javax.swing.JScrollBar'.(êº§è8–³º§ï-Hç0RMINORZ
+]squid:S1604"(Make this anonymous inner class a lambda(±üÓ¸8Õ–Ÿãî-HÃ<RMAJORZ
 CODE_SMELL
-`squid:S1148"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8£ÃÜ®ï-HĞ3RMINORZVULNERABILITY
-¢"squid:ClassVariableVisibilityCheckC"TMake username a static final constant or non-public and provide accessors if needed.(ıá³Ê8»œúî-HÊ0RMINORZVULNERABILITY
-\squid:S14441",Make this "public static userId" field final(Ó¡â±HÒ0RMINORZVULNERABILITY
-vsquid:UselessImportCheck"<Remove this unused import 'java.awt.event.InputMethodEvent'.(ÿ“—”Hå+RMINORZ
+€squid:MaximumInheritanceDepth("<This class has 6 parents which is greater than 5 authorized.(¹É‹ÙûÿÿÿÿHÄ<RMAJORZ
 CODE_SMELL
-]squid:S1604İ"(Make this anonymous inner class a lambda(¼—Ê¶8Ë€¸ªï-H•2RMAJORZ
+xsquid:UselessImportCheck#"2Remove this unused import 'javax.swing.JTextPane'.(ŸÉù¿ùÿÿÿÿ8öÕô¥ï-HÅ<RMINORZ
 CODE_SMELL
-Vsquid:S1604"(Make this anonymous inner class a lambda(»„¦²HÕ0RMAJORZ
+¡"squid:ClassVariableVisibilityCheck:"SMake btnSave a static final constant or non-public and provide accessors if needed.(»Õá8»°°úî-HÆ<RMINORZVULNERABILITY
+¨"squid:ClassVariableVisibilityCheckI"ZMake userDepartment a static final constant or non-public and provide accessors if needed.(á‰•8»œúî-HÇ<RMINORZVULNERABILITY
+‘squid:S1450K"XRemove the "btnLogout" field and declare it as a local variable in the relevant methods.(ô«Áíüÿÿÿÿ8ã—úÏï-HÈ<RMINORZ
 CODE_SMELL
-xsquid:HiddenFieldCheck¤"8Rename "file" which hides the field declared at line 46.(ö‚×¢8êöÄ‚ï-HÅ0RMAJORZ
+wsquid:UselessImportCheck"6Remove this unused import 'PatientSystem.RequestForm'.(¡’Êç8÷´Âûî-HÉ<RMINORZ
 CODE_SMELL
-¬"squid:ClassVariableVisibilityCheck4"^Make txtDisplayComments a static final constant or non-public and provide accessors if needed.(‡”Š”8ş¡âÖî-H¿0RMINORZVULNERABILITY
-jsquid:S1444+".Make this "public static requests" field final(¢áªçûÿÿÿÿ8ş¡âÖî-HÑ0RMINORZVULNERABILITY
-bsquid:S1604ò"(Make this anonymous inner class a lambda(ŸÄñÿÿÿÿÿ8ÌÚùî-H½0RMAJORZ
+gsquid:S1444-"+Make this "public static files" field final(ã¶úûÿÿÿÿ8ş¡âÖî-HÊ<RMINORZVULNERABILITY
+‚squid:UselessImportCheck"<Remove this unused import 'javax.swing.text.StyledDocument'.(ˆ¼ğÒøÿÿÿÿ8öÕô¥ï-HË<RMINORZ
 CODE_SMELL
-Zsquid:S2386¢""Make member "request" "protected".(ØìÔ¥8êöÄ‚ï-H¾0RMINORZVULNERABILITY
-¬"squid:ClassVariableVisibilityCheckB"^Make usernameWithoutTXT a static final constant or non-public and provide accessors if needed.(â•š¶8æÈüî-HÉ0RMINORZVULNERABILITY
+gsquid:S14440"+Make this "public static frame" field final(¹å‘şøÿÿÿÿ8ş¡âÖî-HÌ<RMINORZVULNERABILITY
+bsquid:S1604¬"(Make this anonymous inner class a lambda(œ™åúÿÿÿÿ8÷ç„¤ï-HÍ<RMAJORZ
+CODE_SMELL
+¦"squid:ClassVariableVisibilityCheck,"SMake request a static final constant or non-public and provide accessors if needed.(ôÎÀüÿÿÿÿ8êöÄ‚ï-HÎ<RMINORZVULNERABILITY
+¤"squid:ClassVariableVisibilityCheck-"QMake files a static final constant or non-public and provide accessors if needed.(ã¶úûÿÿÿÿ8ş¡âÖî-HÏ<RMINORZVULNERABILITY

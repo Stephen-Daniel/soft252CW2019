@@ -1,6 +1,43 @@
 
-‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHRMINORZ
+rsquid:UselessImportCheck"1Remove this unused import 'java.text.DateFormat'.(÷Œá¼8˜©¦ğ-Hõ?RMINORZ
 CODE_SMELL
-¶squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Î“ó×ıÿÿÿÿHƒRCRITICALZ
+usquid:UselessImportCheck"/Remove this unused import 'javax.swing.JFrame'.(ßŒŸûùÿÿÿÿ8å©ñ¡ğ-HÊ=RMINORZ
 CODE_SMELL
-jsquid:S1226"DIntroduce a new variable instead of reusing the parameter "dateNow".(è—ÛšH€RMINORZBUG
+qsquid:UselessImportCheck"0Remove this unused import 'javax.swing.JButton'.(´ÀÃ“8˜©¦ğ-Hï?RMINORZ
+CODE_SMELL
+‡squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(õóìÛúÿÿÿÿ8å©ñ¡ğ-HÍ=RMAJORZ
+CODE_SMELL
+vsquid:UselessImportCheck	"0Remove this unused import 'java.awt.FlowLayout'.(Íğç¢ÿÿÿÿÿ8˜©¦ğ-Hí?RMINORZ
+CODE_SMELL
+ysquid:UselessImportCheck"3Remove this unused import 'javax.swing.JComponent'.(²Ü¥–øÿÿÿÿ8ÇÁ’¢ğ-Hï=RMINORZ
+CODE_SMELL
+wsquid:UselessImportCheck"7Remove this unused import 'javax.swing.SwingUtilities'.(…äü$8Şõª¦ğ-H@RMINORZ
+CODE_SMELL
+½squid:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Î“ó×ıÿÿÿÿ8˜©¦ğ-Hö?RCRITICALZ
+CODE_SMELL
+{squid:UselessImportCheck":Remove this unused import 'java.awt.ComponentOrientation'.(˜œ‚Ö8˜©¦ğ-Hò?RMINORZ
+CODE_SMELL
+psquid:UselessImportCheck"/Remove this unused import 'java.awt.Dimension'.(˜‚º·8˜©¦ğ-Hó?RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"0Remove this unused import 'java.awt.EventQueue'.(ùÅØæ8ÇÁ’¢ğ-Hî=RMINORZ
+CODE_SMELL
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRH‰<RMINORZ
+CODE_SMELL
+{squid:UselessImportCheck":Remove this unused import 'java.awt.event.ActionListener'.(Ìä¹8˜©¦ğ-Hî?RMINORZ
+CODE_SMELL
+‚squid:UselessImportCheck"<Remove this unused import 'javax.swing.JFormattedTextField'.(È¹Ç‹şÿÿÿÿ8˜©¦ğ-Hğ?RMINORZ
+CODE_SMELL
+xsquid:UselessImportCheck
+"7Remove this unused import 'java.awt.event.ActionEvent'.(Úù“‘8˜©¦ğ-Hñ?RMINORZ
+CODE_SMELL
+psquid:UselessImportCheck"/Remove this unused import 'java.awt.Container'.(˜ƒ×‹8˜©¦ğ-Hô?RMINORZ
+CODE_SMELL
+ssquid:UselessImportCheck"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8å©ñ¡ğ-HÈ=RMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck".Remove this unused import 'javax.swing.Timer'.(Ñ¼èøÿÿÿÿ8å©ñ¡ğ-HË=RMINORZ
+CODE_SMELL
+vsquid:S1226-"DIntroduce a new variable instead of reusing the parameter "getTime".(şâ¼ıÿÿÿÿ8É­§ğ-HARMINORZBUG
+lsquid:UselessImportCheck"+Remove this unused import 'java.util.Date'.(¸…¼ü8É­§ğ-HŸARMINORZ
+CODE_SMELL
+xsquid:UselessImportCheck"7Remove this unused import 'java.text.SimpleDateFormat'.(ú¡ÙÛ8É­§ğ-H ARMINORZ
+CODE_SMELL

@@ -17,7 +17,13 @@ import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
+
+import AdminSystem.AdminForm;
+
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.JTabbedPane;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 
 public class SecretaryForm {
 // need to work on searching for temp files
@@ -28,6 +34,7 @@ public class SecretaryForm {
 	public static String [] temps;
 	public String beginWith = "temp";
 	private String nums = "";
+	private String temp;
 	private int number;
 	private String uniqueNumber;
 	public static String userId;
@@ -38,7 +45,6 @@ public class SecretaryForm {
 	private static JTextField txtPostcode;
 	private static JTextField txtGender;
 	private static JTextField txtAge;
-	private static JTextField txtPassword;
 	private String filename;
 	private static JTextField txtUsername;
 	/**
@@ -69,7 +75,7 @@ public class SecretaryForm {
 		txtGender.setText("");
 		txtAge.setText("");		
 		txtUsername.setText("");
-		txtPassword.setText("");
+		//txtPassword.setText("");
 		
 	}
 	
@@ -84,10 +90,11 @@ public class SecretaryForm {
 	 */
 	public SecretaryForm() {
 		initialize();
+		
 	}
 	public static void Close() {
 		frame.dispose();
-		return;
+		
 	}
 	/**
 	 * Initialize the contents of the frame.
@@ -112,23 +119,8 @@ public class SecretaryForm {
 				
 			}
 		});
-		btnLogout.setBounds(740, 515, 97, 25);
+		btnLogout.setBounds(924, 626, 97, 25);
 		frame.getContentPane().add(btnLogout);
-		
-		JButton btnNumber = new JButton("number");
-		btnNumber.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				uniqueNumber num = new uniqueNumber();			
-				number = num.uniqueNumber();				
-				System.out.println(number);				
-				nums = Integer.toString(number);				
-				btnNumber.setText(nums);
-			
-			}
-		});
-		btnNumber.setBounds(262, 515, 97, 25);
-		frame.getContentPane().add(btnNumber);
 		
 		JButton btnApproveNewAccounts = new JButton("Approve New Account");
 		btnApproveNewAccounts.setEnabled(false);
@@ -152,31 +144,31 @@ public class SecretaryForm {
 				btnApproveNewAccounts.setEnabled(false);
 			}
 		});
-		btnApproveNewAccounts.setBounds(400, 310, 175, 25);
+		btnApproveNewAccounts.setBounds(780, 76, 175, 25);
 		frame.getContentPane().add(btnApproveNewAccounts);
 		
 		JButton btnReceiveRequestAppointments = new JButton("Receive Request for Appointments");
-		btnReceiveRequestAppointments.setBounds(12, 111, 229, 25);
+		btnReceiveRequestAppointments.setBounds(780, 40, 229, 25);
 		frame.getContentPane().add(btnReceiveRequestAppointments);
 		
 		JButton btnCreateAppointment = new JButton("Create Appointment");
-		btnCreateAppointment.setBounds(12, 148, 229, 25);
+		btnCreateAppointment.setBounds(12, 38, 229, 25);
 		frame.getContentPane().add(btnCreateAppointment);
 		
 		JButton btnGiveMedicines = new JButton("Give Medicines");
-		btnGiveMedicines.setBounds(12, 186, 229, 25);
+		btnGiveMedicines.setBounds(12, 308, 229, 25);
 		frame.getContentPane().add(btnGiveMedicines);
 		
 		JButton btnOrderStock = new JButton("Order and Stock Medicines");
-		btnOrderStock.setBounds(12, 224, 229, 25);
+		btnOrderStock.setBounds(500, 308, 229, 25);
 		frame.getContentPane().add(btnOrderStock);
 		
 		JButton btnRemovePatients = new JButton("Remove Patients");
-		btnRemovePatients.setBounds(12, 262, 229, 25);
+		btnRemovePatients.setBounds(780, 148, 229, 25);
 		frame.getContentPane().add(btnRemovePatients);
 		
 		JButton btnApproveAccRemoval = new JButton("Approve account removal");
-		btnApproveAccRemoval.setBounds(12, 300, 229, 25);
+		btnApproveAccRemoval.setBounds(780, 186, 229, 25);
 		frame.getContentPane().add(btnApproveAccRemoval);
 		
 		lblTitle.setText("Secretary " + userId);
@@ -209,10 +201,12 @@ public class SecretaryForm {
 						txtPostcode.setText(populate.next());
 						txtGender.setText(populate.next());
 						txtAge.setText(populate.next());
+						// for saving patient later
 						uniqueNumber = populate.next();
 						txtUsername.setText(uniqueNumber);
-						txtPassword.setText(populate.next());
-						//
+						//not to show password
+						temp =populate.next();
+						
 						populate.close();
 					} catch (FileNotFoundException e1) {
 						
@@ -227,7 +221,7 @@ public class SecretaryForm {
 				
 			}
 		});
-		cbRequests.setBounds(500, 43, 153, 22);
+		cbRequests.setBounds(500, 29, 153, 22);
 		frame.getContentPane().add(cbRequests);
 		
 		JLabel lblFirstname = new JLabel("First Name");
@@ -257,10 +251,6 @@ public class SecretaryForm {
 		JLabel lblAge = new JLabel("Age");
 		lblAge.setBounds(400, 225, 56, 16);
 		frame.getContentPane().add(lblAge);
-		
-		JLabel lblPassword = new JLabel("Password");
-		lblPassword.setBounds(400, 275, 82, 16);
-		frame.getContentPane().add(lblPassword);
 		
 		txtFirstname = new JTextField();
 		txtFirstname.setBounds(500, 75, 244, 22);
@@ -297,11 +287,6 @@ public class SecretaryForm {
 		frame.getContentPane().add(txtAge);
 		txtAge.setColumns(10);
 		
-		txtPassword = new JTextField();
-		txtPassword.setBounds(500, 275, 245, 22);
-		frame.getContentPane().add(txtPassword);
-		txtPassword.setColumns(10);
-		
 		JLabel lblUsername = new JLabel("Username");
 		lblUsername.setBounds(400, 250, 83, 16);
 		frame.getContentPane().add(lblUsername);
@@ -325,11 +310,46 @@ public class SecretaryForm {
 				btnApproveNewAccounts.setEnabled(false);
 			}
 		});
-		btnNotApproved.setBounds(580, 310, 175, 25);
+		btnNotApproved.setBounds(780, 112, 175, 25);
 		frame.getContentPane().add(btnNotApproved);
 		
 		JLabel lblRequestTitle = new JLabel("Requests");
-		lblRequestTitle.setBounds(400, 46, 72, 16);
+		lblRequestTitle.setBounds(400, 32, 72, 16);
 		frame.getContentPane().add(lblRequestTitle);
+		
+		JLabel lblOrder = new JLabel("Order");
+		lblOrder.setBounds(500, 340, 46, 14);
+		frame.getContentPane().add(lblOrder);
+		
+		JComboBox cbOrder = new JComboBox();
+		cbOrder.setBounds(500, 365, 153, 20);
+		frame.getContentPane().add(cbOrder);
+		
+		JLabel lblStock = new JLabel("Stock");
+		lblStock.setBounds(683, 340, 46, 14);
+		frame.getContentPane().add(lblStock);
+		
+		JComboBox cbStock = new JComboBox();
+		cbStock.setBounds(683, 365, 164, 20);
+		frame.getContentPane().add(cbStock);
+		
+		JComboBox cbMedicine = new JComboBox();
+		cbMedicine.setBounds(12, 337, 229, 20);
+		frame.getContentPane().add(cbMedicine);
+		
+		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		tabbedPane.setBounds(12, 76, 378, 223);
+		frame.getContentPane().add(tabbedPane);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(12, 544, 378, 71);
+		frame.getContentPane().add(scrollPane);
+		
+		JTextArea txtMessage = new JTextArea();
+		scrollPane.setViewportView(txtMessage);
+		
+		JLabel lblMessage = new JLabel("Message");
+		lblMessage.setBounds(12, 516, 46, 14);
+		frame.getContentPane().add(lblMessage);
 	}
 }

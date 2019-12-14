@@ -18,4 +18,18 @@
 		<item key="width" value="525"/>
 		<item key="height" value="281"/>
 	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.PalettePreferencesDialog">
+		<item key="x" value="697"/>
+		<item key="y" value="350"/>
+		<item key="width" value="525"/>
+		<item key="height" value="339"/>
+	</section>
+	<section name="org.eclipse.wb.internal.core.editor.palette.dialogs.ImportArchiveDialog">
+		<item key="x" value="697"/>
+		<item key="y" value="299"/>
+		<item key="width" value="525"/>
+		<item key="height" value="442"/>
+		<list key="HISTORY_JAR_LIST">
+		</list>
+	</section>
 </section>

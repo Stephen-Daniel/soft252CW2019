@@ -12,8 +12,8 @@
 	<section name="ImportExportAction">
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="-950"/>
-		<item key="DIALOG_Y_ORIGIN" value="-627"/>
+		<item key="DIALOG_X_ORIGIN" value="971"/>
+		<item key="DIALOG_Y_ORIGIN" value="215"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item key="dialogHeight" value="-1"/>

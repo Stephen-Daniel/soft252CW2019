@@ -48,12 +48,15 @@ public class AdminForm extends javax.swing.JFrame{
 	public static JFrame frame;
 	public static String userId;
 	public JComboBox<String> cbAdminList;
-	
+	private JButton btnAddSecretary;
 	public JTextArea txtDisplayComments;
 	public JTextArea txtDisplayFeedback;
-	
+	private JButton btnAddDoctor;
+	private JButton btnSendFeedback;
+	private JButton btnClearAndExit;
 	public JButton btnDelete;
 	public JButton btnSave;
+	
 	private JTextField txtFirstname;
 	private JTextField txtSurname;
 	private JTextField txtAddress;
@@ -62,11 +65,14 @@ public class AdminForm extends javax.swing.JFrame{
 	private JTextField txtUsername;
 	private JTextField txtPassword;
 	private JTextField txtRating;
-	
+	private JButton btnCreateAdmin;
+	private JButton btnRemoveStaff;
+	private JButton btnViewRatings;
 	public String usernameWithoutTXT = "";
 	public String username = "";
 	public String userDepartment = "";
 	public String temp;
+	private JButton btnLogout;
 	
 	public static void main(String id) {
 		userId = id;
@@ -77,23 +83,27 @@ public class AdminForm extends javax.swing.JFrame{
 					admin.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
-				}
-								
+				}								
 				Person adminLogin = new Person();
-				adminLogin.setID(userId);
-				
-				
+				adminLogin.setID(userId);							
 			}
 		});
 	}
 	public static void Close() {
-		frame.dispose();
-		
+		frame.dispose();		
+	}
+	public void openAddFields()
+	{
+		txtFirstname.setEditable(true);	
+		txtSurname.setEditable(true);	
+		txtAddress.setEditable(true);	
+		txtCity.setEditable(true);	
+		txtPostcode.setEditable(true);						
+		txtPassword.setEditable(true);	
 	}
 	public void clear()
-	{
-		//cbAdminList.setSelectedIndex(0);
-		txtFirstname.setText("");
+	{	
+		txtFirstname.setText("");	
 		txtSurname.setText("");
 		txtAddress.setText("");
 		txtCity.setText("");
@@ -104,19 +114,45 @@ public class AdminForm extends javax.swing.JFrame{
 		txtDisplayComments.setText("");	
 		txtDisplayFeedback.setText("");
 	}
-	
+	public void disableAllButtons() {
+				
+		btnCreateAdmin.setEnabled(false);
+		btnAddDoctor.setEnabled(false);
+		btnAddSecretary.setEnabled(false);
+		btnRemoveStaff.setEnabled(false);
+		btnViewRatings.setEnabled(false);
+		btnSendFeedback.setEnabled(false);
+		
+		cbAdminList.setEnabled(false);
+		cbAdminList.setSelectedIndex(0);
+		btnSave.setEnabled(false);
+		btnDelete.setEnabled(false);
+		btnClearAndExit.setEnabled(false);	
+		
+	}
+	public void enableAllButtons() {
+		
+		btnCreateAdmin.setEnabled(true);
+		btnAddDoctor.setEnabled(true);
+		btnAddSecretary.setEnabled(true);
+		btnRemoveStaff.setEnabled(true);
+		btnViewRatings.setEnabled(true);
+		btnSendFeedback.setEnabled(true);
+		cbAdminList.setEnabled(true);
+		btnSave.setEnabled(false);
+		btnDelete.setEnabled(false);
+		btnClearAndExit.setEnabled(true);	
+		
+	}
 	public void populate(String chosen) {
 		
 		clear(); 
 		
 			String filename = (String) cbAdminList.getSelectedItem();
-			
-			
-			
+						
 			String feedbackOrNotes = "FeedbackOrNotes";
 			feedbackOrNotes = filename + feedbackOrNotes + ".txt";
-			
-			
+						
 			filename = (filename + ".txt");
 			System.out.println(filename + " name that searches for file then reads to populate");
 			
@@ -158,7 +194,7 @@ public class AdminForm extends javax.swing.JFrame{
 	public AdminForm() {
 		
 		initialize();
-		//populateFileList("all");
+		
 		populateAdminList("all");
 	}
 	public void getUsername(String department)
@@ -173,7 +209,9 @@ public class AdminForm extends javax.swing.JFrame{
 		usernameWithoutTXT = username;
 		username = username + ".txt";		
 		txtUsername.setText(usernameWithoutTXT);
-		txtUsername.setEnabled(false);
+		
+		txtUsername.setEditable(false);
+		
 		System.out.println("add .txt " + username + " Add clear list!");
 		cbAdminList.addItem("Clear List");
 		cbAdminList.setEnabled(false);
@@ -227,8 +265,36 @@ public class AdminForm extends javax.swing.JFrame{
 		catch (IOException e) {
             System.out.println("fail" + feedbackOrNotes);									
 		}
-		cbAdminList.setEnabled(true);
+		txtUsername.setEditable(true);
 		btnSave.setEnabled(false);
+		
+	}
+	public void saveClearExitEnable()
+	{
+		btnSave.setEnabled(true);
+		btnClearAndExit.setEnabled(true);
+	}
+	public void clearAndExit()
+	{
+		enableAllButtons();
+		allText(true);
+		clear();
+		btnSave.setEnabled(false);
+		btnDelete.setEnabled(false);
+	}
+	public void allText(Boolean onOff)
+	{
+		txtFirstname.setEditable(onOff);
+		txtSurname.setEditable(onOff);
+		txtAddress.setEditable(onOff);
+		txtCity.setEditable(onOff);
+		txtUsername.setEditable(onOff);
+		txtPostcode.setEditable(onOff);
+		txtPassword.setEditable(onOff);
+		txtDisplayFeedback.setEditable(onOff);
+		txtDisplayComments.setEditable(onOff);
+		txtRating.setEditable(onOff);
+	
 	}
 	public void clearList()
 	{
@@ -241,28 +307,7 @@ public class AdminForm extends javax.swing.JFrame{
 		System.out.println("cleared ");
 		
 	}
-	//NOW put into one method below
-//	public void populateFileList()
-//	{
-//		System.out.println("populatefilelist and clear combo box");
-//		clearList();
-//		clear();
-//		System.out.println("clear");
-//		secretary getFileList = new secretary();		
-//		String [] letters = {"A","D","S"};		
-//		for (String begin:letters) {
-//		requests = getFileList.FindFiles(files, begin);
-//		
-//		for (File file: requests)
-//		{
-//			String i = file.getName();
-//			
-//			i = i.replace(".txt", "");
-//			
-//			cbAdminList.addItem(i);
-//		}	
-//		}	
-//	}
+
 	public void populateAdminList(String option)
 	{
 		// take out feed back files
@@ -309,7 +354,7 @@ public class AdminForm extends javax.swing.JFrame{
 		lblNewLabel.setBounds(12, 13, 46, 14);
 		frame.getContentPane().add(lblNewLabel);
 		
-		JButton btnLogout = new JButton("Logout");
+		btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				AdminForm.Close();
@@ -319,44 +364,59 @@ public class AdminForm extends javax.swing.JFrame{
 		btnLogout.setBounds(948, 556, 97, 25);
 		frame.getContentPane().add(btnLogout);
 		
-		JButton btnCreateAdmin = new JButton("Create Admin");
+		btnCreateAdmin = new JButton("Create Admin");
 		btnCreateAdmin.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				// get username add to text window then stop from altering				
 				userDepartment = "A";
 				getUsername(userDepartment);
-				
+				disableAllButtons();
+				saveClearExitEnable();
+				allText(false);
+				openAddFields();
 			}
 		});
 		btnCreateAdmin.setBounds(12, 75, 146, 25);
 		frame.getContentPane().add(btnCreateAdmin);
 		
-		JButton btnAddDoctor = new JButton("Add Doctor");
+		btnAddDoctor = new JButton("Add Doctor");
 		btnAddDoctor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				clear();
 				userDepartment = "D";
 				getUsername(userDepartment);
+				disableAllButtons();
+				saveClearExitEnable();
+				allText(false);
+				openAddFields();
 			}
 		});
 		btnAddDoctor.setBounds(12, 113, 146, 25);
 		frame.getContentPane().add(btnAddDoctor);
 		
-		JButton btnAddSecretary = new JButton("Add Secretary");
+		btnAddSecretary = new JButton("Add Secretary");
 		btnAddSecretary.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				userDepartment = "S";
 				getUsername(userDepartment);
+				disableAllButtons();
+				saveClearExitEnable();
+				allText(false);
+				openAddFields();
 			}
 		});
 		btnAddSecretary.setBounds(12, 189, 146, 25);
 		frame.getContentPane().add(btnAddSecretary);
 		
-		JButton btnRemoveStaff = new JButton("Remove Staff");
+		btnRemoveStaff = new JButton("Remove Staff");
 		btnRemoveStaff.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
 				clear();				
-				populateAdminList("delete");				
+				populateAdminList("delete");
+				disableAllButtons();
+				btnClearAndExit.setEnabled(true);
+				cbAdminList.setEnabled(true);
 				btnDelete.setEnabled(true);
 							
 			}
@@ -364,29 +424,34 @@ public class AdminForm extends javax.swing.JFrame{
 		btnRemoveStaff.setBounds(12, 227, 146, 25);
 		frame.getContentPane().add(btnRemoveStaff);
 		
-		JButton btnViewRatings = new JButton("View Ratings");
+		btnViewRatings = new JButton("View Ratings");
 		btnViewRatings.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				clear();				
 				populateAdminList("rating");
+				disableAllButtons();
+				cbAdminList.setEnabled(true);
+				btnClearAndExit.setEnabled(true);
+				btnSendFeedback.setEnabled(true);
+				allText(false);
+				txtDisplayFeedback.setEditable(true);
 			}
 		});
 		btnViewRatings.setBounds(12, 265, 146, 25);
 		frame.getContentPane().add(btnViewRatings);
 		
-		JButton btnSendFeedback = new JButton("Send Feedback");
+		btnSendFeedback = new JButton("Send Feedback");
 		btnSendFeedback.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				cbAdminList.removeAll();
 				saveNewCreatedStaff();				
-				clear();
-				//populateFileList();
 				populateAdminList("all");
+				clearAndExit();
 				
 			}
 		});
-		btnSendFeedback.setBounds(185, 469, 146, 25);
+		btnSendFeedback.setBounds(12, 486, 146, 25);
 		frame.getContentPane().add(btnSendFeedback);
 		
 		JLabel lbluserID = new JLabel("12345");
@@ -469,7 +534,7 @@ public class AdminForm extends javax.swing.JFrame{
 		
 		JLabel lblComments = new JLabel("Comments");
 		lblComments.setHorizontalAlignment(SwingConstants.LEFT);
-		lblComments.setBounds(594, 316, 83, 16);
+		lblComments.setBounds(693, 286, 164, 16);
 		frame.getContentPane().add(lblComments);
 		
 		cbAdminList = new JComboBox();
@@ -500,9 +565,8 @@ public class AdminForm extends javax.swing.JFrame{
 				
 				cbAdminList.removeAll();
 				saveNewCreatedStaff();				
-				clear();
-				//populateFileList();
 				populateAdminList("all");
+				clearAndExit();
 			}
 		});
 		btnSave.setEnabled(false);
@@ -513,15 +577,12 @@ public class AdminForm extends javax.swing.JFrame{
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				//String test = txtUsername.getText();
-				
-				//testing System.out.println("999" + username + "888");
 				cbAdminList.removeItem(username);
 				//send to delete method with correct name
 				secretary delete = new secretary();
 				String usernameWithTXT = (username + ".txt");
 				delete.deleteFile(usernameWithTXT);
-				btnDelete.setEnabled(false);			
+				clearAndExit();			
 			}
 			
 		});
@@ -544,15 +605,18 @@ public class AdminForm extends javax.swing.JFrame{
 		txtDisplayComments = new JTextArea();
 		scrollPane.setViewportView(txtDisplayComments);
 		
-		JButton btnClear = new JButton("Clear and Exit");
-		btnClear.addActionListener(new ActionListener() {
+		btnClearAndExit = new JButton("Clear and Exit");
+		btnClearAndExit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				frame.dispose();
-				AdminForm.main(userId);
+				clearAndExit();
 			}
 		});
-		btnClear.setBounds(910, 487, 116, 23);
-		frame.getContentPane().add(btnClear);
+		btnClearAndExit.setBounds(910, 487, 116, 23);
+		frame.getContentPane().add(btnClearAndExit);
+		
+		JLabel lblfeedback = new JLabel("Feedback");
+		lblfeedback.setBounds(12, 315, 56, 16);
+		frame.getContentPane().add(lblfeedback);
 		//frame.add(spFeedback);
 	}
 }
