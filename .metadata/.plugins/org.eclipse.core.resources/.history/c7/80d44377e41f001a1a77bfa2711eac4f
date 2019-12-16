@@ -1,0 +1,19 @@
+package SecretarySystem;
+
+import com.mindfusion.scheduling.Calendar;
+
+public class CalendarWindow {
+
+	Calendar calendar = new Calendar();
+	
+	public CalendarWindow()
+	{
+		
+		
+		
+        
+        
+       
+	}
+	
+}

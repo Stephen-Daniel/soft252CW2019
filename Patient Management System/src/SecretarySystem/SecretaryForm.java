@@ -1,5 +1,5 @@
 package SecretarySystem;
-
+//test save
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -13,9 +13,13 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
 import javax.swing.JTextField;
 
 import AdminSystem.AdminForm;
@@ -24,6 +28,12 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JTabbedPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import com.toedter.calendar.JDateChooser;
+import com.toedter.components.JSpinField;
+import com.toedter.calendar.JDayChooser;
+import com.toedter.calendar.JCalendar;
+import java.awt.event.InputMethodListener;
+import java.awt.event.InputMethodEvent;
 
 public class SecretaryForm {
 // need to work on searching for temp files
@@ -36,6 +46,8 @@ public class SecretaryForm {
 	private String nums = "";
 	private String temp;
 	private int number;
+	private JButton btnCreateAppointment;
+	private JDateChooser dateChooser;
 	private String uniqueNumber;
 	public static String userId;
 	private static JTextField txtFirstname;
@@ -47,9 +59,9 @@ public class SecretaryForm {
 	private static JTextField txtAge;
 	private String filename;
 	private static JTextField txtUsername;
-	/**
-	 * Launch the application.
-	 */
+	//the TextField for typing the date
+		JFormattedTextField  textField = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
+		
 	public static void main(String id) {
 		userId = id;
 		EventQueue.invokeLater(new Runnable() {
@@ -64,6 +76,12 @@ public class SecretaryForm {
 				secretary.setID(userId);
 			}
 		});
+	}
+	public void appointment()
+	{
+		
+		DateFormat df = new SimpleDateFormat("EEE dd-MM-yyyy" );
+		//lbldate.setText(df.format(dateChooser.getDate()));
 	}
 	public static void clear()
 	{
@@ -147,28 +165,28 @@ public class SecretaryForm {
 		btnApproveNewAccounts.setBounds(780, 76, 175, 25);
 		frame.getContentPane().add(btnApproveNewAccounts);
 		
-		JButton btnReceiveRequestAppointments = new JButton("Receive Request for Appointments");
-		btnReceiveRequestAppointments.setBounds(780, 40, 229, 25);
-		frame.getContentPane().add(btnReceiveRequestAppointments);
+		btnCreateAppointment = new JButton("Create Appointment");
+		btnCreateAppointment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
 		
-		JButton btnCreateAppointment = new JButton("Create Appointment");
-		btnCreateAppointment.setBounds(12, 38, 229, 25);
+				
+				
+			}
+		});
+		btnCreateAppointment.setBounds(12, 221, 145, 25);
 		frame.getContentPane().add(btnCreateAppointment);
 		
 		JButton btnGiveMedicines = new JButton("Give Medicines");
 		btnGiveMedicines.setBounds(12, 308, 229, 25);
 		frame.getContentPane().add(btnGiveMedicines);
 		
-		JButton btnOrderStock = new JButton("Order and Stock Medicines");
-		btnOrderStock.setBounds(500, 308, 229, 25);
-		frame.getContentPane().add(btnOrderStock);
-		
-		JButton btnRemovePatients = new JButton("Remove Patients");
-		btnRemovePatients.setBounds(780, 148, 229, 25);
-		frame.getContentPane().add(btnRemovePatients);
+		JButton btnOrder = new JButton("Order Medicines");
+		btnOrder.setBounds(500, 396, 153, 25);
+		frame.getContentPane().add(btnOrder);
 		
 		JButton btnApproveAccRemoval = new JButton("Approve account removal");
-		btnApproveAccRemoval.setBounds(780, 186, 229, 25);
+		btnApproveAccRemoval.setEnabled(false);
+		btnApproveAccRemoval.setBounds(780, 146, 175, 25);
 		frame.getContentPane().add(btnApproveAccRemoval);
 		
 		lblTitle.setText("Secretary " + userId);
@@ -221,7 +239,7 @@ public class SecretaryForm {
 				
 			}
 		});
-		cbRequests.setBounds(500, 29, 153, 22);
+		cbRequests.setBounds(500, 9, 153, 22);
 		frame.getContentPane().add(cbRequests);
 		
 		JLabel lblFirstname = new JLabel("First Name");
@@ -314,7 +332,7 @@ public class SecretaryForm {
 		frame.getContentPane().add(btnNotApproved);
 		
 		JLabel lblRequestTitle = new JLabel("Requests");
-		lblRequestTitle.setBounds(400, 32, 72, 16);
+		lblRequestTitle.setBounds(400, 12, 72, 16);
 		frame.getContentPane().add(lblRequestTitle);
 		
 		JLabel lblOrder = new JLabel("Order");
@@ -337,10 +355,6 @@ public class SecretaryForm {
 		cbMedicine.setBounds(12, 337, 229, 20);
 		frame.getContentPane().add(cbMedicine);
 		
-		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane.setBounds(12, 76, 378, 223);
-		frame.getContentPane().add(tabbedPane);
-		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(12, 544, 378, 71);
 		frame.getContentPane().add(scrollPane);
@@ -351,5 +365,58 @@ public class SecretaryForm {
 		JLabel lblMessage = new JLabel("Message");
 		lblMessage.setBounds(12, 516, 46, 14);
 		frame.getContentPane().add(lblMessage);
+		
+		JLabel lblTermination = new JLabel("Termination");
+		lblTermination.setBounds(400, 45, 83, 14);
+		frame.getContentPane().add(lblTermination);
+		
+		JComboBox cbTermination = new JComboBox();
+		cbTermination.setBounds(500, 42, 153, 20);
+		frame.getContentPane().add(cbTermination);
+		
+		JButton btnStock = new JButton("Stock Medicines");
+		btnStock.setBounds(683, 397, 164, 23);
+		frame.getContentPane().add(btnStock);
+		
+		dateChooser = new JDateChooser();
+		dateChooser.getCalendarButton().addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("press button");
+				
+			}
+		});
+		
+		dateChooser.setBounds(188, 171, 95, 20);
+		frame.getContentPane().add(dateChooser);
+		dateChooser.setMinSelectableDate(new Date());
+		
+		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.setBounds(12, 171, 154, 20);
+		frame.getContentPane().add(comboBox_1);
+		
+		JLabel lblDoctor = new JLabel("Doctor");
+		lblDoctor.setBounds(12, 149, 46, 14);
+		frame.getContentPane().add(lblDoctor);
+		
+		JLabel lblDate = new JLabel("Date");
+		lblDate.setBounds(188, 145, 46, 14);
+		frame.getContentPane().add(lblDate);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(12, 71, 153, 20);
+		frame.getContentPane().add(comboBox);
+		
+		JLabel lblPatient = new JLabel("Patients Appointment Request");
+		lblPatient.setBounds(12, 45, 164, 14);
+		frame.getContentPane().add(lblPatient);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(12, 100, 271, 45);
+		frame.getContentPane().add(scrollPane_1);
+		
+		JTextArea txtPatientRequest = new JTextArea();
+		scrollPane_1.setViewportView(txtPatientRequest);
+		
 	}
 }

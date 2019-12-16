@@ -1,7 +1,0 @@
-
-‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHˆ>RMINORZ
-CODE_SMELL
-isquid:UselessImportCheck"/Remove this unused import 'java.awt.Component'.(Ÿð¯öH‰>RMINORZ
-CODE_SMELL
-{squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(†–Õ³HŠ>RMAJORZ
-CODE_SMELL

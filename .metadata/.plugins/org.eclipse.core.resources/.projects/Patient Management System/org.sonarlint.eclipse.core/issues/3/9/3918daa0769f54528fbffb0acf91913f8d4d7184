@@ -1,14 +1,14 @@
 
-{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£ªñšH¾;RMINORZ
+psquid:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ã—­ÒH³KRBLOCKERZBUG
+Xsquid:S1148"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿH´KRMINORZVULNERABILITY
+~squid:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ÏñÒŸÿÿÿÿÿHµKRMAJORZ
 CODE_SMELL
-Xsquid:S1148"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿH¿;RMINORZVULNERABILITY
-Xsquid:S1148""#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÀ;RMINORZVULNERABILITY
-~squid:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(ÏñÒŸÿÿÿÿÿHÁ;RMAJORZ
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRH¶KRMINORZ
 CODE_SMELL
-psquid:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ã—­ÒHÂ;RBLOCKERZBUG
-‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHÃ;RMINORZ
+Xsquid:S1148""#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH·KRMINORZVULNERABILITY
+{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(£ªñšH¸KRMINORZ
 CODE_SMELL
-€squid:S1450"SRemove the "read" field and declare it as a local variable in the relevant methods.(‡ºàHÄ;RMINORZ
+€squid:S1450"SRemove the "read" field and declare it as a local variable in the relevant methods.(‡ºàH¹KRMINORZ
 CODE_SMELL
-squid:S1450"[Remove the "returnNumber" field and declare it as a local variable in the relevant methods.(’„‡ûÿÿÿÿHÅ;RMINORZ
+squid:S1450"[Remove the "returnNumber" field and declare it as a local variable in the relevant methods.(’„‡ûÿÿÿÿHºKRMINORZ
 CODE_SMELL

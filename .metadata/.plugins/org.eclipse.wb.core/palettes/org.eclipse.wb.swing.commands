@@ -1,0 +1,3854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commands>
+	<addCategory
+		id="jcalendar-1.1.4_1576401501747"
+		name="jcalendar-1.1.4"
+		description="Container with import elements from C:/code/soft252CW2019/Patient Management System/libs/jcalendar-1.1.4.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="com.toedter.calendar.JDayChooser_1576401501748"
+		name="JDayChooser"
+		description="Custom component: com.toedter.calendar.JDayChooser"
+		visible="true"
+		class="com.toedter.calendar.JDayChooser"
+		category="jcalendar-1.1.4_1576401501747"/>
+	<addComponent
+		id="com.toedter.calendar.JMonthChooser_1576401501748"
+		name="JMonthChooser"
+		description="Custom component: com.toedter.calendar.JMonthChooser"
+		visible="true"
+		class="com.toedter.calendar.JMonthChooser"
+		category="jcalendar-1.1.4_1576401501747"/>
+	<addComponent
+		id="com.toedter.components.JLocaleChooser_1576401501748"
+		name="JLocaleChooser"
+		description="Custom component: com.toedter.components.JLocaleChooser"
+		visible="true"
+		class="com.toedter.components.JLocaleChooser"
+		category="jcalendar-1.1.4_1576401501747"/>
+	<addComponent
+		id="com.toedter.calendar.JCalendar_1576401501748"
+		name="JCalendar"
+		description="Custom component: com.toedter.calendar.JCalendar"
+		visible="true"
+		class="com.toedter.calendar.JCalendar"
+		category="jcalendar-1.1.4_1576401501747"/>
+	<addComponent
+		id="com.toedter.components.JSpinField_1576401501748"
+		name="JSpinField"
+		description="Custom component: com.toedter.components.JSpinField"
+		visible="true"
+		class="com.toedter.components.JSpinField"
+		category="jcalendar-1.1.4_1576401501747"/>
+	<addComponent
+		id="com.toedter.calendar.JYearChooser_1576401501748"
+		name="JYearChooser"
+		description="Custom component: com.toedter.calendar.JYearChooser"
+		visible="true"
+		class="com.toedter.calendar.JYearChooser"
+		category="jcalendar-1.1.4_1576401501747"/>
+	<removeCategory
+		id="jcalendar-1.1.4_1576401501747"/>
+	<removeCategory
+		id="org.eclipse.wb.swing.JGoodies"/>
+	<addCategory
+		id="jcalendar-1.4_1576402220619"
+		name="jcalendar-1.4"
+		description="Container with import elements from C:/code/soft252CW2019/Patient Management System/libs/jcalendar-1.4.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="com.toedter.calendar.JDayChooser_1576402220619"
+		name="JDayChooser"
+		description="Custom component: com.toedter.calendar.JDayChooser"
+		visible="true"
+		class="com.toedter.calendar.JDayChooser"
+		category="jcalendar-1.4_1576402220619"/>
+	<addComponent
+		id="com.toedter.calendar.JMonthChooser_1576402220619"
+		name="JMonthChooser"
+		description="Custom component: com.toedter.calendar.JMonthChooser"
+		visible="true"
+		class="com.toedter.calendar.JMonthChooser"
+		category="jcalendar-1.4_1576402220619"/>
+	<addComponent
+		id="com.toedter.components.JLocaleChooser_1576402220619"
+		name="JLocaleChooser"
+		description="Custom component: com.toedter.components.JLocaleChooser"
+		visible="true"
+		class="com.toedter.components.JLocaleChooser"
+		category="jcalendar-1.4_1576402220619"/>
+	<addComponent
+		id="com.toedter.calendar.JCalendar_1576402220619"
+		name="JCalendar"
+		description="Custom component: com.toedter.calendar.JCalendar"
+		visible="true"
+		class="com.toedter.calendar.JCalendar"
+		category="jcalendar-1.4_1576402220619"/>
+	<addComponent
+		id="com.toedter.calendar.JDateChooser_1576402220619"
+		name="JDateChooser"
+		description="Custom component: com.toedter.calendar.JDateChooser"
+		visible="true"
+		class="com.toedter.calendar.JDateChooser"
+		category="jcalendar-1.4_1576402220619"/>
+	<addComponent
+		id="com.toedter.components.JSpinField_1576402220619"
+		name="JSpinField"
+		description="Custom component: com.toedter.components.JSpinField"
+		visible="true"
+		class="com.toedter.components.JSpinField"
+		category="jcalendar-1.4_1576402220619"/>
+	<addComponent
+		id="com.toedter.calendar.JYearChooser_1576402220619"
+		name="JYearChooser"
+		description="Custom component: com.toedter.calendar.JYearChooser"
+		visible="true"
+		class="com.toedter.calendar.JYearChooser"
+		category="jcalendar-1.4_1576402220619"/>
+	<addCategory
+		id="JPlanner_1576405237462"
+		name="JPlanner"
+		description="Container with import elements from C:/code/soft252CW2019/Patient Management System/libs/JPlanner.jar"
+		visible="true"
+		open="true"/>
+	<addComponent
+		id="com.mindfusion.common.a_1576405237462"
+		name="a"
+		description="Custom component: com.mindfusion.common.a"
+		visible="true"
+		class="com.mindfusion.common.a"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.AlignConverter_1576405237462"
+		name="AlignConverter"
+		description="Custom component: com.mindfusion.common.AlignConverter"
+		visible="true"
+		class="com.mindfusion.common.AlignConverter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ArrayIterable_1576405237462"
+		name="ArrayIterable"
+		description="Custom component: com.mindfusion.common.ArrayIterable"
+		visible="true"
+		class="com.mindfusion.common.ArrayIterable"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.b_1576405237462"
+		name="b"
+		description="Custom component: com.mindfusion.common.b"
+		visible="true"
+		class="com.mindfusion.common.b"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.BaseList_1576405237462"
+		name="BaseList"
+		description="Custom component: com.mindfusion.common.BaseList"
+		visible="true"
+		class="com.mindfusion.common.BaseList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.BaseListAdapter_1576405237462"
+		name="BaseListAdapter"
+		description="Custom component: com.mindfusion.common.BaseListAdapter"
+		visible="true"
+		class="com.mindfusion.common.BaseListAdapter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.BaseListListener_1576405237462"
+		name="BaseListListener"
+		description="Custom component: com.mindfusion.common.BaseListListener"
+		visible="true"
+		class="com.mindfusion.common.BaseListListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ByRef_1576405237462"
+		name="ByRef"
+		description="Custom component: com.mindfusion.common.ByRef"
+		visible="true"
+		class="com.mindfusion.common.ByRef"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.c_1576405237462"
+		name="c"
+		description="Custom component: com.mindfusion.common.c"
+		visible="true"
+		class="com.mindfusion.common.c"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.CanConvert_1576405237462"
+		name="CanConvert"
+		description="Custom component: com.mindfusion.common.CanConvert"
+		visible="true"
+		class="com.mindfusion.common.CanConvert"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ChangeListener_1576405237462"
+		name="ChangeListener"
+		description="Custom component: com.mindfusion.common.ChangeListener"
+		visible="true"
+		class="com.mindfusion.common.ChangeListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Collections_1576405237462"
+		name="Collections"
+		description="Custom component: com.mindfusion.common.Collections"
+		visible="true"
+		class="com.mindfusion.common.Collections"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ColorConverter_1576405237462"
+		name="ColorConverter"
+		description="Custom component: com.mindfusion.common.ColorConverter"
+		visible="true"
+		class="com.mindfusion.common.ColorConverter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.CommonUtils_1576405237462"
+		name="CommonUtils"
+		description="Custom component: com.mindfusion.common.CommonUtils"
+		visible="true"
+		class="com.mindfusion.common.CommonUtils"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Comparison_1576405237462"
+		name="Comparison"
+		description="Custom component: com.mindfusion.common.Comparison"
+		visible="true"
+		class="com.mindfusion.common.Comparison"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Convert_1576405237462"
+		name="Convert"
+		description="Custom component: com.mindfusion.common.Convert"
+		visible="true"
+		class="com.mindfusion.common.Convert"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Convertible_1576405237462"
+		name="Convertible"
+		description="Custom component: com.mindfusion.common.Convertible"
+		visible="true"
+		class="com.mindfusion.common.Convertible"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.d_1576405237462"
+		name="d"
+		description="Custom component: com.mindfusion.common.d"
+		visible="true"
+		class="com.mindfusion.common.d"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.DateTime_1576405237462"
+		name="DateTime"
+		description="Custom component: com.mindfusion.common.DateTime"
+		visible="true"
+		class="com.mindfusion.common.DateTime"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.DayOfWeek_1576405237462"
+		name="DayOfWeek"
+		description="Custom component: com.mindfusion.common.DayOfWeek"
+		visible="true"
+		class="com.mindfusion.common.DayOfWeek"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.DefaultComparison_1576405237462"
+		name="DefaultComparison"
+		description="Custom component: com.mindfusion.common.DefaultComparison"
+		visible="true"
+		class="com.mindfusion.common.DefaultComparison"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.DrawEvent_1576405237462"
+		name="DrawEvent"
+		description="Custom component: com.mindfusion.common.DrawEvent"
+		visible="true"
+		class="com.mindfusion.common.DrawEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Duration_1576405237462"
+		name="Duration"
+		description="Custom component: com.mindfusion.common.Duration"
+		visible="true"
+		class="com.mindfusion.common.Duration"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.e_1576405237462"
+		name="e"
+		description="Custom component: com.mindfusion.common.e"
+		visible="true"
+		class="com.mindfusion.common.e"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.EqualityComparer_1576405237462"
+		name="EqualityComparer"
+		description="Custom component: com.mindfusion.common.EqualityComparer"
+		visible="true"
+		class="com.mindfusion.common.EqualityComparer"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Equatable_1576405237462"
+		name="Equatable"
+		description="Custom component: com.mindfusion.common.Equatable"
+		visible="true"
+		class="com.mindfusion.common.Equatable"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ExtendedArrayList_1576405237462"
+		name="ExtendedArrayList"
+		description="Custom component: com.mindfusion.common.ExtendedArrayList"
+		visible="true"
+		class="com.mindfusion.common.ExtendedArrayList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ExtendedHashMap_1576405237462"
+		name="ExtendedHashMap"
+		description="Custom component: com.mindfusion.common.ExtendedHashMap"
+		visible="true"
+		class="com.mindfusion.common.ExtendedHashMap"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.f_1576405237462"
+		name="f"
+		description="Custom component: com.mindfusion.common.f"
+		visible="true"
+		class="com.mindfusion.common.f"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Flags_1576405237462"
+		name="Flags"
+		description="Custom component: com.mindfusion.common.Flags"
+		visible="true"
+		class="com.mindfusion.common.Flags"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Formattable_1576405237462"
+		name="Formattable"
+		description="Custom component: com.mindfusion.common.Formattable"
+		visible="true"
+		class="com.mindfusion.common.Formattable"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.g_1576405237462"
+		name="g"
+		description="Custom component: com.mindfusion.common.g"
+		visible="true"
+		class="com.mindfusion.common.g"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.GeneralFormat_1576405237462"
+		name="GeneralFormat"
+		description="Custom component: com.mindfusion.common.GeneralFormat"
+		visible="true"
+		class="com.mindfusion.common.GeneralFormat"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.h_1576405237462"
+		name="h"
+		description="Custom component: com.mindfusion.common.h"
+		visible="true"
+		class="com.mindfusion.common.h"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Helper_1576405237462"
+		name="Helper"
+		description="Custom component: com.mindfusion.common.Helper"
+		visible="true"
+		class="com.mindfusion.common.Helper"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.HorizontalAlignment_1576405237462"
+		name="HorizontalAlignment"
+		description="Custom component: com.mindfusion.common.HorizontalAlignment"
+		visible="true"
+		class="com.mindfusion.common.HorizontalAlignment"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.i_1576405237462"
+		name="i"
+		description="Custom component: com.mindfusion.common.i"
+		visible="true"
+		class="com.mindfusion.common.i"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.IntegerComparison_1576405237462"
+		name="IntegerComparison"
+		description="Custom component: com.mindfusion.common.IntegerComparison"
+		visible="true"
+		class="com.mindfusion.common.IntegerComparison"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Internal_1576405237462"
+		name="Internal"
+		description="Custom component: com.mindfusion.common.Internal"
+		visible="true"
+		class="com.mindfusion.common.Internal"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.InvalidFormatException_1576405237462"
+		name="InvalidFormatException"
+		description="Custom component: com.mindfusion.common.InvalidFormatException"
+		visible="true"
+		class="com.mindfusion.common.InvalidFormatException"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.InvalidOperationException_1576405237462"
+		name="InvalidOperationException"
+		description="Custom component: com.mindfusion.common.InvalidOperationException"
+		visible="true"
+		class="com.mindfusion.common.InvalidOperationException"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ISupportInitialize_1576405237462"
+		name="ISupportInitialize"
+		description="Custom component: com.mindfusion.common.ISupportInitialize"
+		visible="true"
+		class="com.mindfusion.common.ISupportInitialize"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.j_1576405237462"
+		name="j"
+		description="Custom component: com.mindfusion.common.j"
+		visible="true"
+		class="com.mindfusion.common.j"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.k_1576405237462"
+		name="k"
+		description="Custom component: com.mindfusion.common.k"
+		visible="true"
+		class="com.mindfusion.common.k"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.KeyValuePair_1576405237462"
+		name="KeyValuePair"
+		description="Custom component: com.mindfusion.common.KeyValuePair"
+		visible="true"
+		class="com.mindfusion.common.KeyValuePair"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.l_1576405237462"
+		name="l"
+		description="Custom component: com.mindfusion.common.l"
+		visible="true"
+		class="com.mindfusion.common.l"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.License_1576405237462"
+		name="License"
+		description="Custom component: com.mindfusion.common.License"
+		visible="true"
+		class="com.mindfusion.common.License"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ListChangedAction_1576405237462"
+		name="ListChangedAction"
+		description="Custom component: com.mindfusion.common.ListChangedAction"
+		visible="true"
+		class="com.mindfusion.common.ListChangedAction"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ListChangedEvent_1576405237462"
+		name="ListChangedEvent"
+		description="Custom component: com.mindfusion.common.ListChangedEvent"
+		visible="true"
+		class="com.mindfusion.common.ListChangedEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ListItemEvent_1576405237462"
+		name="ListItemEvent"
+		description="Custom component: com.mindfusion.common.ListItemEvent"
+		visible="true"
+		class="com.mindfusion.common.ListItemEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.m_1576405237462"
+		name="m"
+		description="Custom component: com.mindfusion.common.m"
+		visible="true"
+		class="com.mindfusion.common.m"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.n_1576405237462"
+		name="n"
+		description="Custom component: com.mindfusion.common.n"
+		visible="true"
+		class="com.mindfusion.common.n"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.o_1576405237462"
+		name="o"
+		description="Custom component: com.mindfusion.common.o"
+		visible="true"
+		class="com.mindfusion.common.o"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ObservableList_1576405237462"
+		name="ObservableList"
+		description="Custom component: com.mindfusion.common.ObservableList"
+		visible="true"
+		class="com.mindfusion.common.ObservableList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ObservableListListener_1576405237462"
+		name="ObservableListListener"
+		description="Custom component: com.mindfusion.common.ObservableListListener"
+		visible="true"
+		class="com.mindfusion.common.ObservableListListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Orientation_1576405237462"
+		name="Orientation"
+		description="Custom component: com.mindfusion.common.Orientation"
+		visible="true"
+		class="com.mindfusion.common.Orientation"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.OrientationConverter_1576405237462"
+		name="OrientationConverter"
+		description="Custom component: com.mindfusion.common.OrientationConverter"
+		visible="true"
+		class="com.mindfusion.common.OrientationConverter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.OverflowException_1576405237462"
+		name="OverflowException"
+		description="Custom component: com.mindfusion.common.OverflowException"
+		visible="true"
+		class="com.mindfusion.common.OverflowException"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.p_1576405237462"
+		name="p"
+		description="Custom component: com.mindfusion.common.p"
+		visible="true"
+		class="com.mindfusion.common.p"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Pair_1576405237462"
+		name="Pair"
+		description="Custom component: com.mindfusion.common.Pair"
+		visible="true"
+		class="com.mindfusion.common.Pair"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.q_1576405237462"
+		name="q"
+		description="Custom component: com.mindfusion.common.q"
+		visible="true"
+		class="com.mindfusion.common.q"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Queryable_1576405237462"
+		name="Queryable"
+		description="Custom component: com.mindfusion.common.Queryable"
+		visible="true"
+		class="com.mindfusion.common.Queryable"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.r_1576405237462"
+		name="r"
+		description="Custom component: com.mindfusion.common.r"
+		visible="true"
+		class="com.mindfusion.common.r"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.RangeSelector_1576405237462"
+		name="RangeSelector"
+		description="Custom component: com.mindfusion.common.RangeSelector"
+		visible="true"
+		class="com.mindfusion.common.RangeSelector"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.RangeSelectorListener_1576405237462"
+		name="RangeSelectorListener"
+		description="Custom component: com.mindfusion.common.RangeSelectorListener"
+		visible="true"
+		class="com.mindfusion.common.RangeSelectorListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ReadOnlyList_1576405237462"
+		name="ReadOnlyList"
+		description="Custom component: com.mindfusion.common.ReadOnlyList"
+		visible="true"
+		class="com.mindfusion.common.ReadOnlyList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ReleaseDate_1576405237462"
+		name="ReleaseDate"
+		description="Custom component: com.mindfusion.common.ReleaseDate"
+		visible="true"
+		class="com.mindfusion.common.ReleaseDate"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.s_1576405237462"
+		name="s"
+		description="Custom component: com.mindfusion.common.s"
+		visible="true"
+		class="com.mindfusion.common.s"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ScrollEvent_1576405237462"
+		name="ScrollEvent"
+		description="Custom component: com.mindfusion.common.ScrollEvent"
+		visible="true"
+		class="com.mindfusion.common.ScrollEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ScrollEventType_1576405237462"
+		name="ScrollEventType"
+		description="Custom component: com.mindfusion.common.ScrollEventType"
+		visible="true"
+		class="com.mindfusion.common.ScrollEventType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Serialization_1576405237462"
+		name="Serialization"
+		description="Custom component: com.mindfusion.common.Serialization"
+		visible="true"
+		class="com.mindfusion.common.Serialization"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.StringUtilities_1576405237462"
+		name="StringUtilities"
+		description="Custom component: com.mindfusion.common.StringUtilities"
+		visible="true"
+		class="com.mindfusion.common.StringUtilities"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.t_1576405237462"
+		name="t"
+		description="Custom component: com.mindfusion.common.t"
+		visible="true"
+		class="com.mindfusion.common.t"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.TriStateCheckBox_1576405237462"
+		name="TriStateCheckBox"
+		description="Custom component: com.mindfusion.common.TriStateCheckBox"
+		visible="true"
+		class="com.mindfusion.common.TriStateCheckBox"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.TriStateCheckBox$MyCheckBoxIcon_1576405237462"
+		name="MyCheckBoxIcon"
+		description="Custom component: com.mindfusion.common.TriStateCheckBox$MyCheckBoxIcon"
+		visible="true"
+		class="com.mindfusion.common.TriStateCheckBox$MyCheckBoxIcon"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.TriStateCheckBox$TristateButtonModel_1576405237462"
+		name="TristateButtonModel"
+		description="Custom component: com.mindfusion.common.TriStateCheckBox$TristateButtonModel"
+		visible="true"
+		class="com.mindfusion.common.TriStateCheckBox$TristateButtonModel"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.TypeConverter_1576405237462"
+		name="TypeConverter"
+		description="Custom component: com.mindfusion.common.TypeConverter"
+		visible="true"
+		class="com.mindfusion.common.TypeConverter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.u_1576405237462"
+		name="u"
+		description="Custom component: com.mindfusion.common.u"
+		visible="true"
+		class="com.mindfusion.common.u"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.v_1576405237462"
+		name="v"
+		description="Custom component: com.mindfusion.common.v"
+		visible="true"
+		class="com.mindfusion.common.v"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.ValueType_1576405237462"
+		name="ValueType"
+		description="Custom component: com.mindfusion.common.ValueType"
+		visible="true"
+		class="com.mindfusion.common.ValueType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.Vector_1576405237462"
+		name="Vector"
+		description="Custom component: com.mindfusion.common.Vector"
+		visible="true"
+		class="com.mindfusion.common.Vector"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.XDimension2D_1576405237462"
+		name="XDimension2D"
+		description="Custom component: com.mindfusion.common.XDimension2D"
+		visible="true"
+		class="com.mindfusion.common.XDimension2D"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.XDimension2D$Double_1576405237462"
+		name="Double"
+		description="Custom component: com.mindfusion.common.XDimension2D$Double"
+		visible="true"
+		class="com.mindfusion.common.XDimension2D$Double"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.common.XmlFunctions_1576405237462"
+		name="XmlFunctions"
+		description="Custom component: com.mindfusion.common.XmlFunctions"
+		visible="true"
+		class="com.mindfusion.common.XmlFunctions"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.a_1576405237462"
+		name="a"
+		description="Custom component: com.mindfusion.drawing.a"
+		visible="true"
+		class="com.mindfusion.drawing.a"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Align_1576405237462"
+		name="Align"
+		description="Custom component: com.mindfusion.drawing.Align"
+		visible="true"
+		class="com.mindfusion.drawing.Align"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.AwtGraphics_1576405237462"
+		name="AwtGraphics"
+		description="Custom component: com.mindfusion.drawing.AwtGraphics"
+		visible="true"
+		class="com.mindfusion.drawing.AwtGraphics"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.b_1576405237462"
+		name="b"
+		description="Custom component: com.mindfusion.drawing.b"
+		visible="true"
+		class="com.mindfusion.drawing.b"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Brush_1576405237462"
+		name="Brush"
+		description="Custom component: com.mindfusion.drawing.Brush"
+		visible="true"
+		class="com.mindfusion.drawing.Brush"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Brushes_1576405237462"
+		name="Brushes"
+		description="Custom component: com.mindfusion.drawing.Brushes"
+		visible="true"
+		class="com.mindfusion.drawing.Brushes"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.c_1576405237462"
+		name="c"
+		description="Custom component: com.mindfusion.drawing.c"
+		visible="true"
+		class="com.mindfusion.drawing.c"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.CardinalSpline_1576405237462"
+		name="CardinalSpline"
+		description="Custom component: com.mindfusion.drawing.CardinalSpline"
+		visible="true"
+		class="com.mindfusion.drawing.CardinalSpline"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Colors_1576405237462"
+		name="Colors"
+		description="Custom component: com.mindfusion.drawing.Colors"
+		visible="true"
+		class="com.mindfusion.drawing.Colors"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.CombineMode_1576405237462"
+		name="CombineMode"
+		description="Custom component: com.mindfusion.drawing.CombineMode"
+		visible="true"
+		class="com.mindfusion.drawing.CombineMode"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.d_1576405237462"
+		name="d"
+		description="Custom component: com.mindfusion.drawing.d"
+		visible="true"
+		class="com.mindfusion.drawing.d"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.DashStyle_1576405237462"
+		name="DashStyle"
+		description="Custom component: com.mindfusion.drawing.DashStyle"
+		visible="true"
+		class="com.mindfusion.drawing.DashStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.DrawTextHint_1576405237462"
+		name="DrawTextHint"
+		description="Custom component: com.mindfusion.drawing.DrawTextHint"
+		visible="true"
+		class="com.mindfusion.drawing.DrawTextHint"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.e_1576405237462"
+		name="e"
+		description="Custom component: com.mindfusion.drawing.e"
+		visible="true"
+		class="com.mindfusion.drawing.e"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.ExternalizableImage_1576405237462"
+		name="ExternalizableImage"
+		description="Custom component: com.mindfusion.drawing.ExternalizableImage"
+		visible="true"
+		class="com.mindfusion.drawing.ExternalizableImage"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.f_1576405237462"
+		name="f"
+		description="Custom component: com.mindfusion.drawing.f"
+		visible="true"
+		class="com.mindfusion.drawing.f"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.FontStyle_1576405237462"
+		name="FontStyle"
+		description="Custom component: com.mindfusion.drawing.FontStyle"
+		visible="true"
+		class="com.mindfusion.drawing.FontStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.g_1576405237462"
+		name="g"
+		description="Custom component: com.mindfusion.drawing.g"
+		visible="true"
+		class="com.mindfusion.drawing.g"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.GradientBrush_1576405237462"
+		name="GradientBrush"
+		description="Custom component: com.mindfusion.drawing.GradientBrush"
+		visible="true"
+		class="com.mindfusion.drawing.GradientBrush"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.GraphicsEx_1576405237462"
+		name="GraphicsEx"
+		description="Custom component: com.mindfusion.drawing.GraphicsEx"
+		visible="true"
+		class="com.mindfusion.drawing.GraphicsEx"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.GraphicsUnit_1576405237462"
+		name="GraphicsUnit"
+		description="Custom component: com.mindfusion.drawing.GraphicsUnit"
+		visible="true"
+		class="com.mindfusion.drawing.GraphicsUnit"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.h_1576405237462"
+		name="h"
+		description="Custom component: com.mindfusion.drawing.h"
+		visible="true"
+		class="com.mindfusion.drawing.h"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.HatchBrush_1576405237462"
+		name="HatchBrush"
+		description="Custom component: com.mindfusion.drawing.HatchBrush"
+		visible="true"
+		class="com.mindfusion.drawing.HatchBrush"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.HatchStyle_1576405237462"
+		name="HatchStyle"
+		description="Custom component: com.mindfusion.drawing.HatchStyle"
+		visible="true"
+		class="com.mindfusion.drawing.HatchStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.i_1576405237462"
+		name="i"
+		description="Custom component: com.mindfusion.drawing.i"
+		visible="true"
+		class="com.mindfusion.drawing.i"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.ImageAlignment_1576405237462"
+		name="ImageAlignment"
+		description="Custom component: com.mindfusion.drawing.ImageAlignment"
+		visible="true"
+		class="com.mindfusion.drawing.ImageAlignment"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.ImageAttributes_1576405237462"
+		name="ImageAttributes"
+		description="Custom component: com.mindfusion.drawing.ImageAttributes"
+		visible="true"
+		class="com.mindfusion.drawing.ImageAttributes"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.ImagePainter_1576405237462"
+		name="ImagePainter"
+		description="Custom component: com.mindfusion.drawing.ImagePainter"
+		visible="true"
+		class="com.mindfusion.drawing.ImagePainter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.j_1576405237462"
+		name="j"
+		description="Custom component: com.mindfusion.drawing.j"
+		visible="true"
+		class="com.mindfusion.drawing.j"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.k_1576405237462"
+		name="k"
+		description="Custom component: com.mindfusion.drawing.k"
+		visible="true"
+		class="com.mindfusion.drawing.k"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.l_1576405237462"
+		name="l"
+		description="Custom component: com.mindfusion.drawing.l"
+		visible="true"
+		class="com.mindfusion.drawing.l"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.m_1576405237462"
+		name="m"
+		description="Custom component: com.mindfusion.drawing.m"
+		visible="true"
+		class="com.mindfusion.drawing.m"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.n_1576405237462"
+		name="n"
+		description="Custom component: com.mindfusion.drawing.n"
+		visible="true"
+		class="com.mindfusion.drawing.n"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.o_1576405237462"
+		name="o"
+		description="Custom component: com.mindfusion.drawing.o"
+		visible="true"
+		class="com.mindfusion.drawing.o"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.p_1576405237462"
+		name="p"
+		description="Custom component: com.mindfusion.drawing.p"
+		visible="true"
+		class="com.mindfusion.drawing.p"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Pen_1576405237462"
+		name="Pen"
+		description="Custom component: com.mindfusion.drawing.Pen"
+		visible="true"
+		class="com.mindfusion.drawing.Pen"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Pens_1576405237462"
+		name="Pens"
+		description="Custom component: com.mindfusion.drawing.Pens"
+		visible="true"
+		class="com.mindfusion.drawing.Pens"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.PlainText_1576405237462"
+		name="PlainText"
+		description="Custom component: com.mindfusion.drawing.PlainText"
+		visible="true"
+		class="com.mindfusion.drawing.PlainText"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.PointList_1576405237462"
+		name="PointList"
+		description="Custom component: com.mindfusion.drawing.PointList"
+		visible="true"
+		class="com.mindfusion.drawing.PointList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Polygon_1576405237462"
+		name="Polygon"
+		description="Custom component: com.mindfusion.drawing.Polygon"
+		visible="true"
+		class="com.mindfusion.drawing.Polygon"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.q_1576405237462"
+		name="q"
+		description="Custom component: com.mindfusion.drawing.q"
+		visible="true"
+		class="com.mindfusion.drawing.q"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.r_1576405237462"
+		name="r"
+		description="Custom component: com.mindfusion.drawing.r"
+		visible="true"
+		class="com.mindfusion.drawing.r"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.RadialGradientBrush_1576405237462"
+		name="RadialGradientBrush"
+		description="Custom component: com.mindfusion.drawing.RadialGradientBrush"
+		visible="true"
+		class="com.mindfusion.drawing.RadialGradientBrush"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.RenderTextCallback_1576405237462"
+		name="RenderTextCallback"
+		description="Custom component: com.mindfusion.drawing.RenderTextCallback"
+		visible="true"
+		class="com.mindfusion.drawing.RenderTextCallback"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.s_1576405237462"
+		name="s"
+		description="Custom component: com.mindfusion.drawing.s"
+		visible="true"
+		class="com.mindfusion.drawing.s"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.SolidBrush_1576405237462"
+		name="SolidBrush"
+		description="Custom component: com.mindfusion.drawing.SolidBrush"
+		visible="true"
+		class="com.mindfusion.drawing.SolidBrush"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.StyledText_1576405237462"
+		name="StyledText"
+		description="Custom component: com.mindfusion.drawing.StyledText"
+		visible="true"
+		class="com.mindfusion.drawing.StyledText"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.t_1576405237462"
+		name="t"
+		description="Custom component: com.mindfusion.drawing.t"
+		visible="true"
+		class="com.mindfusion.drawing.t"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.Text_1576405237462"
+		name="Text"
+		description="Custom component: com.mindfusion.drawing.Text"
+		visible="true"
+		class="com.mindfusion.drawing.Text"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.TextAlignment_1576405237462"
+		name="TextAlignment"
+		description="Custom component: com.mindfusion.drawing.TextAlignment"
+		visible="true"
+		class="com.mindfusion.drawing.TextAlignment"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.TextFormat_1576405237462"
+		name="TextFormat"
+		description="Custom component: com.mindfusion.drawing.TextFormat"
+		visible="true"
+		class="com.mindfusion.drawing.TextFormat"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.TextLayout_1576405237462"
+		name="TextLayout"
+		description="Custom component: com.mindfusion.drawing.TextLayout"
+		visible="true"
+		class="com.mindfusion.drawing.TextLayout"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.TextLayoutOptions_1576405237462"
+		name="TextLayoutOptions"
+		description="Custom component: com.mindfusion.drawing.TextLayoutOptions"
+		visible="true"
+		class="com.mindfusion.drawing.TextLayoutOptions"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.TextureBrush_1576405237462"
+		name="TextureBrush"
+		description="Custom component: com.mindfusion.drawing.TextureBrush"
+		visible="true"
+		class="com.mindfusion.drawing.TextureBrush"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.drawing.u_1576405237462"
+		name="u"
+		description="Custom component: com.mindfusion.drawing.u"
+		visible="true"
+		class="com.mindfusion.drawing.u"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.a_1576405237462"
+		name="a"
+		description="Custom component: com.mindfusion.pdf.a"
+		visible="true"
+		class="com.mindfusion.pdf.a"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.AutoScale_1576405237462"
+		name="AutoScale"
+		description="Custom component: com.mindfusion.pdf.AutoScale"
+		visible="true"
+		class="com.mindfusion.pdf.AutoScale"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.b_1576405237462"
+		name="b"
+		description="Custom component: com.mindfusion.pdf.b"
+		visible="true"
+		class="com.mindfusion.pdf.b"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.BufferedImageConverter_1576405237462"
+		name="BufferedImageConverter"
+		description="Custom component: com.mindfusion.pdf.BufferedImageConverter"
+		visible="true"
+		class="com.mindfusion.pdf.BufferedImageConverter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.c_1576405237462"
+		name="c"
+		description="Custom component: com.mindfusion.pdf.c"
+		visible="true"
+		class="com.mindfusion.pdf.c"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.Globals_1576405237462"
+		name="Globals"
+		description="Custom component: com.mindfusion.pdf.Globals"
+		visible="true"
+		class="com.mindfusion.pdf.Globals"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.Globals$Flags_1576405237462"
+		name="Flags"
+		description="Custom component: com.mindfusion.pdf.Globals$Flags"
+		visible="true"
+		class="com.mindfusion.pdf.Globals$Flags"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.Globals$Patterns_1576405237462"
+		name="Patterns"
+		description="Custom component: com.mindfusion.pdf.Globals$Patterns"
+		visible="true"
+		class="com.mindfusion.pdf.Globals$Patterns"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.INotify_1576405237462"
+		name="INotify"
+		description="Custom component: com.mindfusion.pdf.INotify"
+		visible="true"
+		class="com.mindfusion.pdf.INotify"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.IPdfSaver_1576405237462"
+		name="IPdfSaver"
+		description="Custom component: com.mindfusion.pdf.IPdfSaver"
+		visible="true"
+		class="com.mindfusion.pdf.IPdfSaver"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.NotifyableList_1576405237462"
+		name="NotifyableList"
+		description="Custom component: com.mindfusion.pdf.NotifyableList"
+		visible="true"
+		class="com.mindfusion.pdf.NotifyableList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PageOrientation_1576405237462"
+		name="PageOrientation"
+		description="Custom component: com.mindfusion.pdf.PageOrientation"
+		visible="true"
+		class="com.mindfusion.pdf.PageOrientation"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PageSizes_1576405237462"
+		name="PageSizes"
+		description="Custom component: com.mindfusion.pdf.PageSizes"
+		visible="true"
+		class="com.mindfusion.pdf.PageSizes"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PageSizesEnum_1576405237462"
+		name="PageSizesEnum"
+		description="Custom component: com.mindfusion.pdf.PageSizesEnum"
+		visible="true"
+		class="com.mindfusion.pdf.PageSizesEnum"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PaintType_1576405237462"
+		name="PaintType"
+		description="Custom component: com.mindfusion.pdf.PaintType"
+		visible="true"
+		class="com.mindfusion.pdf.PaintType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfCatalog_1576405237462"
+		name="PdfCatalog"
+		description="Custom component: com.mindfusion.pdf.PdfCatalog"
+		visible="true"
+		class="com.mindfusion.pdf.PdfCatalog"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfDocument_1576405237462"
+		name="PdfDocument"
+		description="Custom component: com.mindfusion.pdf.PdfDocument"
+		visible="true"
+		class="com.mindfusion.pdf.PdfDocument"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfFont_1576405237462"
+		name="PdfFont"
+		description="Custom component: com.mindfusion.pdf.PdfFont"
+		visible="true"
+		class="com.mindfusion.pdf.PdfFont"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfFont$tFontInfo_1576405237462"
+		name="tFontInfo"
+		description="Custom component: com.mindfusion.pdf.PdfFont$tFontInfo"
+		visible="true"
+		class="com.mindfusion.pdf.PdfFont$tFontInfo"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfFontDescription_1576405237462"
+		name="PdfFontDescription"
+		description="Custom component: com.mindfusion.pdf.PdfFontDescription"
+		visible="true"
+		class="com.mindfusion.pdf.PdfFontDescription"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfFunction_1576405237462"
+		name="PdfFunction"
+		description="Custom component: com.mindfusion.pdf.PdfFunction"
+		visible="true"
+		class="com.mindfusion.pdf.PdfFunction"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfGraphics2D_1576405237462"
+		name="PdfGraphics2D"
+		description="Custom component: com.mindfusion.pdf.PdfGraphics2D"
+		visible="true"
+		class="com.mindfusion.pdf.PdfGraphics2D"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfGraphicsState_1576405237462"
+		name="PdfGraphicsState"
+		description="Custom component: com.mindfusion.pdf.PdfGraphicsState"
+		visible="true"
+		class="com.mindfusion.pdf.PdfGraphicsState"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfHref_1576405237462"
+		name="PdfHref"
+		description="Custom component: com.mindfusion.pdf.PdfHref"
+		visible="true"
+		class="com.mindfusion.pdf.PdfHref"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfImage_1576405237462"
+		name="PdfImage"
+		description="Custom component: com.mindfusion.pdf.PdfImage"
+		visible="true"
+		class="com.mindfusion.pdf.PdfImage"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfImageHolder_1576405237462"
+		name="PdfImageHolder"
+		description="Custom component: com.mindfusion.pdf.PdfImageHolder"
+		visible="true"
+		class="com.mindfusion.pdf.PdfImageHolder"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfObject_1576405237462"
+		name="PdfObject"
+		description="Custom component: com.mindfusion.pdf.PdfObject"
+		visible="true"
+		class="com.mindfusion.pdf.PdfObject"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfObjectComparator_1576405237462"
+		name="PdfObjectComparator"
+		description="Custom component: com.mindfusion.pdf.PdfObjectComparator"
+		visible="true"
+		class="com.mindfusion.pdf.PdfObjectComparator"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfObjectTypeEnum_1576405237462"
+		name="PdfObjectTypeEnum"
+		description="Custom component: com.mindfusion.pdf.PdfObjectTypeEnum"
+		visible="true"
+		class="com.mindfusion.pdf.PdfObjectTypeEnum"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfPage_1576405237462"
+		name="PdfPage"
+		description="Custom component: com.mindfusion.pdf.PdfPage"
+		visible="true"
+		class="com.mindfusion.pdf.PdfPage"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfPagesRoot_1576405237462"
+		name="PdfPagesRoot"
+		description="Custom component: com.mindfusion.pdf.PdfPagesRoot"
+		visible="true"
+		class="com.mindfusion.pdf.PdfPagesRoot"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfPath_1576405237462"
+		name="PdfPath"
+		description="Custom component: com.mindfusion.pdf.PdfPath"
+		visible="true"
+		class="com.mindfusion.pdf.PdfPath"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfPattern_1576405237462"
+		name="PdfPattern"
+		description="Custom component: com.mindfusion.pdf.PdfPattern"
+		visible="true"
+		class="com.mindfusion.pdf.PdfPattern"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfShading_1576405237462"
+		name="PdfShading"
+		description="Custom component: com.mindfusion.pdf.PdfShading"
+		visible="true"
+		class="com.mindfusion.pdf.PdfShading"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfSize_1576405237462"
+		name="PdfSize"
+		description="Custom component: com.mindfusion.pdf.PdfSize"
+		visible="true"
+		class="com.mindfusion.pdf.PdfSize"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfText_1576405237462"
+		name="PdfText"
+		description="Custom component: com.mindfusion.pdf.PdfText"
+		visible="true"
+		class="com.mindfusion.pdf.PdfText"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.PdfWriter_1576405237462"
+		name="PdfWriter"
+		description="Custom component: com.mindfusion.pdf.PdfWriter"
+		visible="true"
+		class="com.mindfusion.pdf.PdfWriter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.Tools_1576405237462"
+		name="Tools"
+		description="Custom component: com.mindfusion.pdf.Tools"
+		visible="true"
+		class="com.mindfusion.pdf.Tools"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.pdf.UnsupportedDataTypeException_1576405237462"
+		name="UnsupportedDataTypeException"
+		description="Custom component: com.mindfusion.pdf.UnsupportedDataTypeException"
+		visible="true"
+		class="com.mindfusion.pdf.UnsupportedDataTypeException"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.A_1576405237462"
+		name="A"
+		description="Custom component: com.mindfusion.scheduling.A"
+		visible="true"
+		class="com.mindfusion.scheduling.A"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a_1576405237462"
+		name="a"
+		description="Custom component: com.mindfusion.scheduling.a"
+		visible="true"
+		class="com.mindfusion.scheduling.a"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a0_1576405237462"
+		name="a0"
+		description="Custom component: com.mindfusion.scheduling.a0"
+		visible="true"
+		class="com.mindfusion.scheduling.a0"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a1_1576405237462"
+		name="a1"
+		description="Custom component: com.mindfusion.scheduling.a1"
+		visible="true"
+		class="com.mindfusion.scheduling.a1"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a2_1576405237462"
+		name="a2"
+		description="Custom component: com.mindfusion.scheduling.a2"
+		visible="true"
+		class="com.mindfusion.scheduling.a2"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a3_1576405237462"
+		name="a3"
+		description="Custom component: com.mindfusion.scheduling.a3"
+		visible="true"
+		class="com.mindfusion.scheduling.a3"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a4_1576405237462"
+		name="a4"
+		description="Custom component: com.mindfusion.scheduling.a4"
+		visible="true"
+		class="com.mindfusion.scheduling.a4"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a5_1576405237462"
+		name="a5"
+		description="Custom component: com.mindfusion.scheduling.a5"
+		visible="true"
+		class="com.mindfusion.scheduling.a5"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a6_1576405237462"
+		name="a6"
+		description="Custom component: com.mindfusion.scheduling.a6"
+		visible="true"
+		class="com.mindfusion.scheduling.a6"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a7_1576405237462"
+		name="a7"
+		description="Custom component: com.mindfusion.scheduling.a7"
+		visible="true"
+		class="com.mindfusion.scheduling.a7"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a8_1576405237462"
+		name="a8"
+		description="Custom component: com.mindfusion.scheduling.a8"
+		visible="true"
+		class="com.mindfusion.scheduling.a8"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a9_1576405237462"
+		name="a9"
+		description="Custom component: com.mindfusion.scheduling.a9"
+		visible="true"
+		class="com.mindfusion.scheduling.a9"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.a__1576405237462"
+		name="a_"
+		description="Custom component: com.mindfusion.scheduling.a_"
+		visible="true"
+		class="com.mindfusion.scheduling.a_"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aA_1576405237462"
+		name="aA"
+		description="Custom component: com.mindfusion.scheduling.aA"
+		visible="true"
+		class="com.mindfusion.scheduling.aA"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aa_1576405237462"
+		name="aa"
+		description="Custom component: com.mindfusion.scheduling.aa"
+		visible="true"
+		class="com.mindfusion.scheduling.aa"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aB_1576405237462"
+		name="aB"
+		description="Custom component: com.mindfusion.scheduling.aB"
+		visible="true"
+		class="com.mindfusion.scheduling.aB"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ab_1576405237462"
+		name="ab"
+		description="Custom component: com.mindfusion.scheduling.ab"
+		visible="true"
+		class="com.mindfusion.scheduling.ab"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aC_1576405237462"
+		name="aC"
+		description="Custom component: com.mindfusion.scheduling.aC"
+		visible="true"
+		class="com.mindfusion.scheduling.aC"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ac_1576405237462"
+		name="ac"
+		description="Custom component: com.mindfusion.scheduling.ac"
+		visible="true"
+		class="com.mindfusion.scheduling.ac"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aD_1576405237462"
+		name="aD"
+		description="Custom component: com.mindfusion.scheduling.aD"
+		visible="true"
+		class="com.mindfusion.scheduling.aD"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ad_1576405237462"
+		name="ad"
+		description="Custom component: com.mindfusion.scheduling.ad"
+		visible="true"
+		class="com.mindfusion.scheduling.ad"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aE_1576405237462"
+		name="aE"
+		description="Custom component: com.mindfusion.scheduling.aE"
+		visible="true"
+		class="com.mindfusion.scheduling.aE"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ae_1576405237462"
+		name="ae"
+		description="Custom component: com.mindfusion.scheduling.ae"
+		visible="true"
+		class="com.mindfusion.scheduling.ae"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.AeroEffect_1576405237462"
+		name="AeroEffect"
+		description="Custom component: com.mindfusion.scheduling.AeroEffect"
+		visible="true"
+		class="com.mindfusion.scheduling.AeroEffect"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aF_1576405237462"
+		name="aF"
+		description="Custom component: com.mindfusion.scheduling.aF"
+		visible="true"
+		class="com.mindfusion.scheduling.aF"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.af_1576405237462"
+		name="af"
+		description="Custom component: com.mindfusion.scheduling.af"
+		visible="true"
+		class="com.mindfusion.scheduling.af"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aG_1576405237462"
+		name="aG"
+		description="Custom component: com.mindfusion.scheduling.aG"
+		visible="true"
+		class="com.mindfusion.scheduling.aG"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ag_1576405237462"
+		name="ag"
+		description="Custom component: com.mindfusion.scheduling.ag"
+		visible="true"
+		class="com.mindfusion.scheduling.ag"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aH_1576405237462"
+		name="aH"
+		description="Custom component: com.mindfusion.scheduling.aH"
+		visible="true"
+		class="com.mindfusion.scheduling.aH"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ah_1576405237462"
+		name="ah"
+		description="Custom component: com.mindfusion.scheduling.ah"
+		visible="true"
+		class="com.mindfusion.scheduling.ah"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aI_1576405237462"
+		name="aI"
+		description="Custom component: com.mindfusion.scheduling.aI"
+		visible="true"
+		class="com.mindfusion.scheduling.aI"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ai_1576405237462"
+		name="ai"
+		description="Custom component: com.mindfusion.scheduling.ai"
+		visible="true"
+		class="com.mindfusion.scheduling.ai"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aJ_1576405237462"
+		name="aJ"
+		description="Custom component: com.mindfusion.scheduling.aJ"
+		visible="true"
+		class="com.mindfusion.scheduling.aJ"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aj_1576405237462"
+		name="aj"
+		description="Custom component: com.mindfusion.scheduling.aj"
+		visible="true"
+		class="com.mindfusion.scheduling.aj"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aK_1576405237462"
+		name="aK"
+		description="Custom component: com.mindfusion.scheduling.aK"
+		visible="true"
+		class="com.mindfusion.scheduling.aK"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ak_1576405237462"
+		name="ak"
+		description="Custom component: com.mindfusion.scheduling.ak"
+		visible="true"
+		class="com.mindfusion.scheduling.ak"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aL_1576405237462"
+		name="aL"
+		description="Custom component: com.mindfusion.scheduling.aL"
+		visible="true"
+		class="com.mindfusion.scheduling.aL"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.al_1576405237462"
+		name="al"
+		description="Custom component: com.mindfusion.scheduling.al"
+		visible="true"
+		class="com.mindfusion.scheduling.al"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Alignment_1576405237462"
+		name="Alignment"
+		description="Custom component: com.mindfusion.scheduling.Alignment"
+		visible="true"
+		class="com.mindfusion.scheduling.Alignment"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aM_1576405237462"
+		name="aM"
+		description="Custom component: com.mindfusion.scheduling.aM"
+		visible="true"
+		class="com.mindfusion.scheduling.aM"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.am_1576405237462"
+		name="am"
+		description="Custom component: com.mindfusion.scheduling.am"
+		visible="true"
+		class="com.mindfusion.scheduling.am"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aN_1576405237462"
+		name="aN"
+		description="Custom component: com.mindfusion.scheduling.aN"
+		visible="true"
+		class="com.mindfusion.scheduling.aN"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.an_1576405237462"
+		name="an"
+		description="Custom component: com.mindfusion.scheduling.an"
+		visible="true"
+		class="com.mindfusion.scheduling.an"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aO_1576405237462"
+		name="aO"
+		description="Custom component: com.mindfusion.scheduling.aO"
+		visible="true"
+		class="com.mindfusion.scheduling.aO"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ao_1576405237462"
+		name="ao"
+		description="Custom component: com.mindfusion.scheduling.ao"
+		visible="true"
+		class="com.mindfusion.scheduling.ao"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aP_1576405237462"
+		name="aP"
+		description="Custom component: com.mindfusion.scheduling.aP"
+		visible="true"
+		class="com.mindfusion.scheduling.aP"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ap_1576405237462"
+		name="ap"
+		description="Custom component: com.mindfusion.scheduling.ap"
+		visible="true"
+		class="com.mindfusion.scheduling.ap"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aQ_1576405237462"
+		name="aQ"
+		description="Custom component: com.mindfusion.scheduling.aQ"
+		visible="true"
+		class="com.mindfusion.scheduling.aQ"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aq_1576405237462"
+		name="aq"
+		description="Custom component: com.mindfusion.scheduling.aq"
+		visible="true"
+		class="com.mindfusion.scheduling.aq"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aR_1576405237462"
+		name="aR"
+		description="Custom component: com.mindfusion.scheduling.aR"
+		visible="true"
+		class="com.mindfusion.scheduling.aR"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ar_1576405237462"
+		name="ar"
+		description="Custom component: com.mindfusion.scheduling.ar"
+		visible="true"
+		class="com.mindfusion.scheduling.ar"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aS_1576405237462"
+		name="aS"
+		description="Custom component: com.mindfusion.scheduling.aS"
+		visible="true"
+		class="com.mindfusion.scheduling.aS"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.as_1576405237462"
+		name="as"
+		description="Custom component: com.mindfusion.scheduling.as"
+		visible="true"
+		class="com.mindfusion.scheduling.as"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aT_1576405237462"
+		name="aT"
+		description="Custom component: com.mindfusion.scheduling.aT"
+		visible="true"
+		class="com.mindfusion.scheduling.aT"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.at_1576405237462"
+		name="at"
+		description="Custom component: com.mindfusion.scheduling.at"
+		visible="true"
+		class="com.mindfusion.scheduling.at"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aU_1576405237462"
+		name="aU"
+		description="Custom component: com.mindfusion.scheduling.aU"
+		visible="true"
+		class="com.mindfusion.scheduling.aU"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.au_1576405237462"
+		name="au"
+		description="Custom component: com.mindfusion.scheduling.au"
+		visible="true"
+		class="com.mindfusion.scheduling.au"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aV_1576405237462"
+		name="aV"
+		description="Custom component: com.mindfusion.scheduling.aV"
+		visible="true"
+		class="com.mindfusion.scheduling.aV"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.av_1576405237462"
+		name="av"
+		description="Custom component: com.mindfusion.scheduling.av"
+		visible="true"
+		class="com.mindfusion.scheduling.av"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aW_1576405237462"
+		name="aW"
+		description="Custom component: com.mindfusion.scheduling.aW"
+		visible="true"
+		class="com.mindfusion.scheduling.aW"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aw_1576405237462"
+		name="aw"
+		description="Custom component: com.mindfusion.scheduling.aw"
+		visible="true"
+		class="com.mindfusion.scheduling.aw"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aX_1576405237462"
+		name="aX"
+		description="Custom component: com.mindfusion.scheduling.aX"
+		visible="true"
+		class="com.mindfusion.scheduling.aX"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ax_1576405237462"
+		name="ax"
+		description="Custom component: com.mindfusion.scheduling.ax"
+		visible="true"
+		class="com.mindfusion.scheduling.ax"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aY_1576405237462"
+		name="aY"
+		description="Custom component: com.mindfusion.scheduling.aY"
+		visible="true"
+		class="com.mindfusion.scheduling.aY"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ay_1576405237462"
+		name="ay"
+		description="Custom component: com.mindfusion.scheduling.ay"
+		visible="true"
+		class="com.mindfusion.scheduling.ay"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.aZ_1576405237462"
+		name="aZ"
+		description="Custom component: com.mindfusion.scheduling.aZ"
+		visible="true"
+		class="com.mindfusion.scheduling.aZ"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.az_1576405237462"
+		name="az"
+		description="Custom component: com.mindfusion.scheduling.az"
+		visible="true"
+		class="com.mindfusion.scheduling.az"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.B_1576405237462"
+		name="B"
+		description="Custom component: com.mindfusion.scheduling.B"
+		visible="true"
+		class="com.mindfusion.scheduling.B"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b_1576405237462"
+		name="b"
+		description="Custom component: com.mindfusion.scheduling.b"
+		visible="true"
+		class="com.mindfusion.scheduling.b"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b0_1576405237462"
+		name="b0"
+		description="Custom component: com.mindfusion.scheduling.b0"
+		visible="true"
+		class="com.mindfusion.scheduling.b0"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b1_1576405237462"
+		name="b1"
+		description="Custom component: com.mindfusion.scheduling.b1"
+		visible="true"
+		class="com.mindfusion.scheduling.b1"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b2_1576405237462"
+		name="b2"
+		description="Custom component: com.mindfusion.scheduling.b2"
+		visible="true"
+		class="com.mindfusion.scheduling.b2"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b3_1576405237462"
+		name="b3"
+		description="Custom component: com.mindfusion.scheduling.b3"
+		visible="true"
+		class="com.mindfusion.scheduling.b3"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b4_1576405237462"
+		name="b4"
+		description="Custom component: com.mindfusion.scheduling.b4"
+		visible="true"
+		class="com.mindfusion.scheduling.b4"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b5_1576405237462"
+		name="b5"
+		description="Custom component: com.mindfusion.scheduling.b5"
+		visible="true"
+		class="com.mindfusion.scheduling.b5"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b6_1576405237462"
+		name="b6"
+		description="Custom component: com.mindfusion.scheduling.b6"
+		visible="true"
+		class="com.mindfusion.scheduling.b6"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b7_1576405237462"
+		name="b7"
+		description="Custom component: com.mindfusion.scheduling.b7"
+		visible="true"
+		class="com.mindfusion.scheduling.b7"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b8_1576405237462"
+		name="b8"
+		description="Custom component: com.mindfusion.scheduling.b8"
+		visible="true"
+		class="com.mindfusion.scheduling.b8"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b9_1576405237462"
+		name="b9"
+		description="Custom component: com.mindfusion.scheduling.b9"
+		visible="true"
+		class="com.mindfusion.scheduling.b9"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.b__1576405237462"
+		name="b_"
+		description="Custom component: com.mindfusion.scheduling.b_"
+		visible="true"
+		class="com.mindfusion.scheduling.b_"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bA_1576405237462"
+		name="bA"
+		description="Custom component: com.mindfusion.scheduling.bA"
+		visible="true"
+		class="com.mindfusion.scheduling.bA"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ba_1576405237462"
+		name="ba"
+		description="Custom component: com.mindfusion.scheduling.ba"
+		visible="true"
+		class="com.mindfusion.scheduling.ba"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bB_1576405237462"
+		name="bB"
+		description="Custom component: com.mindfusion.scheduling.bB"
+		visible="true"
+		class="com.mindfusion.scheduling.bB"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bb_1576405237462"
+		name="bb"
+		description="Custom component: com.mindfusion.scheduling.bb"
+		visible="true"
+		class="com.mindfusion.scheduling.bb"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bC_1576405237462"
+		name="bC"
+		description="Custom component: com.mindfusion.scheduling.bC"
+		visible="true"
+		class="com.mindfusion.scheduling.bC"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bc_1576405237462"
+		name="bc"
+		description="Custom component: com.mindfusion.scheduling.bc"
+		visible="true"
+		class="com.mindfusion.scheduling.bc"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bD_1576405237462"
+		name="bD"
+		description="Custom component: com.mindfusion.scheduling.bD"
+		visible="true"
+		class="com.mindfusion.scheduling.bD"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bd_1576405237462"
+		name="bd"
+		description="Custom component: com.mindfusion.scheduling.bd"
+		visible="true"
+		class="com.mindfusion.scheduling.bd"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bE_1576405237462"
+		name="bE"
+		description="Custom component: com.mindfusion.scheduling.bE"
+		visible="true"
+		class="com.mindfusion.scheduling.bE"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.be_1576405237462"
+		name="be"
+		description="Custom component: com.mindfusion.scheduling.be"
+		visible="true"
+		class="com.mindfusion.scheduling.be"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bF_1576405237462"
+		name="bF"
+		description="Custom component: com.mindfusion.scheduling.bF"
+		visible="true"
+		class="com.mindfusion.scheduling.bF"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bf_1576405237462"
+		name="bf"
+		description="Custom component: com.mindfusion.scheduling.bf"
+		visible="true"
+		class="com.mindfusion.scheduling.bf"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bG_1576405237462"
+		name="bG"
+		description="Custom component: com.mindfusion.scheduling.bG"
+		visible="true"
+		class="com.mindfusion.scheduling.bG"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bg_1576405237462"
+		name="bg"
+		description="Custom component: com.mindfusion.scheduling.bg"
+		visible="true"
+		class="com.mindfusion.scheduling.bg"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bH_1576405237462"
+		name="bH"
+		description="Custom component: com.mindfusion.scheduling.bH"
+		visible="true"
+		class="com.mindfusion.scheduling.bH"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bh_1576405237462"
+		name="bh"
+		description="Custom component: com.mindfusion.scheduling.bh"
+		visible="true"
+		class="com.mindfusion.scheduling.bh"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bI_1576405237462"
+		name="bI"
+		description="Custom component: com.mindfusion.scheduling.bI"
+		visible="true"
+		class="com.mindfusion.scheduling.bI"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bi_1576405237462"
+		name="bi"
+		description="Custom component: com.mindfusion.scheduling.bi"
+		visible="true"
+		class="com.mindfusion.scheduling.bi"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bJ_1576405237462"
+		name="bJ"
+		description="Custom component: com.mindfusion.scheduling.bJ"
+		visible="true"
+		class="com.mindfusion.scheduling.bJ"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bj_1576405237462"
+		name="bj"
+		description="Custom component: com.mindfusion.scheduling.bj"
+		visible="true"
+		class="com.mindfusion.scheduling.bj"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bK_1576405237462"
+		name="bK"
+		description="Custom component: com.mindfusion.scheduling.bK"
+		visible="true"
+		class="com.mindfusion.scheduling.bK"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bk_1576405237462"
+		name="bk"
+		description="Custom component: com.mindfusion.scheduling.bk"
+		visible="true"
+		class="com.mindfusion.scheduling.bk"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bL_1576405237462"
+		name="bL"
+		description="Custom component: com.mindfusion.scheduling.bL"
+		visible="true"
+		class="com.mindfusion.scheduling.bL"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bl_1576405237462"
+		name="bl"
+		description="Custom component: com.mindfusion.scheduling.bl"
+		visible="true"
+		class="com.mindfusion.scheduling.bl"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bM_1576405237462"
+		name="bM"
+		description="Custom component: com.mindfusion.scheduling.bM"
+		visible="true"
+		class="com.mindfusion.scheduling.bM"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bm_1576405237462"
+		name="bm"
+		description="Custom component: com.mindfusion.scheduling.bm"
+		visible="true"
+		class="com.mindfusion.scheduling.bm"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bN_1576405237462"
+		name="bN"
+		description="Custom component: com.mindfusion.scheduling.bN"
+		visible="true"
+		class="com.mindfusion.scheduling.bN"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bn_1576405237462"
+		name="bn"
+		description="Custom component: com.mindfusion.scheduling.bn"
+		visible="true"
+		class="com.mindfusion.scheduling.bn"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bO_1576405237462"
+		name="bO"
+		description="Custom component: com.mindfusion.scheduling.bO"
+		visible="true"
+		class="com.mindfusion.scheduling.bO"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bo_1576405237462"
+		name="bo"
+		description="Custom component: com.mindfusion.scheduling.bo"
+		visible="true"
+		class="com.mindfusion.scheduling.bo"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bP_1576405237462"
+		name="bP"
+		description="Custom component: com.mindfusion.scheduling.bP"
+		visible="true"
+		class="com.mindfusion.scheduling.bP"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bp_1576405237462"
+		name="bp"
+		description="Custom component: com.mindfusion.scheduling.bp"
+		visible="true"
+		class="com.mindfusion.scheduling.bp"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bQ_1576405237462"
+		name="bQ"
+		description="Custom component: com.mindfusion.scheduling.bQ"
+		visible="true"
+		class="com.mindfusion.scheduling.bQ"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bq_1576405237462"
+		name="bq"
+		description="Custom component: com.mindfusion.scheduling.bq"
+		visible="true"
+		class="com.mindfusion.scheduling.bq"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bR_1576405237462"
+		name="bR"
+		description="Custom component: com.mindfusion.scheduling.bR"
+		visible="true"
+		class="com.mindfusion.scheduling.bR"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.br_1576405237462"
+		name="br"
+		description="Custom component: com.mindfusion.scheduling.br"
+		visible="true"
+		class="com.mindfusion.scheduling.br"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bS_1576405237462"
+		name="bS"
+		description="Custom component: com.mindfusion.scheduling.bS"
+		visible="true"
+		class="com.mindfusion.scheduling.bS"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bs_1576405237462"
+		name="bs"
+		description="Custom component: com.mindfusion.scheduling.bs"
+		visible="true"
+		class="com.mindfusion.scheduling.bs"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bT_1576405237462"
+		name="bT"
+		description="Custom component: com.mindfusion.scheduling.bT"
+		visible="true"
+		class="com.mindfusion.scheduling.bT"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bt_1576405237462"
+		name="bt"
+		description="Custom component: com.mindfusion.scheduling.bt"
+		visible="true"
+		class="com.mindfusion.scheduling.bt"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bU_1576405237462"
+		name="bU"
+		description="Custom component: com.mindfusion.scheduling.bU"
+		visible="true"
+		class="com.mindfusion.scheduling.bU"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bu_1576405237462"
+		name="bu"
+		description="Custom component: com.mindfusion.scheduling.bu"
+		visible="true"
+		class="com.mindfusion.scheduling.bu"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bV_1576405237462"
+		name="bV"
+		description="Custom component: com.mindfusion.scheduling.bV"
+		visible="true"
+		class="com.mindfusion.scheduling.bV"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bv_1576405237462"
+		name="bv"
+		description="Custom component: com.mindfusion.scheduling.bv"
+		visible="true"
+		class="com.mindfusion.scheduling.bv"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bW_1576405237462"
+		name="bW"
+		description="Custom component: com.mindfusion.scheduling.bW"
+		visible="true"
+		class="com.mindfusion.scheduling.bW"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bw_1576405237462"
+		name="bw"
+		description="Custom component: com.mindfusion.scheduling.bw"
+		visible="true"
+		class="com.mindfusion.scheduling.bw"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bX_1576405237462"
+		name="bX"
+		description="Custom component: com.mindfusion.scheduling.bX"
+		visible="true"
+		class="com.mindfusion.scheduling.bX"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bx_1576405237462"
+		name="bx"
+		description="Custom component: com.mindfusion.scheduling.bx"
+		visible="true"
+		class="com.mindfusion.scheduling.bx"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bY_1576405237462"
+		name="bY"
+		description="Custom component: com.mindfusion.scheduling.bY"
+		visible="true"
+		class="com.mindfusion.scheduling.bY"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.by_1576405237462"
+		name="by"
+		description="Custom component: com.mindfusion.scheduling.by"
+		visible="true"
+		class="com.mindfusion.scheduling.by"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bZ_1576405237462"
+		name="bZ"
+		description="Custom component: com.mindfusion.scheduling.bZ"
+		visible="true"
+		class="com.mindfusion.scheduling.bZ"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.bz_1576405237462"
+		name="bz"
+		description="Custom component: com.mindfusion.scheduling.bz"
+		visible="true"
+		class="com.mindfusion.scheduling.bz"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.C_1576405237462"
+		name="C"
+		description="Custom component: com.mindfusion.scheduling.C"
+		visible="true"
+		class="com.mindfusion.scheduling.C"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.c_1576405237462"
+		name="c"
+		description="Custom component: com.mindfusion.scheduling.c"
+		visible="true"
+		class="com.mindfusion.scheduling.c"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ca_1576405237462"
+		name="ca"
+		description="Custom component: com.mindfusion.scheduling.ca"
+		visible="true"
+		class="com.mindfusion.scheduling.ca"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Calendar_1576405237462"
+		name="Calendar"
+		description="Custom component: com.mindfusion.scheduling.Calendar"
+		visible="true"
+		class="com.mindfusion.scheduling.Calendar"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarAdapter_1576405237462"
+		name="CalendarAdapter"
+		description="Custom component: com.mindfusion.scheduling.CalendarAdapter"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarAdapter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarDrawEvent_1576405237462"
+		name="CalendarDrawEvent"
+		description="Custom component: com.mindfusion.scheduling.CalendarDrawEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarDrawEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarElement_1576405237462"
+		name="CalendarElement"
+		description="Custom component: com.mindfusion.scheduling.CalendarElement"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarElement"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarListener_1576405237462"
+		name="CalendarListener"
+		description="Custom component: com.mindfusion.scheduling.CalendarListener"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarTextElements_1576405237462"
+		name="CalendarTextElements"
+		description="Custom component: com.mindfusion.scheduling.CalendarTextElements"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarTextElements"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarTextEvent_1576405237462"
+		name="CalendarTextEvent"
+		description="Custom component: com.mindfusion.scheduling.CalendarTextEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarTextEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CalendarView_1576405237462"
+		name="CalendarView"
+		description="Custom component: com.mindfusion.scheduling.CalendarView"
+		visible="true"
+		class="com.mindfusion.scheduling.CalendarView"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cb_1576405237462"
+		name="cb"
+		description="Custom component: com.mindfusion.scheduling.cb"
+		visible="true"
+		class="com.mindfusion.scheduling.cb"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cc_1576405237462"
+		name="cc"
+		description="Custom component: com.mindfusion.scheduling.cc"
+		visible="true"
+		class="com.mindfusion.scheduling.cc"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cd_1576405237462"
+		name="cd"
+		description="Custom component: com.mindfusion.scheduling.cd"
+		visible="true"
+		class="com.mindfusion.scheduling.cd"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ce_1576405237462"
+		name="ce"
+		description="Custom component: com.mindfusion.scheduling.ce"
+		visible="true"
+		class="com.mindfusion.scheduling.ce"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CellSettings_1576405237462"
+		name="CellSettings"
+		description="Custom component: com.mindfusion.scheduling.CellSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.CellSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cf_1576405237462"
+		name="cf"
+		description="Custom component: com.mindfusion.scheduling.cf"
+		visible="true"
+		class="com.mindfusion.scheduling.cf"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cg_1576405237462"
+		name="cg"
+		description="Custom component: com.mindfusion.scheduling.cg"
+		visible="true"
+		class="com.mindfusion.scheduling.cg"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ch_1576405237462"
+		name="ch"
+		description="Custom component: com.mindfusion.scheduling.ch"
+		visible="true"
+		class="com.mindfusion.scheduling.ch"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ci_1576405237462"
+		name="ci"
+		description="Custom component: com.mindfusion.scheduling.ci"
+		visible="true"
+		class="com.mindfusion.scheduling.ci"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cj_1576405237462"
+		name="cj"
+		description="Custom component: com.mindfusion.scheduling.cj"
+		visible="true"
+		class="com.mindfusion.scheduling.cj"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ck_1576405237462"
+		name="ck"
+		description="Custom component: com.mindfusion.scheduling.ck"
+		visible="true"
+		class="com.mindfusion.scheduling.ck"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cl_1576405237462"
+		name="cl"
+		description="Custom component: com.mindfusion.scheduling.cl"
+		visible="true"
+		class="com.mindfusion.scheduling.cl"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.cm_1576405237462"
+		name="cm"
+		description="Custom component: com.mindfusion.scheduling.cm"
+		visible="true"
+		class="com.mindfusion.scheduling.cm"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ControlAppearance_1576405237462"
+		name="ControlAppearance"
+		description="Custom component: com.mindfusion.scheduling.ControlAppearance"
+		visible="true"
+		class="com.mindfusion.scheduling.ControlAppearance"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ControlStyle_1576405237462"
+		name="ControlStyle"
+		description="Custom component: com.mindfusion.scheduling.ControlStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.ControlStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Cursor_1576405237462"
+		name="Cursor"
+		description="Custom component: com.mindfusion.scheduling.Cursor"
+		visible="true"
+		class="com.mindfusion.scheduling.Cursor"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CustomDrawElements_1576405237462"
+		name="CustomDrawElements"
+		description="Custom component: com.mindfusion.scheduling.CustomDrawElements"
+		visible="true"
+		class="com.mindfusion.scheduling.CustomDrawElements"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.CustomizeGroupingEvent_1576405237462"
+		name="CustomizeGroupingEvent"
+		description="Custom component: com.mindfusion.scheduling.CustomizeGroupingEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.CustomizeGroupingEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.D_1576405237462"
+		name="D"
+		description="Custom component: com.mindfusion.scheduling.D"
+		visible="true"
+		class="com.mindfusion.scheduling.D"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.d_1576405237462"
+		name="d"
+		description="Custom component: com.mindfusion.scheduling.d"
+		visible="true"
+		class="com.mindfusion.scheduling.d"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DateChangedEvent_1576405237462"
+		name="DateChangedEvent"
+		description="Custom component: com.mindfusion.scheduling.DateChangedEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.DateChangedEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DateEvent_1576405237462"
+		name="DateEvent"
+		description="Custom component: com.mindfusion.scheduling.DateEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.DateEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DateList_1576405237462"
+		name="DateList"
+		description="Custom component: com.mindfusion.scheduling.DateList"
+		visible="true"
+		class="com.mindfusion.scheduling.DateList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DateStyle_1576405237462"
+		name="DateStyle"
+		description="Custom component: com.mindfusion.scheduling.DateStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.DateStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DateStyleList_1576405237462"
+		name="DateStyleList"
+		description="Custom component: com.mindfusion.scheduling.DateStyleList"
+		visible="true"
+		class="com.mindfusion.scheduling.DateStyleList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DateTimeInfo_1576405237462"
+		name="DateTimeInfo"
+		description="Custom component: com.mindfusion.scheduling.DateTimeInfo"
+		visible="true"
+		class="com.mindfusion.scheduling.DateTimeInfo"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DayOfWeekFormat_1576405237462"
+		name="DayOfWeekFormat"
+		description="Custom component: com.mindfusion.scheduling.DayOfWeekFormat"
+		visible="true"
+		class="com.mindfusion.scheduling.DayOfWeekFormat"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DayOfWeekStyle_1576405237462"
+		name="DayOfWeekStyle"
+		description="Custom component: com.mindfusion.scheduling.DayOfWeekStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.DayOfWeekStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DayOfWeekStyleList_1576405237462"
+		name="DayOfWeekStyleList"
+		description="Custom component: com.mindfusion.scheduling.DayOfWeekStyleList"
+		visible="true"
+		class="com.mindfusion.scheduling.DayOfWeekStyleList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.DragDropEffects_1576405237462"
+		name="DragDropEffects"
+		description="Custom component: com.mindfusion.scheduling.DragDropEffects"
+		visible="true"
+		class="com.mindfusion.scheduling.DragDropEffects"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.E_1576405237462"
+		name="E"
+		description="Custom component: com.mindfusion.scheduling.E"
+		visible="true"
+		class="com.mindfusion.scheduling.E"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.e_1576405237462"
+		name="e"
+		description="Custom component: com.mindfusion.scheduling.e"
+		visible="true"
+		class="com.mindfusion.scheduling.e"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.F_1576405237462"
+		name="F"
+		description="Custom component: com.mindfusion.scheduling.F"
+		visible="true"
+		class="com.mindfusion.scheduling.F"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.f_1576405237462"
+		name="f"
+		description="Custom component: com.mindfusion.scheduling.f"
+		visible="true"
+		class="com.mindfusion.scheduling.f"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.G_1576405237462"
+		name="G"
+		description="Custom component: com.mindfusion.scheduling.G"
+		visible="true"
+		class="com.mindfusion.scheduling.G"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.g_1576405237462"
+		name="g"
+		description="Custom component: com.mindfusion.scheduling.g"
+		visible="true"
+		class="com.mindfusion.scheduling.g"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.GlassEffect_1576405237462"
+		name="GlassEffect"
+		description="Custom component: com.mindfusion.scheduling.GlassEffect"
+		visible="true"
+		class="com.mindfusion.scheduling.GlassEffect"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.GlassEffectType_1576405237462"
+		name="GlassEffectType"
+		description="Custom component: com.mindfusion.scheduling.GlassEffectType"
+		visible="true"
+		class="com.mindfusion.scheduling.GlassEffectType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.GroupType_1576405237462"
+		name="GroupType"
+		description="Custom component: com.mindfusion.scheduling.GroupType"
+		visible="true"
+		class="com.mindfusion.scheduling.GroupType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.H_1576405237462"
+		name="H"
+		description="Custom component: com.mindfusion.scheduling.H"
+		visible="true"
+		class="com.mindfusion.scheduling.H"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.h_1576405237462"
+		name="h"
+		description="Custom component: com.mindfusion.scheduling.h"
+		visible="true"
+		class="com.mindfusion.scheduling.h"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.I_1576405237462"
+		name="I"
+		description="Custom component: com.mindfusion.scheduling.I"
+		visible="true"
+		class="com.mindfusion.scheduling.I"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.i_1576405237462"
+		name="i"
+		description="Custom component: com.mindfusion.scheduling.i"
+		visible="true"
+		class="com.mindfusion.scheduling.i"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ImageList_1576405237462"
+		name="ImageList"
+		description="Custom component: com.mindfusion.scheduling.ImageList"
+		visible="true"
+		class="com.mindfusion.scheduling.ImageList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemAction_1576405237462"
+		name="ItemAction"
+		description="Custom component: com.mindfusion.scheduling.ItemAction"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemAction"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemConfirmEvent_1576405237462"
+		name="ItemConfirmEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemConfirmEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemConfirmEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemDrawContext_1576405237462"
+		name="ItemDrawContext"
+		description="Custom component: com.mindfusion.scheduling.ItemDrawContext"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemDrawContext"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemEditConfirmEvent_1576405237462"
+		name="ItemEditConfirmEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemEditConfirmEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemEditConfirmEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemEditContext_1576405237462"
+		name="ItemEditContext"
+		description="Custom component: com.mindfusion.scheduling.ItemEditContext"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemEditContext"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemEditor_1576405237462"
+		name="ItemEditor"
+		description="Custom component: com.mindfusion.scheduling.ItemEditor"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemEditor"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemEditorAttribute_1576405237462"
+		name="ItemEditorAttribute"
+		description="Custom component: com.mindfusion.scheduling.ItemEditorAttribute"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemEditorAttribute"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemEffect_1576405237462"
+		name="ItemEffect"
+		description="Custom component: com.mindfusion.scheduling.ItemEffect"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemEffect"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemListLaneChangedEvent_1576405237462"
+		name="ItemListLaneChangedEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemListLaneChangedEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemListLaneChangedEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemModificationStyle_1576405237462"
+		name="ItemModificationStyle"
+		description="Custom component: com.mindfusion.scheduling.ItemModificationStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemModificationStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemModifiedEvent_1576405237462"
+		name="ItemModifiedEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemModifiedEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemModifiedEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemModifyConfirmEvent_1576405237462"
+		name="ItemModifyConfirmEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemModifyConfirmEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemModifyConfirmEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemMouseEvent_1576405237462"
+		name="ItemMouseEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemMouseEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemMouseEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemSelection_1576405237462"
+		name="ItemSelection"
+		description="Custom component: com.mindfusion.scheduling.ItemSelection"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemSelection"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemSelectionEvent_1576405237462"
+		name="ItemSelectionEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemSelectionEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemSelectionEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemSettings_1576405237462"
+		name="ItemSettings"
+		description="Custom component: com.mindfusion.scheduling.ItemSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemsEvent_1576405237462"
+		name="ItemsEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemsEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemsEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemTooltipEvent_1576405237462"
+		name="ItemTooltipEvent"
+		description="Custom component: com.mindfusion.scheduling.ItemTooltipEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemTooltipEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemViewer_1576405237462"
+		name="ItemViewer"
+		description="Custom component: com.mindfusion.scheduling.ItemViewer"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemViewer"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ItemViewerAttribute_1576405237462"
+		name="ItemViewerAttribute"
+		description="Custom component: com.mindfusion.scheduling.ItemViewerAttribute"
+		visible="true"
+		class="com.mindfusion.scheduling.ItemViewerAttribute"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.J_1576405237462"
+		name="J"
+		description="Custom component: com.mindfusion.scheduling.J"
+		visible="true"
+		class="com.mindfusion.scheduling.J"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.j_1576405237462"
+		name="j"
+		description="Custom component: com.mindfusion.scheduling.j"
+		visible="true"
+		class="com.mindfusion.scheduling.j"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.K_1576405237462"
+		name="K"
+		description="Custom component: com.mindfusion.scheduling.K"
+		visible="true"
+		class="com.mindfusion.scheduling.K"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.k_1576405237462"
+		name="k"
+		description="Custom component: com.mindfusion.scheduling.k"
+		visible="true"
+		class="com.mindfusion.scheduling.k"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.L_1576405237462"
+		name="L"
+		description="Custom component: com.mindfusion.scheduling.L"
+		visible="true"
+		class="com.mindfusion.scheduling.L"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.l_1576405237462"
+		name="l"
+		description="Custom component: com.mindfusion.scheduling.l"
+		visible="true"
+		class="com.mindfusion.scheduling.l"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.LineStyle_1576405237462"
+		name="LineStyle"
+		description="Custom component: com.mindfusion.scheduling.LineStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.LineStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ListViewHeaderStyles_1576405237462"
+		name="ListViewHeaderStyles"
+		description="Custom component: com.mindfusion.scheduling.ListViewHeaderStyles"
+		visible="true"
+		class="com.mindfusion.scheduling.ListViewHeaderStyles"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ListViewSettings_1576405237462"
+		name="ListViewSettings"
+		description="Custom component: com.mindfusion.scheduling.ListViewSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.ListViewSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.M_1576405237462"
+		name="M"
+		description="Custom component: com.mindfusion.scheduling.M"
+		visible="true"
+		class="com.mindfusion.scheduling.M"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.m_1576405237462"
+		name="m"
+		description="Custom component: com.mindfusion.scheduling.m"
+		visible="true"
+		class="com.mindfusion.scheduling.m"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MinuteFormat_1576405237462"
+		name="MinuteFormat"
+		description="Custom component: com.mindfusion.scheduling.MinuteFormat"
+		visible="true"
+		class="com.mindfusion.scheduling.MinuteFormat"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.a_1576405237462"
+		name="a"
+		description="Custom component: com.mindfusion.scheduling.model.a"
+		visible="true"
+		class="com.mindfusion.scheduling.model.a"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.AddItemCommand_1576405237462"
+		name="AddItemCommand"
+		description="Custom component: com.mindfusion.scheduling.model.AddItemCommand"
+		visible="true"
+		class="com.mindfusion.scheduling.model.AddItemCommand"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Appointment_1576405237462"
+		name="Appointment"
+		description="Custom component: com.mindfusion.scheduling.model.Appointment"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Appointment"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.b_1576405237462"
+		name="b"
+		description="Custom component: com.mindfusion.scheduling.model.b"
+		visible="true"
+		class="com.mindfusion.scheduling.model.b"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.c_1576405237462"
+		name="c"
+		description="Custom component: com.mindfusion.scheduling.model.c"
+		visible="true"
+		class="com.mindfusion.scheduling.model.c"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ChangeItemCommand_1576405237462"
+		name="ChangeItemCommand"
+		description="Custom component: com.mindfusion.scheduling.model.ChangeItemCommand"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ChangeItemCommand"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Command_1576405237462"
+		name="Command"
+		description="Custom component: com.mindfusion.scheduling.model.Command"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Command"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.CompositeCommand_1576405237462"
+		name="CompositeCommand"
+		description="Custom component: com.mindfusion.scheduling.model.CompositeCommand"
+		visible="true"
+		class="com.mindfusion.scheduling.model.CompositeCommand"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Contact_1576405237462"
+		name="Contact"
+		description="Custom component: com.mindfusion.scheduling.model.Contact"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Contact"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ContentType_1576405237462"
+		name="ContentType"
+		description="Custom component: com.mindfusion.scheduling.model.ContentType"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ContentType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.CustomBrushes_1576405237462"
+		name="CustomBrushes"
+		description="Custom component: com.mindfusion.scheduling.model.CustomBrushes"
+		visible="true"
+		class="com.mindfusion.scheduling.model.CustomBrushes"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.d_1576405237462"
+		name="d"
+		description="Custom component: com.mindfusion.scheduling.model.d"
+		visible="true"
+		class="com.mindfusion.scheduling.model.d"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.DailyRecurrence_1576405237462"
+		name="DailyRecurrence"
+		description="Custom component: com.mindfusion.scheduling.model.DailyRecurrence"
+		visible="true"
+		class="com.mindfusion.scheduling.model.DailyRecurrence"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.DayOfWeekType_1576405237462"
+		name="DayOfWeekType"
+		description="Custom component: com.mindfusion.scheduling.model.DayOfWeekType"
+		visible="true"
+		class="com.mindfusion.scheduling.model.DayOfWeekType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.e_1576405237462"
+		name="e"
+		description="Custom component: com.mindfusion.scheduling.model.e"
+		visible="true"
+		class="com.mindfusion.scheduling.model.e"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ExceptionCreatedEvent_1576405237462"
+		name="ExceptionCreatedEvent"
+		description="Custom component: com.mindfusion.scheduling.model.ExceptionCreatedEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ExceptionCreatedEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.f_1576405237462"
+		name="f"
+		description="Custom component: com.mindfusion.scheduling.model.f"
+		visible="true"
+		class="com.mindfusion.scheduling.model.f"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.g_1576405237462"
+		name="g"
+		description="Custom component: com.mindfusion.scheduling.model.g"
+		visible="true"
+		class="com.mindfusion.scheduling.model.g"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.h_1576405237462"
+		name="h"
+		description="Custom component: com.mindfusion.scheduling.model.h"
+		visible="true"
+		class="com.mindfusion.scheduling.model.h"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.i_1576405237462"
+		name="i"
+		description="Custom component: com.mindfusion.scheduling.model.i"
+		visible="true"
+		class="com.mindfusion.scheduling.model.i"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.InstantiateItemEvent_1576405237462"
+		name="InstantiateItemEvent"
+		description="Custom component: com.mindfusion.scheduling.model.InstantiateItemEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.InstantiateItemEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.InstantiateResourceEvent_1576405237462"
+		name="InstantiateResourceEvent"
+		description="Custom component: com.mindfusion.scheduling.model.InstantiateResourceEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.InstantiateResourceEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Item_1576405237462"
+		name="Item"
+		description="Custom component: com.mindfusion.scheduling.model.Item"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Item"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemAdapter_1576405237462"
+		name="ItemAdapter"
+		description="Custom component: com.mindfusion.scheduling.model.ItemAdapter"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemAdapter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemEvent_1576405237462"
+		name="ItemEvent"
+		description="Custom component: com.mindfusion.scheduling.model.ItemEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemFinder_1576405237462"
+		name="ItemFinder"
+		description="Custom component: com.mindfusion.scheduling.model.ItemFinder"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemFinder"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemList_1576405237462"
+		name="ItemList"
+		description="Custom component: com.mindfusion.scheduling.model.ItemList"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemListener_1576405237462"
+		name="ItemListener"
+		description="Custom component: com.mindfusion.scheduling.model.ItemListener"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemState_1576405237462"
+		name="ItemState"
+		description="Custom component: com.mindfusion.scheduling.model.ItemState"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemState"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ItemTimeEvent_1576405237462"
+		name="ItemTimeEvent"
+		description="Custom component: com.mindfusion.scheduling.model.ItemTimeEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ItemTimeEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.j_1576405237462"
+		name="j"
+		description="Custom component: com.mindfusion.scheduling.model.j"
+		visible="true"
+		class="com.mindfusion.scheduling.model.j"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.k_1576405237462"
+		name="k"
+		description="Custom component: com.mindfusion.scheduling.model.k"
+		visible="true"
+		class="com.mindfusion.scheduling.model.k"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.l_1576405237462"
+		name="l"
+		description="Custom component: com.mindfusion.scheduling.model.l"
+		visible="true"
+		class="com.mindfusion.scheduling.model.l"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Location_1576405237462"
+		name="Location"
+		description="Custom component: com.mindfusion.scheduling.model.Location"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Location"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.m_1576405237462"
+		name="m"
+		description="Custom component: com.mindfusion.scheduling.model.m"
+		visible="true"
+		class="com.mindfusion.scheduling.model.m"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.MonthlyRecurrence_1576405237462"
+		name="MonthlyRecurrence"
+		description="Custom component: com.mindfusion.scheduling.model.MonthlyRecurrence"
+		visible="true"
+		class="com.mindfusion.scheduling.model.MonthlyRecurrence"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.n_1576405237462"
+		name="n"
+		description="Custom component: com.mindfusion.scheduling.model.n"
+		visible="true"
+		class="com.mindfusion.scheduling.model.n"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.o_1576405237462"
+		name="o"
+		description="Custom component: com.mindfusion.scheduling.model.o"
+		visible="true"
+		class="com.mindfusion.scheduling.model.o"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Occurrence_1576405237462"
+		name="Occurrence"
+		description="Custom component: com.mindfusion.scheduling.model.Occurrence"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Occurrence"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.p_1576405237462"
+		name="p"
+		description="Custom component: com.mindfusion.scheduling.model.p"
+		visible="true"
+		class="com.mindfusion.scheduling.model.p"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.q_1576405237462"
+		name="q"
+		description="Custom component: com.mindfusion.scheduling.model.q"
+		visible="true"
+		class="com.mindfusion.scheduling.model.q"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.r_1576405237462"
+		name="r"
+		description="Custom component: com.mindfusion.scheduling.model.r"
+		visible="true"
+		class="com.mindfusion.scheduling.model.r"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Recurrence_1576405237462"
+		name="Recurrence"
+		description="Custom component: com.mindfusion.scheduling.model.Recurrence"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Recurrence"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RecurrenceAdapter_1576405237462"
+		name="RecurrenceAdapter"
+		description="Custom component: com.mindfusion.scheduling.model.RecurrenceAdapter"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RecurrenceAdapter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RecurrenceEnd_1576405237462"
+		name="RecurrenceEnd"
+		description="Custom component: com.mindfusion.scheduling.model.RecurrenceEnd"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RecurrenceEnd"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RecurrenceException_1576405237462"
+		name="RecurrenceException"
+		description="Custom component: com.mindfusion.scheduling.model.RecurrenceException"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RecurrenceException"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RecurrenceListener_1576405237462"
+		name="RecurrenceListener"
+		description="Custom component: com.mindfusion.scheduling.model.RecurrenceListener"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RecurrenceListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RecurrencePattern_1576405237462"
+		name="RecurrencePattern"
+		description="Custom component: com.mindfusion.scheduling.model.RecurrencePattern"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RecurrencePattern"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RecurrenceState_1576405237462"
+		name="RecurrenceState"
+		description="Custom component: com.mindfusion.scheduling.model.RecurrenceState"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RecurrenceState"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Reminder_1576405237462"
+		name="Reminder"
+		description="Custom component: com.mindfusion.scheduling.model.Reminder"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Reminder"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ReminderType_1576405237462"
+		name="ReminderType"
+		description="Custom component: com.mindfusion.scheduling.model.ReminderType"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ReminderType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.RemoveItemCommand_1576405237462"
+		name="RemoveItemCommand"
+		description="Custom component: com.mindfusion.scheduling.model.RemoveItemCommand"
+		visible="true"
+		class="com.mindfusion.scheduling.model.RemoveItemCommand"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Resource_1576405237462"
+		name="Resource"
+		description="Custom component: com.mindfusion.scheduling.model.Resource"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Resource"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ResourceList_1576405237462"
+		name="ResourceList"
+		description="Custom component: com.mindfusion.scheduling.model.ResourceList"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ResourceList"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Resources_1576405237462"
+		name="Resources"
+		description="Custom component: com.mindfusion.scheduling.model.Resources"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Resources"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.s_1576405237462"
+		name="s"
+		description="Custom component: com.mindfusion.scheduling.model.s"
+		visible="true"
+		class="com.mindfusion.scheduling.model.s"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Schedule_1576405237462"
+		name="Schedule"
+		description="Custom component: com.mindfusion.scheduling.model.Schedule"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Schedule"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ScheduleAdapter_1576405237462"
+		name="ScheduleAdapter"
+		description="Custom component: com.mindfusion.scheduling.model.ScheduleAdapter"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ScheduleAdapter"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ScheduleListener_1576405237462"
+		name="ScheduleListener"
+		description="Custom component: com.mindfusion.scheduling.model.ScheduleListener"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ScheduleListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.SerializationContext_1576405237462"
+		name="SerializationContext"
+		description="Custom component: com.mindfusion.scheduling.model.SerializationContext"
+		visible="true"
+		class="com.mindfusion.scheduling.model.SerializationContext"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.SerializationContextListener_1576405237462"
+		name="SerializationContextListener"
+		description="Custom component: com.mindfusion.scheduling.model.SerializationContextListener"
+		visible="true"
+		class="com.mindfusion.scheduling.model.SerializationContextListener"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.SerializeTagEvent_1576405237462"
+		name="SerializeTagEvent"
+		description="Custom component: com.mindfusion.scheduling.model.SerializeTagEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.SerializeTagEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ShadowStyle_1576405237462"
+		name="ShadowStyle"
+		description="Custom component: com.mindfusion.scheduling.model.ShadowStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ShadowStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Style_1576405237462"
+		name="Style"
+		description="Custom component: com.mindfusion.scheduling.model.Style"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Style"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.SystemCalendar_1576405237462"
+		name="SystemCalendar"
+		description="Custom component: com.mindfusion.scheduling.model.SystemCalendar"
+		visible="true"
+		class="com.mindfusion.scheduling.model.SystemCalendar"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.t_1576405237462"
+		name="t"
+		description="Custom component: com.mindfusion.scheduling.model.t"
+		visible="true"
+		class="com.mindfusion.scheduling.model.t"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.Task_1576405237462"
+		name="Task"
+		description="Custom component: com.mindfusion.scheduling.model.Task"
+		visible="true"
+		class="com.mindfusion.scheduling.model.Task"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.TaskEvent_1576405237462"
+		name="TaskEvent"
+		description="Custom component: com.mindfusion.scheduling.model.TaskEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.TaskEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.TaskPriority_1576405237462"
+		name="TaskPriority"
+		description="Custom component: com.mindfusion.scheduling.model.TaskPriority"
+		visible="true"
+		class="com.mindfusion.scheduling.model.TaskPriority"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.TaskStatus_1576405237462"
+		name="TaskStatus"
+		description="Custom component: com.mindfusion.scheduling.model.TaskStatus"
+		visible="true"
+		class="com.mindfusion.scheduling.model.TaskStatus"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.TimeRanges_1576405237462"
+		name="TimeRanges"
+		description="Custom component: com.mindfusion.scheduling.model.TimeRanges"
+		visible="true"
+		class="com.mindfusion.scheduling.model.TimeRanges"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.u_1576405237462"
+		name="u"
+		description="Custom component: com.mindfusion.scheduling.model.u"
+		visible="true"
+		class="com.mindfusion.scheduling.model.u"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.UndoEvent_1576405237462"
+		name="UndoEvent"
+		description="Custom component: com.mindfusion.scheduling.model.UndoEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.UndoEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.v_1576405237462"
+		name="v"
+		description="Custom component: com.mindfusion.scheduling.model.v"
+		visible="true"
+		class="com.mindfusion.scheduling.model.v"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.ValidateOccurrenceEvent_1576405237462"
+		name="ValidateOccurrenceEvent"
+		description="Custom component: com.mindfusion.scheduling.model.ValidateOccurrenceEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.model.ValidateOccurrenceEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.w_1576405237462"
+		name="w"
+		description="Custom component: com.mindfusion.scheduling.model.w"
+		visible="true"
+		class="com.mindfusion.scheduling.model.w"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.XmlException_1576405237462"
+		name="XmlException"
+		description="Custom component: com.mindfusion.scheduling.model.XmlException"
+		visible="true"
+		class="com.mindfusion.scheduling.model.XmlException"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.XmlSerializationContext_1576405237462"
+		name="XmlSerializationContext"
+		description="Custom component: com.mindfusion.scheduling.model.XmlSerializationContext"
+		visible="true"
+		class="com.mindfusion.scheduling.model.XmlSerializationContext"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.model.YearlyRecurrence_1576405237462"
+		name="YearlyRecurrence"
+		description="Custom component: com.mindfusion.scheduling.model.YearlyRecurrence"
+		visible="true"
+		class="com.mindfusion.scheduling.model.YearlyRecurrence"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ModifiedItemInfo_1576405237462"
+		name="ModifiedItemInfo"
+		description="Custom component: com.mindfusion.scheduling.ModifiedItemInfo"
+		visible="true"
+		class="com.mindfusion.scheduling.ModifiedItemInfo"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MonthCellLayout_1576405237462"
+		name="MonthCellLayout"
+		description="Custom component: com.mindfusion.scheduling.MonthCellLayout"
+		visible="true"
+		class="com.mindfusion.scheduling.MonthCellLayout"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MonthHeaderStyles_1576405237462"
+		name="MonthHeaderStyles"
+		description="Custom component: com.mindfusion.scheduling.MonthHeaderStyles"
+		visible="true"
+		class="com.mindfusion.scheduling.MonthHeaderStyles"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MonthRangeHeaderStyles_1576405237462"
+		name="MonthRangeHeaderStyles"
+		description="Custom component: com.mindfusion.scheduling.MonthRangeHeaderStyles"
+		visible="true"
+		class="com.mindfusion.scheduling.MonthRangeHeaderStyles"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MonthRangeSettings_1576405237462"
+		name="MonthRangeSettings"
+		description="Custom component: com.mindfusion.scheduling.MonthRangeSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.MonthRangeSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MonthSettings_1576405237462"
+		name="MonthSettings"
+		description="Custom component: com.mindfusion.scheduling.MonthSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.MonthSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.MonthWeekHeaderStyle_1576405237462"
+		name="MonthWeekHeaderStyle"
+		description="Custom component: com.mindfusion.scheduling.MonthWeekHeaderStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.MonthWeekHeaderStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.N_1576405237462"
+		name="N"
+		description="Custom component: com.mindfusion.scheduling.N"
+		visible="true"
+		class="com.mindfusion.scheduling.N"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.n_1576405237462"
+		name="n"
+		description="Custom component: com.mindfusion.scheduling.n"
+		visible="true"
+		class="com.mindfusion.scheduling.n"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.O_1576405237462"
+		name="O"
+		description="Custom component: com.mindfusion.scheduling.O"
+		visible="true"
+		class="com.mindfusion.scheduling.O"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.o_1576405237462"
+		name="o"
+		description="Custom component: com.mindfusion.scheduling.o"
+		visible="true"
+		class="com.mindfusion.scheduling.o"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.P_1576405237462"
+		name="P"
+		description="Custom component: com.mindfusion.scheduling.P"
+		visible="true"
+		class="com.mindfusion.scheduling.P"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.p_1576405237462"
+		name="p"
+		description="Custom component: com.mindfusion.scheduling.p"
+		visible="true"
+		class="com.mindfusion.scheduling.p"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.package-info_1576405237462"
+		name="package-info"
+		description="Custom component: com.mindfusion.scheduling.package-info"
+		visible="true"
+		class="com.mindfusion.scheduling.package-info"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Position_1576405237462"
+		name="Position"
+		description="Custom component: com.mindfusion.scheduling.Position"
+		visible="true"
+		class="com.mindfusion.scheduling.Position"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.PreviewTextKey_1576405237462"
+		name="PreviewTextKey"
+		description="Custom component: com.mindfusion.scheduling.PreviewTextKey"
+		visible="true"
+		class="com.mindfusion.scheduling.PreviewTextKey"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.PrintOptions_1576405237462"
+		name="PrintOptions"
+		description="Custom component: com.mindfusion.scheduling.PrintOptions"
+		visible="true"
+		class="com.mindfusion.scheduling.PrintOptions"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Q_1576405237462"
+		name="Q"
+		description="Custom component: com.mindfusion.scheduling.Q"
+		visible="true"
+		class="com.mindfusion.scheduling.Q"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.q_1576405237462"
+		name="q"
+		description="Custom component: com.mindfusion.scheduling.q"
+		visible="true"
+		class="com.mindfusion.scheduling.q"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.R_1576405237462"
+		name="R"
+		description="Custom component: com.mindfusion.scheduling.R"
+		visible="true"
+		class="com.mindfusion.scheduling.R"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.r_1576405237462"
+		name="r"
+		description="Custom component: com.mindfusion.scheduling.r"
+		visible="true"
+		class="com.mindfusion.scheduling.r"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.RecurringItemConfirmEvent_1576405237462"
+		name="RecurringItemConfirmEvent"
+		description="Custom component: com.mindfusion.scheduling.RecurringItemConfirmEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.RecurringItemConfirmEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ResourceDateEvent_1576405237462"
+		name="ResourceDateEvent"
+		description="Custom component: com.mindfusion.scheduling.ResourceDateEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.ResourceDateEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ResourceLengthMethod_1576405237462"
+		name="ResourceLengthMethod"
+		description="Custom component: com.mindfusion.scheduling.ResourceLengthMethod"
+		visible="true"
+		class="com.mindfusion.scheduling.ResourceLengthMethod"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ResourceResizeMethod_1576405237462"
+		name="ResourceResizeMethod"
+		description="Custom component: com.mindfusion.scheduling.ResourceResizeMethod"
+		visible="true"
+		class="com.mindfusion.scheduling.ResourceResizeMethod"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ResourceViewSettings_1576405237462"
+		name="ResourceViewSettings"
+		description="Custom component: com.mindfusion.scheduling.ResourceViewSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.ResourceViewSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ResourceViewStyle_1576405237462"
+		name="ResourceViewStyle"
+		description="Custom component: com.mindfusion.scheduling.ResourceViewStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.ResourceViewStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.S_1576405237462"
+		name="S"
+		description="Custom component: com.mindfusion.scheduling.S"
+		visible="true"
+		class="com.mindfusion.scheduling.S"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.s_1576405237462"
+		name="s"
+		description="Custom component: com.mindfusion.scheduling.s"
+		visible="true"
+		class="com.mindfusion.scheduling.s"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Selection_1576405237462"
+		name="Selection"
+		description="Custom component: com.mindfusion.scheduling.Selection"
+		visible="true"
+		class="com.mindfusion.scheduling.Selection"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.SelectionState_1576405237462"
+		name="SelectionState"
+		description="Custom component: com.mindfusion.scheduling.SelectionState"
+		visible="true"
+		class="com.mindfusion.scheduling.SelectionState"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.SelectionStyle_1576405237462"
+		name="SelectionStyle"
+		description="Custom component: com.mindfusion.scheduling.SelectionStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.SelectionStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ShowClocks_1576405237462"
+		name="ShowClocks"
+		description="Custom component: com.mindfusion.scheduling.ShowClocks"
+		visible="true"
+		class="com.mindfusion.scheduling.ShowClocks"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.T_1576405237462"
+		name="T"
+		description="Custom component: com.mindfusion.scheduling.T"
+		visible="true"
+		class="com.mindfusion.scheduling.T"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.t_1576405237462"
+		name="t"
+		description="Custom component: com.mindfusion.scheduling.t"
+		visible="true"
+		class="com.mindfusion.scheduling.t"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Theme_1576405237462"
+		name="Theme"
+		description="Custom component: com.mindfusion.scheduling.Theme"
+		visible="true"
+		class="com.mindfusion.scheduling.Theme"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ThemeType_1576405237462"
+		name="ThemeType"
+		description="Custom component: com.mindfusion.scheduling.ThemeType"
+		visible="true"
+		class="com.mindfusion.scheduling.ThemeType"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.TimelineSettings_1576405237462"
+		name="TimelineSettings"
+		description="Custom component: com.mindfusion.scheduling.TimelineSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.TimelineSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.TimetableSettings_1576405237462"
+		name="TimetableSettings"
+		description="Custom component: com.mindfusion.scheduling.TimetableSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.TimetableSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.TimeUnit_1576405237462"
+		name="TimeUnit"
+		description="Custom component: com.mindfusion.scheduling.TimeUnit"
+		visible="true"
+		class="com.mindfusion.scheduling.TimeUnit"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.TooltipEvent_1576405237462"
+		name="TooltipEvent"
+		description="Custom component: com.mindfusion.scheduling.TooltipEvent"
+		visible="true"
+		class="com.mindfusion.scheduling.TooltipEvent"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.U_1576405237462"
+		name="U"
+		description="Custom component: com.mindfusion.scheduling.U"
+		visible="true"
+		class="com.mindfusion.scheduling.U"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.u_1576405237462"
+		name="u"
+		description="Custom component: com.mindfusion.scheduling.u"
+		visible="true"
+		class="com.mindfusion.scheduling.u"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Utilities_1576405237462"
+		name="Utilities"
+		description="Custom component: com.mindfusion.scheduling.Utilities"
+		visible="true"
+		class="com.mindfusion.scheduling.Utilities"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.V_1576405237462"
+		name="V"
+		description="Custom component: com.mindfusion.scheduling.V"
+		visible="true"
+		class="com.mindfusion.scheduling.V"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.v_1576405237462"
+		name="v"
+		description="Custom component: com.mindfusion.scheduling.v"
+		visible="true"
+		class="com.mindfusion.scheduling.v"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.ViewSettings_1576405237462"
+		name="ViewSettings"
+		description="Custom component: com.mindfusion.scheduling.ViewSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.ViewSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.W_1576405237462"
+		name="W"
+		description="Custom component: com.mindfusion.scheduling.W"
+		visible="true"
+		class="com.mindfusion.scheduling.W"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.w_1576405237462"
+		name="w"
+		description="Custom component: com.mindfusion.scheduling.w"
+		visible="true"
+		class="com.mindfusion.scheduling.w"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.WeekRangeHeaderStyle_1576405237462"
+		name="WeekRangeHeaderStyle"
+		description="Custom component: com.mindfusion.scheduling.WeekRangeHeaderStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.WeekRangeHeaderStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.WeekRangeSettings_1576405237462"
+		name="WeekRangeSettings"
+		description="Custom component: com.mindfusion.scheduling.WeekRangeSettings"
+		visible="true"
+		class="com.mindfusion.scheduling.WeekRangeSettings"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.WeekRangeViewStyle_1576405237462"
+		name="WeekRangeViewStyle"
+		description="Custom component: com.mindfusion.scheduling.WeekRangeViewStyle"
+		visible="true"
+		class="com.mindfusion.scheduling.WeekRangeViewStyle"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.X_1576405237462"
+		name="X"
+		description="Custom component: com.mindfusion.scheduling.X"
+		visible="true"
+		class="com.mindfusion.scheduling.X"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.x_1576405237462"
+		name="x"
+		description="Custom component: com.mindfusion.scheduling.x"
+		visible="true"
+		class="com.mindfusion.scheduling.x"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Y_1576405237462"
+		name="Y"
+		description="Custom component: com.mindfusion.scheduling.Y"
+		visible="true"
+		class="com.mindfusion.scheduling.Y"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.y_1576405237462"
+		name="y"
+		description="Custom component: com.mindfusion.scheduling.y"
+		visible="true"
+		class="com.mindfusion.scheduling.y"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.Z_1576405237462"
+		name="Z"
+		description="Custom component: com.mindfusion.scheduling.Z"
+		visible="true"
+		class="com.mindfusion.scheduling.Z"
+		category="JPlanner_1576405237462"/>
+	<addComponent
+		id="com.mindfusion.scheduling.z_1576405237462"
+		name="z"
+		description="Custom component: com.mindfusion.scheduling.z"
+		visible="true"
+		class="com.mindfusion.scheduling.z"
+		category="JPlanner_1576405237462"/>
+</commands>

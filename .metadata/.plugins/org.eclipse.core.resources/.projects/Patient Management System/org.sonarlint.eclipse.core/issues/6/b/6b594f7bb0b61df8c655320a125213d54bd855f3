@@ -1,18 +1,26 @@
 
-\squid:S1444",Make this "public static userId" field final(Ó¡â±HŒ<RMINORZVULNERABILITY
-™"squid:ClassVariableVisibilityCheck"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H<RMINORZVULNERABILITY
-Zsquid:S1604"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHŽ<RMAJORZ
+gsquid:S2209 "5Change this instance-reference to a static reference.(õÞŸ¶ùÿÿÿÿHËLRMAJORZ
 CODE_SMELL
-Usquid:S1604;"(Make this anonymous inner class a lambda(‹Ô¡H<RMAJORZ
+€squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ž¬£ëøÿÿÿÿHÌLRMAJORZ
 CODE_SMELL
-ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¤ï­H<RMINORZ
+†squid:S00117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÃÚç8Ÿˆ¾òð-HÍLRMINORZ
 CODE_SMELL
-Xsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿH‘<RMINORZVULNERABILITY
-€squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(ž¬£ëøÿÿÿÿH’<RMAJORZ
+™"squid:ClassVariableVisibilityCheck"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HÎLRMINORZVULNERABILITY
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¤ï­H¬LRMINORZ
 CODE_SMELL
-gsquid:S2209"5Change this instance-reference to a static reference.(õÞŸ¶ùÿÿÿÿH“<RMAJORZ
+Hsquid:S36264"Remove this redundant jump.(ûÁÝ…HÏLRMINORZ
 CODE_SMELL
-Hsquid:S3626/"Remove this redundant jump.(ûÁÝ…H”<RMINORZ
+\squid:S1444",Make this "public static userId" field final(Ó¡â±HÐLRMINORZVULNERABILITY
+Xsquid:S1148""#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿHÑLRMINORZVULNERABILITY
+|squid:S001002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HÒLRMINORZ
 CODE_SMELL
-|squid:S00100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H•<RMINORZ
+Zsquid:S1604"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHÓLRMAJORZ
+CODE_SMELL
+Usquid:S1604@"(Make this anonymous inner class a lambda(‹Ô¡HÔLRMAJORZ
+CODE_SMELL
+†squid:S00117l"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8Ÿˆ¾òð-HÕLRMINORZ
+CODE_SMELL
+Œsquid:S00117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òß¶Ûúÿÿÿÿ8êÕòð-HÖLRMINORZ
+CODE_SMELL
+–squid:S1450"]Remove the "txtNewMedicine" field and declare it as a local variable in the relevant methods.(Ž‡™óøÿÿÿÿ8êÕòð-H×LRMINORZ
 CODE_SMELL

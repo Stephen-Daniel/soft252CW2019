@@ -1,25 +1,25 @@
 
-Xsquid:S11722",Remove this unused method parameter "temps".(ŠÛÊ~HÚ;RMAJORZ
+Xsquid:S11722",Remove this unused method parameter "temps".(ŠÛÊ~HğFRMAJORZ
 CODE_SMELL
-tsquid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8Š¬İŞí-HÙ;RMINORZ
+œ"squid:ClassVariableVisibilityCheck"UMake tempFiles a static final constant or non-public and provide accessors if needed.(ÅÁ³£HñFRMINORZVULNERABILITY
+usquid:UselessImportCheck"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃıÿÿÿÿ8çÆ…€î-HòFRMINORZ
 CODE_SMELL
-ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦HØ;RMINORZ
+ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦HóFRMINORZ
+CODE_SMELL
+‚squid:S001002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÛÊ~8¼í­î-HôFRMINORZ
+CODE_SMELL
+Usquid:S16046"(Make this anonymous inner class a lambda(‹Ü¬¡HõFRMAJORZ
+CODE_SMELL
+¶squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(î½°•üÿÿÿÿHöFRCRITICALZ
+CODE_SMELL
+{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‘ûÉ£H÷FRMINORZ
 CODE_SMELL
 ssquid:UselessImportCheck
-"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8ŞêŸüî-H×;RMINORZ
+"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8ŞêŸüî-HøFRMINORZ
 CODE_SMELL
-¤"squid:ClassVariableVisibilityCheck"VMake adminFiles a static final constant or non-public and provide accessors if needed.(ªúœß8ŞêŸüî-HÜ;RMINORZVULNERABILITY
-{squid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(‘ûÉ£Hİ;RMINORZ
+¤"squid:ClassVariableVisibilityCheck"VMake adminFiles a static final constant or non-public and provide accessors if needed.(ªúœß8ŞêŸüî-HùFRMINORZVULNERABILITY
+tsquid:UselessImportCheck".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8Š¬İŞí-HúFRMINORZ
 CODE_SMELL
-‚squid:S001002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠÛÊ~8¼í­î-Hà;RMINORZ
+™"squid:ClassVariableVisibilityCheck"MMake i a static final constant or non-public and provide accessors if needed.(Ö¿²èıÿÿÿÿHûFRMINORZVULNERABILITY
+isquid:UselessImportCheck"/Remove this unused import 'LoginSystem.Person'.(ÖÀú“HüFRMINORZ
 CODE_SMELL
-¶squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(î½°•üÿÿÿÿHŞ;RCRITICALZ
-CODE_SMELL
-Usquid:S16046"(Make this anonymous inner class a lambda(‹Ü¬¡HÛ;RMAJORZ
-CODE_SMELL
-œ"squid:ClassVariableVisibilityCheck"UMake tempFiles a static final constant or non-public and provide accessors if needed.(ÅÁ³£HÖ;RMINORZVULNERABILITY
-isquid:UselessImportCheck"/Remove this unused import 'LoginSystem.Person'.(ÖÀú“HÕ;RMINORZ
-CODE_SMELL
-usquid:UselessImportCheck"/Remove this unused import 'java.io.FileWriter'.(Ã‘ÅÃıÿÿÿÿ8çÆ…€î-HÔ;RMINORZ
-CODE_SMELL
-™"squid:ClassVariableVisibilityCheck"MMake i a static final constant or non-public and provide accessors if needed.(Ö¿²èıÿÿÿÿHß;RMINORZVULNERABILITY

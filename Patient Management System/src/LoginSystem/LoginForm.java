@@ -3,28 +3,20 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.Font;
 import java.awt.event.ActionListener;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.awt.event.ActionEvent;
 import javax.swing.JPasswordField;
-import java.awt.Window.Type;
 import java.awt.Color;
 import javax.swing.SwingConstants;
-import javax.swing.Timer;
-
 import PatientSystem.RequestForm;
-import SecretarySystem.secretary;
-import java.awt.event.InputMethodListener;
-import java.io.File;
-import java.awt.event.InputMethodEvent;
 
 public class LoginForm extends javax.swing.JFrame{
 
+
+	private static final long serialVersionUID = 1L;
 	private static JFrame frmPatientManagementSystem;
 	private JTextField txtUsername;
 	private JLabel lblUsername;
@@ -166,7 +158,7 @@ public class LoginForm extends javax.swing.JFrame{
 		lblMessage.setBounds(100, 360, 500, 20);
 		frmPatientManagementSystem.getContentPane().add(lblMessage);
 		
-		DateTime getDate = new DateTime();
+		MainDate getDate = new MainDate();
 		date = getDate.sendDate(newDate);
 		
 		JLabel lblDate = new JLabel("Date: " + date);
