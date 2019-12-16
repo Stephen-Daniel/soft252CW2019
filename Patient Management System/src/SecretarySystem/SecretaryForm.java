@@ -114,9 +114,6 @@ public class SecretaryForm {
 		frame.dispose();
 		
 	}
-	/**
-	 * Initialize the contents of the frame.
-	 */
 	
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private void initialize() {
