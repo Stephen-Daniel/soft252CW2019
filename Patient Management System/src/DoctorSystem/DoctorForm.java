@@ -50,11 +50,9 @@ public class DoctorForm extends javax.swing.JFrame{
 	}
 	public static void Close() {
 		frame.dispose();
-		return;
+	
 	}
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1001, 660);
@@ -79,18 +77,34 @@ public class DoctorForm extends javax.swing.JFrame{
 		lbldoctorTitle.setText("Doctor " + userId);
 		
 		JButton btnViewAppointments = new JButton("View Appointments");
+		btnViewAppointments.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnViewAppointments.setBounds(12, 41, 214, 25);
 		frame.getContentPane().add(btnViewAppointments);
 		
 		JButton btnMakeAppointments = new JButton("Make/Propose Appointments");
+		btnMakeAppointments.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnMakeAppointments.setBounds(12, 379, 214, 25);
 		frame.getContentPane().add(btnMakeAppointments);
 		
 		JButton btnPrescribeMedicines = new JButton("Prescribe Medicines and Dosage");
+		btnPrescribeMedicines.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnPrescribeMedicines.setBounds(670, 524, 214, 25);
 		frame.getContentPane().add(btnPrescribeMedicines);
 		
 		JButton btnOrdersForSecretary = new JButton("Orders For Secretary");
+		btnOrdersForSecretary.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnOrdersForSecretary.setBounds(114, 566, 162, 25);
 		frame.getContentPane().add(btnOrdersForSecretary);
 		
@@ -143,6 +157,10 @@ public class DoctorForm extends javax.swing.JFrame{
 		txtNewMedicine.setColumns(10);
 		
 		JButton btnCreateMedicine = new JButton("Create Medicine");
+		btnCreateMedicine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnCreateMedicine.setBounds(350, 257, 121, 23);
 		frame.getContentPane().add(btnCreateMedicine);
 		

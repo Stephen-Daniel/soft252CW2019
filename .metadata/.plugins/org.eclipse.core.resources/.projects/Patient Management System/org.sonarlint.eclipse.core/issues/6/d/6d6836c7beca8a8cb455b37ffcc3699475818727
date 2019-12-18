@@ -1,59 +1,59 @@
 
-¢"squid:ClassVariableVisibilityCheck "VMake txtAddress a static final constant or non-public and provide accessors if needed.(Ç–ÕúûÿÿÿÿHÍKRMINORZVULNERABILITY
-qsquid:S2589"7Remove this expression which always evaluates to "true"(öÈéúÿÿÿÿ8ÇòÌ´î-HÔKRMAJORZ
+¤"squid:ClassVariableVisibilityCheck"XMake txtFirstname a static final constant or non-public and provide accessors if needed.(š§øøÿÿÿÿHº_RMINORZVULNERABILITY
+gsquid:S22093"5Change this instance-reference to a static reference.(‘›àƒøÿÿÿÿH»_RMAJORZ
 CODE_SMELL
-`squid:S1444"+Make this "public static frame" field final(¹å‘şøÿÿÿÿH¼KRMINORZVULNERABILITY
-š"squid:ClassVariableVisibilityCheck"SMake request a static final constant or non-public and provide accessors if needed.(Ú›Û“H»KRMINORZVULNERABILITY
-squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆœˆ­ùÿÿÿÿHáKRMINORZ
+"squid:ClassVariableVisibilityCheck"RMake number a static final constant or non-public and provide accessors if needed.( ë¾©ùÿÿÿÿH¼_RMINORZVULNERABILITY
+zsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(½‚Õ>H½_RMAJORZ
 CODE_SMELL
-£"squid:ClassVariableVisibilityCheck""WMake txtPostcode a static final constant or non-public and provide accessors if needed.(İ¾ÎÚüÿÿÿÿHÓKRMINORZVULNERABILITY
-Zsquid:S1604/"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHÈKRMAJORZ
+wsquid:S1192z"GDefine a constant instead of duplicating this literal "Arial" 20 times.(±“õ™H¾_RCRITICALZ
 CODE_SMELL
+¢"squid:ClassVariableVisibilityCheck "VMake txtAddress a static final constant or non-public and provide accessors if needed.(Ç–ÕúûÿÿÿÿH¿_RMINORZVULNERABILITY
+squid:S3776j"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ˆå¶šûÿÿÿÿ8ÇòÌ´î-HÀ_RCRITICALZ
+CODE_SMELL
+š"squid:ClassVariableVisibilityCheck!"SMake txtCity a static final constant or non-public and provide accessors if needed.(¨ºÎŞHÁ_RMINORZVULNERABILITY
+Usquid:S1604"(Make this anonymous inner class a lambda(‰ÉŸHÂ_RMAJORZ
+CODE_SMELL
+isquid:UselessImportCheck"/Remove this unused import 'LoginSystem.Person'.(ÖÀú“HÃ_RMINORZ
+CODE_SMELL
+š"squid:ClassVariableVisibilityCheck"SMake request a static final constant or non-public and provide accessors if needed.(Ú›Û“HÄ_RMINORZVULNERABILITY
+Zsquid:S1604/"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHÅ_RMAJORZ
+CODE_SMELL
+£"squid:ClassVariableVisibilityCheck""WMake txtPostcode a static final constant or non-public and provide accessors if needed.(İ¾ÎÚüÿÿÿÿHÆ_RMINORZVULNERABILITY
+Vsquid:S1604Ä"(Make this anonymous inner class a lambda(ûò–İHÇ_RMAJORZ
+CODE_SMELL
+`squid:S1444"+Make this "public static frame" field final(¹å‘şøÿÿÿÿHÈ_RMINORZVULNERABILITY
+Tsquid:S1604–"(Make this anonymous inner class a lambda(ØéYHÉ_RMAJORZ
+CODE_SMELL
+squid:S00100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ô¦†øÿÿÿÿHÊ_RMINORZ
+CODE_SMELL
+¢"squid:ClassVariableVisibilityCheck%"TMake lblError a static final constant or non-public and provide accessors if needed.(ö”Ÿœ8Ìåø¯î-HË_RMINORZVULNERABILITY
+Xsquid:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÌ_RMINORZVULNERABILITY
 msquid:UselessImportCheck
-".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿHÕKRMINORZ
+".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿHÍ_RMINORZ
 CODE_SMELL
-Vsquid:S1604Ä"(Make this anonymous inner class a lambda(ûò–İHÚKRMAJORZ
+"squid:ClassVariableVisibilityCheck#"RMake txtAge a static final constant or non-public and provide accessors if needed.(òãôŒıÿÿÿÿHÎ_RMINORZVULNERABILITY
+"squid:ClassVariableVisibilityCheck"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿHÏ_RMINORZVULNERABILITY
+qsquid:S2589"7Remove this expression which always evaluates to "true"(öÈéúÿÿÿÿ8ÇòÌ´î-HĞ_RMAJORZ
 CODE_SMELL
-Usquid:S1604"(Make this anonymous inner class a lambda(‰ÉŸHÙKRMAJORZ
+Zsquid:S1604r"(Make this anonymous inner class a lambda(Ãúó’ÿÿÿÿÿHÑ_RMAJORZ
 CODE_SMELL
-Xsquid:S11485"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÒKRMINORZVULNERABILITY
-zsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(½‚Õ>HÂKRMAJORZ
+¢"squid:ClassVariableVisibilityCheck*"OMake err a static final constant or non-public and provide accessors if needed.(¬º³ıÿÿÿÿ8Ìåø¯î-HÒ_RMINORZVULNERABILITY
+Vsquid:S1604¤"(Make this anonymous inner class a lambda(’¸—¼HÓ_RMAJORZ
 CODE_SMELL
-¢"squid:ClassVariableVisibilityCheck%"TMake lblError a static final constant or non-public and provide accessors if needed.(ö”Ÿœ8Ìåø¯î-H×KRMINORZVULNERABILITY
-Ysquid:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHÛKRMINORZVULNERABILITY
-"squid:ClassVariableVisibilityCheck"VMake txtSurname a static final constant or non-public and provide accessors if needed.(£¤¢ŸHÁKRMINORZVULNERABILITY
-"squid:ClassVariableVisibilityCheck"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿHÏKRMINORZVULNERABILITY
-}squid:S2095š"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÄÉ³ƒûÿÿÿÿ8“í˜³î-HØKRBLOCKERZBUG
-gsquid:S22093"5Change this instance-reference to a static reference.(‘›àƒøÿÿÿÿHÊKRMAJORZ
+]squid:S1659*"$Declare "errAge" on a separate line.(¬º³ıÿÿÿÿ8Ÿú²î-HÔ_RMINORZ
 CODE_SMELL
-¥"squid:ClassVariableVisibilityCheck*"RMake errAge a static final constant or non-public and provide accessors if needed.(¬º³ıÿÿÿÿ8Ÿú²î-HÃKRMINORZVULNERABILITY
-Zsquid:S1604r"(Make this anonymous inner class a lambda(Ãúó’ÿÿÿÿÿHËKRMAJORZ
+¨"squid:ClassVariableVisibilityCheck'"UMake btnFemale a static final constant or non-public and provide accessors if needed.(…»ÜÎÿÿÿÿÿ8ƒ´ª°î-HÕ_RMINORZVULNERABILITY
+¥"squid:ClassVariableVisibilityCheck*"RMake errAge a static final constant or non-public and provide accessors if needed.(¬º³ıÿÿÿÿ8Ÿú²î-HÖ_RMINORZVULNERABILITY
+"squid:ClassVariableVisibilityCheck"VMake txtSurname a static final constant or non-public and provide accessors if needed.(£¤¢ŸH×_RMINORZVULNERABILITY
+Ysquid:S1148·"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHØ_RMINORZVULNERABILITY
+}squid:S2095š"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÄÉ³ƒûÿÿÿÿ8“í˜³î-HÙ_RBLOCKERZBUG
+qsquid:S2589"7Remove this expression which always evaluates to "true"(öÈéúÿÿÿÿ8ÇòÌ´î-HÚ_RMAJORZ
 CODE_SMELL
-]squid:S1659*"$Declare "errAge" on a separate line.(¬º³ıÿÿÿÿ8Ÿú²î-HÖKRMINORZ
+squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ˆœˆ­ùÿÿÿÿHÛ_RMINORZ
 CODE_SMELL
-Tsquid:S1604–"(Make this anonymous inner class a lambda(ØéYHßKRMAJORZ
+|squid:S00100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HÜ_RMINORZ
 CODE_SMELL
-—"squid:ClassVariableVisibilityCheck)"PMake male a static final constant or non-public and provide accessors if needed.(€ğ¹ÂHÅKRMINORZVULNERABILITY
-Vsquid:S1604¤"(Make this anonymous inner class a lambda(’¸—¼HãKRMAJORZ
-CODE_SMELL
-"squid:ClassVariableVisibilityCheck#"RMake txtAge a static final constant or non-public and provide accessors if needed.(òãôŒıÿÿÿÿHÎKRMINORZVULNERABILITY
-¡"squid:ClassVariableVisibilityCheck&"SMake btnMale a static final constant or non-public and provide accessors if needed.(Şşêß8ƒ´ª°î-HàKRMINORZVULNERABILITY
-š"squid:ClassVariableVisibilityCheck!"SMake txtCity a static final constant or non-public and provide accessors if needed.(¨ºÎŞHÄKRMINORZVULNERABILITY
-¢"squid:ClassVariableVisibilityCheck*"OMake err a static final constant or non-public and provide accessors if needed.(¬º³ıÿÿÿÿ8Ìåø¯î-H¿KRMINORZVULNERABILITY
-¤"squid:ClassVariableVisibilityCheck"XMake txtFirstname a static final constant or non-public and provide accessors if needed.(š§øøÿÿÿÿHâKRMINORZVULNERABILITY
-wsquid:S1192z"GDefine a constant instead of duplicating this literal "Arial" 20 times.(±“õ™HÇKRCRITICALZ
-CODE_SMELL
-"squid:ClassVariableVisibilityCheck$"WMake txtPassword a static final constant or non-public and provide accessors if needed.(’äÕèHÉKRMINORZVULNERABILITY
-squid:S00100Z"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ô¦†øÿÿÿÿHÌKRMINORZ
-CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck'"UMake btnFemale a static final constant or non-public and provide accessors if needed.(…»ÜÎÿÿÿÿÿ8ƒ´ª°î-HĞKRMINORZVULNERABILITY
-isquid:UselessImportCheck"/Remove this unused import 'LoginSystem.Person'.(ÖÀú“H¾KRMINORZ
-CODE_SMELL
-qsquid:S2589"7Remove this expression which always evaluates to "true"(öÈéúÿÿÿÿ8ÇòÌ´î-HİKRMAJORZ
-CODE_SMELL
-"squid:ClassVariableVisibilityCheck("RMake female a static final constant or non-public and provide accessors if needed.(¡ õ‚ùÿÿÿÿH½KRMINORZVULNERABILITY
-|squid:S00100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HÜKRMINORZ
-CODE_SMELL
-"squid:ClassVariableVisibilityCheck"RMake number a static final constant or non-public and provide accessors if needed.( ë¾©ùÿÿÿÿHÆKRMINORZVULNERABILITY
-squid:S3776j"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ˆå¶šûÿÿÿÿ8ÇòÌ´î-HÀKRCRITICALZ
-CODE_SMELL
+"squid:ClassVariableVisibilityCheck("RMake female a static final constant or non-public and provide accessors if needed.(¡ õ‚ùÿÿÿÿHİ_RMINORZVULNERABILITY
+"squid:ClassVariableVisibilityCheck$"WMake txtPassword a static final constant or non-public and provide accessors if needed.(’äÕèHŞ_RMINORZVULNERABILITY
+—"squid:ClassVariableVisibilityCheck)"PMake male a static final constant or non-public and provide accessors if needed.(€ğ¹ÂHß_RMINORZVULNERABILITY
+¡"squid:ClassVariableVisibilityCheck&"SMake btnMale a static final constant or non-public and provide accessors if needed.(Şşêß8ƒ´ª°î-Hà_RMINORZVULNERABILITY

@@ -15,6 +15,7 @@ public class secretary {
 	public File[] tempFiles;
 	public int i = 0;
 	public File[] adminFiles;
+	public String firstname, surname, rating;
 		public secretary()
 		{
 			
@@ -47,6 +48,7 @@ public class secretary {
 			
 		}
 
+		
 		public File[] FindFiles(String[] temps, String beginsWith)
 		{						
 				File directoryPath = new File(System.getProperty("user.dir"));			

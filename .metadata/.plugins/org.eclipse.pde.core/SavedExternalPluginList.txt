@@ -1,4 +1,4 @@
-# List of external plug-in models previously loaded. Timestamp: 1576505760919
+# List of external plug-in models previously loaded. Timestamp: 1576659481438
 file:/C:/Users/user/.p2/pool/plugins/ch.qos.logback.classic_1.0.7.v20121108-1250.jar
 file:/C:/Users/user/.p2/pool/plugins/ch.qos.logback.core_1.0.7.v20121108-1250.jar
 file:/C:/Users/user/.p2/pool/plugins/ch.qos.logback.slf4j_1.0.7.v201505121915.jar
@@ -45,11 +45,6 @@ file:/C:/Users/user/.p2/pool/plugins/com.sun.jna_4.5.1.v20180403-1933.jar
 file:/C:/Users/user/.p2/pool/plugins/com.sun.jna.platform_4.5.1.v20180403-1933.jar
 file:/C:/Users/user/.p2/pool/plugins/com.sun.xml.bind_2.2.0.v201505121915.jar
 file:/C:/Users/user/.p2/pool/plugins/com.trilead.ssh2_1.0.0.build220_r167_v20150618_1733.jar
-file:/C:/Users/user/.p2/pool/plugins/de.jcup.asciidoctor.converter_1.0.3.jar
-file:/C:/Users/user/.p2/pool/plugins/de.jcup.asciidoctoreditor_2.0.3.jar
-file:/C:/Users/user/.p2/pool/plugins/de.jcup.asciidoctoreditor.css_1.0.1.jar
-file:/C:/Users/user/.p2/pool/plugins/de.jcup.asciidoctoreditor.libs_2.0.4/
-file:/C:/Users/user/.p2/pool/plugins/de.jcup.yamleditor_1.6.1.jar
 file:/C:/Users/user/.p2/pool/plugins/io.github.classgraph_4.8.35.v20190528-1517.jar
 file:/C:/Users/user/.p2/pool/plugins/io.projectreactor.reactor-core_3.1.9.201902271843-RELEASE.jar
 file:/C:/Users/user/.p2/pool/plugins/io.snyk.eclipse.plugin_1.0.0.201910301001.jar

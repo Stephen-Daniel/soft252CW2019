@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 
 import LoginSystem.LoginForm;
+import LoginSystem.MainDate;
 import LoginSystem.Person;
 import LoginSystem.uniqueNumber;
 import PatientSystem.RequestForm;
@@ -73,6 +74,8 @@ public class AdminForm extends javax.swing.JFrame{
 	public String userDepartment = "";
 	public String temp;
 	private JButton btnLogout;
+	private String date;
+	private String newDate;
 	
 	public static void main(String id) {
 		userId = id;
@@ -111,8 +114,8 @@ public class AdminForm extends javax.swing.JFrame{
 		txtUsername.setText("");
 		txtPassword.setText("");
 		txtRating.setText("");
-		txtDisplayComments.setText("");	
-		txtDisplayFeedback.setText("");
+		txtDisplayComments.setText("Comments");	
+		txtDisplayFeedback.setText("Feedback");
 	}
 	public void disableAllButtons() {
 				
@@ -148,14 +151,13 @@ public class AdminForm extends javax.swing.JFrame{
 		
 		clear(); 
 		
-			String filename = (String) cbAdminList.getSelectedItem();
-						
+			String filename = (String) cbAdminList.getSelectedItem();						
 			String feedbackOrNotes = "FeedbackOrNotes";
-			feedbackOrNotes = filename + feedbackOrNotes + ".txt";
-						
+			feedbackOrNotes = filename + feedbackOrNotes + ".txt";						
 			filename = (filename + ".txt");
 			System.out.println(filename + " name that searches for file then reads to populate");
-			
+			txtDisplayComments.setText("");	
+			txtDisplayFeedback.setText("");
 			Scanner populate;
 			try {
 				populate = new Scanner(new File(filename));
@@ -227,7 +229,8 @@ public class AdminForm extends javax.swing.JFrame{
 		String feedbackOrNotes = "FeedbackOrNotes";
 		feedbackOrNotes = username + feedbackOrNotes + ".txt";
 		username = username + ".txt";
-		
+		MainDate getDate = new MainDate();
+		date = getDate.sendDate(newDate);
 		System.out.println("saving new staff name " + username);
 		try
 		{					
@@ -243,7 +246,9 @@ public class AdminForm extends javax.swing.JFrame{
             pw.println("spare");                      
             pw.println(usernameWithoutTXT);
             pw.println(txtPassword.getText().trim());
-            pw.println(txtRating.getText().trim());
+            pw.println("3");
+            pw.println("Start date ; " + date);
+            pw.println("Starts with old comments");
             pw.println(txtDisplayComments.getText().trim());
             pw.flush();
             pw.close();		            

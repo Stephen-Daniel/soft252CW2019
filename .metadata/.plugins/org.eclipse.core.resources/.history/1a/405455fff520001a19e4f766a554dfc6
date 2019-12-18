@@ -1,0 +1,356 @@
+package PatientSystem;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+import LoginSystem.LoginForm;
+import LoginSystem.Person;
+import SecretarySystem.secretary;
+
+import java.awt.Font;
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
+import com.toedter.calendar.JDayChooser;
+import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
+import javax.swing.JComboBox;
+
+public class PatientForm extends javax.swing.JFrame{
+
+	private static JFrame frame;
+	public static String userId;
+	public static String [] temps;
+	public static File[] requests;
+	
+	public String beginsWith = "";
+	private JTextField txtDisplay;
+	private JTextField txtMedicine;
+	private JTextField txtQuantity;
+	private JTextField txtDosage;
+	private JTextField txtAppointment;
+	private boolean s1,s2,s3,s4,s5;
+	private JRadioButton rbs1;
+	private JRadioButton rbs2;
+	private JRadioButton rbs3;
+	private JRadioButton rbs4;
+	private JRadioButton rbs5;
+	private JTextArea txtDoctorsDetails;
+	private JTextArea txtRatings;
+	private String filename;
+	
+	
+	
+	public static void main(String id) {
+		userId = id;
+		EventQueue.invokeLater(new Runnable() {
+			
+			public void run() {
+				try {
+					PatientForm patient = new PatientForm();
+					patient.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				Person doctor = new Person();
+				doctor.setID(userId);
+			}
+		});
+	}
+public void rateDoctors()
+{
+	secretary getTemps = new secretary();
+	String temp;
+	requests = getTemps.FindFiles(temps, "D");
+	txtRatings.setText("");
+	
+	for (File file: requests)
+	{
+		filename = file.getName();
+		
+			Scanner populate;
+			try {
+				populate = new Scanner(new File(filename));
+				populate.useDelimiter("[\n]");
+				txtRatings.append(populate.next() + " ");
+				txtRatings.append(populate.next() + "  has ");			
+				for (int i=3;i < 10;i++) {					
+				temp = (populate.next());
+				}				
+				txtRatings.append(populate.next() + " Stars\n");				
+				populate.close();
+			} catch (FileNotFoundException e1) {
+				
+				e1.printStackTrace();
+			}				
+	}
+}
+	public PatientForm() {
+		initialize();
+	}
+	public void starsOff()
+	{
+		rbs1.setSelected(false);
+		rbs2.setSelected(false);
+		rbs3.setSelected(false);
+		rbs4.setSelected(false);
+		rbs5.setSelected(false);
+	}
+
+	public static void Close() {
+		frame.dispose();
+		
+	}
+	
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 988, 698);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JLabel lblPatientTitle = new JLabel("");
+		lblPatientTitle.setFont(new Font("Arial", Font.BOLD, 20));
+		lblPatientTitle.setBounds(504, 11, 120, 30);
+		frame.getContentPane().add(lblPatientTitle);
+		
+		JButton btnRateDoctor = new JButton("Rate Doctor with feedback");
+		btnRateDoctor.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnRateDoctor.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnRateDoctor.setBounds(381, 11, 229, 25);
+		frame.getContentPane().add(btnRateDoctor);
+		
+		JButton btnViewRate = new JButton("View Ratings");
+		btnViewRate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				rateDoctors();
+			}
+		});
+		btnViewRate.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnViewRate.setBounds(50, 35, 142, 25);
+		frame.getContentPane().add(btnViewRate);
+		
+		JButton btnRequestApp = new JButton("Request an Appointment");
+		btnRequestApp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnRequestApp.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnRequestApp.setBounds(10, 225, 200, 25);
+		frame.getContentPane().add(btnRequestApp);
+		
+		JButton btnViewHistory = new JButton("View History");
+		btnViewHistory.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnViewHistory.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnViewHistory.setBounds(762, 243, 200, 25);
+		frame.getContentPane().add(btnViewHistory);
+		
+		JButton btnViewAppointment = new JButton("View Appointment");
+		btnViewAppointment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+			}
+		});
+		btnViewAppointment.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnViewAppointment.setBounds(393, 271, 200, 25);
+		frame.getContentPane().add(btnViewAppointment);
+		
+		JButton btnViewPrescription = new JButton("View Prescription");
+		btnViewPrescription.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnViewPrescription.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnViewPrescription.setBounds(350, 408, 200, 25);
+		frame.getContentPane().add(btnViewPrescription);
+		
+		JButton btnLogout = new JButton("Logout");
+		btnLogout.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				PatientForm.Close();
+				LoginForm.main(null);
+			}
+		});
+		btnLogout.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnLogout.setBounds(762, 623, 200, 25);
+		frame.getContentPane().add(btnLogout);
+		
+		JButton btnRequestTermination = new JButton("Request Termination");
+		btnRequestTermination.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnRequestTermination.setFont(new Font("Arial", Font.PLAIN, 15));
+		btnRequestTermination.setBounds(552, 623, 200, 25);
+		frame.getContentPane().add(btnRequestTermination);
+		
+		JLabel lblTitle = new JLabel("Patient");
+		lblTitle.setBounds(40, 13, 159, 16);
+		frame.getContentPane().add(lblTitle);
+		lblTitle.setText("Patient " + userId);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(627, 35, 335, 197);
+		frame.getContentPane().add(scrollPane);
+		
+		txtDisplay = new JTextField();
+		scrollPane.setViewportView(txtDisplay);
+		txtDisplay.setColumns(10);
+		
+		rbs1 = new JRadioButton("1 Star");
+		rbs1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs1.setSelected(true);
+			}
+		});
+		rbs1.setBounds(243, 77, 61, 23);
+		frame.getContentPane().add(rbs1);
+		
+		rbs2 = new JRadioButton("2 Stars");
+		rbs2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs2.setSelected(true);
+			}
+		});
+		rbs2.setBounds(243, 103, 61, 23);
+		frame.getContentPane().add(rbs2);
+		
+		rbs3 = new JRadioButton("3 Stars");
+		rbs3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs3.setSelected(true);
+			}
+		});
+		rbs3.setBounds(243, 129, 61, 23);
+		frame.getContentPane().add(rbs3);
+		
+		rbs4 = new JRadioButton("4 Stars");
+		rbs4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs4.setSelected(true);
+			}
+		});
+		rbs4.setBounds(243, 155, 61, 23);
+		frame.getContentPane().add(rbs4);
+		
+		rbs5 = new JRadioButton("5 Stars");
+		rbs5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs5.setSelected(true);
+			}
+		});
+		rbs5.setBounds(243, 181, 61, 23);
+		frame.getContentPane().add(rbs5);
+		
+		JScrollPane scrollPane_1 = new JScrollPane();
+		scrollPane_1.setBounds(310, 75, 300, 130);
+		frame.getContentPane().add(scrollPane_1);
+		
+		JTextArea txtFeedback = new JTextArea();
+		scrollPane_1.setViewportView(txtFeedback);
+		
+		txtRatings = new JTextArea();
+		txtRatings.setEditable(false);
+		txtRatings.setBounds(20, 64, 217, 128);
+		frame.getContentPane().add(txtRatings);
+		
+		JTextArea txtPatientDetails = new JTextArea();
+		txtPatientDetails.setEditable(false);
+		txtPatientDetails.setBounds(45, 444, 270, 120);
+		frame.getContentPane().add(txtPatientDetails);
+		
+		txtDoctorsDetails = new JTextArea();
+		txtDoctorsDetails.setBounds(329, 444, 270, 120);
+		frame.getContentPane().add(txtDoctorsDetails);
+		
+		JScrollPane scrollPane_2 = new JScrollPane();
+		scrollPane_2.setBounds(613, 444, 270, 120);
+		frame.getContentPane().add(scrollPane_2);
+		
+		JTextArea textPrescriptionNotes = new JTextArea();
+		textPrescriptionNotes.setEditable(false);
+		scrollPane_2.setViewportView(textPrescriptionNotes);
+		
+		txtMedicine = new JTextField();
+		txtMedicine.setEditable(false);
+		txtMedicine.setBounds(45, 575, 270, 20);
+		frame.getContentPane().add(txtMedicine);
+		txtMedicine.setColumns(10);
+		
+		txtQuantity = new JTextField();
+		txtQuantity.setEditable(false);
+		txtQuantity.setBounds(329, 575, 86, 20);
+		frame.getContentPane().add(txtQuantity);
+		txtQuantity.setColumns(10);
+		
+		txtDosage = new JTextField();
+		txtDosage.setEditable(false);
+		txtDosage.setBounds(425, 575, 458, 20);
+		frame.getContentPane().add(txtDosage);
+		txtDosage.setColumns(10);
+		
+		JScrollPane scrollPane_3 = new JScrollPane();
+		scrollPane_3.setBounds(10, 340, 249, 71);
+		frame.getContentPane().add(scrollPane_3);
+		
+		JTextArea textArea = new JTextArea();
+		scrollPane_3.setViewportView(textArea);
+		
+		JComboBox cbDoctorAppointment = new JComboBox();
+		cbDoctorAppointment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		cbDoctorAppointment.setBounds(10, 285, 245, 20);
+		frame.getContentPane().add(cbDoctorAppointment);
+		
+		JLabel lblChooseADoctor = new JLabel("Choose a Doctor");
+		lblChooseADoctor.setBounds(10, 261, 95, 14);
+		frame.getContentPane().add(lblChooseADoctor);
+		
+		JLabel lblWriteWhatsWrong = new JLabel("Write whats wrong and some dates to be seen");
+		lblWriteWhatsWrong.setBounds(10, 316, 235, 14);
+		frame.getContentPane().add(lblWriteWhatsWrong);
+		
+		txtAppointment = new JTextField();
+		txtAppointment.setBounds(393, 307, 270, 29);
+		frame.getContentPane().add(txtAppointment);
+		txtAppointment.setColumns(10);
+		
+		JComboBox cbDoctorRate = new JComboBox();
+		cbDoctorRate.setBounds(272, 47, 245, 20);
+		frame.getContentPane().add(cbDoctorRate);
+		
+		JLabel lblrateDoctor = new JLabel("Choose a Doctor");
+		lblrateDoctor.setBounds(272, 23, 95, 14);
+		frame.getContentPane().add(lblrateDoctor);
+		
+		JButton btnSubmit = new JButton("Submit Rating and Feedback");
+		btnSubmit.setBounds(393, 216, 172, 23);
+		frame.getContentPane().add(btnSubmit);
+	}
+}

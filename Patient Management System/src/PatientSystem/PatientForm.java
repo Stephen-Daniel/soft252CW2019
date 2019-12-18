@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
+import LoginSystem.MainDate;
 import LoginSystem.Person;
 import SecretarySystem.secretary;
 
@@ -14,10 +15,17 @@ import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.Scanner;
 import java.awt.event.ActionEvent;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
@@ -32,13 +40,35 @@ public class PatientForm extends javax.swing.JFrame{
 	public static String userId;
 	public static String [] temps;
 	public static File[] requests;
+	private JComboBox cbDoctorRate;
 	public String beginsWith = "";
 	private JTextField txtDisplay;
 	private JTextField txtMedicine;
 	private JTextField txtQuantity;
 	private JTextField txtDosage;
 	private JTextField txtAppointment;
-	
+	private boolean s1,s2,s3,s4,s5;
+	private String temp;
+	private JRadioButton rbs1;
+	private JRadioButton rbs2;
+	private JRadioButton rbs3;
+	private JRadioButton rbs4;
+	private JRadioButton rbs5;
+	private JTextArea txtDoctorsDetails;
+	private JTextArea txtRatings;
+	private String filename;
+	private String doctor;
+	private String highOrLow;
+	private double rating;
+	private double newRating;
+	private double updatedRating;
+	private JComboBox cbDoctorAppointment;
+	private JTextArea txtDisplayFeedback;
+	private String chosenDoctor;
+	private String firstname;
+	private String surname;
+	private String date;
+	private String newDate;
 	public static void main(String id) {
 		userId = id;
 		EventQueue.invokeLater(new Runnable() {
@@ -55,11 +85,170 @@ public class PatientForm extends javax.swing.JFrame{
 			}
 		});
 	}
+	
+	public void clear()
+	{
+		for(int i = cbDoctorRate.getItemCount()-1;i>=1;i--) {
+			cbDoctorRate.removeItemAt(i);
+			cbDoctorAppointment.removeItemAt(i);
+			
+		}
+	}
+	public void saveRating()
+	{
+		System.out.println("name taken from txtusername " + filename);
+		String feedbackOrNotes = "FeedbackOrNotes";
+		String stars = Double.toString(newRating);
+		if(newRating > rating)
+		{
+			highOrLow = "Rating has increased your stars";
+		}else {
+			highOrLow = "Rating has lowered your stars";
+		}
+		updatedRating = rating + newRating;
+		updatedRating = Math.round((updatedRating/2) * 10.0) / 10.0;
+		String id = filename.replace(".txt", "");
+		System.out.println(updatedRating);		
+		feedbackOrNotes = id + feedbackOrNotes + ".txt";
+		//save new rating score
+		File doctorRatingUpdate = new File(filename);           
+        BufferedReader reader = null;        
+        FileWriter writer = null;
+        String oldContent = "";
+        String patient = ("Patient " + userId + " gave you " + stars + " stars, " + highOrLow);
+        try
+        {
+            reader = new BufferedReader(new FileReader(doctorRatingUpdate));            
+            String line = reader.readLine();
+            String removeOldRating = "";
+            String newRating = Double.toString(updatedRating);
+            for(int i=1;i < 9;i++)
+            {
+                oldContent = oldContent + line + System.lineSeparator();                
+                line = reader.readLine();
+            }
+            
+            oldContent = oldContent + line + System.lineSeparator();
+            removeOldRating = reader.readLine();
+            System.out.println(removeOldRating);
+            oldContent = oldContent + newRating + System.lineSeparator();
+           
+            line = reader.readLine();
+            while (line != null) 
+            {
+                oldContent = oldContent + line + System.lineSeparator();
+                 
+                line = reader.readLine();
+            }
+            
+            writer = new FileWriter(doctorRatingUpdate);
+            writer.write(oldContent);
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        finally
+        {
+            try
+            {
+                //Closing the resources                
+                reader.close();                
+                writer.close();
+            } 
+            catch (IOException e) 
+            {
+                e.printStackTrace();
+            }
+        }           
+		try
+		{	
+			MainDate getDate = new MainDate();
+			date = getDate.sendDate(newDate);
+			FileWriter fw = new FileWriter(doctorRatingUpdate, true);
+			PrintWriter pw = new PrintWriter(fw);
 
+			pw.println("Date : " + date);
+			pw.println("Patient " + userId + " gave you " + newRating + " stars");
+			pw.println(highOrLow);
+			pw.println("There comment was:");
+            pw.println(txtDisplayFeedback.getText().trim());           
+            pw.flush();
+            pw.close();		            
+            fw.close(); 
+            }
+		catch (IOException e) {
+            System.out.println("fail" + feedbackOrNotes);									
+		}
+	
+		rateDoctors();
+		
+		
+	}
+public void rateDoctors()
+{
+	secretary getTemps = new secretary();	
+	requests = getTemps.FindFiles(temps, "D");
+	txtRatings.setText("");	
+	for (File file: requests)
+	{
+		filename = file.getName();
+		doctor = filename;
+		doctor = doctor.replace(".txt", "");
+			Scanner populate;
+			try {
+				populate = new Scanner(new File(filename));
+				populate.useDelimiter("[\n]");
+				firstname = populate.next();
+				txtRatings.append(firstname + " ");
+				surname = populate.next();
+				txtRatings.append(surname + "  has ");			
+				for (int i=3;i < 10;i++) {					
+				temp = (populate.next());
+				}				
+				txtRatings.append(populate.next() + " Stars\n");				
+				populate.close();
+				cbDoctorRate.addItem(firstname + " " + surname + " " + doctor);
+				cbDoctorAppointment.addItem(firstname + " " + surname + " " + doctor);				
+			} catch (FileNotFoundException e1) {				
+				e1.printStackTrace();
+			}				
+	}
+	}
+	public void selectedDoctorForFeedback()
+	{
+		chosenDoctor = cbDoctorRate.getSelectedItem().toString();
+		chosenDoctor = chosenDoctor.substring(chosenDoctor.lastIndexOf(" ")+1) + ".txt";
+		System.out.println(chosenDoctor);
+		//grab chosen rating from doctor
+		filename = chosenDoctor;
+		Scanner populate;
+			try {
+				populate = new Scanner(new File(filename));
+				populate.useDelimiter("[\n]");			
+				for (int i=1;i < 10;i++) {					
+				temp = (populate.next());
+				}							
+				rating = Double.parseDouble(populate.next().trim());			
+				populate.close();				
+			} catch (FileNotFoundException e1) {
+				
+				e1.printStackTrace();
+			}
+		System.out.println(rating);
+	}
 	public PatientForm() {
 		initialize();
+		rateDoctors();
 	}
-	
+	public void starsOff()
+	{
+		rbs1.setSelected(false);
+		rbs2.setSelected(false);
+		rbs3.setSelected(false);
+		rbs4.setSelected(false);
+		rbs5.setSelected(false);
+	}
 
 	public static void Close() {
 		frame.dispose();
@@ -68,13 +257,13 @@ public class PatientForm extends javax.swing.JFrame{
 	
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 988, 698);
+		frame.setBounds(100, 100, 1104, 707);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblPatientTitle = new JLabel("");
 		lblPatientTitle.setFont(new Font("Arial", Font.BOLD, 20));
-		lblPatientTitle.setBounds(350, 30, 120, 30);
+		lblPatientTitle.setBounds(504, 11, 120, 30);
 		frame.getContentPane().add(lblPatientTitle);
 		
 		JButton btnRateDoctor = new JButton("Rate Doctor with feedback");
@@ -83,22 +272,25 @@ public class PatientForm extends javax.swing.JFrame{
 			}
 		});
 		btnRateDoctor.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnRateDoctor.setBounds(265, 35, 229, 25);
+		btnRateDoctor.setBounds(377, 11, 229, 25);
 		frame.getContentPane().add(btnRateDoctor);
 		
-		JButton btnViewRate = new JButton("View Ratings");
-		btnViewRate.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewRate.setBounds(10, 35, 142, 25);
-		frame.getContentPane().add(btnViewRate);
-		
 		JButton btnRequestApp = new JButton("Request an Appointment");
+		btnRequestApp.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnRequestApp.setFont(new Font("Arial", Font.PLAIN, 15));
 		btnRequestApp.setBounds(10, 225, 200, 25);
 		frame.getContentPane().add(btnRequestApp);
 		
 		JButton btnViewHistory = new JButton("View History");
+		btnViewHistory.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnViewHistory.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewHistory.setBounds(665, 248, 200, 25);
+		btnViewHistory.setBounds(794, 243, 200, 25);
 		frame.getContentPane().add(btnViewHistory);
 		
 		JButton btnViewAppointment = new JButton("View Appointment");
@@ -108,10 +300,14 @@ public class PatientForm extends javax.swing.JFrame{
 			}
 		});
 		btnViewAppointment.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewAppointment.setBounds(324, 234, 200, 25);
+		btnViewAppointment.setBounds(393, 271, 200, 25);
 		frame.getContentPane().add(btnViewAppointment);
 		
 		JButton btnViewPrescription = new JButton("View Prescription");
+		btnViewPrescription.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnViewPrescription.setFont(new Font("Arial", Font.PLAIN, 15));
 		btnViewPrescription.setBounds(350, 408, 200, 25);
 		frame.getContentPane().add(btnViewPrescription);
@@ -129,6 +325,10 @@ public class PatientForm extends javax.swing.JFrame{
 		frame.getContentPane().add(btnLogout);
 		
 		JButton btnRequestTermination = new JButton("Request Termination");
+		btnRequestTermination.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnRequestTermination.setFont(new Font("Arial", Font.PLAIN, 15));
 		btnRequestTermination.setBounds(552, 623, 200, 25);
 		frame.getContentPane().add(btnRequestTermination);
@@ -139,43 +339,78 @@ public class PatientForm extends javax.swing.JFrame{
 		lblTitle.setText("Patient " + userId);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(602, 40, 335, 197);
+		scrollPane.setBounds(716, 35, 335, 197);
 		frame.getContentPane().add(scrollPane);
 		
 		txtDisplay = new JTextField();
 		scrollPane.setViewportView(txtDisplay);
 		txtDisplay.setColumns(10);
 		
-		JRadioButton rb1 = new JRadioButton("1 Star");
-		rb1.setBounds(198, 77, 61, 23);
-		frame.getContentPane().add(rb1);
+		rbs1 = new JRadioButton("1 Star");
+		rbs1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs1.setSelected(true);
+				newRating = 1;
+			}
+		});
+		rbs1.setBounds(264, 77, 80, 23);
+		frame.getContentPane().add(rbs1);
 		
-		JRadioButton rb2 = new JRadioButton("2 Stars");
-		rb2.setBounds(198, 103, 61, 23);
-		frame.getContentPane().add(rb2);
+		rbs2 = new JRadioButton("2 Stars");
+		rbs2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs2.setSelected(true);
+				newRating = 2;
+			}
+		});
+		rbs2.setBounds(264, 103, 80, 23);
+		frame.getContentPane().add(rbs2);
 		
-		JRadioButton rb3 = new JRadioButton("3 Stars");
-		rb3.setBounds(198, 129, 61, 23);
-		frame.getContentPane().add(rb3);
+		rbs3 = new JRadioButton("3 Stars");
+		rbs3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs3.setSelected(true);
+				newRating = 3;
+			}
+		});
+		rbs3.setBounds(264, 129, 80, 23);
+		frame.getContentPane().add(rbs3);
 		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("4 Stars");
-		rdbtnNewRadioButton.setBounds(198, 155, 61, 23);
-		frame.getContentPane().add(rdbtnNewRadioButton);
+		rbs4 = new JRadioButton("4 Stars");
+		rbs4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs4.setSelected(true);
+				newRating = 4;
+			}
+		});
+		rbs4.setBounds(264, 155, 80, 23);
+		frame.getContentPane().add(rbs4);
 		
-		JRadioButton rdbtnNewRadioButton_1 = new JRadioButton("5 Stars");
-		rdbtnNewRadioButton_1.setBounds(198, 181, 61, 23);
-		frame.getContentPane().add(rdbtnNewRadioButton_1);
+		rbs5 = new JRadioButton("5 Stars");
+		rbs5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				starsOff();
+				rbs5.setSelected(true);
+				newRating = 5;
+			}
+		});
+		rbs5.setBounds(264, 182, 80, 23);
+		frame.getContentPane().add(rbs5);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
-		scrollPane_1.setBounds(265, 75, 300, 130);
+		scrollPane_1.setBounds(363, 75, 300, 130);
 		frame.getContentPane().add(scrollPane_1);
 		
-		JTextArea txtFeedback = new JTextArea();
-		scrollPane_1.setViewportView(txtFeedback);
+		txtDisplayFeedback = new JTextArea();
+		scrollPane_1.setViewportView(txtDisplayFeedback);
 		
-		JTextArea txtRatings = new JTextArea();
+		txtRatings = new JTextArea();
 		txtRatings.setEditable(false);
-		txtRatings.setBounds(10, 65, 172, 128);
+		txtRatings.setBounds(20, 64, 217, 128);
 		frame.getContentPane().add(txtRatings);
 		
 		JTextArea txtPatientDetails = new JTextArea();
@@ -183,7 +418,7 @@ public class PatientForm extends javax.swing.JFrame{
 		txtPatientDetails.setBounds(45, 444, 270, 120);
 		frame.getContentPane().add(txtPatientDetails);
 		
-		JTextArea txtDoctorsDetails = new JTextArea();
+		txtDoctorsDetails = new JTextArea();
 		txtDoctorsDetails.setBounds(329, 444, 270, 120);
 		frame.getContentPane().add(txtDoctorsDetails);
 		
@@ -220,9 +455,13 @@ public class PatientForm extends javax.swing.JFrame{
 		JTextArea textArea = new JTextArea();
 		scrollPane_3.setViewportView(textArea);
 		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setBounds(10, 285, 245, 20);
-		frame.getContentPane().add(comboBox);
+		cbDoctorAppointment = new JComboBox();
+		cbDoctorAppointment.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		cbDoctorAppointment.setBounds(10, 285, 245, 20);
+		frame.getContentPane().add(cbDoctorAppointment);
 		
 		JLabel lblChooseADoctor = new JLabel("Choose a Doctor");
 		lblChooseADoctor.setBounds(10, 261, 95, 14);
@@ -233,8 +472,36 @@ public class PatientForm extends javax.swing.JFrame{
 		frame.getContentPane().add(lblWriteWhatsWrong);
 		
 		txtAppointment = new JTextField();
-		txtAppointment.setBounds(324, 280, 270, 29);
+		txtAppointment.setBounds(393, 307, 270, 29);
 		frame.getContentPane().add(txtAppointment);
 		txtAppointment.setColumns(10);
+		
+		cbDoctorRate = new JComboBox();
+		cbDoctorRate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				selectedDoctorForFeedback();
+			}
+		});
+		cbDoctorRate.setBounds(282, 47, 245, 20);
+		frame.getContentPane().add(cbDoctorRate);
+		
+		JLabel lblrateDoctor = new JLabel("Choose a Doctor");
+		lblrateDoctor.setBounds(272, 23, 95, 14);
+		frame.getContentPane().add(lblrateDoctor);
+		
+		JButton btnSubmit = new JButton("Submit Rating and Feedback");
+		btnSubmit.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				saveRating();
+			}
+		});
+		btnSubmit.setBounds(425, 216, 172, 23);
+		frame.getContentPane().add(btnSubmit);
+		
+		JLabel lblDoctorsratings = new JLabel("Doctors Ratings");
+		lblDoctorsratings.setFont(new Font("Arial", Font.PLAIN, 15));
+		lblDoctorsratings.setBounds(20, 35, 165, 19);
+		frame.getContentPane().add(lblDoctorsratings);
 	}
 }

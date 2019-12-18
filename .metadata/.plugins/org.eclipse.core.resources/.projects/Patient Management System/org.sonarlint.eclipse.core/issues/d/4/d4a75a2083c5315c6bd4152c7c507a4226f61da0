@@ -1,30 +1,30 @@
 
-wsquid:S1192H"GDefine a constant instead of duplicating this literal "Arial" 10 times.(²À HğHRCRITICALZ
+Œsquid:S1450"ZRemove the "lblUsername" field and declare it as a local variable in the relevant methods.(İòŸ‚øÿÿÿÿH‹cRMINORZ
 CODE_SMELL
-[squid:S1604i"(Make this anonymous inner class a lambda(ğ—ïE8Áâ›«î-HëHRMAJORZ
+[squid:S1604"(Make this anonymous inner class a lambda(¤ÛÙªúÿÿÿÿHŒcRMAJORZ
 CODE_SMELL
-Œsquid:S1450"SRemove the "date" field and declare it as a local variable in the relevant methods.(°‡è›üÿÿÿÿ8ü…¸§ğ-HôHRMINORZ
+[squid:S1604i"(Make this anonymous inner class a lambda(ğ—ïE8Áâ›«î-HcRMAJORZ
 CODE_SMELL
-[squid:S1604"(Make this anonymous inner class a lambda(¤ÛÙªúÿÿÿÿHçHRMAJORZ
+‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHcRMINORZ
 CODE_SMELL
-€squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(¦ŞìûÿÿÿÿÿHêHRMAJORZ
+]squid:S1604ª"(Make this anonymous inner class a lambda(’¤Ï¯8ì÷Ò¦ğ-HcRMAJORZ
 CODE_SMELL
-Œsquid:S1450"ZRemove the "lblUsername" field and declare it as a local variable in the relevant methods.(İòŸ‚øÿÿÿÿHåHRMINORZ
+gsquid:S2209("5Change this instance-reference to a static reference.(ÀŞğúúÿÿÿÿHcRMAJORZ
 CODE_SMELL
-Zsquid:S1604#"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHàHRMAJORZ
+Zsquid:S1604]"(Make this anonymous inner class a lambda(Ãúó’ÿÿÿÿÿH‘cRMAJORZ
 CODE_SMELL
-‡squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(®ÅÒRHâHRMINORZ
+Usquid:S1604z"(Make this anonymous inner class a lambda(ûò–İH’cRMAJORZ
 CODE_SMELL
-Usquid:S1604z"(Make this anonymous inner class a lambda(ûò–İHóHRMAJORZ
+Xsquid:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH“cRMINORZVULNERABILITY
+Œsquid:S1450"SRemove the "date" field and declare it as a local variable in the relevant methods.(°‡è›üÿÿÿÿ8ü…¸§ğ-H”cRMINORZ
 CODE_SMELL
-|squid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HïHRMINORZ
+|squid:S001008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H•cRMINORZ
 CODE_SMELL
-rsquid:CallToDeprecatedMethodl"/Remove this use of "getText"; it is deprecated.(õË—ßûÿÿÿÿHèHRMINORZ
+rsquid:CallToDeprecatedMethodl"/Remove this use of "getText"; it is deprecated.(õË—ßûÿÿÿÿH–cRMINORZ
 CODE_SMELL
-]squid:S1604ª"(Make this anonymous inner class a lambda(’¤Ï¯8ì÷Ò¦ğ-HáHRMAJORZ
+wsquid:S1192H"GDefine a constant instead of duplicating this literal "Arial" 10 times.(²À H—cRCRITICALZ
 CODE_SMELL
-Zsquid:S1604]"(Make this anonymous inner class a lambda(Ãúó’ÿÿÿÿÿHíHRMAJORZ
+Zsquid:S1604#"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH˜cRMAJORZ
 CODE_SMELL
-gsquid:S2209("5Change this instance-reference to a static reference.(ÀŞğúúÿÿÿÿHõHRMAJORZ
+€squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(¦ŞìûÿÿÿÿÿH™cRMAJORZ
 CODE_SMELL
-Xsquid:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHæHRMINORZVULNERABILITY

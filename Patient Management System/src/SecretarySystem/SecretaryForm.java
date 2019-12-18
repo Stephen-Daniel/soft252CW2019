@@ -96,7 +96,11 @@ public class SecretaryForm {
 		//txtPassword.setText("");
 		
 	}
-	
+	public void clearAll()
+	{
+		clear();
+		
+	}
 	public static void sentRequest(String[] request)
 	{
 		
@@ -114,8 +118,40 @@ public class SecretaryForm {
 		frame.dispose();
 		
 	}
+//	public void populateAdminList(String option)
+//	{
+//		// take out feed back files
+//		//clearAll();
+//		//clear();
+//		String [] choosen;
+//		secretary getFileListDS = new secretary();
+//		if(option.equals("all"))
+//		{
+//			String [] letter = {"A","D","S"};
+//			choosen = letter;
+//		}
+//		else if(option.equals("rating"))
+//		{
+//			String [] letter = {"D"};
+//			choosen = letter;}
+//		else 
+//		{
+//			String [] letter = {"D","S"};
+//		choosen = letter;
+//		}
+//		
+//		for (String begin:choosen) {
+//			
+//		//request = getFileListDS.FindFiles(file, begin);
+//		
+//		for (File file: request)
+//		{
+//			String i = file.getName();
+//			i = i.replace(".txt", "");			
+//			cbAdminList.addItem(i);
+//		}	
+//	  }	
 	
-	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1047, 701);
@@ -174,10 +210,18 @@ public class SecretaryForm {
 		frame.getContentPane().add(btnCreateAppointment);
 		
 		JButton btnGiveMedicines = new JButton("Give Medicines");
+		btnGiveMedicines.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnGiveMedicines.setBounds(12, 308, 229, 25);
 		frame.getContentPane().add(btnGiveMedicines);
 		
 		JButton btnOrder = new JButton("Order Medicines");
+		btnOrder.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnOrder.setBounds(500, 396, 153, 25);
 		frame.getContentPane().add(btnOrder);
 		
@@ -337,6 +381,10 @@ public class SecretaryForm {
 		frame.getContentPane().add(lblOrder);
 		
 		JComboBox cbOrder = new JComboBox();
+		cbOrder.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		cbOrder.setBounds(500, 365, 153, 20);
 		frame.getContentPane().add(cbOrder);
 		
@@ -345,10 +393,18 @@ public class SecretaryForm {
 		frame.getContentPane().add(lblStock);
 		
 		JComboBox cbStock = new JComboBox();
+		cbStock.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		cbStock.setBounds(683, 365, 164, 20);
 		frame.getContentPane().add(cbStock);
 		
 		JComboBox cbMedicine = new JComboBox();
+		cbMedicine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		cbMedicine.setBounds(12, 337, 229, 20);
 		frame.getContentPane().add(cbMedicine);
 		
@@ -368,10 +424,18 @@ public class SecretaryForm {
 		frame.getContentPane().add(lblTermination);
 		
 		JComboBox cbTermination = new JComboBox();
+		cbTermination.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		cbTermination.setBounds(500, 42, 153, 20);
 		frame.getContentPane().add(cbTermination);
 		
 		JButton btnStock = new JButton("Stock Medicines");
+		btnStock.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnStock.setBounds(683, 397, 164, 23);
 		frame.getContentPane().add(btnStock);
 		
@@ -389,6 +453,10 @@ public class SecretaryForm {
 		dateChooser.setMinSelectableDate(new Date());
 		
 		JComboBox comboBox_1 = new JComboBox();
+		comboBox_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		comboBox_1.setBounds(12, 171, 154, 20);
 		frame.getContentPane().add(comboBox_1);
 		
@@ -401,6 +469,10 @@ public class SecretaryForm {
 		frame.getContentPane().add(lblDate);
 		
 		JComboBox comboBox = new JComboBox();
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		comboBox.setBounds(12, 71, 153, 20);
 		frame.getContentPane().add(comboBox);
 		
