@@ -7,6 +7,5 @@ Male
 99
 P1007
 password
-appointments
-medicine
+notes
 

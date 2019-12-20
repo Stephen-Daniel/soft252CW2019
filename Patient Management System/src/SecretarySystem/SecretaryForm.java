@@ -60,18 +60,19 @@ public class SecretaryForm {
 	public static String [] temps;
 	public String beginWith = "temp";
 	private String nums = "";
+	public static String userId;
+	private String uniqueNumber;
 	private String temp,terminatedFileToRemove;
 	private int number;
+	private JDateChooser dateChooser;
 	private JButton btnApproveAccRemoval;
 	private JButton btnCreateAppointment;
-	private JDateChooser dateChooser;
-	private String uniqueNumber;
-	public static String userId;
 	private JButton btnNotApproved;
+	private JButton btnStock;
 	private JButton btnApproveNewAccounts;
 	private JTextArea txtMessage;
 	private JTextArea txtPatientRequest;
-	private JComboBox cbOrder;
+	private JLabel lblError;
 	private JComboBox<String> cbPatientAppointments;
 	private JComboBox<String> cbDoctor;
 	private static JTextField txtFirstname;
@@ -82,6 +83,7 @@ public class SecretaryForm {
 	private static JTextField txtGender;
 	private static JTextField txtAge;
 	private JComboBox cbRequests;
+	private JComboBox cbOrder;
 	private JComboBox cbMedicine;
 	private JComboBox<String> cbTermination;
 	private final String filepath = "terminationRequest.txt";
@@ -89,7 +91,7 @@ public class SecretaryForm {
 	private static JTextField txtUsername;
 	private String time,date,patient,notes;
 	private String fileRequest = "";
-	private JButton btnStock;
+	
 	//the TextField for typing the date
 		JFormattedTextField  textField = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
 		
@@ -217,16 +219,23 @@ public class SecretaryForm {
 	
 	public void saveAppointment()
 	{
+		
 		DateFormat df = new SimpleDateFormat("EEE dd-MM-yyyy" );
 		patient = (String) cbPatientAppointments.getSelectedItem();
 		patient = patient.replace("request", "");
 		doctor = (String) cbDoctor.getSelectedItem();
+		//nice code
 		doctor= doctor.substring(0, doctor.indexOf(" "));
 		notes = txtPatientRequest.getText();
+		// add code to stop no date or time
+		System.out.println("is this the problem before date");
 		date = df.format(dateChooser.getDate()).toString();
+		System.out.println("is this the problem ");
 		time = (String) cbTime.getSelectedItem();
-		filename = ("AP "+doctor+" " +time+date+".txt");
 		
+		
+		filename = ("AP "+doctor+" " +time+date+".txt");
+		System.out.println("is this the problem ");
 		File directoryPath = new File(System.getProperty("user.dir"));					
 		File[] files=directoryPath.listFiles(new FilenameFilter() {			
 			public boolean accept(File dir, String name) {	
@@ -292,6 +301,8 @@ public class SecretaryForm {
 	{
 		txtPatientRequest.setText("");
 		fileRequest = (String) cbPatientAppointments.getSelectedItem();
+		if(fileRequest != "Requested Appointments") {
+			btnCreateAppointment.setEnabled(true);
 		fileRequest = fileRequest + ".txt";
 		System.out.println("file to pop " + fileRequest);
 		Scanner patient;
@@ -304,6 +315,9 @@ public class SecretaryForm {
 			patient.close();
 		} catch (FileNotFoundException e1) {				
 			e1.printStackTrace();
+		}
+		}else {
+			btnCreateAppointment.setEnabled(false);
 		}
 	}
 	
@@ -397,11 +411,20 @@ public class SecretaryForm {
 		frame.getContentPane().add(btnApproveNewAccounts);
 		
 		btnCreateAppointment = new JButton("Create Appointment");
+		btnCreateAppointment.setEnabled(false);
 		btnCreateAppointment.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 		
-				saveAppointment();
-				
+				try {
+					DateFormat df = new SimpleDateFormat("EEE dd-MM-yyyy" );
+					date = df.format(dateChooser.getDate()).toString();
+					lblError.setText("");
+					saveAppointment();
+					btnCreateAppointment.setEnabled(false);
+				} catch (Exception e) {
+					
+					lblError.setText("Select a date");
+				}			
 			}
 		});
 		btnCreateAppointment.setBounds(109, 363, 174, 25);
@@ -659,6 +682,7 @@ public class SecretaryForm {
 		frame.getContentPane().add(lblDate);
 		
 		cbPatientAppointments = new JComboBox();
+		cbPatientAppointments.setModel(new DefaultComboBoxModel(new String[] {"Requested Appointments"}));
 		cbPatientAppointments.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
@@ -705,6 +729,12 @@ public class SecretaryForm {
 		JLabel lblToStock = new JLabel("Medicine to stock");
 		lblToStock.setBounds(500, 450, 132, 14);
 		frame.getContentPane().add(lblToStock);
+		
+		lblError = new JLabel("");
+		lblError.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		lblError.setForeground(Color.RED);
+		lblError.setBounds(255, 274, 135, 25);
+		frame.getContentPane().add(lblError);
 		
 	}
 }

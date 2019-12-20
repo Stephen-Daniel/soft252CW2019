@@ -7,7 +7,6 @@ Female
 66
 P1006
 password
-appointment
-medicine
+notes
 
 

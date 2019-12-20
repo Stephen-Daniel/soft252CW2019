@@ -11,6 +11,8 @@ import LoginSystem.Person;
 import SecretarySystem.secretary;
 
 import java.awt.Font;
+
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 
@@ -38,45 +40,50 @@ import javax.swing.JComboBox;
 public class PatientForm extends javax.swing.JFrame{
 
 	private static JFrame frame;
-	public static String userId;
-	public static String [] temps;
-	public static File[] requests;
+	
 	private JComboBox cbDoctorRate;
-	public String beginsWith = "";
+	private JComboBox cbPrescribedMedicine;
+	private JComboBox cbDoctorAppointment;
+	
+	
 	private JTextField txtDisplayHistory;
 	private JTextField txtMedicine;
+	private JTextArea txtDoctorsDetails;
+	private JTextArea txtRatings;
+	private JTextArea txtWhatsWrong;
 	private JTextField txtQuantity;
 	private JTextField txtDosage;
 	private JTextField txtAppointment;
+	private JTextArea txtPatientDetails;
+	private JTextArea txtDisplayFeedback;
+	
 	private JButton btnSubmitRequest;
-	private JButton btnSubmit;
-	private boolean s1,s2,s3,s4,s5;
+	private JButton btnSubmit;	
 	private JButton btnRateDoctor;
 	private JButton btnRequestApp;
-	private JTextArea txtPatientDetails;
-	private JTextArea txtPatientRequest;
-	private String temp;
+	
 	private JRadioButton rbs1;
 	private JRadioButton rbs2;
 	private JRadioButton rbs3;
 	private JRadioButton rbs4;
 	private JRadioButton rbs5;
-	private JTextArea txtDoctorsDetails;
-	private JTextArea txtRatings;
-	private String filename;
 	
-	private String highOrLow;
+	private String firstname, doctor, surname, date, newDate, chosenDoctor;
+	private String filename, highOrLow,temp;
+	public String beginsWith = "";
+	public static String userId;
+	
+	public static String [] temps;
+	
+	public static File[] requests;
+	
+	private boolean s1,s2,s3,s4,s5;
+	
 	private double rating;
 	private double newRating;
 	private double updatedRating;
-	private JComboBox cbDoctorAppointment;
-	private JTextArea txtDisplayFeedback;
-	private String chosenDoctor;
-	private String firstname;
-	private String doctor;
-	private String surname;
-	private String date;
-	private String newDate;
+	private JTextArea txtDatesToBeSeen;
+	
 	public static void main(String id) {
 		userId = id;
 		EventQueue.invokeLater(new Runnable() {
@@ -101,13 +108,16 @@ public class PatientForm extends javax.swing.JFrame{
 		date = date.replace(":", "-");
 		patientID = ("request " + patientID + " "+ date + ".txt");
 		System.out.println(patientID);
-		
+		chosenDoctor = (String) cbDoctorAppointment.getSelectedItem();
+		chosenDoctor = chosenDoctor.substring(chosenDoctor.lastIndexOf(" ")+1);
+		System.out.println(chosenDoctor + " is the doctor now");
 		try
 		{					
 			FileWriter fw = new FileWriter(patientID); 
 			PrintWriter pw = new PrintWriter(fw); 
-			pw.println(cbDoctorAppointment.getSelectedItem());
-            pw.println(txtPatientRequest.getText());           
+			pw.println(chosenDoctor);
+            pw.println(txtWhatsWrong.getText());
+            pw.println(txtDatesToBeSeen.getText());
             pw.flush();
             pw.close();		            
             fw.close(); 
@@ -350,15 +360,6 @@ public void rateDoctors()
 		btnViewAppointment.setBounds(393, 271, 200, 25);
 		frame.getContentPane().add(btnViewAppointment);
 		
-		JButton btnViewPrescription = new JButton("View Prescription");
-		btnViewPrescription.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnViewPrescription.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewPrescription.setBounds(350, 408, 200, 25);
-		frame.getContentPane().add(btnViewPrescription);
-		
 		JButton btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -475,16 +476,16 @@ public void rateDoctors()
 		
 		txtPatientDetails = new JTextArea();
 		txtPatientDetails.setEditable(false);
-		txtPatientDetails.setBounds(45, 444, 270, 120);
+		txtPatientDetails.setBounds(240, 461, 270, 120);
 		frame.getContentPane().add(txtPatientDetails);
 		
 		txtDoctorsDetails = new JTextArea();
 		txtDoctorsDetails.setEditable(false);
-		txtDoctorsDetails.setBounds(329, 444, 270, 120);
+		txtDoctorsDetails.setBounds(524, 461, 270, 120);
 		frame.getContentPane().add(txtDoctorsDetails);
 		
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(613, 444, 270, 120);
+		scrollPane_2.setBounds(808, 461, 270, 120);
 		frame.getContentPane().add(scrollPane_2);
 		
 		JTextArea textPrescriptionNotes = new JTextArea();
@@ -493,19 +494,19 @@ public void rateDoctors()
 		
 		txtMedicine = new JTextField();
 		txtMedicine.setEditable(false);
-		txtMedicine.setBounds(45, 575, 270, 20);
+		txtMedicine.setBounds(240, 592, 270, 20);
 		frame.getContentPane().add(txtMedicine);
 		txtMedicine.setColumns(10);
 		
 		txtQuantity = new JTextField();
 		txtQuantity.setEditable(false);
-		txtQuantity.setBounds(329, 575, 86, 20);
+		txtQuantity.setBounds(524, 592, 86, 20);
 		frame.getContentPane().add(txtQuantity);
 		txtQuantity.setColumns(10);
 		
 		txtDosage = new JTextField();
 		txtDosage.setEditable(false);
-		txtDosage.setBounds(425, 575, 458, 20);
+		txtDosage.setBounds(620, 592, 458, 20);
 		frame.getContentPane().add(txtDosage);
 		txtDosage.setColumns(10);
 		
@@ -513,8 +514,9 @@ public void rateDoctors()
 		scrollPane_3.setBounds(10, 340, 249, 71);
 		frame.getContentPane().add(scrollPane_3);
 		
-		txtPatientRequest = new JTextArea();
-		scrollPane_3.setViewportView(txtPatientRequest);
+		txtWhatsWrong = new JTextArea();
+		txtWhatsWrong.setText("Whats wrong");
+		scrollPane_3.setViewportView(txtWhatsWrong);
 		
 		cbDoctorAppointment = new JComboBox();
 		cbDoctorAppointment.setEnabled(false);
@@ -529,7 +531,7 @@ public void rateDoctors()
 		lblChooseADoctor.setBounds(10, 261, 95, 14);
 		frame.getContentPane().add(lblChooseADoctor);
 		
-		JLabel lblWriteWhatsWrong = new JLabel("Write whats wrong and some dates to be seen");
+		JLabel lblWriteWhatsWrong = new JLabel("Write whats wrong");
 		lblWriteWhatsWrong.setBounds(10, 316, 235, 14);
 		frame.getContentPane().add(lblWriteWhatsWrong);
 		
@@ -587,11 +589,28 @@ public void rateDoctors()
 				cbDoctorAppointment.setEnabled(false);
 				txtDisplayHistory.setText("");
 				txtDisplayHistory.setEnabled(false);
-				txtPatientRequest.setText("");
-				
+				txtWhatsWrong.setText("Whats wrong.");
+				txtDatesToBeSeen.setText("Dates and times.");
 			}
 		});
-		btnSubmitRequest.setBounds(10, 412, 89, 23);
+		btnSubmitRequest.setBounds(10, 523, 89, 23);
 		frame.getContentPane().add(btnSubmitRequest);
+		
+		cbPrescribedMedicine = new JComboBox();
+		cbPrescribedMedicine.setModel(new DefaultComboBoxModel(new String[] {"Prescribed Medicine"}));
+		cbPrescribedMedicine.setBounds(524, 430, 264, 20);
+		frame.getContentPane().add(cbPrescribedMedicine);
+		
+		JLabel lblChoseDate = new JLabel("When would you like to be seen");
+		lblChoseDate.setBounds(10, 422, 175, 14);
+		frame.getContentPane().add(lblChoseDate);
+		
+		JScrollPane scrollPane_4 = new JScrollPane();
+		scrollPane_4.setBounds(10, 447, 189, 71);
+		frame.getContentPane().add(scrollPane_4);
+		
+		txtDatesToBeSeen = new JTextArea();
+		txtDatesToBeSeen.setText("Dates and times.");
+		scrollPane_4.setViewportView(txtDatesToBeSeen);
 	}
 }

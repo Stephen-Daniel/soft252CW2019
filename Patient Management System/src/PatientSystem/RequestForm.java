@@ -168,8 +168,6 @@ public class RequestForm extends javax.swing.JFrame{
 		            pw.println(txtAge.getText());
 		            pw.println(uniqueNumber);
 		            pw.println(txtPassword.getText());
-		            pw.println("appointment");
-		            pw.println("medicine");
 		            pw.println("notes");
 		            pw.flush();
 		            pw.close();		            
