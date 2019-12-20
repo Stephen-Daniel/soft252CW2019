@@ -1,106 +1,153 @@
 
-¹squid:S1186¬"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-Há_RCRITICALZ
+vsquid:S1858Ç"@"format" returns a string, there's no need to call "toString()".(£œÖ¢8Ö×ºóñ-H¬‘RMINORZ
 CODE_SMELL
-[squid:S1481S"'Remove this unused "df" local variable.(ü­Ğ8¬¨Ğ£ñ-Hâ_RMINORZ
+asquid:S1148œ"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8Ö×ºóñ-HÀ‘RMINORZVULNERABILITY
+|squid:S3027Å"FPut single-quotes around ' ' to use the faster "indexOf(char)" method.(Çë‹¢8Ö×ºóñ-HŒ‘RMAJORZ
 CODE_SMELL
-gsquid:S1444*"+Make this "public static frame" field final(¹å‘şøÿÿÿÿ8¶¯œàí-Hã_RMINORZVULNERABILITY
-€squid:UselessImportCheck#"?Remove this unused import 'java.awt.event.InputMethodListener'.(óø©8¬¨Ğ£ñ-Hä_RMINORZ
+asquid:S1148®"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ŠĞœËñ-H£‘RMINORZVULNERABILITY
+^squid:S1604¬"(Make this anonymous inner class a lambda(ÇÙ è8¬¨Ğ£ñ-H‡‘RMAJORZ
 CODE_SMELL
-¤"squid:ClassVariableVisibilityCheck*"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿ8¶¯œàí-Hå_RMINORZVULNERABILITY
- "squid:ClassVariableVisibilityCheck+"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿHæ_RMINORZVULNERABILITY
-¹squid:S1186•"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-Hç_RCRITICALZ
+xsquid:S1854"=Remove this useless assignment to local variable "terminate".(Ñë‘¹ÿÿÿÿÿ8°Àûñ-H›˜RMAJORZ
 CODE_SMELL
-jsquid:S1854S"6Remove this useless assignment to local variable "df".(ü­Ğ8¬¨Ğ£ñ-Hè_RMAJORZ
+ºsquid:S1186™"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H¸‘RCRITICALZ
 CODE_SMELL
-„squid:UselessImportCheck ">Remove this unused import 'com.toedter.components.JSpinField'.(Ì©¤¶üÿÿÿÿ8¬¨Ğ£ñ-Hé_RMINORZ
+[squid:S1604]"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH¹‘RMAJORZ
 CODE_SMELL
-]squid:S1604İ"(Make this anonymous inner class a lambda(ƒ­­œ8¬¨Ğ£ñ-Hê_RMAJORZ
+csquid:S2209a"5Change this instance-reference to a static reference.(¶š¬–HÄ‘RMAJORZ
 CODE_SMELL
-Zsquid:S1604C"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHë_RMAJORZ
+usquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8ëŠôúñ-Hï—RMINORZ
 CODE_SMELL
-‡squid:S00117ã"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8¬¨Ğ£ñ-Hì_RMINORZ
+vsquid:UselessImportCheck"/Remove this unused import 'java.io.FileReader'.(Â¡¢äşÿÿÿÿ8ëŠôúñ-Hğ—RMINORZ
 CODE_SMELL
-±squid:S1186h"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ëİ—Hí_RCRITICALZ
+squid:S14504"VRemove the "surname" field and declare it as a local variable in the relevant methods.(—‡¨åûÿÿÿÿ8Ö×ºóñ-HşRMINORZ
 CODE_SMELL
-|squid:UselessImportCheck"";Remove this unused import 'com.toedter.calendar.JCalendar'.(Ÿç‡8¬¨Ğ£ñ-Hî_RMINORZ
+csquid:S1604"(Make this anonymous inner class a lambda(„çÖßûÿÿÿÿ8¬¨Ğ£ñ-Hº‘RMAJORZ
 CODE_SMELL
-Vsquid:S1604²"(Make this anonymous inner class a lambda(ıÿû‚Hï_RMAJORZ
+}squid:UselessImportCheck)";Remove this unused import 'com.toedter.calendar.JCalendar'.(Ÿç‡8¬¨Ğ£ñ-H­‘RMINORZ
 CODE_SMELL
-ƒsquid:UselessImportCheck!"=Remove this unused import 'com.toedter.calendar.JDayChooser'.(˜íÌûÿÿÿÿ8¬¨Ğ£ñ-Hğ_RMINORZ
+_squid:S1659V"%Declare "patient" on a separate line.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-HõRMINORZ
 CODE_SMELL
-Ysquid:S1148"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHñ_RMINORZVULNERABILITY
-\squid:S14444",Make this "public static userId" field final(Ó¡â±Hò_RMINORZVULNERABILITY
-bsquid:S1604È"(Make this anonymous inner class a lambda(ÿ‚¯üÿÿÿÿ8¬¨Ğ£ñ-Hó_RMAJORZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦H…‘RMINORZ
 CODE_SMELL
-\squid:S1604«"(Make this anonymous inner class a lambda(ğ‡	8¬¨Ğ£ñ-Hô_RMAJORZ
+Vsquid:S1604ü"(Make this anonymous inner class a lambda(ÜºÁRHÃ‘RMAJORZ
 CODE_SMELL
-bsquid:S1604Ø"(Make this anonymous inner class a lambda(€û¬£üÿÿÿÿ8¬¨Ğ£ñ-Hõ_RMAJORZ
+asquid:S1148‘"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8Ö×ºóñ-HûRMINORZVULNERABILITY
+Ysquid:S1148c"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH‘RMINORZVULNERABILITY
+ºsquid:S1186…"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H¿‘RCRITICALZ
 CODE_SMELL
-asquid:S1068."(Remove this unused "nums" private field.(ŠóñÎıÿÿÿÿ8à©ñ¡ğ-Hö_RMAJORZ
+˜squid:S1450B"cRemove the "btnCreateAppointment" field and declare it as a local variable in the relevant methods.(×¾óª8¬¨Ğ£ñ-H‹‘RMINORZ
 CODE_SMELL
-lsquid:S4973ú"9Use the "equals" method if value comparison was intended.(é©ÿÿÿÿÿ8ò–ôßí-H÷_RMAJORZBUG
-—squid:S14501"cRemove the "btnCreateAppointment" field and declare it as a local variable in the relevant methods.(×¾óª8¬¨Ğ£ñ-Hø_RMINORZ
+~squid:UselessImportCheck+"<Remove this unused import 'java.awt.event.InputMethodEvent'.(ÿ“—”8¬¨Ğ£ñ-H²‘RMINORZ
 CODE_SMELL
-Vsquid:S1604÷"(Make this anonymous inner class a lambda(¼¾óHù_RMAJORZ
+bsquid:S1444:"*Make this "public static file" field final(ÇâÜş8Ö×ºóñ-H®‘RMINORZVULNERABILITY
+`squid:S2386î""Make member "request" "protected".(¾®ÁÒøÿÿÿÿ8Ö×ºóñ-H·‘RMINORZVULNERABILITY
+©"squid:ClassVariableVisibilityCheck="UMake beginWith a static final constant or non-public and provide accessors if needed.(öúÚ‡ùÿÿÿÿ8ı¨„­î-H—‘RMINORZVULNERABILITY
+csquid:S1604Œ"(Make this anonymous inner class a lambda(©“÷ñùÿÿÿÿ8Ö×ºóñ-HôRMAJORZ
 CODE_SMELL
-asquid:S1068/"(Remove this unused "temp" private field.(ìøø¯øÿÿÿÿ8à©ñ¡ğ-Hú_RMAJORZ
+csquid:S1604€"(Make this anonymous inner class a lambda(èËåÀıÿÿÿÿ8¬¨Ğ£ñ-H“‘RMAJORZ
 CODE_SMELL
-bsquid:S1604Ê"(Make this anonymous inner class a lambda(óˆåùÿÿÿÿ8¬¨Ğ£ñ-Hû_RMAJORZ
+isquid:S1481".Remove this unused "terminate" local variable.(Ñë‘¹ÿÿÿÿÿ8°Àûñ-Hœ˜RMINORZ
 CODE_SMELL
-Xsquid:S1148I"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿHü_RMINORZVULNERABILITY
-]squid:S1604Œ"(Make this anonymous inner class a lambda(·“‹˜8¬¨Ğ£ñ-Hı_RMAJORZ
+ºsquid:S1186÷"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹à8°Àûñ-Hš˜RCRITICALZ
 CODE_SMELL
-usquid:UselessImportCheck"4Remove this unused import 'javax.swing.JTabbedPane'.(èŞ8¬¨Ğ£ñ-Hş_RMINORZ
+_squid:S1068@"*Remove this unused "number" private field.(òù´Ê8à©ñ¡ğ-H›‘RMAJORZ
 CODE_SMELL
-]squid:S1604»"(Make this anonymous inner class a lambda(ù«óÑ8¬¨Ğ£ñ-Hÿ_RMAJORZ
+squid:S1450V"VRemove the "patient" field and declare it as a local variable in the relevant methods.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-HÿRMINORZ
 CODE_SMELL
-¹squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H€`RCRITICALZ
+]squid:S1659V"#Declare "notes" on a separate line.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-HŠ‘RMINORZ
 CODE_SMELL
-\squid:S1604Õ"(Make this anonymous inner class a lambda(ÜºÁR8¬¨Ğ£ñ-H`RMAJORZ
+ºsquid:S1186¥"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H†‘RCRITICALZ
 CODE_SMELL
-csquid:S1444+".Make this "public static requests" field final(¢áªçûÿÿÿÿH‚`RMINORZVULNERABILITY
-¹squid:S1186Ù"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-Hƒ`RCRITICALZ
+bsquid:S1068>"(Remove this unused "nums" private field.(ŠóñÎıÿÿÿÿ8à©ñ¡ğ-Hµ‘RMAJORZ
 CODE_SMELL
-bsquid:S2209G"5Change this instance-reference to a static reference.(¶š¬–H„`RMAJORZ
+Wsquid:S1604ö"(Make this anonymous inner class a lambda(İÏ‰ÖHª‘RMAJORZ
 CODE_SMELL
-Vsquid:S1604¦"(Make this anonymous inner class a lambda(‹Ô¡H…`RMAJORZ
+š"squid:ClassVariableVisibilityCheckE"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HñRMINORZVULNERABILITY
+asquid:S1444<"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿH‘RMINORZVULNERABILITY
+csquid:S1604ñ"(Make this anonymous inner class a lambda(óˆåùÿÿÿÿ8¬¨Ğ£ñ-HÂ‘RMAJORZ
 CODE_SMELL
-“squid:S14502"ZRemove the "dateChooser" field and declare it as a local variable in the relevant methods.(¼£¿Öıÿÿÿÿ8¬¨Ğ£ñ-H†`RMINORZ
+dsquid:S1444;".Make this "public static requests" field final(¢áªçûÿÿÿÿH±‘RMINORZVULNERABILITY
+squid:S1450V"SRemove the "time" field and declare it as a local variable in the relevant methods.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-H‘RMINORZ
 CODE_SMELL
-}squid:UselessImportCheck$"<Remove this unused import 'java.awt.event.InputMethodEvent'.(ÿ“—”8¬¨Ğ£ñ-H‡`RMINORZ
+]squid:S1604Ä"(Make this anonymous inner class a lambda(ğ‡	8¬¨Ğ£ñ-HöRMAJORZ
 CODE_SMELL
-"squid:ClassVariableVisibilityCheck,"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿHˆ`RMINORZVULNERABILITY
-¹squid:S1186É"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H‰`RCRITICALZ
+³squid:S1186¯"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ëİ—H ‘RCRITICALZ
 CODE_SMELL
-™"squid:ClassVariableVisibilityCheck4"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HŠ`RMINORZVULNERABILITY
-`squid:S1444,"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿH‹`RMINORZVULNERABILITY
-¹squid:S1186Ş"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-HŒ`RCRITICALZ
+vsquid:UselessImportCheck#"4Remove this unused import 'javax.swing.JTabbedPane'.(èŞ8¬¨Ğ£ñ-Hƒ‘RMINORZ
 CODE_SMELL
-Œsquid:S00117Ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–Ššşÿÿÿÿ8¬¨Ğ£ñ-H`RMINORZ
+ºsquid:S1186ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H´‘RCRITICALZ
 CODE_SMELL
-ˆsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦H`RMINORZ
+Ÿ"squid:ClassVariableVisibilityCheck:"PMake file a static final constant or non-public and provide accessors if needed.(ÇâÜş8Ö×ºóñ-H‚‘RMINORZVULNERABILITY
+§"squid:ClassVariableVisibilityCheck6"SMake request a static final constant or non-public and provide accessors if needed.(ôÎÀüÿÿÿÿ8Ö×ºóñ-H•‘RMINORZVULNERABILITY
+]squid:S1068?"(Remove this unused "temp" private field.(º®¸Ÿ8à©ñ¡ğ-H¦‘RMAJORZ
 CODE_SMELL
-¹squid:S1186´"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H`RCRITICALZ
+xsquid:HiddenFieldCheckq"8Rename "file" which hides the field declared at line 58.(ÅÉå¥8Ö×ºóñ-H»‘RMAJORZ
 CODE_SMELL
-¹squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H`RCRITICALZ
+¡"squid:ClassVariableVisibilityCheck;"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿHğRMINORZVULNERABILITY
+Wsquid:S1604¤"(Make this anonymous inner class a lambda(·“‹˜H¢‘RMAJORZ
 CODE_SMELL
-ssquid:UselessImportCheck"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8à©ñ¡ğ-H‘`RMINORZ
+]squid:S1604Ï"(Make this anonymous inner class a lambda(ÍãÃO8¬¨Ğ£ñ-HúRMAJORZ
 CODE_SMELL
-¹squid:S1186Ö"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H’`RCRITICALZ
+jsquid:S14446"-Make this "public static request" field final(ôÎÀüÿÿÿÿ8Ö×ºóñ-H¯‘RMINORZVULNERABILITY
+\squid:S1659V""Declare "date" on a separate line.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-H™‘RMINORZ
 CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck-"UMake beginWith a static final constant or non-public and provide accessors if needed.(öúÚ‡ùÿÿÿÿ8ı¨„­î-H“`RMINORZVULNERABILITY
-Ysquid:S2386ï"#Make member "requests" "protected".(©´å‹ÿÿÿÿÿH”`RMINORZVULNERABILITY
-]squid:S1604”"(Make this anonymous inner class a lambda(ÇÙ è8¬¨Ğ£ñ-H•`RMAJORZ
+ˆsquid:S00117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8¬¨Ğ£ñ-H”‘RMINORZ
 CODE_SMELL
-[squid:S1604è"(Make this anonymous inner class a lambda(èËåÀıÿÿÿÿH–`RMAJORZ
+ºsquid:S1186­"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H‘RCRITICALZ
 CODE_SMELL
-|squid:S00100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H—`RMINORZ
+^squid:S1604ã"(Make this anonymous inner class a lambda(² ºŒ8¬¨Ğ£ñ-H‘RMAJORZ
 CODE_SMELL
-^squid:S10680"*Remove this unused "number" private field.(òù´Ê8à©ñ¡ğ-H˜`RMAJORZ
+ºsquid:S1186ı"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H’‘RCRITICALZ
 CODE_SMELL
-\squid:S1604³"(Make this anonymous inner class a lambda(ÍãÃO8¬¨Ğ£ñ-H™`RMAJORZ
+^squid:S1604˜"(Make this anonymous inner class a lambda(æÉ¸±8Ö×ºóñ-HŸ‘RMAJORZ
 CODE_SMELL
-¹squid:S1186Ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-Hš`RCRITICALZ
+ysquid:HiddenFieldCheckï"8Rename "file" which hides the field declared at line 58.(ö‚×¢8Ö×ºóñ-H°‘RMAJORZ
 CODE_SMELL
-]squid:S1604€"(Make this anonymous inner class a lambda(æÉ¸±8¬¨Ğ£ñ-H›`RMAJORZ
+ysquid:S2095×"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(÷íÿˆ8øú¼óñ-H‘RBLOCKERZBUG
+ˆsquid:S1450?"SRemove the "temp" field and declare it as a local variable in the relevant methods.(º®¸Ÿ8öÜÜ÷ñ-H¨‘RMINORZ
+CODE_SMELL
+^squid:S1604®"(Make this anonymous inner class a lambda(¼¾ó8¬¨Ğ£ñ-Hœ‘RMAJORZ
+CODE_SMELL
+]squid:S1444E",Make this "public static userId" field final(Ó¡â±H–‘RMINORZVULNERABILITY
+^squid:S1604Ù"(Make this anonymous inner class a lambda(ıÿû‚8¬¨Ğ£ñ-HüRMAJORZ
+CODE_SMELL
+squid:S1450V"TRemove the "notes" field and declare it as a local variable in the relevant methods.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-HÁ‘RMINORZ
+CODE_SMELL
+„squid:UselessImportCheck("=Remove this unused import 'com.toedter.calendar.JDayChooser'.(˜íÌûÿÿÿÿ8¬¨Ğ£ñ-H‘RMINORZ
+CODE_SMELL
+squid:S1450V"SRemove the "date" field and declare it as a local variable in the relevant methods.(†Æ‹ûÿÿÿÿ8Ö×ºóñ-Hˆ‘RMINORZ
+CODE_SMELL
+tsquid:UselessImportCheck "2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8à©ñ¡ğ-H÷RMINORZ
+CODE_SMELL
+ysquid:HiddenFieldCheck "8Rename "file" which hides the field declared at line 58.(ÅÉå¥8Ö×ºóñ-H§‘RMAJORZ
+CODE_SMELL
+¥"squid:ClassVariableVisibilityCheck5"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿ8¶¯œàí-H¾‘RMINORZVULNERABILITY
+^squid:S1604„"(Make this anonymous inner class a lambda(ƒ­­œ8¬¨Ğ£ñ-H‘‘RMAJORZ
+CODE_SMELL
+tsquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8€öæúñ-H÷–RMINORZ
+CODE_SMELL
+Zsquid:S1148«"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHî—RMINORZVULNERABILITY
+…squid:UselessImportCheck'">Remove this unused import 'com.toedter.components.JSpinField'.(Ì©¤¶üÿÿÿÿ8¬¨Ğ£ñ-H«‘RMINORZ
+CODE_SMELL
+~squid:S00100½"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H„‘RMINORZ
+CODE_SMELL
+^squid:S1604×"(Make this anonymous inner class a lambda(ù«óÑ8Ö×ºóñ-HóRMAJORZ
+CODE_SMELL
+ºsquid:S1186Ğ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-HïRCRITICALZ
+CODE_SMELL
+hsquid:S14445"+Make this "public static frame" field final(¹å‘şøÿÿÿÿ8¶¯œàí-HùRMINORZVULNERABILITY
+^squid:S1604Ì"(Make this anonymous inner class a lambda(‹Ü¬¡8Ö×ºóñ-H©‘RMAJORZ
+CODE_SMELL
+’squid:S14502"XRemove the "firstname" field and declare it as a local variable in the relevant methods.(ŒøÂÆşÿÿÿÿ8Ö×ºóñ-H¶‘RMINORZ
+CODE_SMELL
+squid:HiddenFieldCheck“";Rename "patient" which hides the field declared at line 86.(®Úõùıÿÿÿÿ8Ö×ºóñ-HøRMAJORZ
+CODE_SMELL
+Wsquid:S1604Í"(Make this anonymous inner class a lambda(‹Ô¡H€‘RMAJORZ
+CODE_SMELL
+`squid:S2386o"#Make member "requests" "protected".(‡ •Œúÿÿÿÿ8Ö×ºóñ-HıRMINORZVULNERABILITY
+"squid:ClassVariableVisibilityCheck<"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿH¼‘RMINORZVULNERABILITY
+lsquid:S4973{"9Use the "equals" method if value comparison was intended.(ùß¢­ÿÿÿÿÿ8ò–ôßí-HòRMAJORZBUG
+isquid:S1659?"4Declare "terminatedFileToRemove" on a separate line.(º®¸Ÿ8çÃš÷ñ-H½‘RMINORZ
+CODE_SMELL
+squid:UselessImportCheck*"?Remove this unused import 'java.awt.event.InputMethodListener'.(óø©8¬¨Ğ£ñ-H³‘RMINORZ
 CODE_SMELL

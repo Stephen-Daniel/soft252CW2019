@@ -1,0 +1,3 @@
+300
+2 every hour from 8am to 10pm
+gives the person something to do

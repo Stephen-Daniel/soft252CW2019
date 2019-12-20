@@ -11,8 +11,15 @@ import LoginSystem.uniqueNumber;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -34,22 +41,39 @@ import com.toedter.calendar.JDayChooser;
 import com.toedter.calendar.JCalendar;
 import java.awt.event.InputMethodListener;
 import java.awt.event.InputMethodEvent;
+import java.awt.Font;
+import java.awt.Color;
 
 public class SecretaryForm {
 // need to work on searching for temp files
-	
-	
+	private JLabel lblTimeTaken;
+	private String firstname;
+	private String doctor, medicine, qty, dosage, description;
+	private String surname;
 	public static JFrame frame;
+	public static File[] request;
+	private JComboBox cbTime;
+	String[] times = new String[] {"0900","0930","1000","1030","1100","1200","1230","1400","1430","1500","1530","1600","1630"};
+	private JComboBox cbStock;
+	public static String [] file;
 	public static File[] requests;
 	public static String [] temps;
 	public String beginWith = "temp";
 	private String nums = "";
-	private String temp;
+	private String temp,terminatedFileToRemove;
 	private int number;
+	private JButton btnApproveAccRemoval;
 	private JButton btnCreateAppointment;
 	private JDateChooser dateChooser;
 	private String uniqueNumber;
 	public static String userId;
+	private JButton btnNotApproved;
+	private JButton btnApproveNewAccounts;
+	private JTextArea txtMessage;
+	private JTextArea txtPatientRequest;
+	private JComboBox cbOrder;
+	private JComboBox<String> cbPatientAppointments;
+	private JComboBox<String> cbDoctor;
 	private static JTextField txtFirstname;
 	private static JTextField txtSurname;
 	private static JTextField txtAddress;
@@ -57,8 +81,15 @@ public class SecretaryForm {
 	private static JTextField txtPostcode;
 	private static JTextField txtGender;
 	private static JTextField txtAge;
+	private JComboBox cbRequests;
+	private JComboBox cbMedicine;
+	private JComboBox<String> cbTermination;
+	private final String filepath = "terminationRequest.txt";
 	private String filename;
 	private static JTextField txtUsername;
+	private String time,date,patient,notes;
+	private String fileRequest = "";
+	private JButton btnStock;
 	//the TextField for typing the date
 		JFormattedTextField  textField = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
 		
@@ -77,12 +108,173 @@ public class SecretaryForm {
 			}
 		});
 	}
-	public void appointment()
+	
+	public void getTempRequests()
 	{
+		secretary getTemps = new secretary();
 		
-		DateFormat df = new SimpleDateFormat("EEE dd-MM-yyyy" );
-		//lbldate.setText(df.format(dateChooser.getDate()));
+		requests = getTemps.FindFiles(temps, "temp");
+		
+		for (File file: requests)
+		{
+			String i = file.getName();
+			cbRequests.addItem(i);
+		}	
 	}
+	
+	public void populateRequests()
+	{
+		filename = cbRequests.getSelectedItem().toString();
+		if (filename != "Temp to approve")
+		{
+			Scanner populate;
+			try {
+				populate = new Scanner(new File(filename));
+				populate.useDelimiter("[\n]");
+				txtFirstname.setText(populate.next());
+				txtSurname.setText(populate.next());
+				txtAddress.setText(populate.next());
+				txtCity.setText(populate.next());
+				txtPostcode.setText(populate.next());
+				txtGender.setText(populate.next());
+				txtAge.setText(populate.next());
+				// for saving patient later
+				uniqueNumber = populate.next();
+				txtUsername.setText(uniqueNumber);
+				//not to show password
+				temp =populate.next();
+				
+				populate.close();
+			} catch (FileNotFoundException e1) {
+				
+				e1.printStackTrace();
+			}
+				// buttons ready to use		
+			btnApproveNewAccounts.setEnabled(true);
+			btnNotApproved.setEnabled(true);
+			
+		}else {
+			clear();
+		}
+	}
+	public void getMedicine()
+	{		
+		secretary getTemps = new secretary();	
+		requests = getTemps.FindFiles(temps, "medicine");		
+		for (File file: requests)
+		{
+			filename = file.getName();
+			medicine = filename;
+			medicine = medicine.replace(".txt", "");
+				Scanner populate;
+				try {
+					populate = new Scanner(new File(filename));
+					populate.useDelimiter("[\n]");
+										
+					qty = populate.next();	
+					
+					populate.close();
+					cbStock.addItem(medicine + " " + qty);									
+				} catch (FileNotFoundException e1) {				
+					e1.printStackTrace();
+				}
+		}	
+	}
+	public void getDoctors()
+	{		
+		secretary getTemps = new secretary();	
+		requests = getTemps.FindFiles(temps, "D");		
+		for (File file: requests)
+		{
+			filename = file.getName();
+			doctor = filename;
+			doctor = doctor.replace(".txt", "");
+				Scanner populate;
+				try {
+					populate = new Scanner(new File(filename));
+					populate.useDelimiter("[\n]");
+					firstname = populate.next();					
+					surname = populate.next();									
+					populate.close();
+					cbDoctor.addItem(doctor + " " + firstname + " " + surname);									
+				} catch (FileNotFoundException e1) {				
+					e1.printStackTrace();
+				}
+		}	
+	}
+	
+	public void clearList()
+	{		
+		for(int i = cbPatientAppointments.getItemCount()-1;i>=1;i--) {
+			cbPatientAppointments.removeItemAt(i);			
+			}
+		getAppointment();
+		for(int i = cbTermination.getItemCount()-1;i>=1;i--) {
+			cbTermination.removeItemAt(i);			
+			}
+		terminationPopulate();
+	}
+	
+	public void saveAppointment()
+	{
+		DateFormat df = new SimpleDateFormat("EEE dd-MM-yyyy" );
+		patient = (String) cbPatientAppointments.getSelectedItem();
+		patient = patient.replace("request", "");
+		doctor = (String) cbDoctor.getSelectedItem();
+		doctor= doctor.substring(0, doctor.indexOf(" "));
+		notes = txtPatientRequest.getText();
+		date = df.format(dateChooser.getDate()).toString();
+		time = (String) cbTime.getSelectedItem();
+		filename = ("AP "+doctor+" " +time+date+".txt");
+		
+		File directoryPath = new File(System.getProperty("user.dir"));					
+		File[] files=directoryPath.listFiles(new FilenameFilter() {			
+			public boolean accept(File dir, String name) {	
+				return name.equals(filename);
+			}}	);
+		
+		if(files.length == 1) {
+			
+			lblTimeTaken.setText("Time and or date taken, Try again");
+		}else {
+			try
+			{					
+				FileWriter fw = new FileWriter(filename);
+				PrintWriter pw = new PrintWriter(fw);  
+	            pw.println(patient);
+	            pw.println(notes);
+	            pw.flush();
+	            pw.close();		            
+	            fw.close(); 
+
+	            File remove = new File(fileRequest);
+	            remove.delete();
+	            clearList();
+	            
+	         }
+			catch (IOException e) {
+			
+	            System.out.println("fail" + filename);									
+			}	
+		  }	
+		}	
+		
+	public void getAppointment()
+	{
+		secretary appointments = new secretary();		
+		request = appointments.FindFiles(file, "request");		
+		for (File file: request)
+		{
+			String i = file.getName();
+			i = i.replace(".txt", "");			
+			cbPatientAppointments.addItem(i);
+		}	
+	}
+	
+	
+
+
+	
 	public static void clear()
 	{
 		txtFirstname.setText("");
@@ -93,75 +285,81 @@ public class SecretaryForm {
 		txtGender.setText("");
 		txtAge.setText("");		
 		txtUsername.setText("");
-		//txtPassword.setText("");
-		
+	
 	}
-	public void clearAll()
+	
+	public void requestAppointmentPopulate()
 	{
-		clear();
-		
+		txtPatientRequest.setText("");
+		fileRequest = (String) cbPatientAppointments.getSelectedItem();
+		fileRequest = fileRequest + ".txt";
+		System.out.println("file to pop " + fileRequest);
+		Scanner patient;
+		try {
+			patient = new Scanner(new File(fileRequest));
+			patient.useDelimiter("\n");				
+			while(patient.hasNext()) {				
+				txtPatientRequest.append(patient.next() +"\n");
+			}
+			patient.close();
+		} catch (FileNotFoundException e1) {				
+			e1.printStackTrace();
+		}
 	}
+	
+	public void updateTerminationList(String removeTerm)
+	{	
+		
+		secretary amend = new secretary();
+		amend.amendFile(removeTerm, filepath);
+		    
+	}
+	
+	public void terminationPopulate()
+	{
+		Scanner termination;
+		try {
+			termination = new Scanner(new File("terminationRequest.txt"));
+			termination.useDelimiter("[\n]");				
+			while(termination.hasNext()) {
+				cbTermination.addItem(termination.next());
+			}
+			termination.close();			
+		} catch (FileNotFoundException e1) {				
+			e1.printStackTrace();
+		}		
+	}
+	
 	public static void sentRequest(String[] request)
 	{
-		
-		
-		
+	
 	}
 	/**
 	 * Create the application.
 	 */
 	public SecretaryForm() {
 		initialize();
-		
+		terminationPopulate();
+		getAppointment();
+		getDoctors();
+		getTempRequests();
+		getMedicine();
 	}
 	public static void Close() {
 		frame.dispose();
 		
 	}
-//	public void populateAdminList(String option)
-//	{
-//		// take out feed back files
-//		//clearAll();
-//		//clear();
-//		String [] choosen;
-//		secretary getFileListDS = new secretary();
-//		if(option.equals("all"))
-//		{
-//			String [] letter = {"A","D","S"};
-//			choosen = letter;
-//		}
-//		else if(option.equals("rating"))
-//		{
-//			String [] letter = {"D"};
-//			choosen = letter;}
-//		else 
-//		{
-//			String [] letter = {"D","S"};
-//		choosen = letter;
-//		}
-//		
-//		for (String begin:choosen) {
-//			
-//		//request = getFileListDS.FindFiles(file, begin);
-//		
-//		for (File file: request)
-//		{
-//			String i = file.getName();
-//			i = i.replace(".txt", "");			
-//			cbAdminList.addItem(i);
-//		}	
-//	  }	
-	
+
 	private void initialize() {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1047, 701);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		JComboBox cbRequests = new JComboBox();
+		cbRequests = new JComboBox();
 		JLabel lblTitle = new JLabel("Secretary");
 		lblTitle.setBounds(12, 13, 164, 14);
 		frame.getContentPane().add(lblTitle);
-		JButton btnNotApproved = new JButton("Not Approved");
+		btnNotApproved = new JButton("Not Approved");
 		JButton btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -173,7 +371,7 @@ public class SecretaryForm {
 		btnLogout.setBounds(924, 626, 97, 25);
 		frame.getContentPane().add(btnLogout);
 		
-		JButton btnApproveNewAccounts = new JButton("Approve New Account");
+		btnApproveNewAccounts = new JButton("Approve New Account");
 		btnApproveNewAccounts.setEnabled(false);
 		btnApproveNewAccounts.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -202,11 +400,11 @@ public class SecretaryForm {
 		btnCreateAppointment.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 		
-				
+				saveAppointment();
 				
 			}
 		});
-		btnCreateAppointment.setBounds(12, 221, 145, 25);
+		btnCreateAppointment.setBounds(109, 363, 174, 25);
 		frame.getContentPane().add(btnCreateAppointment);
 		
 		JButton btnGiveMedicines = new JButton("Give Medicines");
@@ -214,7 +412,7 @@ public class SecretaryForm {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnGiveMedicines.setBounds(12, 308, 229, 25);
+		btnGiveMedicines.setBounds(12, 480, 229, 25);
 		frame.getContentPane().add(btnGiveMedicines);
 		
 		JButton btnOrder = new JButton("Order Medicines");
@@ -225,61 +423,46 @@ public class SecretaryForm {
 		btnOrder.setBounds(500, 396, 153, 25);
 		frame.getContentPane().add(btnOrder);
 		
-		JButton btnApproveAccRemoval = new JButton("Approve account removal");
+		btnApproveAccRemoval = new JButton("Approve account removal");
+		btnApproveAccRemoval.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				secretary terminate = new secretary();
+				String terminated = "terminated";
+				terminatedFileToRemove = cbTermination.getSelectedItem().toString();
+				filename = terminatedFileToRemove;
+				terminated = terminated+filename;
+				
+				System.out.println(filename + " change to " + terminated);
+				
+				File reqFile = new File(filename.trim());
+				File terminatedfile = new File(terminated.trim());
+				
+				if (reqFile.renameTo(terminatedfile)) {  
+					System.out.println(reqFile + " has been changed to " + terminatedfile);
+					}else{
+							System.out.println("error STILL ERROR " + reqFile + " not changed to " + terminatedfile);
+						}
+				updateTerminationList(filename);
+				
+				clearList();
+				
+				btnApproveAccRemoval.setEnabled(false);
+			}
+		});
 		btnApproveAccRemoval.setEnabled(false);
 		btnApproveAccRemoval.setBounds(780, 146, 175, 25);
 		frame.getContentPane().add(btnApproveAccRemoval);
 		
 		lblTitle.setText("Secretary " + userId);
 		
-		cbRequests.setModel(new DefaultComboBoxModel(new String[] {"Request List"}));
+		cbRequests.setModel(new DefaultComboBoxModel(new String[] {"Temp to approve"}));
 		
-		secretary getTemps = new secretary();
-		
-		requests = getTemps.FindFiles(temps, beginWith);
-		
-		for (File file: requests)
-		{
-			String i = file.getName();
-			cbRequests.addItem(i);
-		}	
-	
 		cbRequests.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				filename = cbRequests.getSelectedItem().toString();
-				if (filename != "Request List")
-				{
-					Scanner populate;
-					try {
-						populate = new Scanner(new File(filename));
-						populate.useDelimiter("[\n]");
-						txtFirstname.setText(populate.next());
-						txtSurname.setText(populate.next());
-						txtAddress.setText(populate.next());
-						txtCity.setText(populate.next());
-						txtPostcode.setText(populate.next());
-						txtGender.setText(populate.next());
-						txtAge.setText(populate.next());
-						// for saving patient later
-						uniqueNumber = populate.next();
-						txtUsername.setText(uniqueNumber);
-						//not to show password
-						temp =populate.next();
-						
-						populate.close();
-					} catch (FileNotFoundException e1) {
-						
-						e1.printStackTrace();
-					}
-						// buttons ready to use		
-					btnApproveNewAccounts.setEnabled(true);
-					btnNotApproved.setEnabled(true);
-				}else {
-					clear();
-				}
-				
-			}
-		});
+				populateRequests();
+			}});
+		
 		cbRequests.setBounds(500, 9, 153, 22);
 		frame.getContentPane().add(cbRequests);
 		
@@ -380,112 +563,148 @@ public class SecretaryForm {
 		lblOrder.setBounds(500, 340, 46, 14);
 		frame.getContentPane().add(lblOrder);
 		
-		JComboBox cbOrder = new JComboBox();
+		cbOrder = new JComboBox();
 		cbOrder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		cbOrder.setBounds(500, 365, 153, 20);
+		cbOrder.setBounds(500, 365, 225, 20);
 		frame.getContentPane().add(cbOrder);
 		
-		JLabel lblStock = new JLabel("Stock");
-		lblStock.setBounds(683, 340, 46, 14);
+		JLabel lblStock = new JLabel("Medicine Stock");
+		lblStock.setBounds(791, 340, 138, 14);
 		frame.getContentPane().add(lblStock);
 		
-		JComboBox cbStock = new JComboBox();
+		cbStock = new JComboBox();
 		cbStock.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 			}
 		});
-		cbStock.setBounds(683, 365, 164, 20);
+		cbStock.setBounds(791, 363, 225, 20);
 		frame.getContentPane().add(cbStock);
 		
-		JComboBox cbMedicine = new JComboBox();
+		cbMedicine = new JComboBox();
 		cbMedicine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		cbMedicine.setBounds(12, 337, 229, 20);
+		cbMedicine.setBounds(12, 450, 229, 20);
 		frame.getContentPane().add(cbMedicine);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setBounds(12, 544, 378, 71);
 		frame.getContentPane().add(scrollPane);
 		
-		JTextArea txtMessage = new JTextArea();
+		txtMessage = new JTextArea();
 		scrollPane.setViewportView(txtMessage);
 		
 		JLabel lblMessage = new JLabel("Message");
-		lblMessage.setBounds(12, 516, 46, 14);
+		lblMessage.setBounds(12, 516, 77, 14);
 		frame.getContentPane().add(lblMessage);
 		
 		JLabel lblTermination = new JLabel("Termination");
 		lblTermination.setBounds(400, 45, 83, 14);
 		frame.getContentPane().add(lblTermination);
 		
-		JComboBox cbTermination = new JComboBox();
+		cbTermination = new JComboBox();
+		cbTermination.setModel(new DefaultComboBoxModel(new String[] {"Termination Requests"}));
 		cbTermination.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+			
+				btnApproveAccRemoval.setEnabled(true);
+				
 			}
 		});
 		cbTermination.setBounds(500, 42, 153, 20);
 		frame.getContentPane().add(cbTermination);
 		
-		JButton btnStock = new JButton("Stock Medicines");
+		btnStock = new JButton("Stock Medicines");
 		btnStock.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnStock.setBounds(683, 397, 164, 23);
+		btnStock.setBounds(500, 512, 164, 23);
 		frame.getContentPane().add(btnStock);
 		
 		dateChooser = new JDateChooser();
 		dateChooser.getCalendarButton().addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent arg0) {
-				System.out.println("press button");
-				
+				lblTimeTaken.setText("");
 			}
 		});
 		
-		dateChooser.setBounds(188, 171, 95, 20);
+		dateChooser.setBounds(109, 279, 132, 20);
 		frame.getContentPane().add(dateChooser);
 		dateChooser.setMinSelectableDate(new Date());
 		
-		JComboBox comboBox_1 = new JComboBox();
-		comboBox_1.addActionListener(new ActionListener() {
+		cbDoctor = new JComboBox();
+		cbDoctor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+			
+				
 			}
 		});
-		comboBox_1.setBounds(12, 171, 154, 20);
-		frame.getContentPane().add(comboBox_1);
+		cbDoctor.setBounds(12, 227, 271, 20);
+		frame.getContentPane().add(cbDoctor);
 		
 		JLabel lblDoctor = new JLabel("Doctor");
-		lblDoctor.setBounds(12, 149, 46, 14);
+		lblDoctor.setBounds(12, 205, 46, 14);
 		frame.getContentPane().add(lblDoctor);
 		
 		JLabel lblDate = new JLabel("Date");
-		lblDate.setBounds(188, 145, 46, 14);
+		lblDate.setBounds(109, 255, 46, 14);
 		frame.getContentPane().add(lblDate);
 		
-		JComboBox comboBox = new JComboBox();
-		comboBox.addActionListener(new ActionListener() {
+		cbPatientAppointments = new JComboBox();
+		cbPatientAppointments.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				requestAppointmentPopulate();
 			}
 		});
-		comboBox.setBounds(12, 71, 153, 20);
-		frame.getContentPane().add(comboBox);
+		cbPatientAppointments.setBounds(12, 64, 271, 20);
+		frame.getContentPane().add(cbPatientAppointments);
 		
 		JLabel lblPatient = new JLabel("Patients Appointment Request");
-		lblPatient.setBounds(12, 45, 164, 14);
+		lblPatient.setBounds(12, 38, 164, 14);
 		frame.getContentPane().add(lblPatient);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
-		scrollPane_1.setBounds(12, 100, 271, 45);
+		scrollPane_1.setBounds(12, 90, 271, 110);
 		frame.getContentPane().add(scrollPane_1);
 		
-		JTextArea txtPatientRequest = new JTextArea();
+		txtPatientRequest = new JTextArea();
 		scrollPane_1.setViewportView(txtPatientRequest);
+		
+		JLabel lblTime = new JLabel("Time");
+		lblTime.setBounds(109, 310, 46, 14);
+		frame.getContentPane().add(lblTime);
+		
+		cbTime = new JComboBox(times);
+		cbTime.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				lblTimeTaken.setText("");
+			}
+		});
+		cbTime.setBounds(109, 332, 72, 20);
+		frame.getContentPane().add(cbTime);
+		
+		lblTimeTaken = new JLabel("");
+		lblTimeTaken.setForeground(Color.RED);
+		lblTimeTaken.setFont(new Font("Arial", Font.PLAIN, 16));
+		lblTimeTaken.setBounds(191, 310, 275, 25);
+		frame.getContentPane().add(lblTimeTaken);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.setBounds(500, 475, 225, 20);
+		frame.getContentPane().add(comboBox);
+		
+		JLabel lblToStock = new JLabel("Medicine to stock");
+		lblToStock.setBounds(500, 450, 132, 14);
+		frame.getContentPane().add(lblToStock);
 		
 	}
 }

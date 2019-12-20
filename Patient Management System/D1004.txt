@@ -7,7 +7,17 @@ spare
 spare
 D1002
 password
-4
+3.0
 Start date ; Wed Dec 18 13:16:25 GMT 2019
 Starts with old comments
 Comments
+Date : Wed Dec 18 15:25:10 GMT 2019
+Patient P1006 gave you 4.0 stars
+Rating has lowered your stars
+Their comment was:
+helped me
+Date : Wed Dec 18 15:26:07 GMT 2019
+Patient P1006 gave you 2.0 stars
+Rating has lowered your stars
+Their comment was:
+Could do better

@@ -1,4 +1,4 @@
-# List of external plug-in models previously loaded. Timestamp: 1576659481438
+# List of external plug-in models previously loaded. Timestamp: 1576834499094
 file:/C:/Users/user/.p2/pool/plugins/ch.qos.logback.classic_1.0.7.v20121108-1250.jar
 file:/C:/Users/user/.p2/pool/plugins/ch.qos.logback.core_1.0.7.v20121108-1250.jar
 file:/C:/Users/user/.p2/pool/plugins/ch.qos.logback.slf4j_1.0.7.v201505121915.jar
@@ -97,6 +97,7 @@ file:/C:/Users/user/.p2/pool/plugins/org.apache.felix.gogo.command_1.0.2.v201709
 file:/C:/Users/user/.p2/pool/plugins/org.apache.felix.gogo.runtime_1.1.0.v20180713-1646.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apache.felix.gogo.shell_1.1.0.v20180713-1646.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apache.felix.scr_2.1.14.v20190123-1619.jar
+file:/C:/Users/user/.p2/pool/plugins/org.apache.httpcomponents.httpclient_4.5.6.v20190503-0009.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apache.httpcomponents.httpclient_4.5.6.v20190213-1430.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apache.httpcomponents.httpclient.win_4.5.6.v20190213-1947.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apache.httpcomponents.httpcore_4.4.10.v20190123-2214.jar
@@ -120,9 +121,9 @@ file:/C:/Users/user/.p2/pool/plugins/org.apache.xml.serializer_2.7.1.v2010050804
 file:/C:/Users/user/.p2/pool/plugins/org.apache.xmlgraphics_2.3.0.v20190515-0436.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apache.xmlrpc_3.0.0.v20100427-1100.jar
 file:/C:/Users/user/.p2/pool/plugins/org.apiguardian_1.1.0.v20190826-0900.jar
-file:/C:/Users/user/.p2/pool/plugins/org.bouncycastle.bcpg_1.61.0.v20190602-1335.jar
-file:/C:/Users/user/.p2/pool/plugins/org.bouncycastle.bcpkix_1.61.0.v20190602-1335.jar
-file:/C:/Users/user/.p2/pool/plugins/org.bouncycastle.bcprov_1.61.0.v20190602-1335.jar
+file:/C:/Users/user/.p2/pool/plugins/org.bouncycastle.bcpg_1.64.0.v20191109-0815.jar
+file:/C:/Users/user/.p2/pool/plugins/org.bouncycastle.bcpkix_1.64.0.v20191109-0815.jar
+file:/C:/Users/user/.p2/pool/plugins/org.bouncycastle.bcprov_1.64.0.v20191109-0815.jar
 file:/C:/Users/user/.p2/pool/plugins/org.dadacoalition.yedit_1.0.18.201602092025-RELEASE-SIGNED.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.ant.core_3.5.500.v20190701-1953.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.ant.launching_1.2.600.v20190701-1953.jar
@@ -192,11 +193,11 @@ file:/C:/Users/user/.p2/pool/plugins/org.eclipse.ecf.ssl_1.2.200.v20190502-0212.
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.eclemma.core_3.1.2.201903112331.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.eclemma.doc_3.1.2.201903112331.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.eclemma.ui_3.1.2.201903112331.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit_5.5.1.201910021850-r.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.core_5.5.1.201910021850-r.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.doc_5.5.1.201910021850-r.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.mylyn.ui_5.5.1.201910021850-r.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.ui_5.5.1.201910021850-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.core_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.doc_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.mylyn.ui_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.egit.ui_5.6.0.201912101111-r.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.emf.codegen_2.19.0.v20190821-1536.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.emf.codegen.ecore_2.19.0.v20190822-1451.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.emf.common_2.16.0.v20190625-1131.jar
@@ -324,9 +325,10 @@ file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jetty.xml_9.4.20.v20190813.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jface_3.17.0.v20190820-1444.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jface.databinding_1.9.100.v20190805-1255.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jface.text_3.15.300.v20190819-0725.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit_5.5.1.201910021850-r.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit.archive_5.5.1.201910021850-r.jar
-file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit.ssh.apache_5.5.1.201910021850-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit.archive_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit.http.apache_5.6.0.201912101111-r.jar
+file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jgit.ssh.apache_5.6.0.201912101111-r.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jsch.core_1.3.600.v20190615-1517.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.jsch.ui_1.3.600.v20190617-1017.jar
 file:/C:/Users/user/.p2/pool/plugins/org.eclipse.json_1.1.100.v201901071922.jar

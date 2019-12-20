@@ -1,4 +1,4 @@
-!SESSION 2019-12-18 08:53:16.259 -----------------------------------------------
+!SESSION 2019-12-19 13:52:02.022 -----------------------------------------------
 eclipse.buildId=4.13.0.I20190916-1045
 java.version=1.8.0_221
 java.vendor=Oracle Corporation
@@ -7,9 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
 This is a continuation of log file C:\code\soft252CW2019\.metadata\.bak_1.log
-Created Time: 2019-12-18 13:42:53.511
+Created Time: 2019-12-19 16:56:26.393
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.512
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.393
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -51,7 +51,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.515
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -93,7 +93,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.516
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -135,7 +135,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.517
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -177,7 +177,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.518
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -219,7 +219,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.519
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -261,7 +261,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.519
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -303,7 +303,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.520
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -345,7 +345,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.521
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -387,7 +387,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.522
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -429,7 +429,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.523
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -471,7 +471,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.524
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -513,7 +513,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.525
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -555,7 +555,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.526
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -597,7 +597,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.528
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -639,7 +639,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.529
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -681,7 +681,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.531
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -723,7 +723,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.533
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -765,7 +765,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.534
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -807,7 +807,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.538
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.401
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -849,7 +849,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.539
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -891,7 +891,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.540
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -933,7 +933,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.541
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -975,7 +975,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.542
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1017,7 +1017,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.543
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1059,7 +1059,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.545
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1101,7 +1101,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.546
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1143,7 +1143,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.547
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1185,7 +1185,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.548
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1227,7 +1227,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.549
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1269,7 +1269,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.549
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1311,7 +1311,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.550
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1353,7 +1353,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.551
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1395,7 +1395,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.552
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1437,7 +1437,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.553
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1479,7 +1479,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.553
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.416
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1521,7 +1521,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.554
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1563,7 +1563,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.555
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1605,7 +1605,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.556
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1647,7 +1647,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.558
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1689,7 +1689,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.559
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1731,7 +1731,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.560
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1773,7 +1773,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.561
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1815,7 +1815,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.562
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1857,7 +1857,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.564
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1899,7 +1899,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.565
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1941,7 +1941,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.566
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -1983,7 +1983,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.568
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2025,7 +2025,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.570
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2067,7 +2067,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.571
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2109,7 +2109,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.572
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.432
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2151,7 +2151,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.573
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2193,7 +2193,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.574
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2235,7 +2235,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.575
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2277,7 +2277,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.577
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2319,7 +2319,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.578
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2361,7 +2361,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.579
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2403,7 +2403,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.580
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2445,7 +2445,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.581
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2487,7 +2487,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.582
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2529,7 +2529,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.583
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2571,7 +2571,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.584
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2613,7 +2613,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.585
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2655,7 +2655,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.585
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2697,7 +2697,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.586
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2739,7 +2739,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.587
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.448
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2781,7 +2781,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.588
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2823,7 +2823,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.589
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2865,7 +2865,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.590
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2907,7 +2907,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.591
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2949,7 +2949,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.592
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -2991,7 +2991,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.594
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3033,7 +3033,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.596
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3075,7 +3075,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.598
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3117,7 +3117,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.601
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3159,7 +3159,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.602
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3201,7 +3201,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.604
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3243,7 +3243,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.605
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3285,7 +3285,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.606
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3327,7 +3327,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.607
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3369,7 +3369,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.608
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3411,7 +3411,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.609
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3453,7 +3453,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.610
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.463
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3495,7 +3495,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.610
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3537,7 +3537,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.611
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3579,7 +3579,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.612
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3621,7 +3621,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.613
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3663,7 +3663,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.613
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3705,7 +3705,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.614
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3747,7 +3747,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.615
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3789,7 +3789,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.616
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3831,7 +3831,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.617
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3873,7 +3873,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.618
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3915,7 +3915,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.619
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3957,7 +3957,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.620
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -3999,7 +3999,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.621
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4041,7 +4041,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.621
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4083,7 +4083,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.622
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4125,7 +4125,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.623
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.479
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4167,7 +4167,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.624
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4209,7 +4209,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.626
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4251,7 +4251,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.628
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4293,7 +4293,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.630
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4335,7 +4335,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.632
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4377,7 +4377,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.635
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4419,7 +4419,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.637
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4461,7 +4461,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.638
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4503,7 +4503,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.638
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4545,7 +4545,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.639
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4587,7 +4587,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.640
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4629,7 +4629,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.641
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4671,7 +4671,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.642
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4713,7 +4713,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.643
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4755,7 +4755,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.644
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4797,7 +4797,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.645
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4839,7 +4839,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.645
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4881,7 +4881,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.646
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4923,7 +4923,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.647
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.494
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -4965,7 +4965,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.648
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5007,7 +5007,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.648
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5049,7 +5049,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.649
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5091,7 +5091,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.650
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5133,7 +5133,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.651
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5175,7 +5175,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.652
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5217,7 +5217,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.653
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5259,7 +5259,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.653
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5301,7 +5301,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.654
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5343,7 +5343,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.655
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5385,7 +5385,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.656
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5427,7 +5427,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.657
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5469,7 +5469,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.658
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5511,7 +5511,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.659
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5553,7 +5553,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.660
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5595,7 +5595,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.662
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5637,7 +5637,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.665
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5679,7 +5679,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.666
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5721,7 +5721,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.668
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5763,7 +5763,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.669
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.510
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5805,7 +5805,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.670
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5847,7 +5847,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.671
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5889,7 +5889,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.673
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5931,7 +5931,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.674
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -5973,7 +5973,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.675
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6015,7 +6015,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.677
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6057,7 +6057,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.679
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6099,7 +6099,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.679
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6141,7 +6141,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.680
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6183,7 +6183,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.681
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6225,7 +6225,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.682
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6267,7 +6267,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.683
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6309,7 +6309,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.683
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6351,7 +6351,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.684
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6393,7 +6393,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.685
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6435,7 +6435,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.686
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6477,7 +6477,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.687
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6519,7 +6519,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.687
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6561,7 +6561,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.688
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6603,7 +6603,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.689
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6645,7 +6645,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.690
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.526
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6687,7 +6687,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.691
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6729,7 +6729,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.692
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6771,7 +6771,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.693
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6813,7 +6813,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.694
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6855,7 +6855,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.694
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6897,7 +6897,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.695
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6939,7 +6939,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.696
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -6981,7 +6981,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.697
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7023,7 +7023,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.698
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7065,7 +7065,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.699
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7107,7 +7107,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.700
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7149,7 +7149,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.700
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7191,7 +7191,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.701
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7233,7 +7233,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.702
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7275,7 +7275,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.703
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7317,7 +7317,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.704
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7359,7 +7359,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.704
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7401,7 +7401,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.705
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.541
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7443,7 +7443,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.706
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7485,7 +7485,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.707
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7527,7 +7527,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.709
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7569,7 +7569,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.711
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7611,7 +7611,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.712
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7653,7 +7653,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.714
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7695,7 +7695,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.715
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7737,7 +7737,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.716
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7779,7 +7779,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.717
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7821,7 +7821,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.718
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7863,7 +7863,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.719
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7905,7 +7905,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.720
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7947,7 +7947,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.721
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -7989,7 +7989,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.722
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8031,7 +8031,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.723
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8073,7 +8073,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.723
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8115,7 +8115,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.724
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.557
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8157,7 +8157,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.725
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8199,7 +8199,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.727
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8241,7 +8241,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.728
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8283,7 +8283,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.728
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8325,7 +8325,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.729
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8367,7 +8367,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.730
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8409,7 +8409,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.731
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8451,7 +8451,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.732
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8493,7 +8493,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.732
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8535,7 +8535,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.733
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8577,7 +8577,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.734
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8619,7 +8619,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.735
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8661,7 +8661,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.735
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8703,7 +8703,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.736
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8745,7 +8745,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.737
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8787,7 +8787,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.738
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8829,7 +8829,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.739
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8871,7 +8871,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.739
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8913,7 +8913,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.741
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.573
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8955,7 +8955,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.742
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -8997,7 +8997,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.744
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9039,7 +9039,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.746
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9081,7 +9081,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.746
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9123,7 +9123,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.747
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9165,7 +9165,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.748
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9207,7 +9207,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.749
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9249,7 +9249,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.750
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9291,7 +9291,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.750
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9333,7 +9333,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.751
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9375,7 +9375,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.752
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9417,7 +9417,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.753
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9459,7 +9459,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.753
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9501,7 +9501,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.755
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9543,7 +9543,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.756
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9585,7 +9585,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.756
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9627,7 +9627,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.757
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.588
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9669,7 +9669,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.758
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.604
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9711,7 +9711,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.759
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9753,7 +9753,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.760
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9795,7 +9795,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.760
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9837,7 +9837,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.761
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9879,7 +9879,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.762
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9921,7 +9921,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.763
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -9963,7 +9963,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.764
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10005,7 +10005,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.764
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10047,7 +10047,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.765
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10089,7 +10089,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.766
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10131,7 +10131,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.767
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10173,7 +10173,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.769
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10215,7 +10215,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.770
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10257,7 +10257,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.772
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10299,7 +10299,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.774
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10341,7 +10341,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.775
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10383,7 +10383,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.776
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10425,7 +10425,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.777
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10467,7 +10467,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.779
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10509,7 +10509,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.780
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.605
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10551,7 +10551,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.781
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10593,7 +10593,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.782
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10635,7 +10635,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.783
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10677,7 +10677,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.784
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10719,7 +10719,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.784
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10761,7 +10761,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.785
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10803,7 +10803,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.786
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10845,7 +10845,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.787
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10887,7 +10887,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.788
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10929,7 +10929,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.789
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -10971,7 +10971,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.790
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11013,7 +11013,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.791
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11055,7 +11055,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.792
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11097,7 +11097,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.793
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11139,7 +11139,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.794
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11181,7 +11181,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.795
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.621
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11223,7 +11223,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.796
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11265,7 +11265,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.797
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11307,7 +11307,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.797
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11349,7 +11349,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.798
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11391,7 +11391,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.799
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11433,7 +11433,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.801
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11475,7 +11475,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.802
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11517,7 +11517,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.802
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11559,7 +11559,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.803
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11601,7 +11601,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.805
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11643,7 +11643,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.805
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11685,7 +11685,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.807
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11727,7 +11727,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.808
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11769,7 +11769,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.811
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.636
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11811,7 +11811,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.811
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11853,7 +11853,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.812
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11895,7 +11895,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.813
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11937,7 +11937,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.813
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -11979,7 +11979,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.814
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
@@ -12021,7 +12021,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1468)
 
-!ENTRY org.eclipse.ui.workbench 4 2 2019-12-18 13:42:53.815
+!ENTRY org.eclipse.ui.workbench 4 2 2019-12-19 16:56:26.652
 !MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
 !STACK 0
 java.lang.NullPointerException
