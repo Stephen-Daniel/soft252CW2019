@@ -1,4 +1,4 @@
-P1011 Fri Dec 20 13-46-48 GMT 2019
+P1011 Fri Dec 20 13-46-48 
 D1003.txt
 Whats wrong
 Dates and times.

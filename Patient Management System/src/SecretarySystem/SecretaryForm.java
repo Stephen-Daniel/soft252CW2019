@@ -6,6 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import LoginSystem.LoginForm;
+import LoginSystem.MainDate;
 import LoginSystem.Person;
 import LoginSystem.uniqueNumber;
 
@@ -47,34 +48,38 @@ import java.awt.Color;
 public class SecretaryForm {
 // need to work on searching for temp files
 	private JLabel lblTimeTaken;
-	private String firstname;
-	private String doctor, medicine, qty, dosage, description;
-	private String surname;
+	public static String userId;
+	private String firstname, surname, uniqueNumber, filename;
+	public String doctor, medicine, quantity, dosage, description, prescription, orderFile, orderStock;
+	public String time, date, patient, notes, quantityOfPrescription, quantityInStock, newQuantityInStock;
+	private String fileRequest = "";
+	private String beginWith = "temp";
+	private String nums = "";
+	private String temp,terminatedFileToRemove;	
 	public static JFrame frame;
 	public static File[] request;
-	private JComboBox cbTime;
-	String[] times = new String[] {"0900","0930","1000","1030","1100","1200","1230","1400","1430","1500","1530","1600","1630"};
-	private JComboBox cbStock;
-	public static String [] file;
+	
+	private String[] times = new String[] {"0900","0930","1000","1030","1100","1200","1230","1400","1430","1500","1530","1600","1630"};
+	private final String filepath = "terminationRequest.txt";
+	public static File[] newOrder;
+	public static File[] newStock;
 	public static File[] requests;
 	public static String [] temps;
-	public String beginWith = "temp";
-	private String nums = "";
-	public static String userId;
-	private String uniqueNumber;
-	private String temp,terminatedFileToRemove;
-	private int number;
+	public static String [] file;
+		
+	
+	
 	private JDateChooser dateChooser;
 	private JButton btnApproveAccRemoval;
 	private JButton btnCreateAppointment;
 	private JButton btnNotApproved;
 	private JButton btnStock;
+	private JButton btnGiveMedicines;
 	private JButton btnApproveNewAccounts;
-	private JTextArea txtMessage;
+	private JTextArea txtPrescription;
 	private JTextArea txtPatientRequest;
 	private JLabel lblError;
-	private JComboBox<String> cbPatientAppointments;
-	private JComboBox<String> cbDoctor;
+	
 	private static JTextField txtFirstname;
 	private static JTextField txtSurname;
 	private static JTextField txtAddress;
@@ -82,19 +87,159 @@ public class SecretaryForm {
 	private static JTextField txtPostcode;
 	private static JTextField txtGender;
 	private static JTextField txtAge;
+	private static JTextField txtUsername;
+	private JComboBox<String> cbPatientAppointments;
+	private JComboBox<String> cbDoctor;
 	private JComboBox cbRequests;
 	private JComboBox cbOrder;
-	private JComboBox cbMedicine;
+	private JComboBox cbPrescriptions;
 	private JComboBox<String> cbTermination;
-	private final String filepath = "terminationRequest.txt";
-	private String filename;
-	private static JTextField txtUsername;
-	private String time,date,patient,notes;
-	private String fileRequest = "";
-	
+	private JComboBox cbStock;
+	private JComboBox cbTime;
+	private JComboBox cbMedicineInStock;
+	public int number, prescriptionQuantity = 0, medicineInStock = 0, newMedicineInStock = 0, sum;
 	//the TextField for typing the date
-		JFormattedTextField  textField = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
+	JFormattedTextField  textField = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
+	public void restockMedicines()
+	{	//get midicine name		
+		temp = cbStock.getSelectedItem().toString().trim();
+		orderStock = temp;
+		orderStock = orderStock.replace("stock 1000 ", "").trim();
+	Scanner populate;
+		// get stock add 1000 and save
+			filename = orderStock;	
+			System.out.println(filename + " medicine to update");
+	
+			try {
+				populate = new Scanner(new File(filename));
+				populate.useDelimiter("[\n]");					
+				quantityInStock = populate.next().toString().trim();			
+				populate.close();												
+			} catch (FileNotFoundException e1) {	
+				System.out.println(filename + " failed");
+					e1.printStackTrace();
+			}
+			//sum it
+			medicineInStock = Integer.parseInt(quantityInStock.trim());			
+			newMedicineInStock = medicineInStock + 1000;
+			// edit file
+			newQuantityInStock = Integer.toString(newMedicineInStock);
+			secretary stockUpdate = new secretary();						
+			stockUpdate.amendFile(quantityInStock, newQuantityInStock, filename);
+			
+		//delete file
+		secretary restock = new secretary();
+		restock.deleteFile(temp);
+		getStock();
+		getMedicine();
 		
+	}
+	public void givePrescription()
+	{
+		//get medicine qty in stock
+		filename = medicine + ".txt";	
+		System.out.println(filename + " medicine to update");
+		
+		Scanner populate;
+		try {
+			populate = new Scanner(new File(filename));
+			populate.useDelimiter("[\n]");					
+			quantityInStock = populate.next().toString().trim();			
+			populate.close();												
+		} catch (FileNotFoundException e1) {	
+			System.out.println(filename + " failed");
+				e1.printStackTrace();
+		}
+		//sum it
+		medicineInStock = Integer.parseInt(quantityInStock.trim());
+		prescriptionQuantity = Integer.parseInt(quantityOfPrescription.trim());
+		newMedicineInStock = medicineInStock - prescriptionQuantity;
+		//use int to create order file
+		if(newMedicineInStock < 500) {
+		try
+		{		
+			orderFile = ("order 1000 " + medicine.trim() + ".txt");
+			FileWriter fw = new FileWriter(orderFile);
+			PrintWriter pw = new PrintWriter(fw);  
+            pw.println(medicine.trim());           
+            pw.flush();
+            pw.close();		            
+            fw.close(); 
+            getOrders();
+            }
+		catch (IOException e) {
+            System.out.println("fail" + orderFile);									
+		}
+		}
+		//update medicine text file
+		//System.out.println(newMedicineInStock + " new stock" + quantityInStock + " old stock");
+		newQuantityInStock = Integer.toString(newMedicineInStock);
+		//System.out.println(newMedicineInStock + " new stock" + quantityInStock + " old stock");		
+		secretary stockUpdate = new secretary();						
+		stockUpdate.amendFile(quantityInStock, newQuantityInStock, filename);
+		prescription = cbPrescriptions.getSelectedItem().toString();
+		prescription = (prescription.trim() + ".txt");
+		String renamePrescription = ("old" + prescription);
+		secretary approve = new secretary();
+		File oldfile = new File(prescription);
+		File newfile = new File(renamePrescription);
+		approve.renameFile(oldfile, newfile);
+		
+		getPrescriptions();
+		getMedicine();
+		txtPrescription.setText("");
+		
+	}
+	
+	
+	public void populatePrescription()
+	{
+		
+		prescription = cbPrescriptions.getSelectedItem().toString();
+		
+		
+		System.out.println(filename);	
+		patient = prescription.substring(13, 19);
+		System.out.println(patient);
+		Scanner populate;
+			try {
+				populate = new Scanner(new File(filename));
+				populate.useDelimiter("[\n]");		
+				txtPrescription.setText("");
+				doctor = populate.next();
+				txtPrescription.append("Prescription is for patient " + patient +"\n");
+				//txtPrescription.append(doctor+"/n");
+				medicine = populate.next().trim();
+				txtPrescription.append(medicine +"\n");
+				quantityOfPrescription = populate.next();
+				txtPrescription.append(quantityOfPrescription +"\n");
+				while(populate.hasNext()) {
+					txtPrescription.append(populate.next() + "\n");	
+				}
+				populate.close();												
+			} catch (FileNotFoundException e1) {				
+					e1.printStackTrace();
+				}
+		}	
+	public void getPrescriptions()
+	{
+		for(int i = cbPrescriptions.getItemCount()-1;i>=1;i--) {
+			cbPrescriptions.removeItemAt(i);			
+			}	
+		
+		secretary getTemps = new secretary();	
+		requests = getTemps.FindFiles(temps, "prescription");		
+		for (File file: requests)
+		{
+			filename = file.getName();
+			medicine = filename;
+			medicine = medicine.replace(".txt", "");
+			cbPrescriptions.addItem(medicine);
+		}
+	}
+			
+		
+	
 	public static void main(String id) {
 		userId = id;
 		EventQueue.invokeLater(new Runnable() {
@@ -123,7 +268,38 @@ public class SecretaryForm {
 			cbRequests.addItem(i);
 		}	
 	}
-	
+	public void getStock()
+	{
+		
+		for(int i = cbStock.getItemCount()-1;i>=1;i--) {
+			cbStock.removeItemAt(i);			
+			}
+		secretary getTemps = new secretary();
+		
+		requests = getTemps.FindFiles(temps, "stock");
+		
+		for (File file: requests)
+		{
+			String i = file.getName();
+			cbStock.addItem(i);
+		}	
+	}
+	public void getOrders()
+	{
+		
+		for(int i = cbOrder.getItemCount()-1;i>=1;i--) {
+			cbOrder.removeItemAt(i);			
+			}
+		secretary getTemps = new secretary();
+		
+		requests = getTemps.FindFiles(temps, "order");
+		
+		for (File file: requests)
+		{
+			String i = file.getName();
+			cbOrder.addItem(i);
+		}	
+	}
 	public void populateRequests()
 	{
 		filename = cbRequests.getSelectedItem().toString();
@@ -161,6 +337,10 @@ public class SecretaryForm {
 	}
 	public void getMedicine()
 	{		
+		
+		for(int i = cbMedicineInStock.getItemCount()-1;i>=1;i--) {
+			cbMedicineInStock.removeItemAt(i);			
+			}
 		secretary getTemps = new secretary();	
 		requests = getTemps.FindFiles(temps, "medicine");		
 		for (File file: requests)
@@ -173,10 +353,10 @@ public class SecretaryForm {
 					populate = new Scanner(new File(filename));
 					populate.useDelimiter("[\n]");
 										
-					qty = populate.next();	
+					quantityInStock = populate.next();	
 					
 					populate.close();
-					cbStock.addItem(medicine + " " + qty);									
+					cbMedicineInStock.addItem(medicine + " " + quantityInStock);									
 				} catch (FileNotFoundException e1) {				
 					e1.printStackTrace();
 				}
@@ -220,9 +400,9 @@ public class SecretaryForm {
 	public void saveAppointment()
 	{
 		
-		DateFormat df = new SimpleDateFormat("EEE dd-MM-yyyy" );
+		SimpleDateFormat df = new SimpleDateFormat ("EEE dd-MM-yyyy");
 		patient = (String) cbPatientAppointments.getSelectedItem();
-		patient = patient.replace("request", "");
+		patient = patient.replace("request ", "");
 		doctor = (String) cbDoctor.getSelectedItem();
 		//nice code
 		doctor= doctor.substring(0, doctor.indexOf(" "));
@@ -234,7 +414,7 @@ public class SecretaryForm {
 		time = (String) cbTime.getSelectedItem();
 		
 		
-		filename = ("AP "+doctor+" " +time+date+".txt");
+		filename = ("AP "+doctor+" "+time+" "+date+".txt");
 		System.out.println("is this the problem ");
 		File directoryPath = new File(System.getProperty("user.dir"));					
 		File[] files=directoryPath.listFiles(new FilenameFilter() {			
@@ -358,6 +538,9 @@ public class SecretaryForm {
 		getDoctors();
 		getTempRequests();
 		getMedicine();
+		getPrescriptions();
+		getStock();
+		getOrders();
 	}
 	public static void Close() {
 		frame.dispose();
@@ -431,19 +614,32 @@ public class SecretaryForm {
 		frame.getContentPane().add(btnCreateAppointment);
 		
 		JButton btnGiveMedicines = new JButton("Give Medicines");
+		btnGiveMedicines.setEnabled(false);
 		btnGiveMedicines.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				givePrescription();
+				
+				btnGiveMedicines.setEnabled(false);
 			}
 		});
-		btnGiveMedicines.setBounds(12, 480, 229, 25);
+		btnGiveMedicines.setBounds(161, 626, 229, 25);
 		frame.getContentPane().add(btnGiveMedicines);
 		
 		JButton btnOrder = new JButton("Order Medicines");
 		btnOrder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				orderFile = (cbOrder.getSelectedItem().toString().trim());
+				File newOrder = new File(orderFile);
+				orderStock = orderFile.replace("order", "stock").trim();
+				File newStock = new File(orderStock);
+				secretary rn = new secretary();
+				System.out.println(orderFile);
+				rn.renameFile(newOrder, newStock);
 			}
 		});
-		btnOrder.setBounds(500, 396, 153, 25);
+		btnOrder.setBounds(643, 388, 225, 25);
 		frame.getContentPane().add(btnOrder);
 		
 		btnApproveAccRemoval = new JButton("Approve account removal");
@@ -454,10 +650,8 @@ public class SecretaryForm {
 				String terminated = "terminated";
 				terminatedFileToRemove = cbTermination.getSelectedItem().toString();
 				filename = terminatedFileToRemove;
-				terminated = terminated+filename;
-				
-				System.out.println(filename + " change to " + terminated);
-				
+				terminated = terminated+filename;				
+				System.out.println(filename + " change to " + terminated);				
 				File reqFile = new File(filename.trim());
 				File terminatedfile = new File(terminated.trim());
 				
@@ -465,25 +659,22 @@ public class SecretaryForm {
 					System.out.println(reqFile + " has been changed to " + terminatedfile);
 					}else{
 							System.out.println("error STILL ERROR " + reqFile + " not changed to " + terminatedfile);
-						}
-				updateTerminationList(filename);
-				
-				clearList();
-				
+						 }
+				updateTerminationList(filename);				
+				clearList();				
 				btnApproveAccRemoval.setEnabled(false);
 			}
 		});
 		btnApproveAccRemoval.setEnabled(false);
 		btnApproveAccRemoval.setBounds(780, 146, 175, 25);
-		frame.getContentPane().add(btnApproveAccRemoval);
-		
-		lblTitle.setText("Secretary " + userId);
-		
-		cbRequests.setModel(new DefaultComboBoxModel(new String[] {"Temp to approve"}));
-		
+		frame.getContentPane().add(btnApproveAccRemoval);		
+		lblTitle.setText("Secretary " + userId);		
+		cbRequests.setModel(new DefaultComboBoxModel(new String[] {"Temp to approve"}));	
 		cbRequests.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 				populateRequests();
+				
 			}});
 		
 		cbRequests.setBounds(500, 9, 153, 22);
@@ -582,49 +773,41 @@ public class SecretaryForm {
 		lblRequestTitle.setBounds(400, 12, 72, 16);
 		frame.getContentPane().add(lblRequestTitle);
 		
-		JLabel lblOrder = new JLabel("Order");
-		lblOrder.setBounds(500, 340, 46, 14);
-		frame.getContentPane().add(lblOrder);
-		
 		cbOrder = new JComboBox();
+		cbOrder.setModel(new DefaultComboBoxModel(new String[] {"Medicines to order"}));
 		cbOrder.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		cbOrder.setBounds(500, 365, 225, 20);
+		cbOrder.setBounds(500, 357, 368, 20);
 		frame.getContentPane().add(cbOrder);
 		
-		JLabel lblStock = new JLabel("Medicine Stock");
-		lblStock.setBounds(791, 340, 138, 14);
-		frame.getContentPane().add(lblStock);
-		
-		cbStock = new JComboBox();
-		cbStock.addActionListener(new ActionListener() {
+		cbPrescriptions = new JComboBox();
+		cbPrescriptions.setModel(new DefaultComboBoxModel(new String[] {"Outstanding Prescriptions"}));
+		cbPrescriptions.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				if(cbPrescriptions.getSelectedItem() != "Outstanding Prescriptions") {
+				populatePrescription();
+				btnGiveMedicines.setEnabled(true);
+				}else {
+					btnGiveMedicines.setEnabled(false);
+				}
 				
 			}
 		});
-		cbStock.setBounds(791, 363, 225, 20);
-		frame.getContentPane().add(cbStock);
-		
-		cbMedicine = new JComboBox();
-		cbMedicine.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		cbMedicine.setBounds(12, 450, 229, 20);
-		frame.getContentPane().add(cbMedicine);
+		cbPrescriptions.setBounds(12, 423, 378, 20);
+		frame.getContentPane().add(cbPrescriptions);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(12, 544, 378, 71);
+		scrollPane.setBounds(12, 479, 378, 136);
 		frame.getContentPane().add(scrollPane);
 		
-		txtMessage = new JTextArea();
-		scrollPane.setViewportView(txtMessage);
+		txtPrescription = new JTextArea();
+		scrollPane.setViewportView(txtPrescription);
 		
-		JLabel lblMessage = new JLabel("Message");
-		lblMessage.setBounds(12, 516, 77, 14);
-		frame.getContentPane().add(lblMessage);
+		JLabel lblpresciption = new JLabel("Presciption");
+		lblpresciption.setBounds(12, 454, 77, 14);
+		frame.getContentPane().add(lblpresciption);
 		
 		JLabel lblTermination = new JLabel("Termination");
 		lblTermination.setBounds(400, 45, 83, 14);
@@ -645,9 +828,13 @@ public class SecretaryForm {
 		btnStock = new JButton("Stock Medicines");
 		btnStock.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				if(cbStock.getSelectedItem() != "Medicine to put into stock") {
+				restockMedicines();
+				}
 			}
 		});
-		btnStock.setBounds(500, 512, 164, 23);
+		btnStock.setBounds(643, 491, 225, 23);
 		frame.getContentPane().add(btnStock);
 		
 		dateChooser = new JDateChooser();
@@ -722,19 +909,35 @@ public class SecretaryForm {
 		lblTimeTaken.setBounds(191, 310, 275, 25);
 		frame.getContentPane().add(lblTimeTaken);
 		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setBounds(500, 475, 225, 20);
-		frame.getContentPane().add(comboBox);
-		
-		JLabel lblToStock = new JLabel("Medicine to stock");
-		lblToStock.setBounds(500, 450, 132, 14);
-		frame.getContentPane().add(lblToStock);
+		cbStock = new JComboBox();
+		cbStock.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		cbStock.setModel(new DefaultComboBoxModel(new String[] {"Medicine to put into stock"}));
+		cbStock.setBounds(500, 449, 368, 20);
+		frame.getContentPane().add(cbStock);
 		
 		lblError = new JLabel("");
 		lblError.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		lblError.setForeground(Color.RED);
 		lblError.setBounds(255, 274, 135, 25);
 		frame.getContentPane().add(lblError);
+		
+		cbMedicineInStock = new JComboBox();
+		cbStock.setModel(new DefaultComboBoxModel(new String[] {"Medicine in stock"}));
+		cbMedicineInStock.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				
+			}
+		});
+		cbMedicineInStock.setBounds(500, 563, 368, 20);
+		frame.getContentPane().add(cbMedicineInStock);
+		
+		JLabel lblInStock = new JLabel("Medicine and current stock levels");
+		lblInStock.setBounds(500, 538, 225, 14);
+		frame.getContentPane().add(lblInStock);
 		
 	}
 }

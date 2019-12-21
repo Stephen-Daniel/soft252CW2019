@@ -25,6 +25,47 @@ public class secretary {
 		{
 			
 		}
+		public void amendFile(String oldQuantity, String newQuantity, String filepath)
+		{
+			
+			//System.out.println(oldQuantity + " " + newQuantity);
+			Scanner paper;
+			String tempFile = "amendFileTemp.txt";
+			File oldFile = new File(filepath);
+			File newFile = new File(tempFile);
+			String text = "";
+			try
+			{
+				FileWriter fw = new FileWriter(tempFile, true);
+				BufferedWriter bw = new BufferedWriter(fw);
+				PrintWriter pw = new PrintWriter(bw);
+				paper = new Scanner(new File(filepath));
+				paper.useDelimiter("[\n]");
+				
+				while(paper.hasNext())
+				{
+					text = paper.next().trim();
+					//System.out.println(text + " read first number");
+					if(text.equals(oldQuantity))
+					{
+						//System.out.println(newQuantity + " to replace");
+						pw.println(newQuantity.trim());						
+					}else {
+						pw.println(text.trim());
+					}
+				}
+				paper.close();
+				pw.flush();
+				pw.close();
+				oldFile.delete();
+				File dump = new File(filepath);
+				newFile.renameTo(dump);
+				
+			}catch(IOException e) {
+	            e.printStackTrace();
+				
+			}
+		}
 		public void amendFile(String removeTerm, String filepath)
 		{
 			Scanner paper;

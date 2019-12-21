@@ -40,13 +40,12 @@ public class DoctorForm extends javax.swing.JFrame{
 	private JButton btnPrescribeMedicines;
 	
 	
-	private String doctor, medicine, quantity, dosage, description, chosenMedicine, temp, appointment;
+	private String doctorsNotes, medicine, quantity, dosage, description, chosenMedicine, temp, appointment;
 	private String patient, date, newDate, patientApp;
-	private String filename;
+	private String filename, prescription = "prescription";
 	public static File[] requests;
 	public static String [] temps;
-	private JTextArea txtNewDescription;
-	
+	private JTextArea txtNewDescription;	
 	private JTextArea txtNewAppointment;
 	private JTextField txtQuantityToGivePatient;
 	private JTextField txtNewMedicineName;
@@ -58,7 +57,34 @@ public class DoctorForm extends javax.swing.JFrame{
 	private JTextArea txtMedicineDescription;
 	private JTextArea txtDosage;
 	
-	
+	public void savePrescription()
+	{
+		//"Medicine available"
+		MainDate getDate = new MainDate();
+		date = getDate.sendDate(date);
+		doctorsNotes = txtPatientNewNotes.getText();
+		medicine = cbMedicine.getSelectedItem().toString();
+		quantity = txtQuantityToGivePatient.getText();
+		System.out.println(patient);
+		patient = patient.replaceAll(".txt", "");	
+		prescription = (prescription +" "+ patient + " " + date + ".txt");
+		System.out.println("prescription is for " + prescription);
+		try
+		{					
+			FileWriter fw = new FileWriter(prescription); 
+			PrintWriter pw = new PrintWriter(fw);
+			pw.println(userId);
+			pw.println(medicine);
+            pw.println(quantity);
+            pw.println(doctorsNotes);
+            pw.flush();
+            pw.close();		            
+            fw.close(); 
+            }
+		catch (IOException e) {
+			System.out.println("fail " + patientApp);								
+		}
+	}
 	public void saveNewMedicine()
 	{
 		medicine = txtNewMedicineName.getText();
@@ -81,7 +107,7 @@ public class DoctorForm extends javax.swing.JFrame{
 		catch (IOException e) {
 			System.out.println("fail " + patientApp);								
 		}
-		
+		getMedicine();
 	}
 	public void sendAppointment()
 	
@@ -126,16 +152,16 @@ public class DoctorForm extends javax.swing.JFrame{
 	
 	public void clearList()
 	{		
-		for(int i = cbMedicine.getItemCount()-1;i>=1;i--) {
-			cbMedicine.removeItemAt(i);			
-			}		
-		for(int i = cbAppointments.getItemCount()-1;i>=1;i--) {
-			cbAppointments.removeItemAt(i);			
-			}		
+		
 	}
 	
 	public void getAppointments()
 	{	
+		
+		for(int i = cbAppointments.getItemCount()-1;i>=1;i--) {
+			cbAppointments.removeItemAt(i);			
+			}	
+		
 		secretary getTemps = new secretary();	
 		requests = getTemps.FindFiles(temps, "AP " + userId);		
 		for (File file: requests)
@@ -149,6 +175,11 @@ public class DoctorForm extends javax.swing.JFrame{
 	
 	public void getMedicine()
 	{	
+		for(int i = cbMedicine.getItemCount()-1;i>=1;i--) {
+			cbMedicine.removeItemAt(i);			
+			}
+		
+		
 		secretary getTemps = new secretary();	
 		requests = getTemps.FindFiles(temps, "medicine");		
 		for (File file: requests)
@@ -165,7 +196,7 @@ public class DoctorForm extends javax.swing.JFrame{
 		clear();
 		appointment = cbAppointments.getSelectedItem().toString();		
 		btnPrescribeMedicines.setEnabled(true);
-		getAppointments();		
+		//getAppointments();		
 		for (File file: requests)
 		{
 			filename = file.getName();
@@ -223,8 +254,9 @@ public class DoctorForm extends javax.swing.JFrame{
 		chosenMedicine = cbMedicine.getSelectedItem().toString();
 		btnPrescribeMedicines.setEnabled(true);
 		//make sure vars are correct
-		clearList();
+		int index = cbMedicine.getSelectedIndex();
 		getMedicine();
+		cbMedicine.setSelectedIndex(index);
 		
 		for (File file: requests)
 		{
@@ -336,7 +368,7 @@ public class DoctorForm extends javax.swing.JFrame{
 				btnSendAppointmentToSecretary.setEnabled(true);
 			}
 		});
-		btnMakeAppointments.setBounds(12, 74, 235, 25);
+		btnMakeAppointments.setBounds(12, 74, 245, 25);
 		frame.getContentPane().add(btnMakeAppointments);
 		
 		btnPrescribeMedicines = new JButton("Prescribe Medicines and Dosage");
@@ -344,6 +376,7 @@ public class DoctorForm extends javax.swing.JFrame{
 		btnPrescribeMedicines.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
+				savePrescription();				
 				txtMedicineDescription.setText("");
 				txtQuantityToGivePatient.setText("");
 				txtDosage.setText("");
@@ -352,7 +385,7 @@ public class DoctorForm extends javax.swing.JFrame{
 				
 			}
 		});
-		btnPrescribeMedicines.setBounds(350, 566, 214, 25);
+		btnPrescribeMedicines.setBounds(350, 566, 300, 25);
 		frame.getContentPane().add(btnPrescribeMedicines);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -382,6 +415,7 @@ public class DoctorForm extends javax.swing.JFrame{
 		scrollPane_2.setViewportView(txtPatientNewNotes);
 		
 		cbMedicine = new JComboBox();
+		cbMedicine.setEnabled(false);
 		cbMedicine.setModel(new DefaultComboBoxModel(new String[] {"Medicine available"}));
 		cbMedicine.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -499,13 +533,14 @@ public class DoctorForm extends javax.swing.JFrame{
 			public void actionPerformed(ActionEvent arg0) {
 			
 				if(cbAppointments.getSelectedItem() != "Appointments available")
-				{				
+				{		
+					cbMedicine.setEnabled(true);
 					btnMakeAppointments.setEnabled(true);
 					populatePatient();				
 				}				
 			}
 		});
-		cbAppointments.setBounds(12, 43, 235, 20);
+		cbAppointments.setBounds(12, 43, 245, 20);
 		frame.getContentPane().add(cbAppointments);
 		
 		JLabel lblAppointments = new JLabel("Appointments");
@@ -518,17 +553,18 @@ public class DoctorForm extends javax.swing.JFrame{
 				//clear all re run populates
 				endAppointment();
 				clear();
-				clearList();
+				
+				cbMedicine.setEnabled(false);
 				btnMakeAppointments.setEnabled(false);
 				getAppointments();
 				getMedicine();
 			}
 		});
-		btnEndAppointment.setBounds(785, 528, 185, 23);
+		btnEndAppointment.setBounds(670, 528, 300, 23);
 		frame.getContentPane().add(btnEndAppointment);
 		
 		JScrollPane scrollPane_6 = new JScrollPane();
-		scrollPane_6.setBounds(12, 110, 235, 92);
+		scrollPane_6.setBounds(12, 110, 245, 92);
 		frame.getContentPane().add(scrollPane_6);
 		
 		txtNewAppointment = new JTextArea();
@@ -544,7 +580,7 @@ public class DoctorForm extends javax.swing.JFrame{
 				
 			}});
 		btnSendAppointmentToSecretary.setEnabled(false);
-		btnSendAppointmentToSecretary.setBounds(12, 213, 235, 23);
+		btnSendAppointmentToSecretary.setBounds(12, 213, 245, 23);
 		frame.getContentPane().add(btnSendAppointmentToSecretary);
 		
 		JLabel lblDoctorsNotes = new JLabel("Doctors Notes");
