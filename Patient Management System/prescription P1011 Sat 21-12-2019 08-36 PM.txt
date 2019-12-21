@@ -1,0 +1,8 @@
+D1003
+medicine looksImportant
+60
+1 a day, to be taken at 12noon.qqq cold head
+qqqq Lanced swelling
+qqqqq come back next week after 12.00
+
+

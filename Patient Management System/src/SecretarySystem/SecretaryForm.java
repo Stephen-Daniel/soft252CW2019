@@ -511,14 +511,13 @@ public class SecretaryForm {
 	
 	public void terminationPopulate()
 	{
-		Scanner termination;
+		Scanner populate;
 		try {
-			termination = new Scanner(new File("terminationRequest.txt"));
-			termination.useDelimiter("[\n]");				
-			while(termination.hasNext()) {
-				cbTermination.addItem(termination.next());
+			populate = new Scanner(new File("terminationRequest.txt"));
+			while(populate.hasNext()) {
+				cbTermination.addItem(populate.next().trim());
 			}
-			termination.close();			
+			populate.close();			
 		} catch (FileNotFoundException e1) {				
 			e1.printStackTrace();
 		}		
@@ -817,8 +816,8 @@ public class SecretaryForm {
 		cbTermination.setModel(new DefaultComboBoxModel(new String[] {"Termination Requests"}));
 		cbTermination.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-			
-				btnApproveAccRemoval.setEnabled(true);
+			if(cbTermination.getSelectedItem() != "Termination Requests") {
+				btnApproveAccRemoval.setEnabled(true);}
 				
 			}
 		});

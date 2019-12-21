@@ -45,15 +45,15 @@ public class PatientForm extends javax.swing.JFrame{
 	private JComboBox cbPrescribedMedicine;
 	private JComboBox cbDoctorAppointment;
 	
-	
-	private JTextField txtDisplayHistory;
+	private JTextArea txtPrescriptionNotes;
+	private JTextArea txtDisplayHistory;
 	private JTextField txtMedicine;
 	private JTextArea txtDoctorsDetails;
 	private JTextArea txtRatings;
 	private JTextArea txtWhatsWrong;
 	private JTextField txtQuantity;
 	private JTextField txtDosage;
-	private JTextField txtAppointment;
+	private JTextArea txtAppointment;
 	private JTextArea txtPatientDetails;
 	private JTextArea txtDisplayFeedback;
 	
@@ -68,22 +68,158 @@ public class PatientForm extends javax.swing.JFrame{
 	private JRadioButton rbs4;
 	private JRadioButton rbs5;
 	
-	private String firstname, doctor, surname, date, newDate, chosenDoctor;
-	private String filename, highOrLow,temp;
+	private String firstname, doctor, surname, date, newDate, chosenDoctor, patientID, doctorID;
+	private String filename, highOrLow, temp, prescriptionFile, chosenPrescription, address;
 	public String beginsWith = "";
 	public static String userId;
 	
 	public static String [] temps;
 	
 	public static File[] requests;
-	
+	public static File[] appointments;
 	private boolean s1,s2,s3,s4,s5;
 	
 	private double rating;
 	private double newRating;
 	private double updatedRating;
 	private JTextArea txtDatesToBeSeen;
+	private JScrollPane scrollPane_7;
 	
+	
+	public void populateAppointments()
+	{
+		secretary getAppointments = new secretary();	
+		appointments = getAppointments.FindFiles(temps, "AP");
+		//grab all appointments
+		for (File file: appointments)
+		{
+			filename = file.getName();
+		//search each appointment for the patient logged on	
+			Scanner populate;
+			try {
+				populate = new Scanner(new File(filename));				
+				patientID = populate.next().trim();
+				patientID = patientID.substring(0, 5);
+				System.out.println(patientID + " and " + userId);
+				if(userId.equals(patientID)) {
+					//grab doctors name address
+					doctorID = (filename.substring(3, 8));
+					filename = filename.replace(doctorID, "");
+					System.out.println("doctorID " + doctorID + " "+filename);
+					
+							Scanner doctorsDetails;
+							try {
+								doctorID = (doctorID + ".txt").trim();
+								doctorsDetails = new Scanner(new File(doctorID));
+								doctorsDetails.useDelimiter("[\n]");
+								firstname = doctorsDetails.next();
+								surname = doctorsDetails.next();
+								address = doctorsDetails.next();			
+								doctorsDetails.close();
+							    filename = filename.replace(".txt", "");
+							    
+							    filename = filename.replace("AP", (firstname +" "+surname+", "+address+" at"));
+							    txtAppointment.append(filename +"\n");
+							} catch (FileNotFoundException e1) {				
+								e1.printStackTrace();
+							}								
+				}
+			
+				populate.close();
+			} catch (FileNotFoundException e1) {				
+				e1.printStackTrace();
+			}	
+	
+		}
+		
+	}
+	public void populatePrescribedMedicine()
+	{
+		secretary getTemps = new secretary();	
+		requests = getTemps.FindFiles(temps, "prescription " + userId);
+		txtRatings.setText("");	
+		for (File file: requests)
+		{
+			filename = file.getName();
+			prescriptionFile = filename.trim();
+			temp = prescriptionFile;
+			temp = temp.replace(".txt", "");
+			cbPrescribedMedicine.addItem(temp.toString());
+		}
+	}
+	public void populatePrescription()
+
+	{
+		chosenPrescription = (chosenPrescription + ".txt").trim();
+		txtMedicine.setText("");
+		txtQuantity.setText("");
+		txtDosage.setText("");
+		txtPrescriptionNotes.setText("");
+		
+		System.out.println(chosenPrescription + " prescriptionFile");		
+		Scanner populate;
+		try {
+			populate = new Scanner(new File(chosenPrescription));
+			populate.useDelimiter("[\n]");
+			doctor = populate.next().trim();
+			txtMedicine.setText(populate.next());
+			txtQuantity.setText(populate.next());
+			txtDosage.setText(populate.next());
+			
+			while(populate.hasNext()) {
+			txtPrescriptionNotes.append(populate.next() +"\n");
+			}			
+			populate.close();
+		} catch (FileNotFoundException e1) {				
+			e1.printStackTrace();
+		}
+		//grab doctors address
+		txtDoctorsDetails.setText("");
+		doctor = (doctor + ".txt").trim();	
+		System.out.println(doctor + " doctor");
+		try {
+			populate = new Scanner(new File(doctor));
+			populate.useDelimiter("[\n]");
+			
+			for (int i = 1;i < 6;i++) { 
+				
+			txtDoctorsDetails.append(populate.next() +"\n");
+			
+			}
+			
+			populate.close();
+		} catch (FileNotFoundException e1) {				
+			e1.printStackTrace();
+		}
+		
+	}
+	public void populatePatient()
+	{
+		String filename = userId;														
+		filename = (filename + ".txt");
+		System.out.println(filename + " name that searches for file then reads to populate");		
+		Scanner populate;
+		try {
+			populate = new Scanner(new File(filename));
+			populate.useDelimiter("[\n]");
+			txtPatientDetails.setText(populate.next());
+			txtPatientDetails.append(populate.next() + "\n");
+			txtPatientDetails.append(populate.next() + "\n");
+			txtPatientDetails.append(populate.next() + "\n");
+			txtPatientDetails.append(populate.next() + "\n");
+			txtPatientDetails.append("Gender : " + populate.next() + "\n");
+			txtPatientDetails.append("Age : " + populate.next() + "\n");				 
+			temp = (populate.next());	
+			temp = (populate.next());
+			while(populate.hasNext()) {
+			txtDisplayHistory.append(populate.next() +"\n");
+			}			
+			populate.close();
+		} catch (FileNotFoundException e1) {				
+			e1.printStackTrace();
+		}
+		
+	}
 	public static void main(String id) {
 		userId = id;
 		EventQueue.invokeLater(new Runnable() {
@@ -279,7 +415,9 @@ public void rateDoctors()
 	public PatientForm() {
 		initialize();
 		rateDoctors();
-		
+		populatePatient();
+		populatePrescribedMedicine();
+		populateAppointments();
 	}
 	public void starsEnabled(boolean onOff) 
 	{
@@ -341,25 +479,6 @@ public void rateDoctors()
 		btnRequestApp.setBounds(10, 225, 200, 25);
 		frame.getContentPane().add(btnRequestApp);
 		
-		JButton btnViewHistory = new JButton("View History");
-		btnViewHistory.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		btnViewHistory.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewHistory.setBounds(794, 243, 200, 25);
-		frame.getContentPane().add(btnViewHistory);
-		
-		JButton btnViewAppointment = new JButton("View Appointment");
-		btnViewAppointment.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-			}
-		});
-		btnViewAppointment.setFont(new Font("Arial", Font.PLAIN, 15));
-		btnViewAppointment.setBounds(393, 271, 200, 25);
-		frame.getContentPane().add(btnViewAppointment);
-		
 		JButton btnLogout = new JButton("Logout");
 		btnLogout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -391,10 +510,10 @@ public void rateDoctors()
 		lblTitle.setText("Patient " + userId);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(716, 35, 335, 197);
+		scrollPane.setBounds(715, 75, 335, 197);
 		frame.getContentPane().add(scrollPane);
 		
-		txtDisplayHistory = new JTextField();
+		txtDisplayHistory = new JTextArea();
 		txtDisplayHistory.setEditable(false);
 		scrollPane.setViewportView(txtDisplayHistory);
 		txtDisplayHistory.setColumns(10);
@@ -474,33 +593,24 @@ public void rateDoctors()
 		txtRatings.setBounds(20, 64, 217, 128);
 		frame.getContentPane().add(txtRatings);
 		
-		txtPatientDetails = new JTextArea();
-		txtPatientDetails.setEditable(false);
-		txtPatientDetails.setBounds(240, 461, 270, 120);
-		frame.getContentPane().add(txtPatientDetails);
-		
-		txtDoctorsDetails = new JTextArea();
-		txtDoctorsDetails.setEditable(false);
-		txtDoctorsDetails.setBounds(524, 461, 270, 120);
-		frame.getContentPane().add(txtDoctorsDetails);
-		
 		JScrollPane scrollPane_2 = new JScrollPane();
 		scrollPane_2.setBounds(808, 461, 270, 120);
 		frame.getContentPane().add(scrollPane_2);
 		
-		JTextArea textPrescriptionNotes = new JTextArea();
-		textPrescriptionNotes.setEditable(false);
-		scrollPane_2.setViewportView(textPrescriptionNotes);
+		txtPrescriptionNotes = new JTextArea();
+		txtPrescriptionNotes.setFont(new Font("Arial", Font.PLAIN, 13));
+		txtPrescriptionNotes.setEditable(false);
+		scrollPane_2.setViewportView(txtPrescriptionNotes);
 		
 		txtMedicine = new JTextField();
 		txtMedicine.setEditable(false);
-		txtMedicine.setBounds(240, 592, 270, 20);
+		txtMedicine.setBounds(240, 592, 284, 20);
 		frame.getContentPane().add(txtMedicine);
 		txtMedicine.setColumns(10);
 		
 		txtQuantity = new JTextField();
 		txtQuantity.setEditable(false);
-		txtQuantity.setBounds(524, 592, 86, 20);
+		txtQuantity.setBounds(534, 592, 76, 20);
 		frame.getContentPane().add(txtQuantity);
 		txtQuantity.setColumns(10);
 		
@@ -534,12 +644,6 @@ public void rateDoctors()
 		JLabel lblWriteWhatsWrong = new JLabel("Write whats wrong");
 		lblWriteWhatsWrong.setBounds(10, 316, 235, 14);
 		frame.getContentPane().add(lblWriteWhatsWrong);
-		
-		txtAppointment = new JTextField();
-		txtAppointment.setEditable(false);
-		txtAppointment.setBounds(393, 307, 270, 29);
-		frame.getContentPane().add(txtAppointment);
-		txtAppointment.setColumns(10);
 		
 		cbDoctorRate = new JComboBox();
 		cbDoctorRate.setEnabled(false);
@@ -596,13 +700,24 @@ public void rateDoctors()
 		btnSubmitRequest.setBounds(10, 523, 89, 23);
 		frame.getContentPane().add(btnSubmitRequest);
 		
-		cbPrescribedMedicine = new JComboBox();
+		cbPrescribedMedicine = new JComboBox();		
 		cbPrescribedMedicine.setModel(new DefaultComboBoxModel(new String[] {"Prescribed Medicine"}));
-		cbPrescribedMedicine.setBounds(524, 430, 264, 20);
+		cbPrescribedMedicine.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				if(cbPrescribedMedicine.getSelectedItem() != "Prescribed Medicine") {
+					
+					chosenPrescription = cbPrescribedMedicine.getSelectedItem().toString().trim();
+					populatePrescription();
+				}
+				
+			}
+		});
+		
+		cbPrescribedMedicine.setBounds(458, 405, 353, 20);
 		frame.getContentPane().add(cbPrescribedMedicine);
 		
 		JLabel lblChoseDate = new JLabel("When would you like to be seen");
-		lblChoseDate.setBounds(10, 422, 175, 14);
+		lblChoseDate.setBounds(10, 422, 249, 14);
 		frame.getContentPane().add(lblChoseDate);
 		
 		JScrollPane scrollPane_4 = new JScrollPane();
@@ -612,5 +727,41 @@ public void rateDoctors()
 		txtDatesToBeSeen = new JTextArea();
 		txtDatesToBeSeen.setText("Dates and times.");
 		scrollPane_4.setViewportView(txtDatesToBeSeen);
+		
+		JScrollPane scrollPane_5 = new JScrollPane();
+		scrollPane_5.setBounds(240, 461, 270, 120);
+		frame.getContentPane().add(scrollPane_5);
+		
+		txtPatientDetails = new JTextArea();
+		txtPatientDetails.setFont(new Font("Arial", Font.PLAIN, 13));
+		scrollPane_5.setViewportView(txtPatientDetails);
+		txtPatientDetails.setEditable(false);
+		
+		JScrollPane scrollPane_6 = new JScrollPane();
+		scrollPane_6.setBounds(524, 461, 274, 120);
+		frame.getContentPane().add(scrollPane_6);
+		
+		txtDoctorsDetails = new JTextArea();
+		txtDoctorsDetails.setFont(new Font("Arial", Font.PLAIN, 13));
+		scrollPane_6.setViewportView(txtDoctorsDetails);
+		txtDoctorsDetails.setEditable(false);
+		
+		scrollPane_7 = new JScrollPane();
+		scrollPane_7.setBounds(339, 296, 501, 88);
+		frame.getContentPane().add(scrollPane_7);
+		
+		txtAppointment = new JTextArea();
+		txtAppointment.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		scrollPane_7.setViewportView(txtAppointment);
+		txtAppointment.setEditable(false);
+		txtAppointment.setColumns(10);
+		
+		JLabel lblPatientsHistory = new JLabel("Patients History");
+		lblPatientsHistory.setBounds(715, 38, 148, 14);
+		frame.getContentPane().add(lblPatientsHistory);
+		
+		JLabel lblNewLabel = new JLabel("Next Appointments");
+		lblNewLabel.setBounds(339, 273, 148, 14);
+		frame.getContentPane().add(lblNewLabel);
 	}
 }

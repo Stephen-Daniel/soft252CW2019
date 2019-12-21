@@ -1,105 +1,103 @@
 
-msquid:S4973Í"9Use the "equals" method if value comparison was intended.(ãÉìøÿÿÿÿ8‹ìö™ò-HûÅRMAJORZBUG
-csquid:S1604í"(Make this anonymous inner class a lambda(ª¶ˆÒúÿÿÿÿ8å”ë—ò-HüÅRMAJORZ
+\squid:S1659,""Declare "date" on a separate line.(±Ò¬ˆşÿÿÿÿ8¯Ñ‹¡ò-HÊÛRMINORZ
 CODE_SMELL
-~squid:S00100Ï"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HıÅRMINORZ
+^squid:S1659+")Declare "description" on a separate line.(»şË¸8å”ë—ò-H¨ÛRMINORZ
 CODE_SMELL
-^squid:S1604”"(Make this anonymous inner class a lambda(ñÌ±8® ã§ñ-HşÅRMAJORZ
+asquid:S1148™"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8øõƒ˜ò-HÌÛRMINORZVULNERABILITY
+ksquid:S1444.".Make this "public static requests" field final(¢áªçûÿÿÿÿ8å”ë—ò-H²ÛRMINORZVULNERABILITY
+hsquid:S1444/"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿ8å”ë—ò-H­ÛRMINORZVULNERABILITY
+ˆsquid:S00117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÃÚç8Ÿˆ¾òğ-H¸ÛRMINORZ
 CODE_SMELL
-[squid:S1659+"&Declare "quantity" on a separate line.(»şË¸8½ƒ££ò-HÿÅRMINORZ
+bsquid:S1659,"(Declare "patientApp" on a separate line.(±Ò¬ˆşÿÿÿÿ8½ÿÌ¡ò-H»ÛRMINORZ
 CODE_SMELL
-~squid:S1192U"FDefine a constant instead of duplicating this literal "fail " 3 times.(àÙÏœ8Ïó¿Áò-H€ÆRCRITICALZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¤ï­HÁÛRMINORZ
 CODE_SMELL
-asquid:S1148—"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8¯Ñ‹¡ò-HÆRMINORZVULNERABILITY
-Wsquid:S1659+""Declare "temp" on a separate line.(»şË¸8å”ë—ò-H‚ÆRMINORZ
+¨"squid:ClassVariableVisibilityCheck."TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿ8å”ë—ò-H§ÛRMINORZVULNERABILITY
+csquid:S1604À"(Make this anonymous inner class a lambda(Çáÿÿÿÿÿ8½ÿÌ¡ò-H£ÛRMAJORZ
 CODE_SMELL
-Rsquid:S1643Ö"Use a StringBuilder instead.(æÛã¢8¯Ñ‹¡ò-HƒÆRMINORZ
+Rsquid:S1643Ø"Use a StringBuilder instead.(æÛã¢8¯Ñ‹¡ò-H¾ÛRMINORZ
 CODE_SMELL
-squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(¬£ëøÿÿÿÿH„ÆRMAJORZ
+^squid:S1604İ"(Make this anonymous inner class a lambda(‹Ô¡8å”ë—ò-H—ÛRMAJORZ
 CODE_SMELL
-xsquid:S2095|"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ùİô‚8½ÿÌ¡ò-H…ÆRBLOCKERZBUG
-csquid:S1604†"(Make this anonymous inner class a lambda(‹¶¼øÿÿÿÿ8® ã§ñ-H†ÆRMAJORZ
+^squid:S1659+")Declare "appointment" on a separate line.(»şË¸8ÅÔ™ò-H°ÛRMINORZ
 CODE_SMELL
-bsquid:S1659,"(Declare "patientApp" on a separate line.(±Ò¬ˆşÿÿÿÿ8½ÿÌ¡ò-H‡ÆRMINORZ
+^squid:S1604©"(Make this anonymous inner class a lambda(Ñûş†8® ã§ñ-HÃÛRMAJORZ
 CODE_SMELL
-šsquid:S1450&"`Remove the "btnEndAppointment" field and declare it as a local variable in the relevant methods.(éÙı¶ıÿÿÿÿ8®¤–˜ò-HˆÆRMINORZ
+[squid:S1659+"&Declare "quantity" on a separate line.(»şË¸8½ƒ££ò-H¤ÛRMINORZ
 CODE_SMELL
-}squid:S2095J"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(İ¾Ïÿÿÿÿÿ8¹ÎòÁò-H‰ÆRBLOCKERZBUG
-squid:S1450+"[Remove the "doctorsNotes" field and declare it as a local variable in the relevant methods.(»şË¸8¹ÎòÁò-HŠÆRMINORZ
+šsquid:S1450%"`Remove the "btnCreateMedicine" field and declare it as a local variable in the relevant methods.(ïğùşÿÿÿÿ8®¤–˜ò-H¹ÛRMINORZ
 CODE_SMELL
-squid:S1450+"ZRemove the "description" field and declare it as a local variable in the relevant methods.(»şË¸8¹ÎòÁò-H‹ÆRMINORZ
+squid:S1450+"[Remove the "doctorsNotes" field and declare it as a local variable in the relevant methods.(»şË¸8¹ÎòÁò-HÈÛRMINORZ
 CODE_SMELL
-isquid:S2209»"5Change this instance-reference to a static reference.(õŞŸ¶ùÿÿÿÿHŒÆRMAJORZ
+¥"squid:ClassVariableVisibilityCheck/"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿ8å”ë—ò-HÂÛRMINORZVULNERABILITY
+^squid:S1604À"(Make this anonymous inner class a lambda(…£ÉÙ8® ã§ñ-HÆÛRMAJORZ
 CODE_SMELL
-^squid:S1659+")Declare "description" on a separate line.(»şË¸8å”ë—ò-HÆRMINORZ
+|squid:S1858v"B"sendDate" returns a string, there's no need to call "toString()".(¾ÁÀÓşÿÿÿÿ8½ÿÌ¡ò-H¥ÛRMINORZ
 CODE_SMELL
-ˆsquid:S00117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©šË±8å”ë—ò-HÆRMINORZ
+Wsquid:S1604ú"(Make this anonymous inner class a lambda(¥ó¼³H¡ÛRMAJORZ
 CODE_SMELL
-asquid:S2386¦"#Make member "requests" "protected".(Î§çåøÿÿÿÿ8å”ë—ò-HÆRMINORZVULNERABILITY
-^squid:S1659+")Declare "appointment" on a separate line.(»şË¸8ÅÔ™ò-HÆRMINORZ
+}squid:S2095K"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(İ¾Ïÿÿÿÿÿ8¹ÎòÁò-H©ÛRBLOCKERZBUG
+isquid:S2209½"5Change this instance-reference to a static reference.(õŞŸ¶ùÿÿÿÿHœÛRMAJORZ
 CODE_SMELL
-[squid:S1659+"&Declare "medicine" on a separate line.(»şË¸8øõƒ˜ò-H‘ÆRMINORZ
+asquid:S1148¿"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¯Ñ‹¡ò-HÏÛRMINORZVULNERABILITY
+•squid:S1192Ï"WDefine a constant instead of duplicating this literal "Appointments available" 3 times.(ãÉìøÿÿÿÿ8ßÉ…¢ò-H˜ÛRCRITICALZ
 CODE_SMELL
-}squid:S2095b"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÂÎÿÌùÿÿÿÿ8½ƒ££ò-H’ÆRBLOCKERZBUG
-š"squid:ClassVariableVisibilityCheck"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H“ÆRMINORZVULNERABILITY
-squid:S1450+"ZRemove the "appointment" field and declare it as a local variable in the relevant methods.(»şË¸8÷ìä™ò-H”ÆRMINORZ
+squid:S00117Ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÎ¿éûÿÿÿÿ8® ã§ñ-H¬ÛRMINORZ
 CODE_SMELL
-ksquid:S1444.".Make this "public static requests" field final(¢áªçûÿÿÿÿ8å”ë—ò-H•ÆRMINORZVULNERABILITY
-Wsquid:S1604Û"(Make this anonymous inner class a lambda(‹Ô¡H–ÆRMAJORZ
+]squid:S1444",Make this "public static userId" field final(Ó¡â±H±ÛRMINORZVULNERABILITY
+Wsquid:S1659+""Declare "temp" on a separate line.(»şË¸8å”ë—ò-HÎÛRMINORZ
 CODE_SMELL
-^squid:S1604§"(Make this anonymous inner class a lambda(Ñûş†8® ã§ñ-H—ÆRMAJORZ
+msquid:S4973Ï"9Use the "equals" method if value comparison was intended.(ãÉìøÿÿÿÿ8‹ìö™ò-HÇÛRMAJORZBUG
+ˆsquid:S00117’"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8Ÿˆ¾òğ-H®ÛRMINORZ
 CODE_SMELL
-_squid:S1659-"*Declare "prescription" on a separate line.(Òù¡Û8Ïó¿Áò-H˜ÆRMINORZ
+\squid:S1604¹"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHÄÛRMAJORZ
 CODE_SMELL
-ˆsquid:S00117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÃÚç8Ÿˆ¾òğ-H™ÆRMINORZ
+_squid:S1659-"*Declare "prescription" on a separate line.(Òù¡Û8Ïó¿Áò-H¿ÛRMINORZ
 CODE_SMELL
-hsquid:S1444/"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿ8å”ë—ò-HšÆRMINORZVULNERABILITY
-squid:S00117´"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òß¶Ûúÿÿÿÿ8êÕòğ-H›ÆRMINORZ
+xsquid:S2095~"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(Ùİô‚8½ÿÌ¡ò-H ÛRBLOCKERZBUG
+squid:S00117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òß¶Ûúÿÿÿÿ8êÕòğ-HÍÛRMINORZ
 CODE_SMELL
-^squid:S1604¤"(Make this anonymous inner class a lambda(ÇÙ è8® ã§ñ-HœÆRMAJORZ
+ˆsquid:S00117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©šË±8å”ë—ò-HÛRMINORZ
 CODE_SMELL
-šsquid:S1450%"`Remove the "btnCreateMedicine" field and declare it as a local variable in the relevant methods.(ïğùşÿÿÿÿ8®¤–˜ò-HÆRMINORZ
+¿squid:S1186›"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÔºİÀüÿÿÿÿ8®£ÍÃò-HŸÛRCRITICALZ
 CODE_SMELL
-Zsquid:S1148÷"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHÆRMINORZVULNERABILITY
-Ysquid:S1659+"$Declare "dosage" on a separate line.(»şË¸8å”ë—ò-HŸÆRMINORZ
+_squid:S1659,"%Declare "newDate" on a separate line.(±Ò¬ˆşÿÿÿÿ8¯Ñ‹¡ò-HÉÛRMINORZ
 CODE_SMELL
-^squid:S1604¾"(Make this anonymous inner class a lambda(…£ÉÙ8å”ë—ò-H ÆRMAJORZ
+}squid:S2095d"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ÂÎÿÌùÿÿÿÿ8½ƒ££ò-H«ÛRBLOCKERZBUG
+squid:S00117í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í‰šüÿÿÿÿ8¢İˆ—ò-HÛRMINORZ
 CODE_SMELL
-Šsquid:S1450+"URemove the "dosage" field and declare it as a local variable in the relevant methods.(»şË¸8¹ÎòÁò-H¡ÆRMINORZ
+š"squid:ClassVariableVisibilityCheck"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±H™ÛRMINORZVULNERABILITY
+[squid:S1659+"&Declare "medicine" on a separate line.(»şË¸8øõƒ˜ò-HÅÛRMINORZ
 CODE_SMELL
-]squid:S1068+"(Remove this unused "temp" private field.(»şË¸8İ”²˜ò-H¢ÆRMAJORZ
+ysquid:S2095§"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ŠÿŞ8¯Ñ‹¡ò-H¯ÛRBLOCKERZBUG
+Zsquid:S1148ß"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿH•ÛRMINORZVULNERABILITY
+^squid:S1604–"(Make this anonymous inner class a lambda(ñÌ±8å”ë—ò-HÀÛRMAJORZ
 CODE_SMELL
-ysquid:S2095¥"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ŠÿŞ8¯Ñ‹¡ò-H£ÆRBLOCKERZBUG
-¨"squid:ClassVariableVisibilityCheck."TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿ8å”ë—ò-H¤ÆRMINORZVULNERABILITY
-‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ê¤ï­H¥ÆRMINORZ
+squid:S1450+"ZRemove the "appointment" field and declare it as a local variable in the relevant methods.(»şË¸8÷ìä™ò-HËÛRMINORZ
 CODE_SMELL
-•squid:S1192Í"WDefine a constant instead of duplicating this literal "Appointments available" 3 times.(ãÉìøÿÿÿÿ8ßÉ…¢ò-H¦ÆRCRITICALZ
+asquid:S1148ù"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÅÔ™ò-H½ÛRMINORZVULNERABILITY
+squid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(¬£ëøÿÿÿÿH›ÛRMAJORZ
 CODE_SMELL
-ˆsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8Ÿˆ¾òğ-H§ÆRMINORZ
+]squid:S1068+"(Remove this unused "temp" private field.(»şË¸8İ”²˜ò-H¶ÛRMAJORZ
 CODE_SMELL
-|squid:S1858t"B"sendDate" returns a string, there's no need to call "toString()".(¾ÁÀÓşÿÿÿÿ8½ÿÌ¡ò-H¨ÆRMINORZ
+squid:S1450+"ZRemove the "description" field and declare it as a local variable in the relevant methods.(»şË¸8¹ÎòÁò-H´ÛRMINORZ
 CODE_SMELL
-_squid:S1659,"%Declare "newDate" on a separate line.(±Ò¬ˆşÿÿÿÿ8¯Ñ‹¡ò-H©ÆRMINORZ
+’squid:S1450+"]Remove the "chosenMedicine" field and declare it as a local variable in the relevant methods.(»şË¸8ÅÔ™ò-HµÛRMINORZ
 CODE_SMELL
-¿squid:S1186™"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÔºİÀüÿÿÿÿ8®£ÍÃò-HªÆRCRITICALZ
+šsquid:S1450&"`Remove the "btnEndAppointment" field and declare it as a local variable in the relevant methods.(éÙı¶ıÿÿÿÿ8®¤–˜ò-H–ÛRMINORZ
 CODE_SMELL
-asquid:S1659+",Declare "chosenMedicine" on a separate line.(»şË¸8İ”²˜ò-H«ÆRMINORZ
+~squid:S1192W"FDefine a constant instead of duplicating this literal "fail " 3 times.(àÙÏœ8Ïó¿Áò-HĞÛRCRITICALZ
 CODE_SMELL
-^squid:S1604ø"(Make this anonymous inner class a lambda(¥ó¼³8½ÿÌ¡ò-H¬ÆRMAJORZ
+^squid:S1604¦"(Make this anonymous inner class a lambda(ÇÙ è8® ã§ñ-H¢ÛRMAJORZ
 CODE_SMELL
-squid:S00117È"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àÎ¿éûÿÿÿÿ8® ã§ñ-H­ÆRMINORZ
+csquid:S1604ï"(Make this anonymous inner class a lambda(ª¶ˆÒúÿÿÿÿ8® ã§ñ-HšÛRMAJORZ
 CODE_SMELL
-¥"squid:ClassVariableVisibilityCheck/"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿ8å”ë—ò-H®ÆRMINORZVULNERABILITY
-csquid:S1604¾"(Make this anonymous inner class a lambda(Çáÿÿÿÿÿ8® ã§ñ-H¯ÆRMAJORZ
+asquid:S2386¨"#Make member "requests" "protected".(Î§çåøÿÿÿÿ8å”ë—ò-H¼ÛRMINORZVULNERABILITY
+csquid:S1604ˆ"(Make this anonymous inner class a lambda(‹¶¼øÿÿÿÿ8® ã§ñ-H·ÛRMAJORZ
 CODE_SMELL
-\squid:S1659,""Declare "date" on a separate line.(±Ò¬ˆşÿÿÿÿ8¯Ñ‹¡ò-H°ÆRMINORZ
+Ysquid:S1659+"$Declare "dosage" on a separate line.(»şË¸8å”ë—ò-H³ÛRMINORZ
 CODE_SMELL
-squid:S00117ë"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í‰šüÿÿÿÿ8¢İˆ—ò-H±ÆRMINORZ
+asquid:S1659+",Declare "chosenMedicine" on a separate line.(»şË¸8İ”²˜ò-HºÛRMINORZ
 CODE_SMELL
-asquid:S1148İ"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÅÔ™ò-H²ÆRMINORZVULNERABILITY
-’squid:S1450+"]Remove the "chosenMedicine" field and declare it as a local variable in the relevant methods.(»şË¸8ÅÔ™ò-H³ÆRMINORZ
+~squid:S00100Ñ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H¦ÛRMINORZ
 CODE_SMELL
-\squid:S1604·"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH´ÆRMAJORZ
-CODE_SMELL
-asquid:S1148½"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8øõƒ˜ò-HµÆRMINORZVULNERABILITY
-]squid:S1444",Make this "public static userId" field final(Ó¡â±H¶ÆRMINORZVULNERABILITY

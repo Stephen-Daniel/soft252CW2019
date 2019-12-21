@@ -1,224 +1,224 @@
 
-Šsquid:HiddenFieldCheckè"DRename "btnGiveMedicines" which hides the field declared at line 77.(Æê‘ßúÿÿÿÿ8ÒÆ¼Çò-H­ÊRMAJORZ
+ksquid:S1444@".Make this "public static newOrder" field final(Ï‘õ¾øÿÿÿÿ8¡‡éÉò-HËèRMINORZVULNERABILITY
+bsquid:S10689"(Remove this unused "nums" private field.(ŠóñÎıÿÿÿÿ8à©ñ¡ğ-HÌèRMAJORZ
 CODE_SMELL
-¥"squid:ClassVariableVisibilityCheck;"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿ8¶¯œàí-HëÃRMINORZVULNERABILITY
-asquid:S1444C"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿHîÃRMINORZVULNERABILITY
-^squid:S1604Õ"(Make this anonymous inner class a lambda(² ºŒ8¬¨Ğ£ñ-HïÒRMAJORZ
+¿squid:S1186¡"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òşüÿÿÿÿ8¬¨Ğ£ñ-HÍèRCRITICALZ
 CODE_SMELL
-ysquid:HiddenFieldCheck©"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8ÌÌÅò-HÄRMAJORZ
+ysquid:HiddenFieldCheck‰"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8ÌÌÅò-HÎèRMAJORZ
 CODE_SMELL
-~squid:S00100¡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿H²ÄRMINORZ
+squid:S14504"XRemove the "firstname" field and declare it as a local variable in the relevant methods.(—†ÚÑ8‡µşÊò-HÏèRMINORZ
 CODE_SMELL
-fsquid:S1444A".Make this "public static newStock" field final(³àß8¡‡éÉò-HÁÓRMINORZVULNERABILITY
-^squid:S1604Š"(Make this anonymous inner class a lambda(æÉ¸±8€Ñ‹Êò-HüÔRMAJORZ
+`squid:S2386Æ""Make member "request" "protected".(¾®ÁÒøÿÿÿÿ8Ö×ºóñ-HĞèRMINORZVULNERABILITY
+bsquid:S1444D"*Make this "public static file" field final(ÇâÜş8Ö×ºóñ-HÑèRMINORZVULNERABILITY
+\squid:S1604ô"(Make this anonymous inner class a lambda(èËåÀıÿÿÿÿHÒèRMAJORZ
 CODE_SMELL
-isquid:S1068M"4Remove this unused "btnGiveMedicines" private field.(ÃÌğÆ8ÒÆ¼Çò-H®ÊRMAJORZ
+^squid:S1604Ô"(Make this anonymous inner class a lambda(² ºŒ8¬¨Ğ£ñ-HÓèRMAJORZ
 CODE_SMELL
-¦"squid:ClassVariableVisibilityCheck5"RMake doctor a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H‚ÏRMINORZVULNERABILITY
-~squid:UselessImportCheck,"<Remove this unused import 'java.awt.event.InputMethodEvent'.(ÿ“—”8¬¨Ğ£ñ-H†ÄRMINORZ
+csquid:S1604…"(Make this anonymous inner class a lambda(©“÷ñùÿÿÿÿ8¡‡éÉò-HÔèRMAJORZ
 CODE_SMELL
-`squid:S1148x"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ø‘‡–ò-HƒÄRMINORZVULNERABILITY
-ysquid:HiddenFieldCheckñ"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8µÍ–Êò-HÉÕRMAJORZ
+lsquid:S1659d"2Declare "prescriptionQuantity" on a separate line.(Ù”øûÿÿÿÿ8ÒÆ¼Çò-HÕèRMINORZ
 CODE_SMELL
-]squid:S1604ê"(Make this anonymous inner class a lambda(ÜºÁR8Ö×ºóñ-HôÒRMAJORZ
+‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦HÖèRMINORZ
 CODE_SMELL
-hsquid:S1444;"+Make this "public static frame" field final(¹å‘şøÿÿÿÿ8¶¯œàí-HÄRMINORZVULNERABILITY
-msquid:S4973²"9Use the "equals" method if value comparison was intended.(ùß¢­ÿÿÿÿÿ8ò–ôßí-H¬ÄRMAJORZBUG
-Œsquid:S1450L"WRemove the "btnStock" field and declare it as a local variable in the relevant methods.(³ì¬ô8®˜à•ò-H«ÄRMINORZ
+Wsquid:S1604è"(Make this anonymous inner class a lambda(İÏ‰ÖH×èRMAJORZ
 CODE_SMELL
-£"squid:ClassVariableVisibilityCheckd"OMake sum a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-H“ÏRMINORZVULNERABILITY
-ysquid:HiddenFieldCheck™"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8ø‘‡–ò-H³ÄRMAJORZ
+¨"squid:ClassVariableVisibilityCheck5"TMake quantity a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-HØèRMINORZVULNERABILITY
+csquid:S1604"(Make this anonymous inner class a lambda(„çÖßûÿÿÿÿ8¬¨Ğ£ñ-HÙèRMAJORZ
 CODE_SMELL
-^squid:S1604É"(Make this anonymous inner class a lambda(ù«óÑ8¬¨Ğ£ñ-HçÃRMAJORZ
+asquid:S1148È"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ŠĞœËñ-HÚèRMINORZVULNERABILITY
+¨"squid:ClassVariableVisibilityCheck@"TMake newOrder a static final constant or non-public and provide accessors if needed.(Ï‘õ¾øÿÿÿÿ8¡‡éÉò-HÛèRMINORZVULNERABILITY
+Ÿ"squid:ClassVariableVisibilityCheck6"PMake date a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HÜèRMINORZVULNERABILITY
+asquid:S1148Š"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÒÆ¼Çò-HİèRMINORZVULNERABILITY
+^squid:S1604õ"(Make this anonymous inner class a lambda(ƒ­­œ8¬¨Ğ£ñ-HŞèRMAJORZ
 CODE_SMELL
-ysquid:HiddenFieldCheck‰"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8ÌÌÅò-H¥ÇRMAJORZ
+esquid:S16596"0Declare "newQuantityInStock" on a separate line.(ßªÔš8ÒÆ¼Çò-HßèRMINORZ
 CODE_SMELL
-asquid:S1148ñ"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÊèÊò-H—ÖRMINORZVULNERABILITY
-lsquid:S1659d"2Declare "prescriptionQuantity" on a separate line.(Ù”øûÿÿÿÿ8ÒÆ¼Çò-H¦ÊRMINORZ
+ysquid:HiddenFieldCheckñ"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8µÍ–Êò-HàèRMAJORZ
 CODE_SMELL
-tsquid:UselessImportCheck!"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8à©ñ¡ğ-HÖÃRMINORZ
+š"squid:ClassVariableVisibilityCheck3"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HáèRMINORZVULNERABILITY
+ysquid:HiddenFieldCheckÚ"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8Ö×ºóñ-HâèRMAJORZ
 CODE_SMELL
-\squid:S2386ç"#Make member "requests" "protected".(÷¼µÂ8Ö×ºóñ-H©ÄRMINORZVULNERABILITY
-^squid:S16595"$Declare "dosage" on a separate line.(íë™Òûÿÿÿÿ8ø‘‡–ò-H´ÄRMINORZ
+squid:UselessImportCheck+"?Remove this unused import 'java.awt.event.InputMethodListener'.(óø©8¬¨Ğ£ñ-HãèRMINORZ
 CODE_SMELL
-£"squid:ClassVariableVisibilityCheckA"TMake newStock a static final constant or non-public and provide accessors if needed.(³àß8¡‡éÉò-HÃÓRMINORZVULNERABILITY
-ysquid:HiddenFieldCheckÚ"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8Ö×ºóñ-H±ÄRMAJORZ
+xsquid:UselessImportCheck	"1Remove this unused import 'LoginSystem.MainDate'.(øÂ²†üÿÿÿÿ8ÒÆ¼Çò-HäèRMINORZ
 CODE_SMELL
-Zsquid:S16594"%Declare "surname" on a separate line.(—†ÚÑ8ÌÌÅò-H¦ÄRMINORZ
+asquid:S1148ÿ"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8Ö×ºóñ-HåèRMINORZVULNERABILITY
+]squid:S14443",Make this "public static userId" field final(Ó¡â±HæèRMINORZVULNERABILITY
+¦"squid:ClassVariableVisibilityCheck5"RMake dosage a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-HçèRMINORZVULNERABILITY
+Wsquid:S1604 "(Make this anonymous inner class a lambda(¼¾óHèèRMAJORZ
 CODE_SMELL
-squid:S14504"XRemove the "firstname" field and declare it as a local variable in the relevant methods.(—†ÚÑ8‡µşÊò-H´×RMINORZ
+²"squid:ClassVariableVisibilityCheckd"^Make newMedicineInStock a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-HéèRMINORZVULNERABILITY
+ysquid:HiddenFieldCheck©"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8ÌÌÅò-HêèRMAJORZ
 CODE_SMELL
-bsquid:S1444D"*Make this "public static file" field final(ÇâÜş8Ö×ºóñ-H…ÄRMINORZVULNERABILITY
-ksquid:S1444@".Make this "public static newOrder" field final(Ï‘õ¾øÿÿÿÿ8¡‡éÉò-HÀÓRMINORZVULNERABILITY
-jsquid:S1444<"-Make this "public static request" field final(ôÎÀüÿÿÿÿ8Ö×ºóñ-H˜ÄRMINORZVULNERABILITY
-^squid:S1604“"(Make this anonymous inner class a lambda(Æ´Å©8¬¨Ğ£ñ-H÷ÒRMAJORZ
+[squid:S1170?"!Make this final field static too.(İúÄ§ùÿÿÿÿ8ôŒ•ò-HëèRMINORZ
 CODE_SMELL
-ª"squid:ClassVariableVisibilityCheck5"VMake orderStock a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HåÑRMINORZVULNERABILITY
-isquid:S16596"4Declare "quantityOfPrescription" on a separate line.(ßªÔš8ÒÆ¼Çò-H¤ÊRMINORZ
+vsquid:UselessImportCheck"/Remove this unused import 'java.io.FileReader'.(Â¡¢äşÿÿÿÿ8ëŠôúñ-HìèRMINORZ
 CODE_SMELL
-bsquid:S16596"-Declare "quantityInStock" on a separate line.(ßªÔš8¼ªğÅò-HÎÃRMINORZ
+Xsquid:S16596"#Declare "notes" on a separate line.(ßªÔš8Ö×ºóñ-HíèRMINORZ
 CODE_SMELL
-‹squid:S14504"VRemove the "surname" field and declare it as a local variable in the relevant methods.(—†ÚÑ8‡µşÊò-Hµ×RMINORZ
+]squid:S1604¼"(Make this anonymous inner class a lambda(ÍãÃO8Ö×ºóñ-HîèRMAJORZ
 CODE_SMELL
-csquid:S1604¡"(Make this anonymous inner class a lambda(‰­§ƒüÿÿÿÿ8Ö×ºóñ-H‰ÄRMAJORZ
+Šsquid:HiddenFieldCheckç"DRename "btnGiveMedicines" which hides the field declared at line 77.(Æê‘ßúÿÿÿÿ8ÒÆ¼Çò-HïèRMAJORZ
 CODE_SMELL
-vsquid:S1858œ"@"format" returns a string, there's no need to call "toString()".(£œÖ¢8Ö×ºóñ-HÒÃRMINORZ
+^squid:S1604¼"(Make this anonymous inner class a lambda(ıÿû‚8¬¨Ğ£ñ-HğèRMAJORZ
 CODE_SMELL
-^squid:S1604±"(Make this anonymous inner class a lambda(‹Ô¡8¬¨Ğ£ñ-HõÒRMAJORZ
+«"squid:ClassVariableVisibilityCheck5"WMake description a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-HñèRMINORZVULNERABILITY
+^squid:S1604°"(Make this anonymous inner class a lambda(‹Ô¡8¬¨Ğ£ñ-HòèRMAJORZ
 CODE_SMELL
-‚squid:HiddenFieldCheckú"<Rename "newOrder" which hides the field declared at line 64.(¾Üíàøÿÿÿÿ8¡‡éÉò-HÅÓRMAJORZ
+]squid:S1604±"(Make this anonymous inner class a lambda(ğ‡	8¬¨Ğ£ñ-HóèRMAJORZ
 CODE_SMELL
-[squid:S1170?"!Make this final field static too.(İúÄ§ùÿÿÿÿ8ôŒ•ò-HİÃRMINORZ
+xsquid:S1854ˆ"=Remove this useless assignment to local variable "terminate".(Ñë‘¹ÿÿÿÿÿ8°Àûñ-HôèRMAJORZ
 CODE_SMELL
-Zsquid:S1148—"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHŸÊRMINORZVULNERABILITY
-³squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ëİ—H‚ÄRCRITICALZ
+isquid:S16596"4Declare "quantityOfPrescription" on a separate line.(ßªÔš8ÒÆ¼Çò-HõèRMINORZ
 CODE_SMELL
- "squid:ClassVariableVisibilityCheck6"QMake notes a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-H‹ÏRMINORZVULNERABILITY
-±"squid:ClassVariableVisibilityCheck6"bMake quantityOfPrescription a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HŒÏRMINORZVULNERABILITY
-Zsquid:S16596"%Declare "patient" on a separate line.(ßªÔš8Ö×ºóñ-H“ÄRMINORZ
+ysquid:HiddenFieldCheckè"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8Ö×ºóñ-HöèRMAJORZ
 CODE_SMELL
-dsquid:S1444B".Make this "public static requests" field final(¢áªçûÿÿÿÿH÷ÃRMINORZVULNERABILITY
-š"squid:ClassVariableVisibilityCheck3"RMake userId a static final constant or non-public and provide accessors if needed.(Ó¡â±HŒÄRMINORZVULNERABILITY
-isquid:S1481‰".Remove this unused "terminate" local variable.(Ñë‘¹ÿÿÿÿÿ8°Àûñ-HìÒRMINORZ
+³squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(£ëİ—H÷èRCRITICALZ
 CODE_SMELL
-¡"squid:ClassVariableVisibilityCheckB"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿHËÃRMINORZVULNERABILITY
-gsquid:S10688"-Remove this unused "beginWith" private field.(§áÕîúÿÿÿÿ8ÌÌÅò-HÓÃRMAJORZ
+~squid:S00100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ãœ’¿HøèRMINORZ
 CODE_SMELL
-usquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8ëŠôúñ-HÌÃRMINORZ
+fsquid:S1444A".Make this "public static newStock" field final(³àß8¡‡éÉò-HùèRMINORZVULNERABILITY
+Zsquid:S16594"%Declare "surname" on a separate line.(—†ÚÑ8ÌÌÅò-HúèRMINORZ
 CODE_SMELL
-ˆsquid:S00117ö"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8¬¨Ğ£ñ-HğÒRMINORZ
+asquid:S1444C"+Make this "public static temps" field final(¬‘²÷ıÿÿÿÿHûèRMINORZVULNERABILITY
+isquid:S1068M"4Remove this unused "btnGiveMedicines" private field.(ÃÌğÆ8ÒÆ¼Çò-HüèRMAJORZ
 CODE_SMELL
-asquid:S1148ÿ"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8Ö×ºóñ-HØÃRMINORZVULNERABILITY
-esquid:S16596"0Declare "newQuantityInStock" on a separate line.(ßªÔš8ÒÆ¼Çò-H¥ÊRMINORZ
+usquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedReader'.(€é²Å8ëŠôúñ-HıèRMINORZ
 CODE_SMELL
-^squid:S1604½"(Make this anonymous inner class a lambda(ıÿû‚8¬¨Ğ£ñ-HîÒRMAJORZ
+`squid:S16595"&Declare "medicine" on a separate line.(íë™Òûÿÿÿÿ8ø‘‡–ò-HşèRMINORZ
 CODE_SMELL
-Ÿ"squid:ClassVariableVisibilityCheck6"PMake date a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-H‰ÏRMINORZVULNERABILITY
-msquid:S4973ä"9Use the "equals" method if value comparison was intended.(’£òàøÿÿÿÿ8üú›ò-HœÄRMAJORZBUG
-ºsquid:S1186Ö"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-HñÒRCRITICALZ
+asquid:S16595"'Declare "orderFile" on a separate line.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HÿèRMINORZ
 CODE_SMELL
-ª"squid:ClassVariableVisibilityCheck6"[Make quantityInStock a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HÏRMINORZVULNERABILITY
-«"squid:ClassVariableVisibilityCheck5"WMake description a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H†ÏRMINORZVULNERABILITY
-"squid:ClassVariableVisibilityCheckC"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿHñÃRMINORZVULNERABILITY
-\squid:S1604õ"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿHşÃRMAJORZ
+Ÿ"squid:ClassVariableVisibilityCheck6"PMake time a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-H€éRMINORZVULNERABILITY
+^squid:S1604¤"(Make this anonymous inner class a lambda(‹Ü¬¡8Ö×ºóñ-HéRMAJORZ
 CODE_SMELL
-[squid:S16594"&Declare "filename" on a separate line.(—†ÚÑ8ÌÌÅò-HìÃRMINORZ
+tsquid:S1858“">"next" returns a string, there's no need to call "toString()".(À³ù¸8ÊèÊò-H‚éRMINORZ
 CODE_SMELL
-isquid:S1659:"4Declare "terminatedFileToRemove" on a separate line.(º®¸Ÿ8çÃš÷ñ-HšÄRMINORZ
+\squid:S2386ç"#Make member "requests" "protected".(÷¼µÂ8Ö×ºóñ-HƒéRMINORZVULNERABILITY
+`squid:S1148x"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ø‘‡–ò-H„éRMINORZVULNERABILITY
+Wsquid:S16596""Declare "date" on a separate line.(ßªÔš8Ö×ºóñ-H…éRMINORZ
 CODE_SMELL
-Xsquid:S16596"#Declare "notes" on a separate line.(ßªÔš8Ö×ºóñ-HäÃRMINORZ
+Ÿ"squid:ClassVariableVisibilityCheckD"PMake file a static final constant or non-public and provide accessors if needed.(ÇâÜş8Ö×ºóñ-H†éRMINORZVULNERABILITY
+§"squid:ClassVariableVisibilityCheck<"SMake request a static final constant or non-public and provide accessors if needed.(ôÎÀüÿÿÿÿ8Ö×ºóñ-H‡éRMINORZVULNERABILITY
+vsquid:UselessImportCheck$"4Remove this unused import 'javax.swing.JTabbedPane'.(èŞ8¬¨Ğ£ñ-HˆéRMINORZ
 CODE_SMELL
-squid:HiddenFieldCheckè";Rename "patient" which hides the field declared at line 54.(®Úõùıÿÿÿÿ8Ö×ºóñ-H ÄRMAJORZ
+gsquid:S10688"-Remove this unused "beginWith" private field.(§áÕîúÿÿÿÿ8ÌÌÅò-H‰éRMAJORZ
 CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck5"TMake medicine a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-HƒÏRMINORZVULNERABILITY
-¦"squid:ClassVariableVisibilityCheck5"RMake dosage a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H…ÏRMINORZVULNERABILITY
-´"squid:ClassVariableVisibilityCheckd"`Make prescriptionQuantity a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-HÏRMINORZVULNERABILITY
-asquid:S1148û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ö×ºóñ-Hõ×RMINORZVULNERABILITY
-bsquid:S10689"(Remove this unused "nums" private field.(ŠóñÎıÿÿÿÿ8à©ñ¡ğ-HğÃRMAJORZ
+¥"squid:ClassVariableVisibilityCheck;"QMake frame a static final constant or non-public and provide accessors if needed.(¹å‘şøÿÿÿÿ8¶¯œàí-HŠéRMINORZVULNERABILITY
+csquid:S1604 "(Make this anonymous inner class a lambda(‰­§ƒüÿÿÿÿ8Ö×ºóñ-H‹éRMAJORZ
 CODE_SMELL
-[squid:S1659d"!Declare "sum" on a separate line.(Ù”øûÿÿÿÿ8ÒÆ¼Çò-H¨ÊRMINORZ
+ysquid:HiddenFieldCheck™"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8ø‘‡–ò-HŒéRMAJORZ
 CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck@"TMake newOrder a static final constant or non-public and provide accessors if needed.(Ï‘õ¾øÿÿÿÿ8¡‡éÉò-HÂÓRMINORZVULNERABILITY
-asquid:S16595"'Declare "orderFile" on a separate line.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HæÑRMINORZ
+ysquid:S2095¯"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(÷íÿˆ8øú¼óñ-HéRBLOCKERZBUG
+¨"squid:ClassVariableVisibilityCheck5"TMake medicine a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-HéRMINORZVULNERABILITY
+£"squid:ClassVariableVisibilityCheckd"OMake sum a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-HéRMINORZVULNERABILITY
+ysquid:HiddenFieldCheckÇ"8Rename "file" which hides the field declared at line 68.(ö‚×¢8úÍ™Éò-HéRMAJORZ
 CODE_SMELL
-¨"squid:ClassVariableVisibilityCheck5"TMake quantity a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H„ÏRMINORZVULNERABILITY
-¢"squid:ClassVariableVisibilityCheck6"SMake patient a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HŠÏRMINORZVULNERABILITY
-_squid:S16594"*Declare "uniqueNumber" on a separate line.(—†ÚÑ8ÌÌÅò-HÜÃRMINORZ
+asquid:S1148ñ"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÊèÊò-H‘éRMINORZVULNERABILITY
+ºsquid:S1186‘"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-H’éRCRITICALZ
 CODE_SMELL
-Wsquid:S16596""Declare "date" on a separate line.(ßªÔš8Ö×ºóñ-HÚÃRMINORZ
+jsquid:S1659d"0Declare "newMedicineInStock" on a separate line.(Ù”øûÿÿÿÿ8ÒÆ¼Çò-H“éRMINORZ
 CODE_SMELL
-vsquid:UselessImportCheck$"4Remove this unused import 'javax.swing.JTabbedPane'.(èŞ8¬¨Ğ£ñ-HÕÃRMINORZ
+¬"squid:ClassVariableVisibilityCheck5"XMake prescription a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H”éRMINORZVULNERABILITY
+¡"squid:ClassVariableVisibilityCheckB"TMake requests a static final constant or non-public and provide accessors if needed.(¢áªçûÿÿÿÿH•éRMINORZVULNERABILITY
+…squid:UselessImportCheck(">Remove this unused import 'com.toedter.components.JSpinField'.(Ì©¤¶üÿÿÿÿ8¬¨Ğ£ñ-H–éRMINORZ
 CODE_SMELL
-`squid:S2386Æ""Make member "request" "protected".(¾®ÁÒøÿÿÿÿ8Ö×ºóñ-H¶ÄRMINORZVULNERABILITY
-ysquid:HiddenFieldCheckÇ"8Rename "file" which hides the field declared at line 68.(ö‚×¢8úÍ™Éò-H¬ÒRMAJORZ
+¦"squid:ClassVariableVisibilityCheck5"RMake doctor a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H—éRMINORZVULNERABILITY
+~squid:UselessImportCheck,"<Remove this unused import 'java.awt.event.InputMethodEvent'.(ÿ“—”8¬¨Ğ£ñ-H˜éRMINORZ
 CODE_SMELL
-©"squid:ClassVariableVisibilityCheck5"UMake orderFile a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HäÑRMINORZVULNERABILITY
-¬"squid:ClassVariableVisibilityCheck5"XMake prescription a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8Ë¡ˆÈò-H‡ÏRMINORZVULNERABILITY
-ssquid:S1858t">"next" returns a string, there's no need to call "toString()".(À³ù¸8¦ÑÔÇò-HÔÌRMINORZ
+gsquid:S1659d"-Declare "medicineInStock" on a separate line.(Ù”øûÿÿÿÿ8¼ªğÅò-H™éRMINORZ
 CODE_SMELL
-tsquid:S1858“">"next" returns a string, there's no need to call "toString()".(À³ù¸8ÊèÊò-H˜ÖRMINORZ
+ "squid:ClassVariableVisibilityCheck6"QMake notes a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HšéRMINORZVULNERABILITY
+dsquid:S1444B".Make this "public static requests" field final(¢áªçûÿÿÿÿH›éRMINORZVULNERABILITY
+`squid:S16595"&Declare "quantity" on a separate line.(íë™Òûÿÿÿÿ8ÌÌÅò-HœéRMINORZ
 CODE_SMELL
-Ÿ"squid:ClassVariableVisibilityCheck6"PMake time a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HˆÏRMINORZVULNERABILITY
-vsquid:S1858Û"@"format" returns a string, there's no need to call "toString()".(£œÖ¢8“Œ«Äò-H×ÃRMINORZ
+tsquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8€öæúñ-HéRMINORZ
 CODE_SMELL
-`squid:S16595"&Declare "quantity" on a separate line.(íë™Òûÿÿÿÿ8ÌÌÅò-HïÃRMINORZ
+csquid:S16595")Declare "description" on a separate line.(íë™Òûÿÿÿÿ8ø‘‡–ò-HéRMINORZ
 CODE_SMELL
-asquid:S1148È"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ŠĞœËñ-HåÃRMINORZVULNERABILITY
-²"squid:ClassVariableVisibilityCheckd"^Make newMedicineInStock a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-H’ÏRMINORZVULNERABILITY
-Ÿ"squid:ClassVariableVisibilityCheckD"PMake file a static final constant or non-public and provide accessors if needed.(ÇâÜş8Ö×ºóñ-HÄRMINORZVULNERABILITY
-ºsquid:S1186‹"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8€Ñ‹Êò-HıÔRCRITICALZ
+jsquid:S1444<"-Make this "public static request" field final(ôÎÀüÿÿÿÿ8Ö×ºóñ-HŸéRMINORZVULNERABILITY
+´"squid:ClassVariableVisibilityCheckd"`Make prescriptionQuantity a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-H éRMINORZVULNERABILITY
+‹squid:S14504"VRemove the "surname" field and declare it as a local variable in the relevant methods.(—†ÚÑ8‡µşÊò-H¡éRMINORZ
 CODE_SMELL
-}squid:UselessImportCheck*";Remove this unused import 'com.toedter.calendar.JCalendar'.(Ÿç‡8¬¨Ğ£ñ-H¢ÄRMINORZ
+vsquid:S1858Ú"@"format" returns a string, there's no need to call "toString()".(£œÖ¢8“Œ«Äò-H¢éRMINORZ
 CODE_SMELL
-Wsquid:S1604é"(Make this anonymous inner class a lambda(İÏ‰ÖHòÒRMAJORZ
+Zsquid:S1148—"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿH£éRMINORZVULNERABILITY
+bsquid:S16595"(Declare "orderStock" on a separate line.(íë™Òûÿÿÿÿ8‚ˆˆÉò-H¤éRMINORZ
 CODE_SMELL
-vsquid:UselessImportCheck"/Remove this unused import 'java.io.FileReader'.(Â¡¢äşÿÿÿÿ8ëŠôúñ-HôÃRMINORZ
+isquid:S1659:"4Declare "terminatedFileToRemove" on a separate line.(º®¸Ÿ8çÃš÷ñ-H¥éRMINORZ
 CODE_SMELL
-`squid:S16595"&Declare "medicine" on a separate line.(íë™Òûÿÿÿÿ8ø‘‡–ò-H£ÄRMINORZ
+ssquid:S1858t">"next" returns a string, there's no need to call "toString()".(À³ù¸8¦ÑÔÇò-H¦éRMINORZ
 CODE_SMELL
-csquid:S1604‚"(Make this anonymous inner class a lambda(„çÖßûÿÿÿÿ8¬¨Ğ£ñ-H§ÄRMAJORZ
+[squid:S16594"&Declare "filename" on a separate line.(—†ÚÑ8ÌÌÅò-H§éRMINORZ
 CODE_SMELL
-]squid:S1604²"(Make this anonymous inner class a lambda(ğ‡	8¬¨Ğ£ñ-HëÒRMAJORZ
+‚squid:HiddenFieldCheckù"<Rename "newOrder" which hides the field declared at line 64.(¾Üíàøÿÿÿÿ8¡‡éÉò-H¨éRMAJORZ
 CODE_SMELL
-dsquid:S16595"*Declare "prescription" on a separate line.(íë™Òûÿÿÿÿ8ÌÌÅò-HãÃRMINORZ
+~squid:S2095¢"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(€£’şÿÿÿÿ8‚ˆˆÉò-H©éRBLOCKERZBUG
+]squid:S1604é"(Make this anonymous inner class a lambda(ÜºÁR8Ö×ºóñ-HªéRMAJORZ
 CODE_SMELL
-}squid:HiddenFieldCheckü"<Rename "newStock" which hides the field declared at line 65.(öÆû¸8¡‡éÉò-HÆÓRMAJORZ
+^squid:S1604È"(Make this anonymous inner class a lambda(ù«óÑ8¬¨Ğ£ñ-H«éRMAJORZ
 CODE_SMELL
-dsquid:S2209ù"5Change this instance-reference to a static reference.(¶š¬–HªÄRMAJORZ
+tsquid:UselessImportCheck!"2Remove this unused import 'AdminSystem.AdminForm'.(ôÄÊ»8à©ñ¡ğ-H¬éRMINORZ
 CODE_SMELL
-‰squid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒÇ¦H‡ÄRMINORZ
+£"squid:ClassVariableVisibilityCheckA"TMake newStock a static final constant or non-public and provide accessors if needed.(³àß8¡‡éÉò-H­éRMINORZVULNERABILITY
+^squid:S1604‰"(Make this anonymous inner class a lambda(æÉ¸±8€Ñ‹Êò-H®éRMAJORZ
 CODE_SMELL
-csquid:S16595")Declare "description" on a separate line.(íë™Òûÿÿÿÿ8ø‘‡–ò-HÑÃRMINORZ
+\squid:S1604õ"(Make this anonymous inner class a lambda(¤©ÒâüÿÿÿÿH¯éRMAJORZ
 CODE_SMELL
-ºsquid:S1186’"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-HèÃRCRITICALZ
+}squid:UselessImportCheck*";Remove this unused import 'com.toedter.calendar.JCalendar'.(Ÿç‡8¬¨Ğ£ñ-H°éRMINORZ
 CODE_SMELL
-Wsquid:S1604‘"(Make this anonymous inner class a lambda(·“‹˜HóÒRMAJORZ
+±"squid:ClassVariableVisibilityCheck6"bMake quantityOfPrescription a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-H±éRMINORZVULNERABILITY
+^squid:S16595"$Declare "dosage" on a separate line.(íë™Òûÿÿÿÿ8ø‘‡–ò-H²éRMINORZ
 CODE_SMELL
-asquid:S1148‹"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÒÆ¼Çò-H£ÊRMINORZVULNERABILITY
-xsquid:S1854‰"=Remove this useless assignment to local variable "terminate".(Ñë‘¹ÿÿÿÿÿ8°Àûñ-HêÒRMAJORZ
+}squid:HiddenFieldCheckû"<Rename "newStock" which hides the field declared at line 65.(öÆû¸8¡‡éÉò-H³éRMAJORZ
 CODE_SMELL
-]squid:S14443",Make this "public static userId" field final(Ó¡â±HŸÄRMINORZVULNERABILITY
-¦"squid:ClassVariableVisibilityCheckd"RMake number a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-HÏRMINORZVULNERABILITY
-\squid:S1604õ"(Make this anonymous inner class a lambda(èËåÀıÿÿÿÿHíÒRMAJORZ
+¢"squid:ClassVariableVisibilityCheck6"SMake patient a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-H´éRMINORZVULNERABILITY
+dsquid:S2209ù"5Change this instance-reference to a static reference.(¶š¬–HµéRMAJORZ
 CODE_SMELL
-ysquid:S2095¯"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(÷íÿˆ8øú¼óñ-HüÃRBLOCKERZBUG
-­"squid:ClassVariableVisibilityCheck6"^Make newQuantityInStock a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HÏRMINORZVULNERABILITY
-gsquid:S1659d"-Declare "medicineInStock" on a separate line.(Ù”øûÿÿÿÿ8¼ªğÅò-H¡ÊRMINORZ
+[squid:S1659d"!Declare "sum" on a separate line.(Ù”øûÿÿÿÿ8ÒÆ¼Çò-H¶éRMINORZ
 CODE_SMELL
-~squid:S2095¢"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(€£’şÿÿÿÿ8‚ˆˆÉò-HãÑRBLOCKERZBUG
-tsquid:UselessImportCheck"3Remove this unused import 'java.io.BufferedWriter'.(¬õº/8€öæúñ-H­ÄRMINORZ
+^squid:S1604’"(Make this anonymous inner class a lambda(Æ´Å©8¬¨Ğ£ñ-H·éRMAJORZ
 CODE_SMELL
-xsquid:UselessImportCheck	"1Remove this unused import 'LoginSystem.MainDate'.(øÂ²†üÿÿÿÿ8ÒÆ¼Çò-H¢ÊRMINORZ
+„squid:UselessImportCheck)"=Remove this unused import 'com.toedter.calendar.JDayChooser'.(˜íÌûÿÿÿÿ8¬¨Ğ£ñ-H¸éRMINORZ
 CODE_SMELL
-squid:UselessImportCheck+"?Remove this unused import 'java.awt.event.InputMethodListener'.(óø©8¬¨Ğ£ñ-HêÃRMINORZ
+Wsquid:S1604"(Make this anonymous inner class a lambda(·“‹˜H¹éRMAJORZ
 CODE_SMELL
-¿squid:S1186¢"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼ Òşüÿÿÿÿ8¬¨Ğ£ñ-HöÒRCRITICALZ
+¦"squid:ClassVariableVisibilityCheckd"RMake number a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-HºéRMINORZVULNERABILITY
+isquid:S1481ˆ".Remove this unused "terminate" local variable.(Ñë‘¹ÿÿÿÿÿ8°Àûñ-H»éRMINORZ
 CODE_SMELL
-Zsquid:S1148İ"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿH•ÄRMINORZVULNERABILITY
-csquid:S1604Ö"(Make this anonymous inner class a lambda(óˆåùÿÿÿÿ8¬¨Ğ£ñ-HøÃRMAJORZ
+¯"squid:ClassVariableVisibilityCheckd"[Make medicineInStock a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-H¼éRMINORZVULNERABILITY
+ºsquid:S1186Õ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8€Ñ‹Êò-H½éRCRITICALZ
 CODE_SMELL
-…squid:UselessImportCheck(">Remove this unused import 'com.toedter.components.JSpinField'.(Ì©¤¶üÿÿÿÿ8¬¨Ğ£ñ-HâÃRMINORZ
+"squid:ClassVariableVisibilityCheckC"QMake temps a static final constant or non-public and provide accessors if needed.(¬‘²÷ıÿÿÿÿH¾éRMINORZVULNERABILITY
+msquid:S4973²"9Use the "equals" method if value comparison was intended.(ùß¢­ÿÿÿÿÿ8ò–ôßí-H¿éRMAJORZBUG
+asquid:S1148é"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÊèÊò-HÀéRMINORZVULNERABILITY
+dsquid:S16595"*Declare "prescription" on a separate line.(íë™Òûÿÿÿÿ8ÌÌÅò-HÁéRMINORZ
 CODE_SMELL
-bsquid:S16595"(Declare "orderStock" on a separate line.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HçÑRMINORZ
+©"squid:ClassVariableVisibilityCheck5"UMake orderFile a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HÂéRMINORZVULNERABILITY
+ª"squid:ClassVariableVisibilityCheck5"VMake orderStock a static final constant or non-public and provide accessors if needed.(íë™Òûÿÿÿÿ8‚ˆˆÉò-HÃéRMINORZVULNERABILITY
+msquid:S4973ä"9Use the "equals" method if value comparison was intended.(’£òàøÿÿÿÿ8üú›ò-HÄéRMAJORZBUG
+Zsquid:S1148İ"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHÅéRMINORZVULNERABILITY
+_squid:S16594"*Declare "uniqueNumber" on a separate line.(—†ÚÑ8ÌÌÅò-HÆéRMINORZ
 CODE_SMELL
-asquid:S1148é"#Use a logger to log this exception.(Âşÿâûÿÿÿÿ8ÊèÊò-H–ÖRMINORZVULNERABILITY
-„squid:UselessImportCheck)"=Remove this unused import 'com.toedter.calendar.JDayChooser'.(˜íÌûÿÿÿÿ8¬¨Ğ£ñ-HˆÄRMINORZ
+Œsquid:S1450L"WRemove the "btnStock" field and declare it as a local variable in the relevant methods.(³ì¬ô8®˜à•ò-HÇéRMINORZ
 CODE_SMELL
-jsquid:S1659d"0Declare "newMedicineInStock" on a separate line.(Ù”øûÿÿÿÿ8ÒÆ¼Çò-H§ÊRMINORZ
+csquid:S1604Õ"(Make this anonymous inner class a lambda(óˆåùÿÿÿÿ8¬¨Ğ£ñ-HÈéRMAJORZ
 CODE_SMELL
-^squid:S1604¤"(Make this anonymous inner class a lambda(‹Ü¬¡8Ö×ºóñ-HıÃRMAJORZ
+ª"squid:ClassVariableVisibilityCheck6"[Make quantityInStock a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HÉéRMINORZVULNERABILITY
+ˆsquid:S00117õ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ê¹‹‘8¬¨Ğ£ñ-HÊéRMINORZ
 CODE_SMELL
-|squid:S3027˜"FPut single-quotes around ' ' to use the faster "indexOf(char)" method.(Çë‹¢8Ö×ºóñ-HÄRMAJORZ
+ºsquid:S1186Š"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨ø ¥8¬¨Ğ£ñ-HËéRCRITICALZ
 CODE_SMELL
-^squid:S1604ö"(Make this anonymous inner class a lambda(ƒ­­œ8¬¨Ğ£ñ-HèÒRMAJORZ
+asquid:S1148û"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ö×ºóñ-HÌéRMINORZVULNERABILITY
+Zsquid:S16596"%Declare "patient" on a separate line.(ßªÔš8Ö×ºóñ-HÍéRMINORZ
 CODE_SMELL
-]squid:S1604½"(Make this anonymous inner class a lambda(ÍãÃO8Ö×ºóñ-H’ÄRMAJORZ
+­"squid:ClassVariableVisibilityCheck6"^Make newQuantityInStock a static final constant or non-public and provide accessors if needed.(ßªÔš8Ë¡ˆÈò-HÎéRMINORZVULNERABILITY
+bsquid:S16596"-Declare "quantityInStock" on a separate line.(ßªÔš8¼ªğÅò-HÏéRMINORZ
 CODE_SMELL
-¯"squid:ClassVariableVisibilityCheckd"[Make medicineInStock a static final constant or non-public and provide accessors if needed.(Ù”øûÿÿÿÿ8Ë¡ˆÈò-H‘ÏRMINORZVULNERABILITY
-§"squid:ClassVariableVisibilityCheck<"SMake request a static final constant or non-public and provide accessors if needed.(ôÎÀüÿÿÿÿ8Ö×ºóñ-HÛÃRMINORZVULNERABILITY
-csquid:S1604†"(Make this anonymous inner class a lambda(©“÷ñùÿÿÿÿ8¡‡éÉò-HÄÓRMAJORZ
+squid:HiddenFieldCheckè";Rename "patient" which hides the field declared at line 54.(®Úõùıÿÿÿÿ8Ö×ºóñ-HĞéRMAJORZ
 CODE_SMELL
-Wsquid:S1604¡"(Make this anonymous inner class a lambda(¼¾óHøÒRMAJORZ
+|squid:S3027˜"FPut single-quotes around ' ' to use the faster "indexOf(char)" method.(Çë‹¢8Ö×ºóñ-HÑéRMAJORZ
 CODE_SMELL
-ysquid:HiddenFieldCheckè"8Rename "file" which hides the field declared at line 68.(ÅÉå¥8Ö×ºóñ-H®ÄRMAJORZ
+hsquid:S1444;"+Make this "public static frame" field final(¹å‘şøÿÿÿÿ8¶¯œàí-HÒéRMINORZVULNERABILITY
+vsquid:S1858œ"@"format" returns a string, there's no need to call "toString()".(£œÖ¢8Ö×ºóñ-HÓéRMINORZ
 CODE_SMELL

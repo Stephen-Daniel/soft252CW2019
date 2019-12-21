@@ -65,10 +65,11 @@ public class DoctorForm extends javax.swing.JFrame{
 		doctorsNotes = txtPatientNewNotes.getText();
 		medicine = cbMedicine.getSelectedItem().toString();
 		quantity = txtQuantityToGivePatient.getText();
-		System.out.println(patient);
+		dosage = txtDosage.getText();
+		//System.out.println(patient);
 		patient = patient.replaceAll(".txt", "");	
 		prescription = (prescription +" "+ patient + " " + date + ".txt");
-		System.out.println("prescription is for " + prescription);
+		//System.out.println("prescription is for " + prescription);
 		try
 		{					
 			FileWriter fw = new FileWriter(prescription); 
@@ -76,6 +77,7 @@ public class DoctorForm extends javax.swing.JFrame{
 			pw.println(userId);
 			pw.println(medicine);
             pw.println(quantity);
+            pw.println(dosage);
             pw.println(doctorsNotes);
             pw.flush();
             pw.close();		            
