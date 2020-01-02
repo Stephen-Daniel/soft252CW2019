@@ -28,7 +28,7 @@ public class secretary {
 		public void amendFile(String oldQuantity, String newQuantity, String filepath)
 		{
 			
-			//System.out.println(oldQuantity + " " + newQuantity);
+			System.out.println(oldQuantity + " " + newQuantity);
 			Scanner paper;
 			String tempFile = "amendFileTemp.txt";
 			File oldFile = new File(filepath);
@@ -130,13 +130,22 @@ public class secretary {
 		public void deleteFile(String filename)
 		{
 			System.out.println("delete method " + filename);
+			String feedbackFilename = (filename.replace(".txt", "")) +"FeedbackorNotes.txt" ;
 			File deleteTextFile = new File(filename);
+			File deleteFeedbackFile  = new File(feedbackFilename);
 			if (deleteTextFile.exists()) {
 			deleteTextFile.delete();
 			System.out.println("deleted " + deleteTextFile.getAbsolutePath());
 			}else {
 				System.out.println("not found file at " + deleteTextFile.getAbsolutePath());
-			}			
+			}
+			if (deleteFeedbackFile.exists()) {
+				deleteFeedbackFile.delete();
+				System.out.println("deleted " + deleteFeedbackFile.getAbsolutePath());
+				}else {
+					System.out.println("not found file at " + deleteFeedbackFile.getAbsolutePath());
+				}
+			
 		}
 
 		public File[] FindFiles(String[] temps, String beginsWith)

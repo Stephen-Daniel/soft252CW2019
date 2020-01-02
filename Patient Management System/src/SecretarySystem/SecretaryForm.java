@@ -100,11 +100,13 @@ public class SecretaryForm {
 	public int number, prescriptionQuantity = 0, medicineInStock = 0, newMedicineInStock = 0, sum;
 	//the TextField for typing the date
 	JFormattedTextField  textField = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
+	
+	
 	public void restockMedicines()
-	{	//get midicine name		
+	{	//get medicine name		
 		temp = cbStock.getSelectedItem().toString().trim();
 		orderStock = temp;
-		orderStock = orderStock.replace("stock 1000 ", "").trim();
+		orderStock = orderStock.replace("stock ", "").trim();
 	Scanner populate;
 		// get stock add 1000 and save
 			filename = orderStock;	
@@ -126,7 +128,7 @@ public class SecretaryForm {
 			newQuantityInStock = Integer.toString(newMedicineInStock);
 			secretary stockUpdate = new secretary();						
 			stockUpdate.amendFile(quantityInStock, newQuantityInStock, filename);
-			
+				
 		//delete file
 		secretary restock = new secretary();
 		restock.deleteFile(temp);
@@ -158,7 +160,7 @@ public class SecretaryForm {
 		if(newMedicineInStock < 500) {
 		try
 		{		
-			orderFile = ("order 1000 " + medicine.trim() + ".txt");
+			orderFile = ("order " + medicine.trim() + ".txt");
 			FileWriter fw = new FileWriter(orderFile);
 			PrintWriter pw = new PrintWriter(fw);  
             pw.println(medicine.trim());           
@@ -636,6 +638,8 @@ public class SecretaryForm {
 				secretary rn = new secretary();
 				System.out.println(orderFile);
 				rn.renameFile(newOrder, newStock);
+				getOrders();
+				getStock();
 			}
 		});
 		btnOrder.setBounds(643, 388, 225, 25);
@@ -668,7 +672,7 @@ public class SecretaryForm {
 		btnApproveAccRemoval.setBounds(780, 146, 175, 25);
 		frame.getContentPane().add(btnApproveAccRemoval);		
 		lblTitle.setText("Secretary " + userId);		
-		cbRequests.setModel(new DefaultComboBoxModel(new String[] {"Temp to approve"}));	
+		cbRequests.setModel(new DefaultComboBoxModel(new String[] {"New Patients to approve"}));	
 		cbRequests.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
@@ -830,6 +834,8 @@ public class SecretaryForm {
 				
 				if(cbStock.getSelectedItem() != "Medicine to put into stock") {
 				restockMedicines();
+				getOrders();
+				getStock();
 				}
 			}
 		});
@@ -924,7 +930,7 @@ public class SecretaryForm {
 		frame.getContentPane().add(lblError);
 		
 		cbMedicineInStock = new JComboBox();
-		cbStock.setModel(new DefaultComboBoxModel(new String[] {"Medicine in stock"}));
+		cbMedicineInStock.setModel(new DefaultComboBoxModel(new String[] {"Medicine in stock"}));
 		cbMedicineInStock.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				

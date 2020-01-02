@@ -37,6 +37,7 @@ import javax.swing.JTextPane;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JScrollBar;
+import java.awt.Font;
 
 public class AdminForm extends javax.swing.JFrame{
 
@@ -76,6 +77,7 @@ public class AdminForm extends javax.swing.JFrame{
 	private JButton btnLogout;
 	private String date;
 	private String newDate;
+	private JLabel lblRate;
 	
 	public static void main(String id) {
 		userId = id;
@@ -211,7 +213,7 @@ public class AdminForm extends javax.swing.JFrame{
 		usernameWithoutTXT = username;
 		username = username + ".txt";		
 		txtUsername.setText(usernameWithoutTXT);
-		
+		System.out.println("test " + username + " Add clear list!");
 		txtUsername.setEditable(false);
 		
 		System.out.println("add .txt " + username + " Add clear list!");
@@ -284,8 +286,10 @@ public class AdminForm extends javax.swing.JFrame{
 		enableAllButtons();
 		allText(true);
 		clear();
+		clearList();
 		btnSave.setEnabled(false);
 		btnDelete.setEnabled(false);
+		populateAdminList("all");
 	}
 	public void allText(Boolean onOff)
 	{
@@ -322,7 +326,7 @@ public class AdminForm extends javax.swing.JFrame{
 		secretary getFileListDS = new secretary();
 		if(option.equals("all"))
 		{
-			String [] letter = {"A","D","S"};
+			String [] letter = {"A1","D","S"};
 			choosen = letter;
 		}
 		else if(option.equals("rating"))
@@ -423,7 +427,7 @@ public class AdminForm extends javax.swing.JFrame{
 				btnClearAndExit.setEnabled(true);
 				cbAdminList.setEnabled(true);
 				btnDelete.setEnabled(true);
-							
+				lblRate.setText("Select staff to delete!")	;		
 			}
 		});
 		btnRemoveStaff.setBounds(12, 227, 146, 25);
@@ -432,7 +436,8 @@ public class AdminForm extends javax.swing.JFrame{
 		btnViewRatings = new JButton("View Ratings");
 		btnViewRatings.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				clear();				
+				clear();
+				lblRate.setText("Choose a Doctor, read the comments and then write and send feedback");
 				populateAdminList("rating");
 				disableAllButtons();
 				cbAdminList.setEnabled(true);
@@ -448,7 +453,7 @@ public class AdminForm extends javax.swing.JFrame{
 		btnSendFeedback = new JButton("Send Feedback");
 		btnSendFeedback.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
+				lblRate.setText("");
 				cbAdminList.removeAll();
 				saveNewCreatedStaff();				
 				populateAdminList("all");
@@ -554,6 +559,7 @@ public class AdminForm extends javax.swing.JFrame{
 				System.out.println("click combo" + username + pick);
 				//change to username from pick
 				populate(username); }
+				
 			}
 		});
 		
@@ -567,11 +573,20 @@ public class AdminForm extends javax.swing.JFrame{
 		btnSave = new JButton("Save");
 		btnSave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {	
-				
+
+				if(txtFirstname.getText().equals("") || txtSurname.getText().equals("") ||
+						txtAddress.getText().equals("") || txtCity.getText().equals("") || 
+						txtPassword.getText().equals(""))
+					{
+					lblRate.setText("Enter all fields please!");
+				}else {
 				cbAdminList.removeAll();
 				saveNewCreatedStaff();				
 				populateAdminList("all");
 				clearAndExit();
+				lblRate.setText("");
+				}
+				
 			}
 		});
 		btnSave.setEnabled(false);
@@ -582,12 +597,15 @@ public class AdminForm extends javax.swing.JFrame{
 		btnDelete.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				cbAdminList.removeItem(username);
+				username = cbAdminList.getSelectedItem().toString().trim();
+				
 				//send to delete method with correct name
 				secretary delete = new secretary();
 				String usernameWithTXT = (username + ".txt");
 				delete.deleteFile(usernameWithTXT);
-				clearAndExit();			
+				clearAndExit();
+				lblRate.setText(null);
+				
 			}
 			
 		});
@@ -622,6 +640,12 @@ public class AdminForm extends javax.swing.JFrame{
 		JLabel lblfeedback = new JLabel("Feedback");
 		lblfeedback.setBounds(12, 315, 56, 16);
 		frame.getContentPane().add(lblfeedback);
+		
+		lblRate = new JLabel("");
+		lblRate.setForeground(Color.RED);
+		lblRate.setFont(new Font("Tahoma", Font.PLAIN, 11));
+		lblRate.setBounds(155, 33, 480, 14);
+		frame.getContentPane().add(lblRate);
 		//frame.add(spFeedback);
 	}
 }

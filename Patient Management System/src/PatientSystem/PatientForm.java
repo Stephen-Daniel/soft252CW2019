@@ -36,6 +36,7 @@ import com.toedter.calendar.JDayChooser;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JComboBox;
+import java.awt.Color;
 
 public class PatientForm extends javax.swing.JFrame{
 
@@ -67,7 +68,7 @@ public class PatientForm extends javax.swing.JFrame{
 	private JRadioButton rbs3;
 	private JRadioButton rbs4;
 	private JRadioButton rbs5;
-	
+	private JLabel lblChoseADoctor;
 	private String firstname, doctor, surname, date, newDate, chosenDoctor, patientID, doctorID;
 	private String filename, highOrLow, temp, prescriptionFile, chosenPrescription, address;
 	public String beginsWith = "";
@@ -264,10 +265,19 @@ public class PatientForm extends javax.swing.JFrame{
 	}
 	public void clear()
 	{
-		for(int i = cbDoctorRate.getItemCount()-1;i>=1;i--) {
+		
+		for(int i = cbDoctorRate.getItemCount()-1; i >= 1; i--) {
+			
 			cbDoctorRate.removeItemAt(i);
+						
+		}
+		for(int i = cbDoctorAppointment.getItemCount(); i >= 1; i--) {
+			
 			cbDoctorAppointment.removeItemAt(i);			
 		}
+		
+		
+		
 	}
 	public void saveRating()
 	{
@@ -364,7 +374,10 @@ public void rateDoctors()
 {
 	secretary getTemps = new secretary();	
 	requests = getTemps.FindFiles(temps, "D");
-	txtRatings.setText("");	
+	txtRatings.setText("");
+	System.out.println("before clear");
+	clear();
+	System.out.println("after clear");
 	for (File file: requests)
 	{
 		filename = file.getName();
@@ -455,6 +468,7 @@ public void rateDoctors()
 		btnRateDoctor = new JButton("Rate Doctor with feedback");
 		btnRateDoctor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 				cbDoctorRate.setEnabled(true);
 				starsEnabled(true);
 				txtDisplayFeedback.setEnabled(true);
@@ -629,9 +643,11 @@ public void rateDoctors()
 		scrollPane_3.setViewportView(txtWhatsWrong);
 		
 		cbDoctorAppointment = new JComboBox();
+		//cbPrescribedMedicine.setModel(new DefaultComboBoxModel(new String[] {"Doctors Appointment"}));
 		cbDoctorAppointment.setEnabled(false);
 		cbDoctorAppointment.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
 			}
 		});
 		cbDoctorAppointment.setBounds(10, 285, 245, 20);
@@ -647,11 +663,14 @@ public void rateDoctors()
 		
 		cbDoctorRate = new JComboBox();
 		cbDoctorRate.setEnabled(false);
+		cbDoctorRate.setModel(new DefaultComboBoxModel(new String[] {"Doctors available"}));
 		cbDoctorRate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
+				if(cbDoctorRate.getSelectedItem() != "Doctors available") {
 				selectedDoctorForFeedback();
 				
+				}
 			}
 		});
 		cbDoctorRate.setBounds(282, 47, 245, 20);
@@ -666,16 +685,20 @@ public void rateDoctors()
 		btnSubmit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
+				if(cbDoctorRate.getSelectedItem() != "Doctors available") {
 				saveRating();
 				starsEnabled(false);
 				cbDoctorRate.setEnabled(false);
 				txtDisplayFeedback.setText("");
 				txtDisplayFeedback.setEditable(false);
 				btnSubmit.setEnabled(false);
-	
+				lblChoseADoctor.setText(null);
+				}else {
+					lblChoseADoctor.setText("You must chose a doctor to add feedback!");
+				}
 			}
 		});
-		btnSubmit.setBounds(425, 216, 172, 23);
+		btnSubmit.setBounds(363, 216, 234, 23);
 		frame.getContentPane().add(btnSubmit);
 		
 		JLabel lblDoctorsratings = new JLabel("Doctors Ratings");
@@ -763,5 +786,10 @@ public void rateDoctors()
 		JLabel lblNewLabel = new JLabel("Next Appointments");
 		lblNewLabel.setBounds(339, 273, 148, 14);
 		frame.getContentPane().add(lblNewLabel);
+		
+		lblChoseADoctor = new JLabel("");
+		lblChoseADoctor.setForeground(Color.RED);
+		lblChoseADoctor.setBounds(363, 248, 300, 14);
+		frame.getContentPane().add(lblChoseADoctor);
 	}
 }

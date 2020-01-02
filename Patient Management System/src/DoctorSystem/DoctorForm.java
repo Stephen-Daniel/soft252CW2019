@@ -41,7 +41,7 @@ public class DoctorForm extends javax.swing.JFrame{
 	
 	
 	private String doctorsNotes, medicine, quantity, dosage, description, chosenMedicine, temp, appointment;
-	private String patient, date, newDate, patientApp;
+	private String patient, date, newDate, orderFile, patientApp;
 	private String filename, prescription = "prescription";
 	public static File[] requests;
 	public static String [] temps;
@@ -91,8 +91,9 @@ public class DoctorForm extends javax.swing.JFrame{
 	{
 		medicine = txtNewMedicineName.getText();
 		dosage = txtNewDosage.getText();
+		//save new medicine
 		quantity = txtNewQuantity.getText();
-		medicine = ("Order " + medicine.trim() + ".txt");
+		medicine = ("medicine " + medicine.trim() + ".txt");
 		description = txtNewDescription.getText();
 		System.out.println("new medicine is " + medicine);
 		try
@@ -109,7 +110,30 @@ public class DoctorForm extends javax.swing.JFrame{
 		catch (IOException e) {
 			System.out.println("fail " + patientApp);								
 		}
+		
+		try
+		{		
+			orderFile = ("order " + medicine.trim());
+			FileWriter fw = new FileWriter(orderFile);
+			PrintWriter pw = new PrintWriter(fw);  
+            pw.println(medicine.trim());           
+            pw.flush();
+            pw.close();		            
+            fw.close(); 
+            //getOrders();
+            }
+		catch (IOException e) {
+            System.out.println("fail" + orderFile);									
+		}
+		
+		
+		
+		
 		getMedicine();
+		txtNewMedicineName.setText("");
+		txtNewDosage.setText("");
+		txtNewQuantity.setText("");
+		txtNewDescription.setText("");
 	}
 	public void sendAppointment()
 	
@@ -248,6 +272,11 @@ public class DoctorForm extends javax.swing.JFrame{
 				
 				e1.printStackTrace();
 			}
+			//delete appointment
+			secretary delete = new secretary();
+			delete.deleteFile(filename);
+			
+			getAppointments();
 }
 				// buttons ready to use			
 		
@@ -291,7 +320,10 @@ public class DoctorForm extends javax.swing.JFrame{
 		{	
 			MainDate getDate = new MainDate();
 			date = getDate.sendDate(newDate);
+			patient = patient.replace(".txt", "");
+			patient = patient + ".txt";
 			
+			System.out.println("patient to update file called " + patient);
 			FileWriter fw = new FileWriter(patient, true);
 			PrintWriter pw = new PrintWriter(fw);
 
@@ -478,7 +510,7 @@ public class DoctorForm extends javax.swing.JFrame{
 		txtQuantityToGivePatient.setColumns(10);
 		
 		JLabel lblMedicinenewname = new JLabel("Name of new medicine");
-		lblMedicinenewname.setBounds(22, 307, 121, 14);
+		lblMedicinenewname.setBounds(22, 307, 179, 14);
 		frame.getContentPane().add(lblMedicinenewname);
 		
 		txtNewMedicineName = new JTextField();

@@ -1,5 +1,5 @@
-Lady Type
-Afoursize
+Lady Eima
+Incharj
 87 Inkpot Lane 
 Plymouth
 PL19 22L
@@ -7,7 +7,7 @@ spare
 spare
 S1005
 password
--
--
+comments
+feedback
 
 

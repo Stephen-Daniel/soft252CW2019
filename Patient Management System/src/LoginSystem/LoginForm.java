@@ -73,7 +73,7 @@ public class LoginForm extends javax.swing.JFrame{
 		lblTitle.setBounds(100, 24, 100, 30);
 		frmPatientManagementSystem.getContentPane().add(lblTitle);
 		
-		txtUsername = new JTextField("P1011");
+		txtUsername = new JTextField("");
 		txtUsername.setFont(new Font("Arial", Font.BOLD, 20));
 		txtUsername.setBounds(250, 90, 300, 40);
 		frmPatientManagementSystem.getContentPane().add(txtUsername);
@@ -106,10 +106,14 @@ public class LoginForm extends javax.swing.JFrame{
 			public void actionPerformed(ActionEvent e) {
 				String username = txtUsername.getText();
 				String password = txtPassword.getText();
-			
+			System.out.println("username = " + username + " and password is " + password + " ok");
+			if(username.equals("") || password.equals("")) {
+				lblMessage.setText("Incorrect Username and or Password. Please try again.");
+			}else{
 				VerifyLogin checkLogin = new VerifyLogin();
 				checkLogin.verifyLogin(username, password);
-				// error message for in correct username and or password
+			}	
+				// error message for incorrect username and or password
 				lblMessage.setText("Incorrect Username and or Password. Please try again.");
 				
 			}
@@ -165,16 +169,6 @@ public class LoginForm extends javax.swing.JFrame{
 		lblDate.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		lblDate.setBounds(386, 24, 257, 14);
 		frmPatientManagementSystem.getContentPane().add(lblDate);
-		
-		JButton btnCal = new JButton("calender");
-		btnCal.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				System.out.println(getDate.sendDate(newDate));
-			}
-		});	
-		btnCal.setBounds(10, 289, 89, 23);
-		frmPatientManagementSystem.getContentPane().add(btnCal);
 		
 	}
 }
